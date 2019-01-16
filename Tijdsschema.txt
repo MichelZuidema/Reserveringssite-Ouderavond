@@ -1,0 +1,35 @@
+#Tijdsschema 
+Klant:
+Wireframe + offerte goedkeuren  3uur (Samen) 
+
+
+Front: 
+	1. Folder structuur + Sass Setup  1 uur 
+	3. Images + fonts + variables 1uur 
+	2. Html structuur 2 uur
+	3. Header stylen 2 uur 
+	4. Footer stylen 30min 
+	5. Homepagina main info 1 uur 
+	6. Homepagina contact 2uur 
+	7. Tijdschema voor de ouder 3 uur
+	8. Tijdschema voor de mentor 1 uur 
+	9.  Responive maken mobile/desktop  3,5 uur
+
+Back: 
+
+1. Database gereed maken  1,5 uur 
+2. Class met connect functie en close connectie functie  30 min
+3. Login functie mentor  2 uur 
+4. Unieke link generator  2 uur 
+5. Tijdschema  6 uur 
+6. Algoritme tijd suggestie  2 uur 
+
+
+Baas:
+Flowchart  1 uur  (Michel)
+Project plan 4 uur (samen)
+Setup logbook 30 min (samen)
+
+
+
+
