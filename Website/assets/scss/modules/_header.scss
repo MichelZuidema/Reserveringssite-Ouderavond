@@ -1,0 +1,28 @@
+body>header{
+
+    section:nth-child(1){
+        opacity: .7;
+        font-size: $login-size;
+        position: absolute;
+        right: calc(1rem * 2);
+        top: 1rem;
+
+        @include setQeury($md){
+            right: calc(2rem * 2);
+            top: 2rem;
+        }
+        @include setQeury($lg){
+            right: calc(2.5rem * 2);
+            top: 2.5rem;
+        }
+        @include setQeury($xlg){
+            right: calc(3rem * 2);
+            top: 3rem;
+        }
+        @include setQeury($high){
+            right: calc(5rem * 2);
+            top: 5rem;
+            font-size: $login-size-4k;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+// mixin for al black containers 
+
+// to call this function type: @include blackContainer(height,border){something}
+
+// depending on the height fill the first parameter
+// for mobile devices type: 1 as second parameter
+// for Desktop devices type: 0 as second parameter
+@mixin blackContainer ($containerHeight, $desktopContainer: 1){
+    width: 100%;
+    max-width: 80rem;
+    margin: 5rem auto 0 auto;
+    height: $containerHeight;
+    background: $black-container;
+    box-shadow: 1px 1.5px 6px #000;
+    
+    @if $desktopContainer == 1{
+        border-top: 3px solid $black-container-border; 
+        border-bottom: 3px solid $black-container-border;
+    }@else {
+        border: 3px solid $black-container-border;
+        margin: 8rem auto 0 auto;
+    }
+}
+

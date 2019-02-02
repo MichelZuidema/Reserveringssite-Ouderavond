@@ -1,0 +1,21 @@
+// Here we set al color variables 
+
+
+// background color of all pages
+$body-background:#1D1D1D;
+// background color of all specific sections. for example: contact/login form
+$black-container: #1C1C1C;
+// black container border
+$black-container-border: #484646;
+// Corporate identity color of GLR
+$glr-green: #8FE501;
+// An overlay for every background image on the website
+$img-overlay: rgba(142, 229, 1, 0.26);
+// The standard "WHITE" color
+$standard-color: #f1f1f1;
+// Color for all fully booked appointments 
+$booked-full: #FF0000;
+// Color for all nearly full booked appointments
+$nearly-full: #EA7500;
+// Color for most buttons. Also used for a disabled button
+$button-gray: #484646;

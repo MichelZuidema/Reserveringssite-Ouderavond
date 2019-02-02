@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans');
+
+// Here we set all typography styles
+
+// All titles have a montserrat font family 
+$title-font: 'Montserrat', sans-serif;
+
+// title font-sizes
+$title-size: 5.8rem;
+$subtitle-size: 4.2rem;
+$paragraf-size: 2.8rem;
+
+$login-size: calc(1.6rem + .5vw);
+$login-size-4k: calc(3rem + .5vw);
+
+// All regular text have a Nunito Sans font family
+$text-font: 'Nunito Sans', sans-serif;
+
+// text font-sizes
+$button-text-size: 3.2rem;
+$navigation-text-size: 3.2rem;
+$normal-text-size: 2.2rem;
