@@ -1,28 +1,199 @@
 body>header{
+    position: relative;
 
+
+//////////////////////////////////////////////////////////////////////////////////////
+// pure css hamburger menu 
+    
+    // background 
     section:nth-child(1){
-        opacity: .7;
-        font-size: $login-size;
-        position: absolute;
-        right: calc(1rem * 2);
-        top: 1rem;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
 
-        @include setQeury($md){
-            right: calc(2rem * 2);
-            top: 2rem;
-        }
+        // turns hamburger menu off for desktops view
         @include setQeury($lg){
-            right: calc(2.5rem * 2);
-            top: 2.5rem;
+            display: none;
         }
-        @include setQeury($xlg){
-            right: calc(3rem * 2);
-            top: 3rem;
+        
+    // white bars
+        section,
+        section:before,
+        section:after{
+            content: '';
+            display: block;
+            background: #f1f1f1;
+            height: 0.3rem;
+            width: 2.5rem;
+            border-radius: 0.3rem;
         }
-        @include setQeury($high){
-            right: calc(5rem * 2);
-            top: 5rem;
-            font-size: $login-size-4k;
+
+        // center white bars in the background
+        section{
+            @include centerAbs(45%,50%);
+        }
+        
+        // separates the white bars
+        section:after{
+            transform: translateY(3px)
+        }
+
+        section:before{
+            transform: translateY(-6px)
         }
     }
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// navigation
+
+    // ul swicht of for mobile view
+    nav{
+        top: -3000px;
+        transition: width 2s;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background: $glr-green;
+        z-index: 1000;
+        display: block;
+        overflow: hidden;
+
+        article{
+            position: absolute;
+            width: 7rem;
+            height: 6rem;
+        }
+
+        // CSS shape: CROSS
+        div{
+            background: $navigation-color;
+            height: 4rem;
+            position: relative;
+            width: .8rem;
+            transform: rotate(45deg);
+            margin: 10px 0 0 30px;
+        }
+
+        div:after{
+            background: $navigation-color;
+            content: "";
+            height: .8rem;
+            left: -1.6rem;
+            position: absolute;
+            top: 1.6rem;
+            width: 4rem;
+        }
+
+        // unorderd list with flexbox
+        ul{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;          
+
+            li{
+
+            }
+            
+            a{
+                color: $navigation-color;
+                font-size: $navigation-text-size;
+                cursor: pointer;
+            }
+
+            a:after{
+                content: '';
+                display: block;
+                background: $navigation-color;
+                height: 3px;
+                margin: .5rem auto;
+                width: 60%;
+            }
+        }
+    }
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// current user
+
+    section:nth-child(3){
+        opacity: .5;
+        font-size: $login-size;
+        @include centerAbs(85%,50%);
+        
+        @include setQeury($md){
+            transform: translateX(0);
+            left: unset;
+            right: 2.5rem;
+            top: 2.5rem;
+        }
+    }
+
+//////////////////////////////////////////////////////////////////////////////////////
+//h1 title 
+
+    section:nth-child(4){
+        font-family: $title-font;
+        color: $glr-green;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        text-shadow: 1px 1.5px 6px #000;
+    }
+
+    // standard lengths(top,left)
+    h1{
+        font-size: $title-size;
+        @include centerAbs(10%,50%);
+
+    }
+
+    // Left title (inschrijving)
+    // set to 25% procent from the left
+    h1:nth-child(1) {   
+        @include setQeury($lg){
+            @include centerAbs(8rem, 25%);
+        }
+    }
+
+    // right title (ouderavond) 
+    // set to 75% procent from the left
+    h1:nth-child(2){
+        top: 65%;
+
+        @include setQeury($lg){
+            @include centerAbs(8rem, 75%);
+        }
+    }
+
+//////////////////////////////////////////////////////////////////////////////////////
+// logo header
+
+    // school figure
+    figure{
+            @include centerAbs(9rem,50%);
+
+            @include setQeury($lg){
+                top: 2rem;
+            }
+
+        img{
+            width: 20rem;
+            border: 3px solid $glr-green;
+            box-shadow: 1px 1.5px 6px #000;
+            
+            @include setQeury($lg){
+                border-radius: 100%;
+                width: 16rem;
+                height: 16rem;
+            }
+
+            @include setQeury($xlg){
+                width: 18rem;
+                height: 18rem;
+            }
+        }
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////
+
 }

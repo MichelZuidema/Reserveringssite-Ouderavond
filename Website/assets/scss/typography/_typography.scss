@@ -6,12 +6,11 @@
 $title-font: 'Montserrat', sans-serif;
 
 // title font-sizes
-$title-size: 5.8rem;
+$title-size: calc(2.8rem + 1vw);
 $subtitle-size: 4.2rem;
 $paragraf-size: 2.8rem;
 
 $login-size: calc(1.6rem + .5vw);
-$login-size-4k: calc(3rem + .5vw);
 
 // All regular text have a Nunito Sans font family
 $text-font: 'Nunito Sans', sans-serif;
