@@ -48,16 +48,28 @@ body>header{
 // navigation
 
     // ul swicht of for mobile view
+    // transition of 2 seconds over the width of the nav
     nav{
-        top: -3000px;
+        top: 0;
         transition: width 2s;
         position: absolute;
         height: 100vh;
         width: 100vw;
         background: $glr-green;
         z-index: 1000;
-        display: block;
+        display: none;
         overflow: hidden;
+
+    @include setQeury($lg){
+        width: 90vw;
+        @include centerAbs(13rem,50%);
+        display: block;
+        background: $navigation-background-desktop;
+        height: 18rem;
+        border: 3px solid $black-container-border;
+        box-shadow: 1px 1.5px 6px #000;
+        z-index: 0;
+    }
 
         article{
             position: absolute;
@@ -73,6 +85,12 @@ body>header{
             width: .8rem;
             transform: rotate(45deg);
             margin: 10px 0 0 30px;
+            cursor: pointer;
+
+            // turns of the cross icon on desktop view
+            @include setQeury($lg){
+                display: none;
+            }
         }
 
         div:after{
@@ -90,16 +108,21 @@ body>header{
             height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;          
-
-            li{
-
+            justify-content: space-evenly;          
+        
+            @include setQeury($lg){
+                margin-top: 9.5rem;
+                flex-direction: row;
             }
             
             a{
                 color: $navigation-color;
                 font-size: $navigation-text-size;
                 cursor: pointer;
+
+                @include setQeury($lg){
+                    color: $standard-color;
+                }
             }
 
             a:after{
@@ -109,6 +132,11 @@ body>header{
                 height: 3px;
                 margin: .5rem auto;
                 width: 60%;
+
+                @include setQeury($lg){
+                    background: $glr-green;
+                    width: 100%;
+                }
             }
         }
     }
@@ -151,7 +179,7 @@ body>header{
     // set to 25% procent from the left
     h1:nth-child(1) {   
         @include setQeury($lg){
-            @include centerAbs(8rem, 25%);
+            @include centerAbs(10.5rem, 25%);
         }
     }
 
@@ -161,7 +189,7 @@ body>header{
         top: 65%;
 
         @include setQeury($lg){
-            @include centerAbs(8rem, 75%);
+            @include centerAbs(10.5rem, 75%);
         }
     }
 
@@ -173,7 +201,7 @@ body>header{
             @include centerAbs(9rem,50%);
 
             @include setQeury($lg){
-                top: 2rem;
+                top: 4rem;
             }
 
         img{
@@ -183,12 +211,7 @@ body>header{
             
             @include setQeury($lg){
                 border-radius: 100%;
-                width: 16rem;
-                height: 16rem;
-            }
-
-            @include setQeury($xlg){
-                width: 18rem;
+                width: 18em;
                 height: 18rem;
             }
         }
