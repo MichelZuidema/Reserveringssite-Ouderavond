@@ -1,8 +1,7 @@
 body>header{
     position: relative;
 
-
-//////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // pure css hamburger menu 
     
     // background 
@@ -44,32 +43,46 @@ body>header{
         }
     }
 
-///////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // navigation
 
-    // ul swicht of for mobile view
-    // transition of 2 seconds over the width of the nav
-    nav{
+
+    // placeholder for navbar swichts
+    .toggleOn{
         top: 0;
-        transition: width 2s;
         position: absolute;
         height: 100vh;
         width: 100vw;
         background: $glr-green;
         z-index: 1000;
-        display: none;
         overflow: hidden;
-
-    @include setQeury($lg){
-        width: 90vw;
-        @include centerAbs(13rem,50%);
         display: block;
-        background: $navigation-background-desktop;
-        height: 18rem;
-        border: 3px solid $black-container-border;
-        box-shadow: 1px 1.5px 6px #000;
-        z-index: 0;
     }
+
+    %toggleOff{
+        display: block;
+    }
+
+    // ul swicht of for mobile view
+    nav{
+        @extend %toggleOff;
+
+        @include setQeury($lg){
+            width: 90vw!important;
+            transition: width 2s;
+            @include centerAbs(11rem,50%);
+            display: block!important;
+            background: $navigation-background-desktop;
+            height: 16rem;
+            border: 3px solid $black-container-border;
+            box-shadow: 1px 1.5px 6px #000;
+            z-index: 0;
+        }
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// CSS shape: CROSS
 
         article{
             position: absolute;
@@ -77,14 +90,13 @@ body>header{
             height: 6rem;
         }
 
-        // CSS shape: CROSS
         div{
             background: $navigation-color;
-            height: 4rem;
+            height: 3rem;
             position: relative;
-            width: .8rem;
+            width: .6rem;
             transform: rotate(45deg);
-            margin: 10px 0 0 30px;
+            margin: 1rem 0 0 2rem;
             cursor: pointer;
 
             // turns of the cross icon on desktop view
@@ -96,52 +108,91 @@ body>header{
         div:after{
             background: $navigation-color;
             content: "";
-            height: .8rem;
-            left: -1.6rem;
+            height: .6rem;
+            left: -1.2rem;
             position: absolute;
-            top: 1.6rem;
-            width: 4rem;
+            top: 1.2rem;
+            width: 3rem;
         }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// unorderd list
 
-        // unorderd list with flexbox
         ul{
             height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;          
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            align-items: center;
         
             @include setQeury($lg){
-                margin-top: 9.5rem;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 flex-direction: row;
             }
+
+            li{
+                @include setQeury($lg){
+                    grid-row: 2/3;
+                }
+
+                a{
+
+                    opacity: .7;
+                    color: $navigation-color;
+                    font-size: $navigation-mobile-size;
+                    cursor: pointer;
+    
+                    @include setQeury($lg){
+                        color: $standard-color;
+                        font-size: $navigation-desktop-size;
+                    }
+                }
             
-            a{
-                color: $navigation-color;
-                font-size: $navigation-text-size;
-                cursor: pointer;
+            
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// hover animation for navigation links
+
+            a:hover{
+                opacity: 1;
+                transition: opacity 500ms;
 
                 @include setQeury($lg){
-                    color: $standard-color;
+                    color: $glr-green;
+                    transition: all 500ms;
+                    font-size: 3rem;
+
+                }
+                
+            }
+            a:not(:hover){
+                @include setQeury($lg){
+                    transition: 500ms;
                 }
             }
 
             a:after{
+                opacity: .7;
                 content: '';
                 display: block;
                 background: $navigation-color;
                 height: 3px;
                 margin: .5rem auto;
                 width: 60%;
+                
+                :hover{
+                    opacity: 1;
+                    transition: opacity 500ms;
+                }
 
                 @include setQeury($lg){
-                    background: $glr-green;
-                    width: 100%;
+                    background: $standard-color;
+                    width: calc(10rem + 4vw);
+                    }
                 }
             }
         }
     }
 
-//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // current user
 
     section:nth-child(3){
@@ -157,8 +208,8 @@ body>header{
         }
     }
 
-//////////////////////////////////////////////////////////////////////////////////////
-//h1 title 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Page TITLE
 
     section:nth-child(4){
         font-family: $title-font;
@@ -173,27 +224,29 @@ body>header{
         font-size: $title-size;
         @include centerAbs(10%,50%);
 
+        @include setQeury($xlg){
+            font-weight: bold;
+        }
+
     }
 
     // Left title (inschrijving)
-    // set to 25% procent from the left
     h1:nth-child(1) {   
         @include setQeury($lg){
-            @include centerAbs(10.5rem, 25%);
+            @include centerAbs(8.5rem, 25%);
         }
     }
 
     // right title (ouderavond) 
-    // set to 75% procent from the left
     h1:nth-child(2){
         top: 65%;
 
         @include setQeury($lg){
-            @include centerAbs(10.5rem, 75%);
+            @include centerAbs(8.5rem, 75%);
         }
     }
 
-//////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // logo header
 
     // school figure
@@ -201,22 +254,28 @@ body>header{
             @include centerAbs(9rem,50%);
 
             @include setQeury($lg){
-                top: 4rem;
+                top: 2rem;
             }
+        :hover{
+            transform: rotate(360deg);
+            transition: 1200ms;
+        }
+
+        
 
         img{
             width: 20rem;
-            border: 3px solid $glr-green;
+            border: 4px solid $glr-green;
             box-shadow: 1px 1.5px 6px #000;
             
             @include setQeury($lg){
                 border-radius: 100%;
-                width: 18em;
-                height: 18rem;
+                width: 17em;
+                height: 17rem;
             }
         }
     }
 
-////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 }

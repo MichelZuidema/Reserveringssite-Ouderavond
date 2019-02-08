@@ -280,7 +280,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type="search"] {
+input[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   -webkit-box-sizing: content-box;
@@ -817,30 +817,34 @@ body > header section:nth-child(1) section:before {
           transform: translateY(-6px);
 }
 
-body > header nav {
+body > header .toggleOn {
   top: 0;
-  -webkit-transition: width 2s;
-  transition: width 2s;
   position: absolute;
   height: 100vh;
   width: 100vw;
   background: #8FE501;
   z-index: 1000;
-  display: none;
   overflow: hidden;
+  display: block;
+}
+
+body > header nav {
+  display: block;
 }
 
 @media only screen and (min-width: 1024px) {
   body > header nav {
-    width: 90vw;
+    width: 90vw !important;
+    -webkit-transition: width 2s;
+    transition: width 2s;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: 13rem;
-    display: block;
+    top: 11rem;
+    display: block !important;
     background: #222;
-    height: 18rem;
+    height: 16rem;
     border: 3px solid #484646;
     -webkit-box-shadow: 1px 1.5px 6px #000;
             box-shadow: 1px 1.5px 6px #000;
@@ -856,12 +860,12 @@ body > header nav article {
 
 body > header nav div {
   background: #1C1C1C;
-  height: 4rem;
+  height: 3rem;
   position: relative;
-  width: .8rem;
+  width: .6rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  margin: 10px 0 0 30px;
+  margin: 1rem 0 0 2rem;
   cursor: pointer;
 }
 
@@ -874,30 +878,30 @@ body > header nav div {
 body > header nav div:after {
   background: #1C1C1C;
   content: "";
-  height: .8rem;
-  left: -1.6rem;
+  height: .6rem;
+  left: -1.2rem;
   position: absolute;
-  top: 1.6rem;
-  width: 4rem;
+  top: 1.2rem;
+  width: 3rem;
 }
 
 body > header nav ul {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (min-width: 1024px) {
   body > header nav ul {
-    margin-top: 9.5rem;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -905,19 +909,52 @@ body > header nav ul {
   }
 }
 
-body > header nav ul a {
+@media only screen and (min-width: 1024px) {
+  body > header nav ul li {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
+
+body > header nav ul li a {
+  opacity: .7;
   color: #1C1C1C;
-  font-size: 3.2rem;
+  font-size: 4rem;
   cursor: pointer;
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header nav ul a {
+  body > header nav ul li a {
     color: #f1f1f1;
+    font-size: 2.8rem;
   }
 }
 
-body > header nav ul a:after {
+body > header nav ul li a:hover {
+  opacity: 1;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+@media only screen and (min-width: 1024px) {
+  body > header nav ul li a:hover {
+    color: #8FE501;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body > header nav ul li a:not(:hover) {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+}
+
+body > header nav ul li a:after {
+  opacity: .7;
   content: '';
   display: block;
   background: #1C1C1C;
@@ -926,10 +963,16 @@ body > header nav ul a:after {
   width: 60%;
 }
 
+body > header nav ul li a:after :hover {
+  opacity: 1;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
 @media only screen and (min-width: 1024px) {
-  body > header nav ul a:after {
-    background: #8FE501;
-    width: 100%;
+  body > header nav ul li a:after {
+    background: #f1f1f1;
+    width: calc(10rem + 4vw);
   }
 }
 
@@ -970,13 +1013,19 @@ body > header h1 {
   top: 10%;
 }
 
+@media only screen and (min-width: 1440px) {
+  body > header h1 {
+    font-weight: bold;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   body > header h1:nth-child(1) {
     position: absolute;
     left: 25%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: 10.5rem;
+    top: 8.5rem;
   }
 }
 
@@ -990,7 +1039,7 @@ body > header h1:nth-child(2) {
     left: 75%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: 10.5rem;
+    top: 8.5rem;
   }
 }
 
@@ -1004,13 +1053,20 @@ body > header figure {
 
 @media only screen and (min-width: 1024px) {
   body > header figure {
-    top: 4rem;
+    top: 2rem;
   }
+}
+
+body > header figure :hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
 }
 
 body > header figure img {
   width: 20rem;
-  border: 3px solid #8FE501;
+  border: 4px solid #8FE501;
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
 }
@@ -1018,8 +1074,8 @@ body > header figure img {
 @media only screen and (min-width: 1024px) {
   body > header figure img {
     border-radius: 100%;
-    width: 18em;
-    height: 18rem;
+    width: 17em;
+    height: 17rem;
   }
 }
 
