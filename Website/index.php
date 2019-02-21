@@ -12,24 +12,9 @@
     <link rel="stylesheet" href="assets/css-import/all.css">    
 </head>
 <body>
-    <header>
-        <section><section></section></section>
-        <nav>
-            <article><div></div></article>
-            <ul>
-                <li><a href="index.html">Homepagina</a></li>
-                <li><a href="registration.html">Tijdschema</a></li>
-                <li><a href="">Inloggen</a></li>
-                <li><a href="contact.html">Contactpagina</a></li>
-            </ul>
-        </nav>
-        <section><p>Ingelogt als: <span>Onbekend</span></p></section>
-        <section>
-            <h1>Inschrijving</h1>
-            <h1>Ouderavond</h1>
-        </section>
-        <figure><a href="index.html"><img src="assets/img/school.jpg" alt="School-image"></a></figure>
-    </header>
+    <?php 
+        require 'assets/header-footer/header.php';
+    ?>
     <main>
         <article>
             <h2>Algemene informatie</h2>
@@ -77,39 +62,9 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <section>
-            <figure><img src="assets/img/GLRlogo_RGB.png" alt="GLR logo"></figure>
-        </section>
-            <section>
-                <ul>
-                    <li>Grafisch Lyceum Rotterdam</li>
-                    <li>Heer Bokelweg 255, 3032 AD Rotterdam</li>
-                    <li>WFHH+36 Rotterdam</li>
-                    <li>088 200 1500</li>
-                </ul>
-            </section>
-            <section>
-                <figure>
-                    <img src="assets/img/footer-facebook.png" alt="Facebook logo">
-                    <figcaption>
-                        <p>GLR Facebook</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/img/footer-instagram.png" alt="Instagram logo">
-                    <figcaption>
-                        <p>GLR Instagram</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/img/footer-linkedin.png" alt="Linkedin logo">
-                    <figcaption>
-                        <p>GLR Linkedin</p>
-                    </figcaption>
-                </figure>
-            </section>
-    </footer>
+        <?php
+            require 'assets/header-footer/footer.php';
+        ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

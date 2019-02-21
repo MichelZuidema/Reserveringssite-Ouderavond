@@ -46,7 +46,6 @@ body>header{
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // navigation
 
-
     // placeholder for navbar swichts
     .toggleOn{
         top: 0;
@@ -63,20 +62,25 @@ body>header{
         display: block;
     }
 
+
     // ul swicht of for mobile view
     nav{
         @extend %toggleOff;
 
         @include setQeury($lg){
-            width: 90vw!important;
+            width: 90vw;
             transition: width 2s;
             @include centerAbs(11rem,50%);
-            display: block!important;
+            display: block;
             background: $navigation-background-desktop;
             height: 16rem;
             border: 3px solid $black-container-border;
             box-shadow: 1px 1.5px 6px #000;
             z-index: 0;
+        }
+
+        @include setQeury($max){
+            width: 70vw;
         }
 
 
@@ -159,9 +163,7 @@ body>header{
                     color: $glr-green;
                     transition: all 500ms;
                     font-size: 3rem;
-
                 }
-                
             }
             a:not(:hover){
                 @include setQeury($lg){
@@ -227,6 +229,10 @@ body>header{
         @include setQeury($xlg){
             font-weight: bold;
         }
+        
+        @include setQeury($max){
+            font-size: $title-size-4k;
+        }
 
     }
 
@@ -234,6 +240,9 @@ body>header{
     h1:nth-child(1) {   
         @include setQeury($lg){
             @include centerAbs(8.5rem, 25%);
+        }
+        @include setQeury($max){
+            @include centerAbs(7rem, 30%)
         }
     }
 
@@ -243,6 +252,9 @@ body>header{
 
         @include setQeury($lg){
             @include centerAbs(8.5rem, 75%);
+        }
+        @include setQeury($max){
+            @include centerAbs(7rem, 70%)
         }
     }
 
@@ -277,5 +289,4 @@ body>header{
     }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 }
