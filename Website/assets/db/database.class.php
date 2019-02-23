@@ -10,6 +10,10 @@ class Database {
 
     public $mysqli;
 
+    public function __construct() {
+        $this->Connect();
+    }
+    
     // Connection Function
     public function Connect() {
         // Database Credentials
@@ -24,6 +28,8 @@ class Database {
         // Check for connection errors
         if($this->mysqli->connect_error) {
             echo "Connection failed! " . $this->mysqli->connect_error;
+        } else {
+            echo "Connected<br>";
         }
     }
 
@@ -75,6 +81,19 @@ class Database {
         
     }
 
+    public function LeftJoin() {
+        $sql = "SELECT student.naam, student.klas_id FROM student INNER JOIN mentor ON student.klas_id=mentor.klas_id";
+
+        $result = mysqli_query($this->mysqli, $sql);
+        
+        while($rij = mysqli_fetch_array($result)) {
+            $id = $rij[0];
+            $naam = $rij[1];
+            $klas = $rij[2];
+            echo "Student ID: $id, Student Naam: $naam, Klas: $klas <br>";
+        }
+    }
+
     // Close Connection Function
     public function CloseConnection() {
         // Check if closing the connection gets any error
@@ -85,4 +104,7 @@ class Database {
         }
     }
 }
+
+$db = new Database();
+$db->LeftJoin();
 ?>
