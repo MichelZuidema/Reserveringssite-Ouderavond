@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- legacy html5 support voor IE -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inschrijving ouderavond | Grafisch Lyceum Rotterdam</title>
-    <link rel="stylesheet" href="assets/css-import/all.css">    
-</head>
-<body>
     <?php 
-        require 'assets/header-footer/header.php';
+        //page title
+        $pageTitle = "Inschrijving ouderavond | Grafisch Lyceum Rotterdam";
+        
+        //header
+        require 'assets/include/header.php';
     ?>
     <main>
         <article>
@@ -62,10 +52,7 @@
             </ul>
         </section>
     </main>
-        <?php
-            require 'assets/header-footer/footer.php';
-        ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
+    <?php
+        // footer
+        require 'assets/include/footer.php';
+    ?>
