@@ -3,6 +3,7 @@ $("section:nth-child(1)").click(function(){
         $("header nav").addClass("toggleOn");
         $("body").addClass("overflow");
       });
+      
 $("header nav article").click(function(){
     $("header nav").removeClass("toggleOn");
     $("body").removeClass("overflow");
