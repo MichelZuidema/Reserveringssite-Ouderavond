@@ -83,19 +83,29 @@ class Database {
 
     // Mentor Login Function
     public function MentorLoginProcess($username, $password) {
+        // SQL Query: Search in database for rows with the username
         $sql = "SELECT * FROM mentor WHERE naam='$username'";
         $result = mysqli_query($this->mysqli, $sql);
+
+        // Row with the username
         $row = mysqli_fetch_array($result);
-        
-        if(password_verify($password, $row['wachtwoord'])) {
-            $_SESSION['username'] = $row['naam'];
-            var_dump($_SESSION);
-            return true;
+
+        // Count all rows returned from $result
+        $rowcount = mysqli_num_rows($result);
+
+        // Password validation
+        if($rowcount > 0) {
+            if(password_verify($password, $row['wachtwoord'])) {
+                $_SESSION['username'] = $row['naam'];
+                return true;
+            } else {
+                $_SESSION['errormsg'] = "Uw ingevulde wachtwoord is niet correct!";
+                return false;
+            }
         } else {
-            $_SESSION['errormsg'] = "Uw ingevulde wachtwoord is niet correct!";
+            $_SESSION['errormsg'] = "Er bestaan geen mentoren met de ingevulde naam.";
             return false;
         }
-        
         /* 
             Check if password is true
             echo password_verify($password, $hashed);
@@ -105,7 +115,9 @@ class Database {
     }
 
     public function Logout() {
+        // Unset all variables in session
         if(session_unset()) {
+            // Destroy session
             session_destroy();
             return true;
         } else {
