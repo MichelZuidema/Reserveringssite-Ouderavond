@@ -1,6 +1,8 @@
 <?php
 // Start session
 session_start();
+ini_set('display_errors', 'On');
+require("sessions.php");
 
 // Check if submit button has been clicked 
 if(isset($_POST['submit'])) {
@@ -13,6 +15,7 @@ if(isset($_POST['submit'])) {
     $username = $_POST['inputName'];
     $password = $_POST['inputPassword'];
 
+    // Login validation
     if($db->MentorLoginProcess($username, $password)) {
         echo "Ingelogd als " . $_SESSION['username'] . "!";
     } else {
