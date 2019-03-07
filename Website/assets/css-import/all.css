@@ -743,6 +743,32 @@ body > footer {
   grid-row: 3/4;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
+.toggleOn {
+  top: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: #8FE501;
+  z-index: 1000;
+  overflow: hidden;
+  display: block;
+}
+
+.selectedLink {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  .selectedLink {
+    color: #8FE501;
+    font-size: 3rem;
+  }
+}
+
 :root {
   font-size: 10px;
 }
@@ -759,10 +785,6 @@ h1, h2, h3, h4, h5, h6, p {
 html body {
   height: 100%;
   position: relative;
-}
-
-.overflow {
-  overflow: hidden;
 }
 
 body {
@@ -820,17 +842,6 @@ body > header section:nth-child(1) section:after {
 body > header section:nth-child(1) section:before {
   -webkit-transform: translateY(-6px);
           transform: translateY(-6px);
-}
-
-body > header .toggleOn {
-  top: 0;
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  background: #8FE501;
-  z-index: 1000;
-  overflow: hidden;
-  display: block;
 }
 
 body > header nav {
@@ -1116,17 +1127,114 @@ body > header figure img {
   }
 }
 
-main article {
+#homepage {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  margin: 0 0 20rem 0;
+  line-height: 1.9rem;
+}
+
+#homepage article {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
-  height: 300px;
+  height: 30rem;
   background: #1C1C1C;
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
   border-top: 3px solid #484646;
-  border-bottom: 3px solid #484646;
   margin: 0 auto 0 auto;
+}
+
+#homepage article h2 {
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 2rem auto 1.5rem auto;
+}
+
+#homepage article h2:after {
+  content: '';
+  display: block;
+  height: 0.3rem;
+  width: 30rem;
+  background: #8FE501;
+  margin: .9rem auto 0 auto;
+}
+
+#homepage article div {
+  width: 50rem;
+  max-width: 90vw;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#homepage article li {
+  line-height: 4rem;
+}
+
+#homepage #main-image-1, #homepage #main-image-2, #homepage #main-image-3 {
+  width: 100%;
+  max-width: 80rem;
+  margin: 5rem auto 0 auto;
+  height: 30rem;
+  background: #1C1C1C;
+  -webkit-box-shadow: 1px 1.5px 6px #000;
+          box-shadow: 1px 1.5px 6px #000;
+  border-top: 3px solid #484646;
+  margin: 0 auto 0 auto;
+  background-color: rgba(9, 231, 9, 0.301);
+  background-blend-mode: screen, multiply;
+}
+
+#homepage #main-image-1 {
+  background-image: url(../img/layout-picture.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#homepage #main-image-2 {
+  background-image: url(../img/layout-picture3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#homepage #main-image-3 {
+  background-image: url(../img/layout-picture4.jpg), url(../img/GLRlogo_RGB.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover,contain;
+}
+
+#homepage #main-diagram {
+  position: relative;
+}
+
+#homepage .main-diagram-1, #homepage .main-diagram-2, #homepage .main-diagram-3, #homepage .main-diagram-4 {
+  width: 50px;
+  height: 100px;
+  background: #8FE501;
+  position: absolute;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+#homepage .main-diagram-1 {
+  left: 25%;
+}
+
+#homepage .main-diagram-2 {
+  left: 37.5%;
+}
+
+#homepage .main-diagram-3 {
+  left: 50%;
+}
+
+#homepage .main-diagram-4 {
+  left: 62.5%;
 }
 
 footer {

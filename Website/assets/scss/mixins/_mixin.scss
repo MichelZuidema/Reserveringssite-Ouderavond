@@ -15,7 +15,6 @@
     
     @if $desktopContainer == 1{
         border-top: 3px solid $black-container-border; 
-        border-bottom: 3px solid $black-container-border;
     }@else {
         border: 3px solid $black-container-border;
         margin: 8rem auto 0 auto;
@@ -32,4 +31,16 @@ $leftLength: 50%;
     left: $leftLength;
     transform: translateX(-50%);
     top: $topLength;
+}
+
+//underline mixin
+@mixin underline($width, $height, $color) {
+    &:after{
+        content: '';
+        display: block;
+        height: $height;
+        width: $width;
+        background: $color;
+        margin: .9rem auto 0 auto;
+    }
 }

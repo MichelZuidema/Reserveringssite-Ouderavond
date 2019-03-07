@@ -142,7 +142,7 @@ body>header{
 // hover animation for navigation links
 
             a:hover{
-                opacity: 1;
+                opacity: 1; 
                 transition: opacity 500ms;
 
                 @include setQeury($lg){

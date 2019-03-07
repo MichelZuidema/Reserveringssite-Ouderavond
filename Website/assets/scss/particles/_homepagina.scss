@@ -1,6 +1,93 @@
-main{
+#homepage{
+    font-family: $text-font;
+    font-size: $paragraf-size;
+    margin:  0 0 20rem 0;
+    line-height: 1.9rem;
+
+
+    //articles homepage
     article{
-        @include blackContainer(300px, 1);
+        @include blackContainer(30rem, 1);
         margin: 0 auto 0 auto;
+
+        h2{
+            font-size: $subtitle-size;
+            font-family: $title-font;
+            margin: 2rem auto 1.5rem auto;
+
+            @include underline(30rem, .3rem, $glr-green)
+        }
+        
+        div{
+            width: 50rem;
+            max-width: 90vw;
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        li{
+            line-height: 4rem;
+        }
     }
+
+        //blend images
+        #main-image-1, #main-image-2, #main-image-3{
+            @include blackContainer(30rem, 1);
+            margin: 0 auto 0 auto;
+            background-color: rgba(9, 231, 9, 0.301);
+            background-blend-mode: screen, multiply; 
+        }
+
+        #main-image-1{
+            background-image: url(../img/layout-picture.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #main-image-2{
+            background-image: url(../img/layout-picture3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #main-image-3{
+            background-image: url(../img/layout-picture4.jpg), url(../img/GLRlogo_RGB.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover,contain;
+        }
+
+
+        #main-diagram{
+            position: relative;
+        }
+    
+
+        .main-diagram-1, .main-diagram-2, .main-diagram-3, .main-diagram-4{
+            width: 50px;
+            height: 100px;
+            background: $glr-green;
+            position: absolute;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+
+        .main-diagram-1{
+            left: 25%
+        }
+
+        .main-diagram-2{
+            left: 37.5%;
+        }
+
+        .main-diagram-3{
+            left: 50%;
+        }
+
+        .main-diagram-4{
+            left: 62.5%;
+        }
+
 }

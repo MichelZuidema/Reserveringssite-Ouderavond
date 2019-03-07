@@ -15,3 +15,12 @@
     display: block;
 }
 
+// selectedLink 
+.selectedLink{
+    opacity: 1;
+
+    @include setQeury($lg){
+        color: $glr-green;
+        font-size: 3rem;
+    }    
+}

@@ -17,7 +17,7 @@
         <nav>
             <article><div></div></article>
             <ul>
-                <li><a href="index.php">Homepagina</a></li>
+                <li><a href="index.php" class="<?php echo $selectedLink; ?>">Homepagina</a></li>
                 <li><a href="registration.html">Tijdschema</a></li>
                 <li><a href="">Inloggen</a></li>
                 <li><a href="contact.html">Contactpagina</a></li>
