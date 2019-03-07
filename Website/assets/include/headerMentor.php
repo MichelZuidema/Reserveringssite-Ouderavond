@@ -21,13 +21,12 @@
         <nav>
             <article><div></div></article>
             <ul>
-                <li><a href="index.php" class="<?php echo $selectedLink; ?>">Homepagina</a></li>
+                <li><a href="index.php" class="<?php echo $selectedLink; ?>">Inloggen</a></li>
                 <li><a href="registration.html">Tijdschema</a></li>
                 <li><a href="">GLR website</a></li>
-                <li><a href="contact.html">Contactpagina</a></li>
+                <li><a href="contact.html">Notities</a></li>
             </ul>
         </nav>
-        <section><span><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Ingelogt als:"; } ?></span></section>
         <section>
             <h1>Inschrijving</h1>
             <h1>Ouderavond</h1>

@@ -23,6 +23,11 @@ body{
     color: $standard-color;
     max-width: 100vw;
     text-align: center;
+    
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 // setting al images to max 100vw. to prevent images to go outside the screen

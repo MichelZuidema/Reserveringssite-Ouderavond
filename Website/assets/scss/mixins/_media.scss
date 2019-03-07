@@ -3,13 +3,18 @@
 
 // to call this function write: @include setQeury(md){something}
 
+$sm: 480px;
 $md: 720px;
 $lg: 1024px;
 $xlg: 1440px;
 $max: 2000px;
 
 @mixin setQeury($type) {
-    @if $type == $md {
+    @if $type == $sm {
+        @media only screen and(min-width: $sm){
+            @content;
+        }
+    }@else if $type == $md {
         @media only screen and(min-width: $md){
             @content;
         }

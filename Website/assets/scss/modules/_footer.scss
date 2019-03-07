@@ -1,13 +1,23 @@
 footer {
-    //make green footer
     position: absolute;
-    bottom: 0;
+    bottom: -10rem;
     height: 54rem;
     width: 100vw;
     background: $glr-green;
     font-family: $text-font;
+    margin: 10rem 0 0 0 ;
 
-    //make black container
+    @include setQeury($sm){
+        height: 32rem;
+    }
+    @include setQeury($md){
+        height: 26rem;
+    }
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ //black container
+
     #footer-container{
         position: absolute;
         left: 50%;
@@ -18,54 +28,137 @@ footer {
         height: 54rem;
         box-shadow: 1px 1.5px #000;
         border: 1.2px solid $border-color;
-    }
 
-    //make container for social media icons 
-    #footer-socialmedia{
-        margin: 3rem 0 0 0;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 2.5rem 20vw 45vw 5vw;
-        grid-template-rows: 1fr 1fr 1fr;
-        height: 24rem;
-    }
-
-    figure{ 
-        grid-column: 2/3;
-        margin: auto;
-
-        img{
-            width: 6rem;
-            height: 6rem;
+        @include setQeury($sm){
+            height: 44rem;
+        }
+        @include setQeury($md){
+            height: 26rem;
         }
     }
 
-    p{
-        font-size: 1.9rem;
-        margin: auto;
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//social media icons 
+
+    #footer-socialmedia{
+        margin: 2rem auto;
+        position: absolute;
+        left: 14rem;
+        transform: translateX(-50%);
+        width: 100%;
+
+        @include setQeury($sm){
+            left: 13rem;
+            top: 0;
+        }
+
+        @include setQeury($md){
+            left: 60%;
+            top: -1rem;
+        }
     }
-    // footer contact info
+
+    figure{ 
+        padding: 1rem 0;
+
+        @include setQeury($sm){
+            padding: 0;
+        }
+        
+        img{
+            width: 6rem;
+            height: 6rem;
+            
+        }
+
+        section{
+            width: 15rem;
+            display: inline-block;
+
+            @include setQeury($md){
+                width: 20rem;
+            }
+        }
+
+        p{
+            font-size: 1.9rem;
+            text-align: left;
+            padding: 1rem;
+            margin: 1.5rem 0;
+
+
+        @include setQeury($lg){
+            font-size: 2.2rem;
+        }
+        }
+    }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// footer contact info
+
     #footer-contact{
         font-size: $footer-text;
+        position: absolute;
         font-size: 1.7rem;
         text-align: left;
         margin: 2.5rem;
+        bottom: 7rem;
 
         li{
             padding: .5rem;
             line-height: 2rem;
+
+            @include setQeury($md){
+                line-height: 3rem;
+            }
+        }
+
+        @include setQeury($sm){
+            bottom: 2rem;
+            left: 0;
+        }
+        
+        @include setQeury($lg){
+            font-size: 2.2rem;
         }
     }
 
-    // logo of the school
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//school logo
+
     #footer-logo{
         position: absolute;
         right: 2rem;
         bottom: 2rem;
 
+
+        @include setQeury($md){
+            top: 4.5rem;
+            right: 2rem;
+        }
+
+        @include setQeury($lg){
+            right: 4.5rem;
+        }
+
         img{
             width: 10rem;
             height: 10rem;
+
+            @include setQeury($sm){
+                width: 14rem;
+                height: 14rem;
+            }
+
+            @include setQeury($md){
+                width: 15rem;
+                height: 15rem;
+            }
+
+            @include setQeury($lg){
+                width: 17rem;
+                height: 17rem;
+            }
         }
     }
 }

@@ -3,21 +3,22 @@
                 <section id="footer-socialmedia">
                     <figure>
                         <img src="assets/img/footer-facebook.png" alt="Facebook logo">
+                        <section><p>GLR Facebook</p></section>
                     </figure>
-                    <p>GLR Facebook</p>
                     <figure>
                         <img src="assets/img/footer-instagram.png" alt="Instagram logo">
+                        <section><p>GLR Instagram</p></section>
                     </figure>
-                    <p>GLR Instagram</p>
                     <figure>
                         <img src="assets/img/footer-linkedin.png" alt="Linkedin logo">
+                        <section><p>GLR Linkedin</p></section>                  
                     </figure>
-                    <p>GLR Linkedin</p>
                 </section>
                 <section id="footer-contact">
                     <ul>
                         <li>Grafisch Lyceum Rotterdam</li>
-                        <li>Heer Bokelweg 255, 3032 AD Rotterdam</li>
+                        <li>Heer Bokelweg 255</li>
+                        <li>3032 AD Rotterdam</li>
                         <li>WFHH+36 Rotterdam</li>
                         <li>088 200 1500</li>
                     </ul>

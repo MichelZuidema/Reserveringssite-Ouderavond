@@ -1,8 +1,9 @@
 body>header{
     position: relative;
+    height: 40rem;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// pure css hamburger menu 
+// hamburger menu 
     
     // background 
     section:nth-child(1){
@@ -184,7 +185,7 @@ body>header{
 // current user
 
     section:nth-child(3){
-        opacity: .5;
+        padding: .5rem;
         font-size: $login-size;
         @include centerAbs(85%,50%);
         
@@ -253,10 +254,11 @@ body>header{
 
             @include setQeury($lg){
                 top: 2rem;
+                :hover{
+                    transform: rotate(360deg);
+                    transition: 1200ms;
             }
-        :hover{
-            transform: rotate(360deg);
-            transition: 1200ms;
+
         }
 
         

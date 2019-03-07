@@ -4,7 +4,7 @@
     margin:  0 0 20rem 0;
     line-height: 1.9rem;
 
-
+    
     //articles homepage
     article{
         @include blackContainer(30rem, 1);
@@ -29,6 +29,8 @@
             line-height: 4rem;
         }
     }
+
+    
 
         //blend images
         #main-image-1, #main-image-2, #main-image-3{
@@ -57,6 +59,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover,contain;
+            margin: 0 0 73rem 0;
         }
 
 
