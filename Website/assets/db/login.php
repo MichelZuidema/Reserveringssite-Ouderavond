@@ -1,22 +1,20 @@
 <?php
 // Start session
 session_start();
+// Error Display
 ini_set('display_errors', 'On');
-require("database.class.php");
-require("sessions.php");
-require("UserController.php");
+
+// Required files
+require("Controllers/UserController.php");
 
 $user = new UserController();
 
 // Check if submit button has been clicked 
 if(isset($_POST['submit'])) {
-    // Require database class
-    // Make new db object
-    $db = new Database();
 
     // Get user input
-    $username = $_POST['inputName'];
-    $password = $_POST['inputPassword'];
+    $username = htmlspecialchars($_POST['inputName']);
+    $password = htmlspecialchars($_POST['inputPassword']);
 
     // Login validation
     if($user->MentorLoginProcess($username, $password)) {
@@ -26,7 +24,7 @@ if(isset($_POST['submit'])) {
     }
 }
 ?>
-<form method="post" action="">
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>">
     <table>
         <tr>
             <td>Username: </td>
@@ -34,11 +32,15 @@ if(isset($_POST['submit'])) {
         </tr>
         <tr>
             <td>Password: </td>
-            <td><input type="password" name="inputPassword" required value="geheim"></td>
+            <td><input type="password" name="inputPassword" required required value="geheim"></td>
         </tr>
         <tr>
             <td></td>
             <td><input type="submit" name="submit" value="submit"></td>
+        </tr>
+        <tr>
+            <td>Unique Link Gen:</td>
+            <td><?php echo $user->UniqueLinkGenerator(3000); ?></td>
         </tr>
     </table>
 </form>
