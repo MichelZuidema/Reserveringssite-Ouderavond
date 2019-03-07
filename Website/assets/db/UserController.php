@@ -10,6 +10,28 @@ require("database.class.php");
 session_start();
 
 class UserController extends Database {
+    // Function to add array of students
+    public function AddStudents($studentArray, $classArray) {
+        // Combine both arrays into a associative array
+        $studentAndClass = array_combine($studentArray, $classArray);
+
+        // Loop through the students and classes
+        foreach($studentAndClass as $student => $class) {
+            // Generate unique token
+            $token = UniqueLinkGenerator();
+            // SQL INSERT Query
+            $sql = "INSERT INTO `student` (id, naam, klas_id, uniqueLink) VALUES (NULL, '$student', $class, $token)";
+
+            // Execute into database and check for errors
+            if(mysqli_query($this->mysqli, $sql)) {
+                echo "Students Added";
+            } else {
+                die(mysqli_error($this->mysqli));
+                echo "Failed to add students";
+            }
+        }
+    }
+
     // Login function for a 'mentor'
     public function MentorLoginProcess($username, $password) {
         // SQL Query: Search in database for rows with the username

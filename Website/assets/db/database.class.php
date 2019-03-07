@@ -33,26 +33,6 @@ class Database {
         }
     }
 
-    // Function to add array of students
-    public function AddStudents($studentArray, $classArray) {
-        // Combine both arrays into a associative array
-        $studentAndClass = array_combine($studentArray, $classArray);
-
-        // Loop through the students and classes
-        foreach($studentAndClass as $student => $class) {
-            // SQL INSERT Query
-            $sql = "INSERT INTO `student` (id, naam, klas_id) VALUES (NULL, '$student', $class)";
-
-            // Execute into database and check for errors
-            if(mysqli_query($this->mysqli, $sql)) {
-                echo "Gelukt!";
-            } else {
-                die(mysqli_error($this->mysqli));
-                echo "Mislukt!";
-            }
-        }
-    }
-
     // Get a specific row from a table
     public function GetSpecificFromTable($id, $specificRow, $table) {
         // SQL Select 
@@ -75,10 +55,6 @@ class Database {
         while($rij = mysqli_fetch_array($result)) {
             echo $rij[$specificRow] . "<br>";
         }
-    }
-
-    public function Diagrams($class) {
-        
     }
 
     // Close Connection Function
