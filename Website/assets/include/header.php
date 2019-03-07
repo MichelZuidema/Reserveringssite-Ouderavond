@@ -1,3 +1,7 @@
+<?php
+    // Start the session to get the logged in user details
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +27,7 @@
                 <li><a href="contact.html">Contactpagina</a></li>
             </ul>
         </nav>
-        <section><p>Ingelogt als: <span>Onbekend</span></p></section>
+        <section><p>Ingelogt als: <span><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Onbekend"; } ?></span></p></section>
         <section>
             <h1>Inschrijving</h1>
             <h1>Ouderavond</h1>
