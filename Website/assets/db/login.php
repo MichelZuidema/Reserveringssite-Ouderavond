@@ -2,12 +2,15 @@
 // Start session
 session_start();
 ini_set('display_errors', 'On');
+require("database.class.php");
 require("sessions.php");
+require("UserController.php");
+
+$user = new UserController();
 
 // Check if submit button has been clicked 
 if(isset($_POST['submit'])) {
     // Require database class
-    require("database.class.php");
     // Make new db object
     $db = new Database();
 
@@ -16,7 +19,7 @@ if(isset($_POST['submit'])) {
     $password = $_POST['inputPassword'];
 
     // Login validation
-    if($db->MentorLoginProcess($username, $password)) {
+    if($user->MentorLoginProcess($username, $password)) {
         echo "Ingelogd als " . $_SESSION['username'] . "!";
     } else {
         echo $_SESSION['errormsg'];

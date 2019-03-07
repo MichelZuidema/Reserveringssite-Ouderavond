@@ -114,6 +114,10 @@ class Database {
         */
     }
 
+    public function UniqueLinkGenerator($length) {
+        $charactars = "abcdefghijklmnopqrstuvwzyxABCDEFGHIJKLMNOPQRSTUVWXYZ012345678!@#$%^&*()-=_+";
+    }
+
     public function Logout() {
         // Unset all variables in session
         if(session_unset()) {
