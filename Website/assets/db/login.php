@@ -13,8 +13,8 @@ $user = new UserController();
 if(isset($_POST['submit'])) {
 
     // Get user input
-    $username = $_POST['inputName'];
-    $password = $_POST['inputPassword'];
+    $username = htmlspecialchars($_POST['inputName']);
+    $password = htmlspecialchars($_POST['inputPassword']);
 
     // Login validation
     if($user->MentorLoginProcess($username, $password)) {
@@ -24,7 +24,7 @@ if(isset($_POST['submit'])) {
     }
 }
 ?>
-<form method="post" action="">
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>">
     <table>
         <tr>
             <td>Username: </td>
@@ -32,7 +32,7 @@ if(isset($_POST['submit'])) {
         </tr>
         <tr>
             <td>Password: </td>
-            <td><input type="password" name="inputPassword" required value="geheim"></td>
+            <td><input type="password" name="inputPassword" required required value="geheim"></td>
         </tr>
         <tr>
             <td></td>

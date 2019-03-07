@@ -1,4 +1,4 @@
-<?php
+    <?php
 /*
     This class extends the Database class
     The functions in this class are all the functions the user will need to talk to the database except connecting etc.
@@ -34,6 +34,15 @@ class UserController extends Database {
 
     // Login function for a 'mentor'
     public function MentorLoginProcess($username, $password) {
+        // Input checks
+        if($username == "") {
+            echo '<script>alert("U heeft geen naam ingevuld!")</script>';
+        }
+
+        if($password == "") {
+            echo '<script>alert("U heeft geen wachtwoord ingevuld!")</script>';
+        }
+
         // SQL Query: Search in database for rows with the username
         $sql = "SELECT * FROM mentor WHERE naam='$username'";
         $result = mysqli_query($this->mysqli, $sql);
