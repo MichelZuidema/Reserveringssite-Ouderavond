@@ -18,9 +18,9 @@ class UserController extends Database {
         // Loop through the students and classes
         foreach($studentAndClass as $student => $class) {
             // Generate unique token
-            $token = UniqueLinkGenerator();
+            $token = $this->UniqueLinkGenerator();
             // SQL INSERT Query
-            $sql = "INSERT INTO `student` (id, naam, klas_id, uniqueLink) VALUES (NULL, '$student', $class, $token)";
+            $sql = "INSERT INTO `student` (id, naam, klas_id, uniqueLink) VALUES (NULL, '$student', $class, '$token')";
 
             // Execute into database and check for errors
             if(mysqli_query($this->mysqli, $sql)) {

@@ -1,6 +1,6 @@
 <?php
 
-require("UserController.php");
+require("Controllers/UserController.php");
 $user = new UserController();
 
 ini_set('display_errors', 'On');
@@ -13,7 +13,7 @@ if (isset($_GET["token"]) && preg_match('/\b([a-f0-9]{40})\b/', $_GET['token']))
     }
 }
 else {
-    echo "U heeft geen token ingevoerd.";
+    echo "U heeft geen geldige token ingevoerd!";
 }
 
 // Michel - c5b312884352253d711492452af163832ae777a9
