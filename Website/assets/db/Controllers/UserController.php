@@ -36,11 +36,11 @@ class UserController extends Database {
     public function MentorLoginProcess($username, $password) {
         // Input checks
         if($username == "") {
-            echo '<script>alert("U heeft geen naam ingevuld!")</script>';
+            $_SESSION['errormsg'] = "U heeft geen naam ingevuld!";
         }
 
         if($password == "") {
-            echo '<script>alert("U heeft geen wachtwoord ingevuld!")</script>';
+            $_SESSION['errormsg'] = "U heeft geen wachtwoord ingevuld!";
         }
 
         // SQL Query: Search in database for rows with the username
@@ -109,7 +109,8 @@ class UserController extends Database {
         // Unset all variables in session
         if(session_unset()) {
             // Destroy session
-            session_destroy();
+            session_destroy();            echo '<script>alert("U heeft geen wachtwoord ingevuld!")</script>';
+
             return true;
         } else {
             $_SESSION['errormsg'] = "Er is iets foutgegegaan met het uitloggen!";
