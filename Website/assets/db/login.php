@@ -1,18 +1,16 @@
 <?php
 // Start session
 session_start();
+// Error Display
 ini_set('display_errors', 'On');
-require("database.class.php");
-require("sessions.php");
+
+// Required files
 require("UserController.php");
 
 $user = new UserController();
 
 // Check if submit button has been clicked 
 if(isset($_POST['submit'])) {
-    // Require database class
-    // Make new db object
-    $db = new Database();
 
     // Get user input
     $username = $_POST['inputName'];
@@ -39,6 +37,10 @@ if(isset($_POST['submit'])) {
         <tr>
             <td></td>
             <td><input type="submit" name="submit" value="submit"></td>
+        </tr>
+        <tr>
+            <td>Unique Link Gen:</td>
+            <td><?php echo $user->UniqueLinkGenerator(3000); ?></td>
         </tr>
     </table>
 </form>
