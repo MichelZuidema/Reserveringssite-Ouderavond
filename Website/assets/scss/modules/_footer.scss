@@ -1,11 +1,11 @@
-footer {
+body>footer{
     position: absolute;
     bottom: -10rem;
     height: 54rem;
     width: 100vw;
     background: $glr-green;
     font-family: $text-font;
-    margin: 10rem 0 0 0 ;
+    margin: 10rem 0 0 0;
 
     @include setQeury($sm){
         height: 32rem;
@@ -32,6 +32,7 @@ footer {
         @include setQeury($sm){
             height: 44rem;
         }
+
         @include setQeury($md){
             height: 26rem;
         }
@@ -86,10 +87,9 @@ footer {
             padding: 1rem;
             margin: 1.5rem 0;
 
-
         @include setQeury($lg){
             font-size: 2.2rem;
-        }
+            }
         }
     }
 
@@ -130,7 +130,6 @@ footer {
         position: absolute;
         right: 2rem;
         bottom: 2rem;
-
 
         @include setQeury($md){
             top: 4.5rem;

@@ -15,7 +15,7 @@
             font-family: $title-font;
             margin: 2rem auto 1.5rem auto;
 
-            @include underline(30rem, .3rem, $glr-green)
+            @include underline(30rem, .3rem, $glr-green);
         }
         
         div{
@@ -29,9 +29,6 @@
             line-height: 4rem;
         }
     }
-
-    
-
         //blend images
         #main-image-1, #main-image-2, #main-image-3{
             @include blackContainer(30rem, 1);
@@ -66,7 +63,6 @@
         #main-diagram{
             position: relative;
         }
-    
 
         .main-diagram-1, .main-diagram-2, .main-diagram-3, .main-diagram-4{
             width: 50px;
@@ -78,7 +74,7 @@
         }
 
         .main-diagram-1{
-            left: 25%
+            left: 25%;
         }
 
         .main-diagram-2{

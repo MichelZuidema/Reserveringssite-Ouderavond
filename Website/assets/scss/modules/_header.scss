@@ -36,11 +36,11 @@ body>header{
         
         // separates the white bars
         section:after{
-            transform: translateY(3px)
+            transform: translateY(3px);
         }
 
         section:before{
-            transform: translateY(-6px)
+            transform: translateY(-6px);
         }
     }
 
@@ -113,7 +113,8 @@ body>header{
             display: grid;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             align-items: center;
-        
+            
+            //changes to desktop view
             @include setQeury($lg){
                 grid-template-rows: 1fr 1fr;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -126,7 +127,6 @@ body>header{
                 }
 
                 a{
-
                     opacity: .7;
                     color: $navigation-color;
                     font-size: $navigation-mobile-size;
@@ -152,6 +152,7 @@ body>header{
                     font-size: 3rem;
                 }
             }
+
             a:not(:hover){
                 @include setQeury($lg){
                     transition: 500ms;
@@ -226,10 +227,11 @@ body>header{
     // Left title (inschrijving)
     h1:nth-child(1) {   
         @include setQeury($lg){
-            @include centerAbs(8.5rem, 25%);
+        @include centerAbs(8.5rem, 25%);
         }
+
         @include setQeury($max){
-            @include centerAbs(7rem, 30%)
+            @include centerAbs(7rem, 30%);
         }
     }
 
@@ -240,8 +242,9 @@ body>header{
         @include setQeury($lg){
             @include centerAbs(8.5rem, 75%);
         }
+
         @include setQeury($max){
-            @include centerAbs(7rem, 70%)
+            @include centerAbs(7rem, 70%);
         }
     }
 
@@ -254,14 +257,13 @@ body>header{
 
             @include setQeury($lg){
                 top: 2rem;
+
                 :hover{
                     transform: rotate(360deg);
                     transition: 1200ms;
             }
 
         }
-
-        
 
         img{
             width: 20rem;
