@@ -7,7 +7,9 @@
 // Require database class
 require("database.class.php");
 // Start session
-session_start();
+if(session_id() == '') {
+    session_start();
+}
 
 class UserController extends Database {
     // Function to add array of students
@@ -57,6 +59,7 @@ class UserController extends Database {
         if($rowcount > 0) {
             if(password_verify($password, $row['wachtwoord'])) {
                 $_SESSION['username'] = $row['naam'];
+                $_SESSION['role'] = 1;
                 return true;
             } else {
                 $_SESSION['errormsg'] = "Uw ingevulde wachtwoord is niet correct!";
@@ -96,6 +99,7 @@ class UserController extends Database {
                 session_unset();
                 $_SESSION['username'] = $row['naam'];
                 $_SESSION['class_id'] = $row['klas_id'];
+                $_SESSION['role'] = 0;
                 return true;
             } else {
                 // Error message
@@ -109,8 +113,7 @@ class UserController extends Database {
         // Unset all variables in session
         if(session_unset()) {
             // Destroy session
-            session_destroy();            echo '<script>alert("U heeft geen wachtwoord ingevuld!")</script>';
-
+            session_destroy();  
             return true;
         } else {
             $_SESSION['errormsg'] = "Er is iets foutgegegaan met het uitloggen!";
