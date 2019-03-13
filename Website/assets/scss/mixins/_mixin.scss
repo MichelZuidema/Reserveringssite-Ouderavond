@@ -33,6 +33,7 @@ $leftLength: 50%;
 }
 
 //underline mixin
+//define height width and color
 @mixin underline($width, $height, $color) {
     &:after{
         content: '';

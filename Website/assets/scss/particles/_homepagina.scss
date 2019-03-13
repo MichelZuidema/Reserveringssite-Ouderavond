@@ -1,22 +1,9 @@
 #homepage{
-    font-family: $text-font;
-    font-size: $paragraf-size;
-    margin:  0 0 20rem 0;
-    line-height: 1.9rem;
 
-    
     //articles homepage
     article{
         @include blackContainer(30rem, 1);
         margin: 0 auto 0 auto;
-
-        h2{
-            font-size: $subtitle-size;
-            font-family: $title-font;
-            margin: 2rem auto 1.5rem auto;
-
-            @include underline(30rem, .3rem, $glr-green);
-        }
         
         div{
             width: 50rem;
@@ -55,8 +42,12 @@
             background-image: url(../img/layout-picture4.jpg), url(../img/GLRlogo_RGB.png);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover,contain;
-            margin: 0 0 73rem 0;
+            background-size: cover, calc(15rem + 10vw);
+            transform: rotate(0,0,45deg);
+
+            @include setQeury($lg){
+                background-size: cover, 25.5rem;
+            }
         }
 
 

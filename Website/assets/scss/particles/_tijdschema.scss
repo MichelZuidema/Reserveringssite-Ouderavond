@@ -1,0 +1,99 @@
+#tijdschema{
+    
+    h2{
+        font-size: $title-size-big;
+    }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////choose a time
+
+    #choose-time{
+        @include blackContainer(30rem,1);
+        margin: 0 auto 0 auto;
+        position: relative;
+
+        //button for choosing a time
+        @include setQeury($lg){
+            @include blackContainer(40rem, 0);  
+        }
+            div{
+                @include centerAbs(35%,50%);
+                height: 15rem;
+                width: 15rem;
+                background: $glr-green;
+                color: $black-container;
+                box-shadow: 1px 1.5px 6px black;
+                cursor: pointer;
+            
+                //hover effect for button. if border get bigger margin must be smaller
+                &:hover{
+                    border: 4px solid red;
+                    :nth-child(1){
+                        margin: 3.6rem 0 0 0;
+                    }
+                    p{
+                        color: red;
+                    }
+                }
+
+                :nth-child(1){
+                    margin: 4rem 0 0 0;
+                }
+
+                p{
+                    font-size: 2rem;
+                    padding: .5rem;
+                }
+            }
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////timetable
+
+    #timetable{
+        @include blackContainer(50rem,1);
+
+        @include setQeury($lg){
+            @include blackContainer(80rem, 0);  
+        }
+
+        ul{
+
+            li{
+               
+            }
+        }
+//here i need to do some work
+        #timetable-info{
+            @include blackContainer(10rem, 0);  
+            width: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -5rem;            
+        }
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////number of person
+
+    #number-of-persons{
+        @include blackContainer(30rem,1);
+        
+        @include setQeury($lg){
+            @include blackContainer(40rem, 0);  
+        }
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////ask question
+    
+    #ask-question{
+        @include blackContainer(60rem,1);
+        
+        @include setQeury($lg){
+            @include blackContainer(40rem, 0);  
+        }
+    }
+
+
+}

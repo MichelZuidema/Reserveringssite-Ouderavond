@@ -22,7 +22,7 @@
             <article><div></div></article>
             <ul>
                 <li><a href="index.php" class="<?php echo $selectedLink; ?>">Homepagina</a></li>
-                <li><a href="registration.html">Tijdschema</a></li>
+                <li><a href="tijdschema.php">Tijdschema</a></li>
                 <li><a href="">GLR website</a></li>
                 <li><a href="contact.html">Contactpagina</a></li>
             </ul>

@@ -10,7 +10,7 @@
         <article>
             <h2>Algemene informatie</h2>
             <div>
-                <p>dat een lezer, tijdens het bekijken van de layout van een pagina, afgeleid wordt door de tekstuele inhoud. Het belangrijke punt van het gebruik van Lorem Ipsum is dat het uit een min of meer normale verdeling van letters bestaat, in uw tegenstelling tot “Hier uw tekst, hier uw tekst” wat het tot min of meer leesbaar nederlands maakt. Veel desktop publishing pakketten en web pagina </p>
+                <p>dat een lezer, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt iste, minima ex magnam tenetur voluptates culpa. Rem, labore expedita eius quibusdam error ipsam corrupti temporibus ab, earum nesciunt blanditiis dicta. tijdens het bekijken van de layout van een pagina, afgeleid wordt door de tekstuele inhoud. Het belangrijke punt van het gebruik van Lorem Ipsum is dat het uit een min of meer normale verdeling van letters bestaat, in uw tegenstelling tot “Hier uw tekst, hier uw tekst” wat het tot min of meer leesbaar nederlands maakt. Veel desktop publishing pakketten en web pagina </p>
             </div>
         </article>
         <section id="main-image-1"></section>
