@@ -4,6 +4,7 @@
         //selected navigation link
         $selectedLink = "selectedLink";
         //header
+
         require 'assets/include/header.php';
     ?>
     <main id="homepage">
