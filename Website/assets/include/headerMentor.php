@@ -1,6 +1,9 @@
 <?php
     // Start the session to get the logged in user details
     session_start();
+
+    //stores string for toggling classes
+    $selectedLinkActive = "selectedLinkActive";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,10 +24,11 @@
         <nav>
             <article><div></div></article>
             <ul>
-                <li><a href="index.php" class="<?php echo $selectedLink; ?>">Inloggen</a></li>
-                <li><a href="registration.html">Tijdschema</a></li>
-                <li><a href="">GLR website</a></li>
-                <li><a href="contact.html">Notities</a></li>
+
+                <li><a href="index.php" class="<?php if($selectedLink == "index"){ echo $selectedLinkActive;} ?>">Homepagina</a></li>
+                <li><a href="tijdschema.php" class="<?php if($selectedLink == "tijdschema"){ echo $selectedLinkActive;} ?>">Tijdschema</a></li>
+                <li><a href="https://www.glr.nl/">GLR website</a></li>
+                <li><a href="contact.html" class="<?php if($selectedLink == "300"){ echo $selectedLinkActive;} ?>">Notities</a></li>
             </ul>
         </nav>
         <section>

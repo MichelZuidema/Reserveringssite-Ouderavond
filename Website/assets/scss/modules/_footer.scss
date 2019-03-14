@@ -8,7 +8,7 @@ body>footer{
     margin: 10rem 0 0 0;
 
     @include setQeury($sm){
-        height: 32rem;
+        height: 40rem;
     }
     @include setQeury($md){
         height: 26rem;

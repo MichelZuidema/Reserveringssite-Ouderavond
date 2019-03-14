@@ -33,6 +33,7 @@ $leftLength: 50%;
 }
 
 //underline mixin
+//define height width and color
 @mixin underline($width, $height, $color) {
     &:after{
         content: '';
@@ -42,4 +43,28 @@ $leftLength: 50%;
         background: $color;
         margin: .9rem auto 0 auto;
     }
+}
+
+
+@mixin greenButton($topLenght, $leftLenght,$height,$width) {
+    @include centerAbs($topLenght,$leftLenght);
+    height: $height;
+    width: $width;
+    background: $glr-green;
+    color: $black-container;
+    box-shadow: 1px 1.5px 6px black;
+    cursor: pointer;
+
+    //hover effect for button. if border get bigger margin must be smaller
+    &:hover{
+        border: 4px solid red;
+        :nth-child(1){
+            margin: 3.6rem 0 0 0;
+        }
+        p{
+            color: red;
+        }
+    }
+
+    
 }

@@ -16,7 +16,7 @@
 }
 
 // selectedLink 
-.selectedLink{
+.selectedLinkActive{
     opacity: 1;
 
     @include setQeury($lg){

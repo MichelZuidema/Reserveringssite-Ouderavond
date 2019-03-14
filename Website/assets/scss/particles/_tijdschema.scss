@@ -1,0 +1,115 @@
+#tijdschema{
+    
+    h2{
+        font-size: $title-size-big;
+    }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////choose a time
+
+    #choose-time{
+        @include blackContainer(40rem,1);
+        margin: 0 auto 0 auto;
+        position: relative;
+
+        :nth-child(3){
+            position: absolute;
+            white-space: nowrap;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        :nth-child(3){
+            bottom: 6rem;
+        }
+
+        //button for choosing a time
+        @include setQeury($lg){
+            @include blackContainer(40rem, 0);  
+            margin: 0 auto 0 auto;
+        }
+            //green button
+            div{
+                @include greenButton(30%, 50%,15rem,15rem);
+
+                :nth-child(1){
+                    margin: 4rem 0 0 0;
+                }
+
+                p{
+                    font-size: 2rem;
+                    padding: .5rem;
+                }
+            }
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////timetable
+
+    #timetable{
+        @include blackContainer(50rem,1);
+
+        @include setQeury($lg){
+            @include blackContainer(80rem, 0);  
+        }
+
+        ul{
+
+            li{
+               
+            }
+        }
+//here i need to do some work
+        #timetable-info{
+            @include blackContainer(10rem, 0);  
+            width: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -5rem;            
+        }
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////number of person
+
+    #number-of-persons{
+        @include blackContainer(30rem,1);
+        position: relative;
+
+        ul{
+            
+            li{
+                font-size: 2rem;
+                padding: .5rem;
+            }
+
+            :nth-child(1){
+                @include greenButton(40%, 25%,9rem,9rem);            
+            }
+            :nth-child(2){
+                @include greenButton(40%, 50%, 9rem, 9rem);
+            }
+            :nth-child(3){
+                @include greenButton(40%, 75%, 9rem, 9rem);
+
+            }
+        }
+        
+        @include setQeury($lg){
+            @include blackContainer(40rem, 0);  
+        }
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////ask question
+    
+    #ask-question{
+        @include blackContainer(60rem,1);
+        
+        @include setQeury($lg){
+            @include blackContainer(40rem, 0);  
+        }
+    }
+
+
+}
