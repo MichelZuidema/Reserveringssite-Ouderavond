@@ -733,6 +733,17 @@ template {
   }
 }
 
+.selectedBox {
+  background: #8FE501 !important;
+  color: #131313 !important;
+  font-weight: 900;
+  border: 2px solid black !important;
+}
+
+.selectedBox :hover {
+  background: #8FE501 !important;
+}
+
 :root {
   font-size: 10px;
 }
@@ -1282,23 +1293,26 @@ body > header figure img {
   top: 30%;
   height: 15rem;
   width: 15rem;
-  background: #8FE501;
-  color: #1C1C1C;
+  background: #1C1C1C;
+  color: #f1f1f1;
   -webkit-box-shadow: 1px 1.5px 6px black;
           box-shadow: 1px 1.5px 6px black;
   cursor: pointer;
+  border: 3px solid #484646;
 }
 
 #tijdschema #choose-time div:hover {
-  border: 4px solid red;
+  background: #131313;
 }
 
-#tijdschema #choose-time div:hover :nth-child(1) {
-  margin: 3.6rem 0 0 0;
+#tijdschema #choose-time div p {
+  font-weight: 1000;
 }
 
-#tijdschema #choose-time div:hover p {
-  color: red;
+@media only screen and (min-width: 720px) {
+  #tijdschema #choose-time div p {
+    font-size: 2.1rem;
+  }
 }
 
 #tijdschema #choose-time div :nth-child(1) {
@@ -1319,6 +1333,7 @@ body > header figure img {
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
   border-top: 3px solid #484646;
+  position: relative;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1326,13 +1341,76 @@ body > header figure img {
     width: 100%;
     max-width: 80rem;
     margin: 5rem auto 0 auto;
-    height: 80rem;
+    height: 50rem;
     background: #1C1C1C;
     -webkit-box-shadow: 1px 1.5px 6px #000;
             box-shadow: 1px 1.5px 6px #000;
     border: 3px solid #484646;
     margin: 8rem auto 0 auto;
   }
+}
+
+#tijdschema #timetable ul {
+  width: 30rem;
+  margin: 3rem auto;
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #timetable ul {
+    width: 50rem;
+  }
+}
+
+#tijdschema #timetable ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 80rem;
+  margin: 5rem auto 0 auto;
+  height: 7rem;
+  background: #1C1C1C;
+  -webkit-box-shadow: 1px 1.5px 6px #000;
+          box-shadow: 1px 1.5px 6px #000;
+  border-top: 3px solid #484646;
+  border: none;
+  margin: 1rem 0 0 0;
+  cursor: pointer;
+}
+
+#tijdschema #timetable ul li :hover {
+  background: #131313;
+}
+
+#tijdschema #timetable ul li P {
+  text-align: center;
+  width: 100%;
+  padding: 2.5rem 0 0 0;
+  font-size: 2rem;
+}
+
+#tijdschema #timetable ul #time-1 {
+  border: 3px solid orangered;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#tijdschema #timetable ul #time-2 {
+  border: 3px solid #3d3d3d;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#tijdschema #timetable ul #time-3 {
+  border: 3px solid green;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#tijdschema #timetable ul #time-4 {
+  border: 3px solid #3d3d3d;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #tijdschema #timetable #timetable-info {
@@ -1345,7 +1423,7 @@ body > header figure img {
           box-shadow: 1px 1.5px 6px #000;
   border: 3px solid #484646;
   margin: 8rem auto 0 auto;
-  width: 50%;
+  width: 30rem;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1353,102 +1431,55 @@ body > header figure img {
   bottom: -5rem;
 }
 
+#tijdschema #timetable #timetable-info section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template: 1fr/ 1fr 1fr 1fr;
+}
+
+#tijdschema #timetable #timetable-info p {
+  display: inline-block;
+  padding: 1rem;
+}
+
+#tijdschema #timetable #timetable-info #available-1::before, #tijdschema #timetable #timetable-info #available-2::before, #tijdschema #timetable #timetable-info #available-3::before {
+  content: '';
+  margin: 1rem 25%;
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  background: green;
+}
+
+#tijdschema #timetable #timetable-info #available-2::before {
+  background: orangered;
+}
+
+#tijdschema #timetable #timetable-info #available-3::before {
+  background: #3d3d3d;
+}
+
 #tijdschema #number-of-persons {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
-  height: 30rem;
+  height: 60rem;
   background: #1C1C1C;
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
   border-top: 3px solid #484646;
   position: relative;
+  margin: 10rem auto 0 auto;
 }
 
-#tijdschema #number-of-persons ul li {
-  font-size: 2rem;
-  padding: .5rem;
-}
-
-#tijdschema #number-of-persons ul :nth-child(1) {
-  position: absolute;
-  left: 25%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 40%;
-  height: 9rem;
-  width: 9rem;
-  background: #8FE501;
-  color: #1C1C1C;
-  -webkit-box-shadow: 1px 1.5px 6px black;
-          box-shadow: 1px 1.5px 6px black;
-  cursor: pointer;
-}
-
-#tijdschema #number-of-persons ul :nth-child(1):hover {
-  border: 4px solid red;
-}
-
-#tijdschema #number-of-persons ul :nth-child(1):hover :nth-child(1) {
-  margin: 3.6rem 0 0 0;
-}
-
-#tijdschema #number-of-persons ul :nth-child(1):hover p {
-  color: red;
-}
-
-#tijdschema #number-of-persons ul :nth-child(2) {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 40%;
-  height: 9rem;
-  width: 9rem;
-  background: #8FE501;
-  color: #1C1C1C;
-  -webkit-box-shadow: 1px 1.5px 6px black;
-          box-shadow: 1px 1.5px 6px black;
-  cursor: pointer;
-}
-
-#tijdschema #number-of-persons ul :nth-child(2):hover {
-  border: 4px solid red;
-}
-
-#tijdschema #number-of-persons ul :nth-child(2):hover :nth-child(1) {
-  margin: 3.6rem 0 0 0;
-}
-
-#tijdschema #number-of-persons ul :nth-child(2):hover p {
-  color: red;
-}
-
-#tijdschema #number-of-persons ul :nth-child(3) {
-  position: absolute;
-  left: 75%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 40%;
-  height: 9rem;
-  width: 9rem;
-  background: #8FE501;
-  color: #1C1C1C;
-  -webkit-box-shadow: 1px 1.5px 6px black;
-          box-shadow: 1px 1.5px 6px black;
-  cursor: pointer;
-}
-
-#tijdschema #number-of-persons ul :nth-child(3):hover {
-  border: 4px solid red;
-}
-
-#tijdschema #number-of-persons ul :nth-child(3):hover :nth-child(1) {
-  margin: 3.6rem 0 0 0;
-}
-
-#tijdschema #number-of-persons ul :nth-child(3):hover p {
-  color: red;
+@media only screen and (min-width: 720px) {
+  #tijdschema #number-of-persons {
+    height: 45rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1465,6 +1496,130 @@ body > header figure img {
   }
 }
 
+#tijdschema #number-of-persons p {
+  margin: 2.5rem 0 0 0;
+}
+
+#tijdschema #number-of-persons ul li {
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+#tijdschema #number-of-persons ul li p {
+  margin: 4rem  0 0 0;
+  font-size: 2rem;
+}
+
+#tijdschema #number-of-persons ul #person-1 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 25%;
+  height: 12rem;
+  width: 12rem;
+  background: #1C1C1C;
+  color: #f1f1f1;
+  -webkit-box-shadow: 1px 1.5px 6px black;
+          box-shadow: 1px 1.5px 6px black;
+  cursor: pointer;
+  border: 3px solid #484646;
+}
+
+#tijdschema #number-of-persons ul #person-1:hover {
+  background: #131313;
+}
+
+#tijdschema #number-of-persons ul #person-1 p {
+  font-weight: 1000;
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #number-of-persons ul #person-1 p {
+    font-size: 2.1rem;
+  }
+}
+
+#tijdschema #number-of-persons ul #person-2 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 50%;
+  height: 12rem;
+  width: 12rem;
+  background: #1C1C1C;
+  color: #f1f1f1;
+  -webkit-box-shadow: 1px 1.5px 6px black;
+          box-shadow: 1px 1.5px 6px black;
+  cursor: pointer;
+  border: 3px solid #484646;
+}
+
+#tijdschema #number-of-persons ul #person-2:hover {
+  background: #131313;
+}
+
+#tijdschema #number-of-persons ul #person-2 p {
+  font-weight: 1000;
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #number-of-persons ul #person-2 p {
+    font-size: 2.1rem;
+  }
+}
+
+#tijdschema #number-of-persons ul #person-3 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 75%;
+  height: 12rem;
+  width: 12rem;
+  background: #1C1C1C;
+  color: #f1f1f1;
+  -webkit-box-shadow: 1px 1.5px 6px black;
+          box-shadow: 1px 1.5px 6px black;
+  cursor: pointer;
+  border: 3px solid #484646;
+}
+
+#tijdschema #number-of-persons ul #person-3:hover {
+  background: #131313;
+}
+
+#tijdschema #number-of-persons ul #person-3 p {
+  font-weight: 1000;
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #number-of-persons ul #person-3 p {
+    font-size: 2.1rem;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #number-of-persons ul #person-1 {
+    left: 25%;
+  }
+  #tijdschema #number-of-persons ul #person-2 {
+    left: 50%;
+  }
+  #tijdschema #number-of-persons ul #person-3 {
+    left: 75%;
+  }
+  #tijdschema #number-of-persons ul li {
+    top: 40% !important;
+    height: 14rem !important;
+    width: 14rem !important;
+  }
+  #tijdschema #number-of-persons ul li p {
+    margin: 5.5rem  0 0 0;
+  }
+}
+
 #tijdschema #ask-question {
   width: 100%;
   max-width: 80rem;
@@ -1474,6 +1629,12 @@ body > header figure img {
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
   border-top: 3px solid #484646;
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #ask-question {
+    height: 45rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1487,6 +1648,42 @@ body > header figure img {
             box-shadow: 1px 1.5px 6px #000;
     border: 3px solid #484646;
     margin: 8rem auto 0 auto;
+  }
+}
+
+#tijdschema #ask-question textarea, #tijdschema #ask-question input {
+  display: block;
+  margin: 0 auto;
+}
+
+#tijdschema #ask-question textarea {
+  height: 20rem;
+  width: 30rem;
+  font-size: 2rem;
+  background: #a7a7a7;
+  border: 2px solid black;
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #ask-question textarea {
+    width: 40rem;
+    height: 20rem;
+  }
+}
+
+#tijdschema #ask-question input {
+  width: 30rem;
+  height: 4rem;
+  margin: 2rem auto 0 auto;
+  background: #5e5e5e;
+  font-size: 2rem;
+  border: 2px solid #8FE501;
+  outline: 2px solid black;
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #ask-question input {
+    width: 40rem;
   }
 }
 
@@ -1563,6 +1760,11 @@ body > footer #footer-socialmedia {
 
 body > footer figure {
   padding: 1rem 0;
+}
+
+body > footer figure a {
+  text-decoration: none;
+  color: #f1f1f1;
 }
 
 @media only screen and (min-width: 480px) {
