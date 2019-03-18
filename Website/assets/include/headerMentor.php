@@ -35,5 +35,5 @@
             <h1>Inschrijving</h1>
             <h1>Ouderavond</h1>
         </section>
-        <figure><a href="index.html"><img src="assets/img/school.jpg" alt="School-image"></a></figure>
+        <figure><a href="index.php"><img src="assets/img/school.jpg" alt="School-image"></a></figure>
     </header>
