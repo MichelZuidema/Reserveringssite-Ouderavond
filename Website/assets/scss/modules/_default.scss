@@ -14,6 +14,19 @@ p{
     line-height: 1.9rem;
 }
 
+textarea{
+    font-family: $text-font;
+    font-size: $paragraf-size;
+    padding: 1rem;
+    background: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+textarea,input{
+    display: block;
+    margin: 0 auto;
+}
+
 //bottom margin for the main
 main{
     margin:  0 0 64rem 0;
