@@ -1739,6 +1739,7 @@ body > header figure img {
           box-shadow: 1px 1.5px 6px black;
   cursor: pointer;
   border: 3px solid #484646;
+<<<<<<< HEAD
 }
 
 #tijdschema #number-of-persons ul #person-3:hover {
@@ -1749,6 +1750,18 @@ body > header figure img {
   font-weight: 1000;
 }
 
+=======
+}
+
+#tijdschema #number-of-persons ul #person-3:hover {
+  background: #131313;
+}
+
+#tijdschema #number-of-persons ul #person-3 p {
+  font-weight: 1000;
+}
+
+>>>>>>> cae4a87f45200df8d79c13076e5ffbafecf595d7
 @media only screen and (min-width: 720px) {
   #tijdschema #number-of-persons ul #person-3 p {
     font-size: 2.1rem;
@@ -1850,6 +1863,12 @@ body > header figure img {
   border-top: 3px solid #484646;
 }
 
+@media only screen and (min-width: 720px) {
+  #tijdschema #ask-question {
+    height: 45rem;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   #contact article form {
     width: 100%;
@@ -1861,6 +1880,42 @@ body > header figure img {
             box-shadow: 1px 1.5px 6px #000;
     border: 3px solid #484646;
     margin: 8rem auto 0 auto;
+  }
+}
+
+#tijdschema #ask-question textarea, #tijdschema #ask-question input {
+  display: block;
+  margin: 0 auto;
+}
+
+#tijdschema #ask-question textarea {
+  height: 20rem;
+  width: 30rem;
+  font-size: 2rem;
+  background: #a7a7a7;
+  border: 2px solid black;
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #ask-question textarea {
+    width: 40rem;
+    height: 20rem;
+  }
+}
+
+#tijdschema #ask-question input {
+  width: 30rem;
+  height: 4rem;
+  margin: 2rem auto 0 auto;
+  background: #5e5e5e;
+  font-size: 2rem;
+  border: 2px solid #8FE501;
+  outline: 2px solid black;
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #ask-question input {
+    width: 40rem;
   }
 }
 
