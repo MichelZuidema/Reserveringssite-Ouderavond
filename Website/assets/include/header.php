@@ -20,14 +20,14 @@
 </head>
 <body>
     <header>
-        <section><section></section></section>
+        <section id="header-hamburger"><section></section></section>
         <nav>
             <article><div></div></article>
             <ul>
                 <li><a href="index.php" class="<?php if($selectedLink == "index"){ echo $selectedLinkActive;} ?>">Homepagina</a></li>
                 <li><a href="tijdschema.php" class="<?php if($selectedLink == "tijdschema"){ echo $selectedLinkActive;} ?>">Tijdschema</a></li>
                 <li><a href="https://www.glr.nl/">GLR website</a></li>
-                <li><a href="contact.html" class="<?php if($selectedLink == "300"){ echo $selectedLinkActive;} ?>">Contactpagina</a></li>
+                <li><a href="contact.php" class="<?php if($selectedLink == "contact"){ echo $selectedLinkActive;} ?>">Contactpagina</a></li>
             </ul>
         </nav>
         <section><span><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Ingelogt als:"; } ?></span></section>
@@ -35,5 +35,5 @@
             <h1>Inschrijving</h1>
             <h1>Ouderavond</h1>
         </section>
-        <figure><a href="index.html"><img src="assets/img/school.jpg" alt="School-image"></a></figure>
+        <figure><a href="index.php"><img src="assets/img/school.jpg" alt="School-image"></a></figure>
     </header>
