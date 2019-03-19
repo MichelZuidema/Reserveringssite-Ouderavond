@@ -2,16 +2,22 @@
         <section id="footer-container">
                 <section id="footer-socialmedia">
                     <figure>
-                        <img src="assets/img/footer-facebook.png" alt="Facebook logo">
-                        <section><p>GLR Facebook</p></section>
+                        <a href="facebook.com">
+                            <img src="assets/img/footer-facebook.png" alt="Facebook logo">
+                            <section><p>GLR Facebook</p></section>
+                        </a>
                     </figure>
                     <figure>
-                        <img src="assets/img/footer-instagram.png" alt="Instagram logo">
-                        <section><p>GLR Instagram</p></section>
+                        <a href="instagram.com">
+                            <img src="assets/img/footer-instagram.png" alt="Instagram logo">
+                            <section><p>GLR Instagram</p></section>
+                        </a>
                     </figure>
                     <figure>
-                        <img src="assets/img/footer-linkedin.png" alt="Linkedin logo">
-                        <section><p>GLR Linkedin</p></section>                  
+                        <a href="https://linkedin.com">
+                            <img src="assets/img/footer-linkedin.png" alt="Linkedin logo">
+                            <section><p>GLR Linkedin</p></section>             
+                        </a>     
                     </figure>
                 </section>
                 <section id="footer-contact">
