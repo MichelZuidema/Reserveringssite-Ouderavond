@@ -7,7 +7,9 @@
 // Require database class
 require("database.class.php");
 // Start session
-session_start();
+if(session_id() == '') {
+    session_start();
+}
 
 class UserController extends Database {
     // Function to add array of students
@@ -57,6 +59,7 @@ class UserController extends Database {
         if($rowcount > 0) {
             if(password_verify($password, $row['wachtwoord'])) {
                 $_SESSION['username'] = $row['naam'];
+                $_SESSION['role'] = 1;
                 return true;
             } else {
                 $_SESSION['errormsg'] = "Uw ingevulde wachtwoord is niet correct!";
@@ -96,6 +99,24 @@ class UserController extends Database {
                 session_unset();
                 $_SESSION['username'] = $row['naam'];
                 $_SESSION['class_id'] = $row['klas_id'];
+                $_SESSION['student_id'] = $row['id'];
+                $_SESSION['role'] = 0;
+
+                $id = $row['id'];
+
+                /* mentor id */
+                $query = "SELECT id FROM mentor WHERE klas_id = ( SELECT klas_id FROM student WHERE id='$id' )";
+                $resultMentor = mysqli_query($this->mysqli, $query);
+                $rowMentor = mysqli_fetch_array($resultMentor);
+                $rowCountMentor = mysqli_num_rows($resultMentor);
+
+                if($rowCountMentor > 0) {
+                    $_SESSION['mentor_id'] = $rowMentor['id'];
+                    echo $_SESSION['mentor_id'];
+                } else {
+                    $_SESSION['errormsg'] = "Kon geen mentor vinden die gelinkt is aan uw klas.";
+                    return false;
+                }
                 return true;
             } else {
                 // Error message
@@ -109,8 +130,7 @@ class UserController extends Database {
         // Unset all variables in session
         if(session_unset()) {
             // Destroy session
-            session_destroy();            echo '<script>alert("U heeft geen wachtwoord ingevuld!")</script>';
-
+            session_destroy();  
             return true;
         } else {
             $_SESSION['errormsg'] = "Er is iets foutgegegaan met het uitloggen!";
