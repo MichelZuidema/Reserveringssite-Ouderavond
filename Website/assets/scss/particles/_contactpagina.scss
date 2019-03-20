@@ -1,0 +1,12 @@
+#contact{
+    article{
+
+        form{
+            @include blackContainer(80rem,1);
+
+            @include setQeury($lg){
+                @include blackContainer(80rem,0);
+            }
+        }
+    }
+}

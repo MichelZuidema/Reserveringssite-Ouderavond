@@ -19,24 +19,27 @@
             <article id="timetable">
                 <h2>Tijdschema</h2>
                 <ul>
-                    <li>18:00 - 19:00</li>
-                    <li>19:00 - 20:00</li>
-                    <li>20:00 - 21:00</li>
-                    <li>21:00 - 22:00</li>
+                    <li id="time-1"><p>18:00 - 19:00</p></li>
+                    <li id="time-2"><p>19:00 - 20:00</p></li>
+                    <li id="time-3"><p>20:00 - 21:00</p></li>
+                    <li id="time-4"><p>21:00 - 22:00</p></li>
                 </ul>
                 <section id="timetable-info">
-                    <p>Vol</p>
-                    <p>Bijna vol</p>
-                    <p>vol</p>
+                    <section>   
+                        <p id="available-1">Vrij</p>
+                        <p id="available-2">Bijna vol</p>
+                        <p id="available-3">Vol</p>
+                    </section>
                 </section>
             </article>
             <section id="number-of-persons">
                 <h2>Aantal personen</h2>
                 <ul>
-                    <li>1 persoon</li>
-                    <li>2 personen</li>
-                    <li>3 personen</li>
+                    <li id="person-1"><p>1 persoon</p></li>
+                    <li id="person-2"><p>2 personen</p></li>
+                    <li id="person-3"><p>3 personen</p></li>
                 </ul>
+                <p>Selecteer met hoeveel personen u wilt komen</p>
             </section>
             <article id="ask-question">
                 <h2>Opmerking of vraag</h2>

@@ -28,12 +28,12 @@
                 <li><a href="index.php" class="<?php if($selectedLink == "index"){ echo $selectedLinkActive;} ?>">Homepagina</a></li>
                 <li><a href="tijdschema.php" class="<?php if($selectedLink == "tijdschema"){ echo $selectedLinkActive;} ?>">Tijdschema</a></li>
                 <li><a href="https://www.glr.nl/">GLR website</a></li>
-                <li><a href="contact.html" class="<?php if($selectedLink == "300"){ echo $selectedLinkActive;} ?>">Notities</a></li>
+                <li><a href="contact.php" class="<?php if($selectedLink == "contact"){ echo $selectedLinkActive;} ?>">Notities</a></li>
             </ul>
         </nav>
         <section>
             <h1>Inschrijving</h1>
             <h1>Ouderavond</h1>
         </section>
-        <figure><a href="index.html"><img src="assets/img/school.jpg" alt="School-image"></a></figure>
+        <figure><a href="index.php"><img src="assets/img/school.jpg" alt="School-image"></a></figure>
     </header>

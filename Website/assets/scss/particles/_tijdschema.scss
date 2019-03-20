@@ -22,12 +22,11 @@
             bottom: 6rem;
         }
 
-        //button for choosing a time
         @include setQeury($lg){
             @include blackContainer(40rem, 0);  
             margin: 0 auto 0 auto;
         }
-            //green button
+             //button for choosing a time
             div{
                 @include greenButton(30%, 50%,15rem,15rem);
 
@@ -47,25 +46,98 @@
 
     #timetable{
         @include blackContainer(50rem,1);
+        position: relative;
 
         @include setQeury($lg){
-            @include blackContainer(80rem, 0);  
+            @include blackContainer(50rem, 0);  
         }
 
         ul{
+            width: 30rem;
+            margin: 3rem auto;
 
+            @include setQeury($md){
+                width: 50rem;
+            }
+            
             li{
-               
+                display: flex; 
+                @include blackContainer(7rem,1);
+                border: none;
+                margin: 1rem 0 0 0;
+                cursor: pointer;
+
+                :hover{
+                    background: rgb(19, 19, 19);
+                }
+
+                P{
+                    text-align: center;
+                    width: 100%;
+                    padding: 2.5rem 0 0 0;
+                    font-size: 2rem;
+                }
+            }
+
+            #time-1{
+                border: 3px solid orangered;
+                box-shadow: none;
+            }
+
+            #time-2{
+                border: 3px solid rgb(61, 61, 61);
+                box-shadow: none;
+            }
+
+            #time-3{
+                border: 3px solid green;
+                box-shadow: none;
+            }
+
+            #time-4{
+                border: 3px solid rgb(61, 61, 61);
+                box-shadow: none;
             }
         }
-//here i need to do some work
+
+        // vrij, bijna vol, vol
         #timetable-info{
             @include blackContainer(10rem, 0);  
-            width: 50%;
+            width: 30rem;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            bottom: -5rem;            
+            bottom: -5rem; 
+            
+            section{
+                display: grid;
+                grid-template: 1fr/ 1fr 1fr 1fr;
+            }
+
+            p{
+                display: inline-block;
+                padding: 1rem;
+            }
+
+            #available-1::before{
+                content: '';
+                margin: 1rem 25%;
+                transform: translateX(25%);
+                display: block;
+                height: 3rem;
+                width: 3rem;
+                background: green;
+            }
+
+            #available-2::before{
+                @extend #available-1::before;
+                background: orangered;
+            }
+
+            #available-3::before{
+                @extend #available-1::before;
+                background: rgb(61, 61, 61);
+            }
         }
     }
 
@@ -73,41 +145,118 @@
 ///////number of person
 
     #number-of-persons{
-        @include blackContainer(30rem,1);
+        @include blackContainer(60rem,1);
         position: relative;
+        margin: 10rem auto 0 auto;
 
+        @include setQeury($md){
+            height: 45rem;
+        }
+
+        @include setQeury($lg){
+            @include blackContainer(40rem, 0);  
+        }
+
+        //info text
+        p{
+            margin: 2.5rem 0 0 0;
+        }
+
+        //container for the buttons
         ul{
             
             li{
                 font-size: 2rem;
                 padding: .5rem;
+
+                p{
+                    margin: 4rem  0 0 0;
+                    font-size: 2rem;
+                }
             }
 
-            :nth-child(1){
-                @include greenButton(40%, 25%,9rem,9rem);            
+            //made buttons and set them vertical for mobile 
+            #person-1{
+                @include greenButton(25%, 50%,12rem,12rem);            
             }
-            :nth-child(2){
-                @include greenButton(40%, 50%, 9rem, 9rem);
+            #person-2{
+                @include greenButton(50%, 50%, 12rem, 12rem);
             }
-            :nth-child(3){
-                @include greenButton(40%, 75%, 9rem, 9rem);
+            #person-3{
+                @include greenButton(75%, 50%, 12rem, 12rem);
+            }
 
-            }
+
+            //sets buttons horizontal
+            @include setQeury($md){
+
+                #person-1{
+                    left: 25%;
+                }
+                #person-2{
+                    left: 50%;
+                }
+                #person-3{
+                    left: 75%;
+                }
+
+                //!important so that it over rules css specificity from the pseudo elements
+                li{
+                    top: 40%!important;
+                    height: 14rem!important;
+                    width: 14rem!important;
+
+                    p{
+                        margin: 5.5rem  0 0 0;
+                    }
+                }
+            
+            }      
         }
-        
-        @include setQeury($lg){
-            @include blackContainer(40rem, 0);  
-        }
+
     }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////ask question
     
     #ask-question{
-        @include blackContainer(60rem,1);
-        
+        @include blackContainer(45rem,1);
+
         @include setQeury($lg){
-            @include blackContainer(40rem, 0);  
+            @include blackContainer(45rem, 0);  
+        }
+
+        textarea{
+            height: 20rem;
+            width: 35rem;
+
+            @include setQeury($md){
+                width: 50rem;
+                height: 22rem;
+            }
+        }
+
+        input{
+            width: 35rem;
+            height: 4rem;
+            margin: 2rem auto 0 auto;
+            background: $glr-green;
+            font-size: 2rem;
+            border: 2px solid black;
+
+            &:hover{
+                background: rgb(19, 19, 19);
+                color: #fff;
+            }
+
+            @include setQeury($sm){
+                width: 35rem;
+                height: 4.5rem;
+            }
+            
+            @include setQeury($md){
+                width: 50rem;
+            }
         }
     }
 
