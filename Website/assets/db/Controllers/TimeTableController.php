@@ -13,6 +13,10 @@ class TimeTableController extends Database {
     // Array of all dates and their times `after the function GetDates has been called
     public $dates = array();
 
+    // Array variables used for the algorithm
+    public $availableTimes = array();
+    public $timesRegistered = array();
+
     // Function to check how many students have signed up for a specific 'tijdstip'
     public function CheckAvailability($timeID) {
         // SQL to get the row 'bezet' whith the ID of the mentor
@@ -82,15 +86,60 @@ class TimeTableController extends Database {
         $result = mysqli_query($this->mysqli, $sql);
         $rij = mysqli_fetch_array($result);
         $tijdstip_id = $rij['id'];
+        
+        // Check if the logged in user already has a reservation
+        $duplicateCheck = "SELECT * FROM reservering WHERE student_id='$student_id'";
+        $duplicateResult = mysqli_query($this->mysqli, $duplicateCheck);
+        $duplicateRowCount = mysqli_num_rows($duplicateResult);
+        
+        // If any duplicates exist, give error
+        if($duplicateRowCount > 0) {
+            $_SESSION['errormsg'] = "U heeft al een reservering!";
+            return false;
+        }
 
         // Sql query to insert the reservation into the database
         $query = " INSERT INTO reservering (id, student_id, mentor_id, tijdstip_id, personen, opmerking, mentor_opmerking) VALUES (NULL, '$student_id', '$mentor_id', '$tijdstip_id', '$personen', '$opmerking', NULL)";
 
+        // Execute the query into the database and check for errors
         if(mysqli_query($this->mysqli, $query)) {
-            $_SESSION['errormsg'] = "Topp!";
+            $_SESSION['succmsg'] = "Uw reservering is toegevoegt!";
+            return true;
         } else {
-            $_SESSION['errormsg'] = "Er is iets mislukt!!";
+            $_SESSION['errormsg'] = "Er is iets mislukt!";
+            return false;
         }
+    }
+
+    // Time suggestion algorithm
+    public function SuggestionAlgorithm($mentor_id) {
+        // Get all times from mentor
+        $query = "SELECT * FROM tijdstip WHERE mentor_id = '$mentor_id'";
+        $result = mysqli_query($this->mysqli, $query);
+        while($row = mysqli_fetch_array($result)) {
+            $this->availableTimes[] = $row;
+        }
+
+        // Get all times where students have registered
+        $query = "SELECT * FROM tijdstip WHERE mentor_id = '$mentor_id' AND bezet > 0";
+        $result = mysqli_query($this->mysqli, $query);
+        while($row = mysqli_fetch_array($result)) {
+            $this->timesRegistered[] = $row;
+        }
+
+        $highest = 0;
+        // Loop through the 'tijdstip''s and check which one has the highest students
+        for($x = 0; $x < count($this->timesRegistered); $x++) {
+            if($this->timesRegistered[$x]['bezet'] > $highest) {
+                if($this->timesRegistered[$x]['bezet'] >= 4) {
+                    exit;
+                } else {
+                    $highest = $this->timesRegistered[$x]['id'];
+                }
+            }
+        }
+        // Return the ID of the tijdstip with the most students
+        return $highest;
     }
 }
 ?>

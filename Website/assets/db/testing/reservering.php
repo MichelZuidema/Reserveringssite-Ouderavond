@@ -1,14 +1,20 @@
 <?php
 session_start();
 
+if(!isset($_SESSION['username'])) {
+    die("Niet ingelogd!!");
+}
+
 if(isset($_POST['submit'])) {
     require("../Controllers/TimeTableController.php");
     $time = new TimeTableController();
 
     if($time->CreateReservation()) {
-        echo $_SESSION['errormsg'];
+        echo $_SESSION['succmsg'];
+        unset($_SESSION['succmsg']);
     } else {
-        echo $_SESSION['errormsg'];
+        die($_SESSION['errormsg']);
+        unset($_SESSION['errormsg']);
     }
 }
 
@@ -23,12 +29,6 @@ if(isset($_POST['submit'])) {
             <fieldset>
                 <legend>Reservering Form</legend>
                 <form action="?" method="POST">
-                    <?php   
-                        session_start();
-                        if($_SESSION['errormsg']) {
-                            echo '<h2>' . $_SESSION['errormsg'] . '</h2>';
-                        }
-                    ?>
                     <!-- inputs from session -->
                     <input type="hidden" name="student_id" value="<?php echo $_SESSION['student_id']?>">
                     <input type="hidden" name="mentor_id" value="<?php echo $_SESSION['mentor_id']?>">
