@@ -11,26 +11,26 @@
         <article>
             <h2>Neem contact op</h2>
             <form action="">
-                <label>Voornaam:</label>
-                <input type="text" require>
+                <label id="contact-voornaam">Voornaam:</label>
+                <input type="text" name="voornaam" require>
 
-                <label>Achternaam:</label>
-                <input type="text" require>
+                <label id="contact-achternaam">Achternaam:</label>
+                <input type="text" name="achternaam" require>
 
 
-                <label>E-mail:</label>
-                <input type="text" require>
+                <label id="contact-email">E-mail:</label>
+                <input type="text" name="email" require>
 
                 
-                <label>Telefoonummer:</label>
-                <input type="number">
+                <label id="contact-telefoon">Telefoonummer:</label>
+                <input type="number" name="telefoon">
 
 
-                <label>Betreft kind:</label>
-                <input type="text" require>
+                <label id="contact-kind">Betreft kind:</label>
+                <input type="text" name="kind" require>
                 
-                <label>Uw bericht</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label id="contact-bericht">Uw bericht</label>
+                <textarea></textarea>
                 
                 <input type="submit">
             </form>

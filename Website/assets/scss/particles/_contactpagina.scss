@@ -1,12 +1,125 @@
 #contact{
-    article{
+    margin-top: 0;
 
-        form{
+    article{
             @include blackContainer(80rem,1);
+            margin:  0 auto!important;
+
+            h2{
+                font-size: 4rem;
+            }
 
             @include setQeury($lg){
                 @include blackContainer(80rem,0);
+        }
+
+        form{
+            width: 95%;
+            height: 80%;
+            margin: 4rem auto 0 auto;
+            display: grid;
+            grid-template-columns: 5% 1fr 5%;
+            grid-template-areas: 
+            ". voornaam .  "
+            ". inputvoornaam . "
+            ". achternaam  ."
+            ". inputachternaam ."
+            ". email ."
+            ". inputemail ."
+            ". telefoon ."
+            ". inputtelefoon ."
+            ". kind ."
+            ". inputkind ."
+            ". uwBericht . "
+            ". textarea ."
+            ". button . ";
+
+            @include setQeury($md){
+                grid-template-columns: 5% 40% 50% 5%;
+                grid-template-areas: 
+            ". voornaam inputvoornaam  ."
+            ". achternaam inputachternaam  ."
+            ". email inputemail ."
+            ". telefoon inputtelefoon ."
+            ". kind inputkind ."
+            ". uwBericht . . "
+            ". textarea  textarea ."
+            ". button button .";
             }
         }
+        
+        label{
+            text-align: left;
+        }
+
+        input{
+            width: 100%;
+            height: 3rem;
+        }
+
+        input[name="voornaam"]{
+            grid-area: inputvoornaam;
+        }
+
+        #contact-voornaam{
+            grid-area: voornaam;
+        }
+
+        input[name="achternaam"]{
+            grid-area: inputachternaam;
+        }
+
+        #contact-achternaam{
+            grid-area: achternaam;
+        }
+
+        input[name="email"]{
+            grid-area: inputemail;
+        }
+
+        #contact-email{
+            grid-area: email;
+        }
+
+        input[name="telefoon"]{
+            grid-area: inputtelefoon;
+        }
+
+        #contact-telefoon{
+            grid-area: telefoon;
+        }
+
+        input[name="kind"]{
+            grid-area: inputkind;
+        }
+
+        #contact-kind{
+            grid-area: kind;
+        }
+
+        input[type="submit"]{
+            grid-area: button;
+            background: $black-container;
+            color: #f1f1f1;
+            font-size: $button-text-size;
+            height: 5rem;
+            border: 2px solid $border-color;
+
+            &:hover{
+                background: $glr-green;
+                color: $black-container;
+            }
+        }
+
+        #contact-bericht{
+            grid-area: uwBericht;
+        }
+
+        textarea{
+            grid-area: textarea;
+            width: 100%;
+            height: 10rem;
+        }
+
     }
 }

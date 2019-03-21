@@ -1,0 +1,56 @@
+#mentor{
+    img{
+        width: 15rem;
+        height: 15rem;
+    }
+    #selectStudent{
+        display: grid;
+        padding: 0 3rem 3rem 3rem;
+        grid-template-areas: 
+        ". . title . ."
+        ". . foto . ."
+        ". klas . student .";
+        @include blackContainer(40rem, 1);
+
+        @include setQeury($lg){
+            @include blackContainer(40rem, 0);
+        }
+        h2{
+            grid-area: title;
+        }
+
+        #foto{
+            grid-area: foto;
+        }
+
+        #klas{
+            grid-area: klas;
+
+            select{
+                width: 20rem;
+                height: 5rem;
+                position: relative;
+
+                option{
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    z-index: 100;   
+                    font-size: 2rem;
+                }
+            } 
+        }
+
+        #student{
+            grid-area: student;
+
+            select{
+                width: 20rem;
+                height: 5rem;
+                background: red;  
+                
+            }
+        }
+    }
+}

@@ -27,6 +27,11 @@ textarea,input{
     margin: 0 auto;
 }
 
+label{
+    font-family: $text-font;
+    font-size: $normal-text-size;
+}
+
 //bottom margin for the main
 main{
     margin:  0 0 64rem 0;

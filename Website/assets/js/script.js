@@ -28,48 +28,48 @@ $selectedTime = 0;
 $("#time-1").click(function(){
   $(this).toggleClass("selectedBox");
   $("#time-2, #time-3, #time-4").removeClass("selectedBox");
-  $hash = "#timetable-info";
-  location.hash = $hash;
+  var hash = "#timetable-info";
+  location.hash = hash;
 
   //check for a class
   if($(this).hasClass("selectedBox")){
-    $selectedTime = 1;
+    selectedTime = 1;
   }
 })
 
 $("#time-2").click(function(){
   $(this).toggleClass("selectedBox");
   $("#time-1, #time-3, #time-4").removeClass("selectedBox");
-  $hash = "#timetable-info";
-  location.hash = $hash;
+  var hash = "#timetable-info";
+  location.hash = hash;
 
   //check for a class
   if($(this).hasClass("selectedBox")){
-    $selectedTime = 2;
+    selectedTime = 2;
   }
 })
 
 $("#time-3").click(function(){
   $(this).toggleClass("selectedBox");
   $("#time-1, #time-2, #time-4").removeClass("selectedBox");
-  $hash = "#timetable-info";
-  location.hash = $hash;
+  var hash = "#timetable-info";
+  location.hash = hash;
 
   //check for a class
   if($(this).hasClass("selectedBox")){
-    $selectedTime = 3;
+    selectedTime = 3;
   }
 })
 
 $("#time-4").click(function(){
   $(this).toggleClass("selectedBox");
   $("#time-1, #time-3, #time-2").removeClass("selectedBox");
-  $hash = "#timetable-info";
-  location.hash = $hash;
+  var hash = "#timetable-info";
+  location.hash = hash;
 
   //check for a class
   if($(this).hasClass("selectedBox")){
-    $selectedTime = 4;
+    selectedTime = 4;
   }
 })
 
@@ -77,35 +77,47 @@ $("#time-4").click(function(){
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////// Choose day 
 
-$selectedDay = 0;
+var selectedDay = 0;
 
 $("#choose-time div").click(function(){
   $(this).toggleClass("selectedBox");
-  $hash = "#timetable";
-  location.hash = $hash;
+  var hash = "#timetable";
+  location.hash = hash;
 
   //check for a class
   if($(this).hasClass("selectedBox")){
-    $selectedDay = 1;
+    selectedDay = 1;
   }
 })
 
+$(document).ready(function(){
+  $("#choose-time div").on('click', function(event) {
+      if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+         
+          $('html, body').animate({
+              scrollTop: $(hash).offset().top - 220
+          }, 900);
+      }
+  });
+});
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////// Choose persons
 
 var selectedPerson = 0;
-$selectedPerson = 0;
 
 $("#person-1").click(function(){
   $(this).toggleClass("selectedBox");
   $("#person-2, #person-3").removeClass("selectedBox");
-  $hash = "#ask-question";
+  var hash = "#ask-question";
   location.hash = $hash;
 
   //check for a class
   if($(this).hasClass("selectedBox")){
-    $selectedPerson = 1;
+    selectedPerson = 1;
   }
 })
 

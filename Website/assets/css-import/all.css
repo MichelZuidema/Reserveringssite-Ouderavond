@@ -813,6 +813,11 @@ textarea, input {
   margin: 0 auto;
 }
 
+label {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.2rem;
+}
+
 main {
   margin: 0 0 64rem 0;
 }
@@ -1739,15 +1744,10 @@ body > header figure img {
           box-shadow: 1px 1.5px 6px black;
   cursor: pointer;
   border: 3px solid #484646;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 02092989fcdca7bf840d0ec486deb9b9e56252b8
 }
 
 #tijdschema #number-of-persons ul #person-3:hover {
   background: #131313;
-<<<<<<< HEAD
 }
 
 #tijdschema #number-of-persons ul #person-3 p {
@@ -1760,32 +1760,6 @@ body > header figure img {
   }
 }
 
-=======
-}
-
-#tijdschema #number-of-persons ul #person-3 p {
-  font-weight: 1000;
-}
-
-=======
-}
-
-#tijdschema #number-of-persons ul #person-3:hover {
-  background: #131313;
-}
-
-#tijdschema #number-of-persons ul #person-3 p {
-  font-weight: 1000;
-}
-
->>>>>>> cae4a87f45200df8d79c13076e5ffbafecf595d7
-@media only screen and (min-width: 720px) {
-  #tijdschema #number-of-persons ul #person-3 p {
-    font-size: 2.1rem;
-  }
-}
-
->>>>>>> 02092989fcdca7bf840d0ec486deb9b9e56252b8
 @media only screen and (min-width: 720px) {
   #tijdschema #number-of-persons ul #person-1 {
     left: 25%;
@@ -1870,7 +1844,11 @@ body > header figure img {
   }
 }
 
-#contact article form {
+#contact {
+  margin-top: 0;
+}
+
+#contact article {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -1879,19 +1857,15 @@ body > header figure img {
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
   border-top: 3px solid #484646;
+  margin: 0 auto !important;
 }
 
-<<<<<<< HEAD
-=======
-@media only screen and (min-width: 720px) {
-  #tijdschema #ask-question {
-    height: 45rem;
-  }
+#contact article h2 {
+  font-size: 4rem;
 }
 
->>>>>>> 02092989fcdca7bf840d0ec486deb9b9e56252b8
 @media only screen and (min-width: 1024px) {
-  #contact article form {
+  #contact article {
     width: 100%;
     max-width: 80rem;
     margin: 5rem auto 0 auto;
@@ -1904,40 +1878,201 @@ body > header figure img {
   }
 }
 
-#tijdschema #ask-question textarea, #tijdschema #ask-question input {
-  display: block;
-  margin: 0 auto;
-}
-
-#tijdschema #ask-question textarea {
-  height: 20rem;
-  width: 30rem;
-  font-size: 2rem;
-  background: #a7a7a7;
-  border: 2px solid black;
-}
-
-@media only screen and (min-width: 720px) {
-  #tijdschema #ask-question textarea {
-    width: 40rem;
-    height: 20rem;
-  }
-}
-
-#tijdschema #ask-question input {
-  width: 30rem;
-  height: 4rem;
-  margin: 2rem auto 0 auto;
-  background: #5e5e5e;
-  font-size: 2rem;
-  border: 2px solid #8FE501;
-  outline: 2px solid black;
+#contact article form {
+  width: 95%;
+  height: 80%;
+  margin: 4rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 1fr 5%;
+      grid-template-columns: 5% 1fr 5%;
+      grid-template-areas: ". voornaam .  " ". inputvoornaam . " ". achternaam  ." ". inputachternaam ." ". email ." ". inputemail ." ". telefoon ." ". inputtelefoon ." ". kind ." ". inputkind ." ". uwBericht . " ". textarea ." ". button . ";
 }
 
 @media only screen and (min-width: 720px) {
-  #tijdschema #ask-question input {
-    width: 40rem;
+  #contact article form {
+    -ms-grid-columns: 5% 40% 50% 5%;
+        grid-template-columns: 5% 40% 50% 5%;
+        grid-template-areas: ". voornaam inputvoornaam  ." ". achternaam inputachternaam  ." ". email inputemail ." ". telefoon inputtelefoon ." ". kind inputkind ." ". uwBericht . . " ". textarea  textarea ." ". button button .";
   }
+}
+
+#contact article label {
+  text-align: left;
+}
+
+#contact article input {
+  width: 100%;
+  height: 3rem;
+}
+
+#contact article input[name="voornaam"] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: inputvoornaam;
+}
+
+#contact article #contact-voornaam {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: voornaam;
+}
+
+#contact article input[name="achternaam"] {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: inputachternaam;
+}
+
+#contact article #contact-achternaam {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: achternaam;
+}
+
+#contact article input[name="email"] {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: inputemail;
+}
+
+#contact article #contact-email {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: email;
+}
+
+#contact article input[name="telefoon"] {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+  grid-area: inputtelefoon;
+}
+
+#contact article #contact-telefoon {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  grid-area: telefoon;
+}
+
+#contact article input[name="kind"] {
+  -ms-grid-row: 10;
+  -ms-grid-column: 2;
+  grid-area: inputkind;
+}
+
+#contact article #contact-kind {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  grid-area: kind;
+}
+
+#contact article input[type="submit"] {
+  -ms-grid-row: 13;
+  -ms-grid-column: 2;
+  grid-area: button;
+  background: #1C1C1C;
+  color: #f1f1f1;
+  font-size: 3.2rem;
+  height: 5rem;
+  border: 2px solid #707070;
+}
+
+#contact article input[type="submit"]:hover {
+  background: #8FE501;
+  color: #1C1C1C;
+}
+
+#contact article #contact-bericht {
+  -ms-grid-row: 11;
+  -ms-grid-column: 2;
+  grid-area: uwBericht;
+}
+
+#contact article textarea {
+  -ms-grid-row: 12;
+  -ms-grid-column: 2;
+  grid-area: textarea;
+  width: 100%;
+  height: 10rem;
+}
+
+#mentor img {
+  width: 15rem;
+  height: 15rem;
+}
+
+#mentor #selectStudent {
+  display: -ms-grid;
+  display: grid;
+  padding: 0 3rem 3rem 3rem;
+      grid-template-areas: ". . title . ." ". . foto . ." ". klas . student .";
+  width: 100%;
+  max-width: 80rem;
+  margin: 5rem auto 0 auto;
+  height: 40rem;
+  background: #1C1C1C;
+  -webkit-box-shadow: 1px 1.5px 6px #000;
+          box-shadow: 1px 1.5px 6px #000;
+  border-top: 3px solid #484646;
+}
+
+@media only screen and (min-width: 1024px) {
+  #mentor #selectStudent {
+    width: 100%;
+    max-width: 80rem;
+    margin: 5rem auto 0 auto;
+    height: 40rem;
+    background: #1C1C1C;
+    -webkit-box-shadow: 1px 1.5px 6px #000;
+            box-shadow: 1px 1.5px 6px #000;
+    border: 3px solid #484646;
+    margin: 8rem auto 0 auto;
+  }
+}
+
+#mentor #selectStudent h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: title;
+}
+
+#mentor #selectStudent #foto {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: foto;
+}
+
+#mentor #selectStudent #klas {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: klas;
+}
+
+#mentor #selectStudent #klas select {
+  width: 20rem;
+  height: 5rem;
+  position: relative;
+}
+
+#mentor #selectStudent #klas select option {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  font-size: 2rem;
+}
+
+#mentor #selectStudent #student {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: student;
+}
+
+#mentor #selectStudent #student select {
+  width: 20rem;
+  height: 5rem;
+  background: red;
 }
 
 body > footer {
