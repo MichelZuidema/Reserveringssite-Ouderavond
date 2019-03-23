@@ -1780,6 +1780,59 @@ body > header figure img {
   }
 }
 
+#tijdschema #questionPopup {
+  height: 10rem;
+  width: 90%;
+  max-width: 80rem;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #8FE501;
+  border-radius: 1rem;
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #questionPopup {
+    width: 100%;
+  }
+}
+
+#tijdschema #questionPopup div p {
+  font-size: calc(2.2rem - .5rem);
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+@media only screen and (min-width: 480px) {
+  #tijdschema #questionPopup div p {
+    font-size: calc(2.2rem - .2rem);
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #questionPopup div p {
+    font-size: 2.2rem;
+  }
+}
+
+#tijdschema #questionPopup div :nth-child(1) {
+  padding: 1.3rem 0;
+}
+
+@media only screen and (min-width: 480px) {
+  #tijdschema #questionPopup div :nth-child(1) {
+    padding: 1.5rem 0;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #questionPopup div :nth-child(1) {
+    padding: 2rem 0;
+  }
+}
+
 #tijdschema #ask-question {
   width: 100%;
   max-width: 80rem;
@@ -1821,14 +1874,15 @@ body > header figure img {
   width: 35rem;
   height: 4rem;
   margin: 2rem auto 0 auto;
-  background: #8FE501;
+  background: #1C1C1C;
   font-size: 2rem;
   border: 2px solid black;
+  color: #fff;
+  font-weight: 900;
 }
 
 #tijdschema #ask-question input:hover {
   background: #131313;
-  color: #fff;
 }
 
 @media only screen and (min-width: 480px) {
@@ -1842,6 +1896,75 @@ body > header figure img {
   #tijdschema #ask-question input {
     width: 50rem;
   }
+}
+
+#tijdschema #summary {
+  width: 100%;
+  max-width: 80rem;
+  margin: 5rem auto 0 auto;
+  height: auto;
+  background: #1C1C1C;
+  -webkit-box-shadow: 1px 1.5px 6px #000;
+          box-shadow: 1px 1.5px 6px #000;
+  border-top: 3px solid #484646;
+}
+
+@media only screen and (min-width: 1024px) {
+  #tijdschema #summary {
+    width: 100%;
+    max-width: 80rem;
+    margin: 5rem auto 0 auto;
+    height: auto;
+    background: #1C1C1C;
+    -webkit-box-shadow: 1px 1.5px 6px #000;
+            box-shadow: 1px 1.5px 6px #000;
+    border: 3px solid #484646;
+    margin: 8rem auto 0 auto;
+  }
+}
+
+#tijdschema #summary ul {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 720px) {
+  #tijdschema #summary ul {
+    width: 80%;
+  }
+}
+
+#tijdschema #summary ul li, #tijdschema #summary ul h3, #tijdschema #summary ul blockquote {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+#tijdschema #summary ul li span {
+  padding: 1rem;
+  line-height: 2;
+}
+
+#tijdschema #summary ul span {
+  color: #8FE501;
+}
+
+#tijdschema #summary ul h3 {
+  color: #8FE501;
+}
+
+#tijdschema #summary ul blockquote {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#tijdschema #summary p {
+  color: #8FE501;
+  padding: 0 0 2rem 0;
+  font-size: 2.5rem;
 }
 
 #contact {
@@ -1886,14 +2009,14 @@ body > header figure img {
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
       grid-template-columns: 5% 1fr 5%;
-      grid-template-areas: ". voornaam .  " ". inputvoornaam . " ". achternaam  ." ". inputachternaam ." ". email ." ". inputemail ." ". telefoon ." ". inputtelefoon ." ". kind ." ". inputkind ." ". uwBericht . " ". textarea ." ". button . ";
+      grid-template-areas: ". voornaam .  " ". inputvoornaam . " ". achternaam  ." ". inputachternaam ." ". email ." ". inputemail ." ". telefoon ." ". inputtelefoon ." ". kind ." ". inputkind ." ". uwBericht . " ". textarea ." ". button . ";
 }
 
 @media only screen and (min-width: 720px) {
   #contact article form {
     -ms-grid-columns: 5% 40% 50% 5%;
         grid-template-columns: 5% 40% 50% 5%;
-        grid-template-areas: ". voornaam inputvoornaam  ." ". achternaam inputachternaam  ." ". email inputemail ." ". telefoon inputtelefoon ." ". kind inputkind ." ". uwBericht . . " ". textarea  textarea ." ". button button .";
+        grid-template-areas: ". voornaam inputvoornaam  ." ". achternaam inputachternaam  ." ". email inputemail ." ". telefoon inputtelefoon ." ". kind inputkind ." ". uwBericht . . " ". textarea  textarea ." ". button button .";
   }
 }
 
@@ -2005,7 +2128,7 @@ body > header figure img {
   display: -ms-grid;
   display: grid;
   padding: 0 3rem 3rem 3rem;
-      grid-template-areas: ". . title . ." ". . foto . ." ". klas . student .";
+      grid-template-areas: ". . title . ." ". . foto . ." ". klas . student .";
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
