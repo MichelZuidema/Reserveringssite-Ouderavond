@@ -215,6 +215,56 @@
         }
 
     }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////question popup
+
+#questionPopup{
+    height: 10rem;
+    width: 90%;
+    max-width: 80rem;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background: $glr-green;
+    border-radius: 1rem;
+
+
+    @include setQeury($md){
+        width: 100%;
+    }
+
+    div{
+
+        p{
+            font-size: calc(2.2rem - .5rem);
+            font-family: $title-font;
+            color: black;
+
+            @include setQeury($sm){
+                font-size: calc(2.2rem - .2rem);
+            }
+
+            @include setQeury($md){
+                font-size: $normal-text-size;            
+            }
+        }
+
+        :nth-child(1){
+            padding: 1.3rem 0;       
+
+            @include setQeury($sm){
+                padding: 1.5rem 0;
+            }
+            
+            @include setQeury($md){
+                padding: 2rem 0;
+            }
+        }
+
+    }
+}
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////ask question
