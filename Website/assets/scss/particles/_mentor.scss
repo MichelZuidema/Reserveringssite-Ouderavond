@@ -1,8 +1,14 @@
 #mentor{
+
+    h2{
+        font-size: $title-size-big;
+    }
+
     img{
         width: 15rem;
         height: 15rem;
     }
+    
     #selectStudent{
         display: grid;
         padding: 0 3rem 3rem 3rem;
@@ -21,6 +27,14 @@
 
         #foto{
             grid-area: foto;
+        }
+
+        select{
+            width: 20rem;
+            height: 5rem;
+            background: $black-container;  
+            color: #f1f1f1;
+            font-size: 2rem;
         }
 
         #klas{
@@ -44,13 +58,6 @@
 
         #student{
             grid-area: student;
-
-            select{
-                width: 20rem;
-                height: 5rem;
-                background: red;  
-                
-            }
         }
     }
 }

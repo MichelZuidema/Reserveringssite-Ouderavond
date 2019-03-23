@@ -240,13 +240,15 @@
             width: 35rem;
             height: 4rem;
             margin: 2rem auto 0 auto;
-            background: $glr-green;
+            background: $black-container;
             font-size: 2rem;
-            border: 2px solid black;
+            border: 2px solid $border-color;
+            box-shadow: 1px 1.5px 6px #111;
+            color: #fff;
+            font-weight: 900;
 
             &:hover{
                 background: rgb(19, 19, 19);
-                color: #fff;
             }
 
             @include setQeury($sm){
@@ -260,5 +262,61 @@
         }
     }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// return aanmelding
 
+#summary{
+    display: none;
+    @include blackContainer(auto,1);
+
+    @include setQeury($lg){
+        @include blackContainer(auto,0);
+    }
+
+    ul{
+        width: 95%;
+        margin: 0 auto;
+        padding: 2rem;
+
+        @include setQeury($md){
+            width: 80%;
+        }
+        
+        li,h3, blockquote{
+            font-family: $title-font;
+            font-size: $normal-text-size;            
+            padding: 1rem;
+            text-align: left;
+
+        }
+
+        li span{
+            padding: 1rem;
+            line-height: 2;
+        }
+
+        span{
+            color: $glr-green;
+        }
+
+        h3{
+            color: $glr-green;
+        }
+
+        blockquote{
+            font-size: 1.6rem;
+            line-height: 1.5;
+            text-align: left;
+        }
+    }
+
+    p{
+        color: $glr-green;
+        padding: 0 0 2rem 0;
+        font-size: 2.5rem;
+    }
+}
+
+
+//end
 }

@@ -13,8 +13,8 @@
                 <img src="assets/img/GLRlogo_RGB.png" alt="">
             </section>
             <section id="klas">
-                
                 <select>
+                    <option value="">Kies een klas</option>
                     <option value="">i1a</option>
                     <option value="">i1b</option>
                     <option value="">i1c</option>
@@ -24,6 +24,7 @@
             </section>
             <section id="student">
                 <select id="">
+                    <option value="">Kies een student</option>
                     <option value="">piet</option>
                     <option value="">klaas</option>
                     <option value="">henk</option>

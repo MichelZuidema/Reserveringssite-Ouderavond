@@ -9,7 +9,7 @@
     <main id="tijdschema">
         <form action="#" method="POST">
             <section id="choose-time">
-                <h2>Kies een tijd</h2>
+                <h2>Kies een Datum</h2>
                 <div>
                     <p>Donderdag</p>
                     <p>28/04/2019</p>
@@ -41,10 +41,28 @@
                 </ul>
                 <p>Selecteer met hoeveel personen u wilt komen</p>
             </section>
+            <section class="questionPopup">
+                <div>
+                    <p>Bedankt voor uw aanmelding!</p>
+                    <p>Wij hebben u een mail gestuurd met uw gegevens</p>
+                </div>
+            </section>
             <article id="ask-question">
                 <h2>Opmerking of vraag</h2>
                 <textarea cols="30" rows="10" placeholder="Hier komt uw vraag/opmerking"></textarea>
-                <input type="submit" value="Aanmelding versturen">
+                <input type="" class="sendButton" value="Aanmelding versturen">
+                <input type="" id="showButton" value="Bekijk mijn huidige aanmelding">
+            </article>
+            <article id="summary">
+                <section>
+                    <h2>Gegevens van uw aanmelding</h2>
+                    <ul>
+                        <li>Datum: <span>28/4/2020</span></li>
+                        <li>gewenste tijd: <span>18:00 t/m 19:00</span></li>
+                        <li>Uw opmerking bericht:<blockquote></blockquote></li>
+                    </ul>
+                    <p>Wij hebben u ook een mail gestuurd met uw gegevens</p>
+                </section>
             </article>
         </form>
     </main>
