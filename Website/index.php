@@ -27,7 +27,7 @@
         <!-- layout background images -->
         <section id="main-image-2"></section>
         <article id="main-diagram">
-            <h2>Ingescheven ouders</h2>
+            <h2>Ingeschreven ouders</h2>
             <section id="main-diagram-grid">
                 <section class="main-diagram-1">
                     <p>18:00</p>

@@ -38,6 +38,60 @@
                 </select>
             </section>
         </section>
+        <form id="studentInfo">
+            <h2>Student informatie</h2>
+            <section>
+                <label>Naam:</label>
+                <p>klaas</p>
+            </section>
+            <section>
+                <label>Aantal personen:</label>
+                <p>3</p>
+            </section>
+            <section>
+                <label>Gewenste tijd:</label>
+                <p>18:00 t/m 19:00</p>
+            </section>
+            <section>
+                <label>Ingeschreven tijd:</label>
+                <button>18:00 t/m 18:15</button>
+                <button>18:00 t/m 18:15</button>
+                <button>18:00 t/m 18:15</button>
+                <button>18:00 t/m 18:15</button>
+            </section>
+            <section>
+                <label>Opmerking of vraag:</label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corporis dignissimos nostrum accusamus dolor iste accusantium repellendus? Unde</p>
+            </section>
+            <section>
+                <label>Notities mentor:</label>
+                <textarea id="mentor-notities"></textarea>
+                <input type="submit" id="mentor-wijzig" value="Wijzig">
+            </section>
+        </form>
+        <form id="planningStudent" method="POST">
+            <h2>Tijdschema</h2>
+            <section id="planningGrid">
+                <ul>
+                    <li>18:00 t/m 18:15</li>
+                    <li>18:15 t/m 18:30</li>
+                    <li>18:30 t/m 18:45</li>
+                    <li>18:45 t/m 19:00</li>
+                    <li>19:00 t/m 19:15</li>
+                    <li>19:15 t/m 19:30</li>
+                    <li>19:30 t/m 19:45</li>
+                    <li>19:45 t/m 20:00</li>
+                    <li>20:00 t/m 20:15</li>
+                    <li>20:15 t/m 20:30</li>
+                    <li>20:30 t/m 20:45</li>
+                    <li>20:45 t/m 21:00</li>
+                    <li>21:00 t/m 21:15</li>
+                    <li>21:15 t/m 21:30</li>
+                    <li>21:30 t/m 21:45</li>
+                    <li>21:45 t/m 22:00</li>
+                </ul>
+            </section>
+        </form>
     </main>
     <?php
         // footer
