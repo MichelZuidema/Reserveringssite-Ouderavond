@@ -4,6 +4,7 @@
 //open navigation menu
 $("#header-hamburger").click(function(){
         $("header nav").addClass("toggleOn");
+        $(".toggleOn").slideDown(2000);
         $("body").addClass("overflow");
       });
 //close navigation menu
@@ -41,7 +42,6 @@ $(document).ready(function(){
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////// tijdschema message
-<<<<<<< HEAD
 
 
 //hides the popup and the summary
@@ -51,17 +51,6 @@ $("#summary").hide();
 $(".sendButton").click(function(){
   $(".questionPopup").css.display = "block";
   $(".questionPopup")
-=======
-
-
-//hides the popup and the summary
-$("#questionPopup").hide();
-$("#summary").hide();
-
-//when send button is clicked show the popup
-$("#sendButton").click(function(){
-  $("#questionPopup")
->>>>>>> 3cdc58b107ef3a4069ab607d12047f637ad71d7e
     .slideDown(500)
     .delay(4000)
     .slideUp(1000);
@@ -69,11 +58,8 @@ $("#sendButton").click(function(){
 
 //when clicked show button: the current info is show
 $("#showButton").click(function(){
-<<<<<<< HEAD
   $("#summary").css.display = "block";
 
-=======
->>>>>>> 3cdc58b107ef3a4069ab607d12047f637ad71d7e
   var clicks = $(this).data('clicks');
 
   //oneven 
@@ -91,5 +77,11 @@ $("#showButton").click(function(){
 });
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////// mentor page
 
+$("#mentor-wijzig").click(function(){
+  $("#mentor-notities").html("<textarea>halooooooosadmklsl;fkdsjfjsd;kfjk;dsjfl;ks</textarea>");
+  $("#mentor-notities").css.width = "50px";
+});
 
