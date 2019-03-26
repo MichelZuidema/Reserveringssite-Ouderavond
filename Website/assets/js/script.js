@@ -4,6 +4,7 @@
 //open navigation menu
 $("#header-hamburger").click(function(){
         $("header nav").addClass("toggleOn");
+        $(".toggleOn").slideDown(2000);
         $("body").addClass("overflow");
       });
 //close navigation menu
@@ -23,25 +24,58 @@ $(window).resize(function() {
 /////// anker links 
 
 $(document).ready(function(){
+
+///////////////////////////////////
+/////// choose a day
+
   $("#choose-time div").on('click', function(event){
     $(this).toggleClass("selectedBox");
-
     if(this.hash !== ''){
       event.preventDefault();
       var hash = this.hash;
-
       $("html, body").animate({
-        scrollTop: $(hash).offset().top - 220
-      }, 900);
+        scrollTop: $("#time-2").offset().top - 220
+      }, 1300);
     }
-
   });
-});
 
+//////////////////////////////////
+/////// Timetable 
+
+  $("#time-1 , #time-2, #time-3, #time-4").on('click', function(event){
+    if($("#time-1 , #time-2, #time-3, #time-4").hasClass("selectedBox")){
+       $(this).removeClass("selectedBox");
+    }else{
+       $(this).addClass("selectedBox");
+       if(this.hash !== ''){
+        event.preventDefault();
+        $("html, body").animate({
+          scrollTop: $("#available-1").offset().top + 100
+        }, 1300);
+      }
+    }
+  });
+
+///////////////////////////////////
+/////// persons scroll buttons
+
+$("#person-1 , #person-2, #person-3").on('click', function(event){
+  if($("#person-1 , #person-2, #person-3").hasClass("selectedBox")){
+    $(this).removeClass("selectedBox");
+ }else{
+    $(this).addClass("selectedBox");
+    if(this.hash !== ''){
+     event.preventDefault();
+     $("html, body").animate({
+       scrollTop: $("#ask-question textarea").offset().top + 100
+     }, 1300);
+   }
+ }
+});
+});
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////// tijdschema message
-<<<<<<< HEAD
 
 
 //hides the popup and the summary
@@ -51,17 +85,6 @@ $("#summary").hide();
 $(".sendButton").click(function(){
   $(".questionPopup").css.display = "block";
   $(".questionPopup")
-=======
-
-
-//hides the popup and the summary
-$("#questionPopup").hide();
-$("#summary").hide();
-
-//when send button is clicked show the popup
-$("#sendButton").click(function(){
-  $("#questionPopup")
->>>>>>> 3cdc58b107ef3a4069ab607d12047f637ad71d7e
     .slideDown(500)
     .delay(4000)
     .slideUp(1000);
@@ -69,11 +92,8 @@ $("#sendButton").click(function(){
 
 //when clicked show button: the current info is show
 $("#showButton").click(function(){
-<<<<<<< HEAD
   $("#summary").css.display = "block";
 
-=======
->>>>>>> 3cdc58b107ef3a4069ab607d12047f637ad71d7e
   var clicks = $(this).data('clicks');
 
   //oneven 
@@ -89,7 +109,3 @@ $("#showButton").click(function(){
   
   $(this).data("clicks", !clicks);
 });
-
-
-
-

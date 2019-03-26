@@ -71,7 +71,9 @@
                     background: rgb(19, 19, 19);
                 }
 
-                P{
+                a{
+                    text-decoration: none;
+                    color: #fff;
                     text-align: center;
                     width: 100%;
                     padding: 2.5rem 0 0 0;
@@ -176,13 +178,13 @@
             }
 
             //made buttons and set them vertical for mobile 
-            #person-1{
+            #person-1 {
                 @include greenButton(25%, 50%,12rem,12rem);            
             }
-            #person-2{
+            #person-2 {
                 @include greenButton(50%, 50%, 12rem, 12rem);
             }
-            #person-3{
+            #person-3{ 
                 @include greenButton(75%, 50%, 12rem, 12rem);
             }
 

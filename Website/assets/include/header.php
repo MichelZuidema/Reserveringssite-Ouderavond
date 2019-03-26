@@ -24,6 +24,7 @@
         <nav>
             <article><div></div></article>
             <ul>
+                <!-- changes styles depening on the page -->
                 <li><a href="index.php" class="<?php if($selectedLink == "index"){ echo $selectedLinkActive;} ?>">Homepagina</a></li>
                 <li><a href="tijdschema.php" class="<?php if($selectedLink == "tijdschema"){ echo $selectedLinkActive;} ?>">Tijdschema</a></li>
                 <li><a href="https://www.glr.nl/">GLR website</a></li>
@@ -35,5 +36,6 @@
             <h1>Inschrijving</h1>
             <h1>Ouderavond</h1>
         </section>
+        <!-- school logo -->
         <figure><a href="index.php"><img src="assets/img/school.jpg" alt="School-image"></a></figure>
     </header>
