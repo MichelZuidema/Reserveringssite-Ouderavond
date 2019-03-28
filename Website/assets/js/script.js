@@ -30,6 +30,7 @@ $(document).ready(function(){
 
   $("#choose-time div").on('click', function(event){
     $(this).toggleClass("selectedBox");
+
     scrollDown(200,"#time-2");
   });
 
@@ -42,8 +43,25 @@ $(document).ready(function(){
 
     if($("#time-2, #time-3, #time-4").hasClass("selectedBox")){
        $("#time-2, #time-3, #time-4").removeClass("selectedBox");
-    }
 
+    }
+  });
+
+//////////////////////////////////
+/////// Timetable 
+
+  $("#time-1 , #time-2, #time-3, #time-4").on('click', function(event){
+    if($("#time-1 , #time-2, #time-3, #time-4").hasClass("selectedBox")){
+       $(this).removeClass("selectedBox");
+    }else{
+       $(this).addClass("selectedBox");
+       if(this.hash !== ''){
+        event.preventDefault();
+        $("html, body").animate({
+          scrollTop: $("#available-1").offset().top + 100
+        }, 1300);
+      }
+    }
   });
 
 
@@ -92,6 +110,23 @@ $("#person-1").on('click', function(event){
  }
 });
 
+///////////////////////////////////
+/////// persons scroll buttons
+
+$("#person-1 , #person-2, #person-3").on('click', function(event){
+  if($("#person-1 , #person-2, #person-3").hasClass("selectedBox")){
+    $(this).removeClass("selectedBox");
+ }else{
+    $(this).addClass("selectedBox");
+    if(this.hash !== ''){
+     event.preventDefault();
+     $("html, body").animate({
+       scrollTop: $("#ask-question textarea").offset().top + 100
+     }, 1300);
+   }
+ }
+});
+});
 
 $("#person-2").on('click', function(event){
   $(this).addClass("selectedBox");    
