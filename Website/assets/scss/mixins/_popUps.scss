@@ -3,15 +3,14 @@
 
 .questionPopup{
     height: 10rem;
-    width: 90%;
-    max-width: 80rem;
+    width: 100%;
     position: fixed;
     display: none;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
     background: $glr-green;
-    border-radius: 1rem;
+    z-index: 1000;
 
 
     @include setQeury($md){

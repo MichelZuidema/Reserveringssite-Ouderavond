@@ -1,4 +1,5 @@
 #mentor{
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     h2{
         font-size: $title-size-big;
@@ -9,26 +10,47 @@
         height: 15rem;
     }
     
+    //mobile grid
     #selectStudent{
         display: grid;
-        padding: 0 3rem 3rem 3rem;
         grid-template-areas: 
-        ". . title . ."
-        ". . foto . ."
-        ". klas . student .";
-        @include blackContainer(40rem, 1);
+            ". . title . ."
+            ". . foto . ."
+            ". . klas . ."
+            ". . student . .";
+        
+        //Desktop grid
+        @include setQeury($md){
+            padding: 0 3rem 3rem 3rem;
+            grid-template-areas: 
+            ". . title . ."
+            ". . foto . ."
+            ". klas . student .";
+            }
+
+        @include blackContainer(45rem, 1);
+            margin: 0 auto 0 auto;
+
 
         @include setQeury($lg){
             @include blackContainer(40rem, 0);
+            margin: 0 auto 0 auto;
         }
+
         h2{
             grid-area: title;
         }
 
         #foto{
             grid-area: foto;
-        }
 
+            img{
+                border: .7rem solid transparent;
+                outline: 3px solid white;
+            }
+        }
+        
+        //options
         select{
             width: 20rem;
             height: 5rem;
@@ -60,4 +82,174 @@
             grid-area: student;
         }
     }
+
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ////// student info
+
+
+  #studentInfo{
+      @include blackContainer(auto,1);
+      padding: 0 2rem 6rem 2rem;
+
+      @include setQeury($lg){
+          @include blackContainer(auto,0);
+      }
+
+      section{
+        text-align: left;
+        line-height: 1.5;
+        margin: 2rem;
+
+        label{
+            color: $glr-green;
+        }
+
+        p{
+            line-height: 1.5;
+            font-size: 2rem;
+        }
+        
+        button{
+            display: block;
+            width: 35rem;
+            height: 4rem;
+            margin: 2rem 0 0 0;
+            background: $black-container;
+            font-size: 2rem;
+            border: 2px solid $border-color;
+            box-shadow: 1px 1.5px 6px #111;
+            color: #fff;
+            font-weight: 900;
+
+            &:hover{
+                background: rgb(19, 19, 19);
+            }
+        }
+        
+        #mentor-notities{
+            width: 100%;
+            height: 15rem;
+            max-width: 80rem;
+            line-height: 2;
+            font-size: 2rem;
+        }
+
+        #mentor-wijzig{
+            width: 35rem;
+            height: 4rem;
+            margin: 2rem auto 0 auto;
+            background: $black-container;
+            font-size: 2rem;
+            border: 2px solid $border-color;
+            box-shadow: 1px 1.5px 6px #111;
+            color: #fff;
+            font-weight: 900;
+
+            &:hover{
+                background: rgb(19, 19, 19);
+            }
+        }
+      }
+  }
+/////////////////////////////////////////////////////////////////////////////////
+//////// planning student 
+
+  #planningStudent{
+    position: relative;
+    @include blackContainer(65rem,1);
+    padding: 0 2rem 6rem 2rem;
+
+    @include setQeury($lg){
+        @include blackContainer(65rem,0);
+    }
+    
+    h2{
+        margin: 2rem 0 4rem 0;
+    }
+
+    #planningGrid{
+
+        ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10rem 10rem 10rem 10rem;
+        width: 100%;
+        height: 100%;
+        grid-gap: 1rem;
+
+        :nth-child(1){
+            grid-row: 1/2;
+        }
+
+        :nth-child(2){
+            grid-row: 2/3;
+        }
+
+        :nth-child(3){
+            grid-row: 3/4;
+        }
+
+        :nth-child(4){
+            grid-row: 4/5;
+        }
+
+        li{
+            @include blackContainer(5rem,0);
+            margin: 0;
+            height: 100%;
+            border: 0px;
+            background: #111;
+            border: 1px solid $border-color;
+
+            p{
+                margin: 3.5rem auto;
+                font-size: 1.5rem;
+
+                @include setQeury($md){
+                    margin: 4rem auto;
+                    font-size: 2rem;
+                }
+            }
+
+            }   
+
+        }
+    }
+
+    //info about color from tijdschema
+    #planningInfo{
+        @include blackContainer(10rem, 0);  
+        width: 20rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -5rem; 
+
+        p{
+            display: inline-block;
+            padding: 0 3rem;
+        }
+
+        :nth-child(1)::before{
+            content: '';
+            margin: 2rem 25% 1rem 25%;
+            transform: translateX(-25%);
+            display: block;
+            height: 3rem;
+            width: 3rem;
+            background: #111111;
+        }
+
+
+        :nth-child(2)::before{
+            content: '';
+            margin: 2rem 75% 1rem 75%;            
+            transform: translateX(-75%);
+            display: block;
+            height: 3rem;
+            width: 3rem;
+            background: $glr-green;
+        }
+    }
+  }
 }
