@@ -7,22 +7,24 @@
         require 'assets/include/header.php';
     ?>
     <main id="tijdschema">
-        <form action="#" method="POST">
+        <form action="bestaatNogNoiet.php" method="POST" onsubmit="return false">
             <section id="choose-time">
                 <h2>Kies een Datum</h2>
                 <div>
-                    <p>Donderdag</p>
-                    <p>28/04/2019</p>
+                    <a>
+                        <p>Donderdag</p>
+                        <p>28/04/2019</p>
+                    </a>
                 </div>
                 <p><strong>Click</strong> de gewenste datum aan a.u.b</p>
             </section>
             <article id="timetable">
                 <h2>Tijdschema</h2>
                 <ul>
-                    <li id="time-1"><p>18:00 - 19:00</p></li>
-                    <li id="time-2"><p>19:00 - 20:00</p></li>
-                    <li id="time-3"><p>20:00 - 21:00</p></li>
-                    <li id="time-4"><p>21:00 - 22:00</p></li>
+                    <li id="time-1"><a>18:00 - 19:00</a></li>
+                    <li id="time-2"><a>19:00 - 20:00</a></li>
+                    <li id="time-3"><a>20:00 - 21:00</a></li>
+                    <li id="time-4"><a>21:00 - 22:00</a></li>
                 </ul>
                 <section id="timetable-info">
                     <section>   
@@ -50,8 +52,8 @@
             <article id="ask-question">
                 <h2>Opmerking of vraag</h2>
                 <textarea cols="30" rows="10" placeholder="Hier komt uw vraag/opmerking"></textarea>
-                <input type="" class="sendButton" value="Aanmelding versturen">
-                <input type="" id="showButton" value="Bekijk mijn huidige aanmelding">
+                <input type="submit" class="sendButton" value="Aanmelding versturen">
+                <input type="button" id="showButton" value="Bekijk mijn huidige aanmelding">
             </article>
             <article id="summary">
                 <section>
