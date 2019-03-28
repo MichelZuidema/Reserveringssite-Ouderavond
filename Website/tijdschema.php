@@ -10,13 +10,11 @@
         <form action="bestaatNogNoiet.php" method="POST" onsubmit="return false">
             <section id="choose-time">
                 <h2>Kies een Datum</h2>
-
                     <input type="checkbox">
                     <section id="checkbox-text">
                         <p>Donderdag</p>
                         <p>28/04/2019</p>
                     </section>
-
                 <p><strong>Click</strong> de gewenste datum aan a.u.b</p>
             </section>
             <article id="timetable">

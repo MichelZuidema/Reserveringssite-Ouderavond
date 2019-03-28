@@ -25,6 +25,7 @@ $(window).resize(function() {
 
 $(document).ready(function(){
 
+
 ///////////////////////////////////
 /////// choose a day
 
@@ -42,9 +43,11 @@ $(document).ready(function(){
 
     if($("#time-2, #time-3, #time-4").hasClass("selectedBox")){
        $("#time-2, #time-3, #time-4").removeClass("selectedBox");
+
     }
 
   });
+
 
 
   $("#time-2").on('click', function(event){
@@ -56,7 +59,6 @@ $(document).ready(function(){
     }
 
   });
-
 
   $("#time-3").on('click', function(event){
     scrollDown(200,"#person-2");
@@ -90,7 +92,9 @@ $("#person-1").on('click', function(event){
   if($("#person-2, #person-3").hasClass("selectedBox")){
     $("#person-2, #person-3").removeClass("selectedBox");  
  }
-});
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//scroll down function
 
 
 $("#person-2").on('click', function(event){
@@ -117,7 +121,6 @@ $("#person-3").on('click', function(event){
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //scroll down function
-
 var scrollBy;
 var scrollTo;
 
