@@ -65,25 +65,28 @@
                 width: 50rem;
             }
             
-            li{
+            input[type="checkbox"]{
+                appearance: none;
                 display: flex; 
                 @include blackContainer(7rem,1);
                 border: none;
                 margin: 1rem 0 0 0;
                 cursor: pointer;
 
+                
                 :hover{
                     background: rgb(19, 19, 19);
                 }
+            }
 
-                a{
-                    text-decoration: none;
-                    color: #fff;
-                    text-align: center;
-                    width: 100%;
-                    padding: 2.5rem 0 0 0;
-                    font-size: 2rem;
-                }
+            p{
+                text-decoration: none;
+                color: #fff;
+                text-align: center;
+                width: 100%;
+                font-size: 2rem;
+                position: absolute;
+                
             }
 
             #time-1{

@@ -1600,7 +1600,10 @@ body > header figure img {
   }
 }
 
-#tijdschema #timetable ul li {
+#tijdschema #timetable ul input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1617,17 +1620,17 @@ body > header figure img {
   cursor: pointer;
 }
 
-#tijdschema #timetable ul li :hover {
+#tijdschema #timetable ul input[type="checkbox"] :hover {
   background: #131313;
 }
 
-#tijdschema #timetable ul li a {
+#tijdschema #timetable ul p {
   text-decoration: none;
   color: #fff;
   text-align: center;
   width: 100%;
-  padding: 2.5rem 0 0 0;
   font-size: 2rem;
+  position: absolute;
 }
 
 #tijdschema #timetable ul #time-1 {

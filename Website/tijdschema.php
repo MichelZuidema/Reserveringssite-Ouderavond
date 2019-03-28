@@ -27,22 +27,14 @@
             <article id="timetable">
                 <h2>Tijdschema</h2>
                 <ul>
-                    <section class="timetable-checkbox">
-                        <input type="checkbox" id="time-1">
-                        <p>18:00 - 19:00</p>
-                    </section>
-                    <section class="timetable-checkbox">
-                        <input type="checkbox" id="time-2">
-                        <p>19:00 - 20:00</p>
-                    </section>
-                    <section class="timetable-checkbox">    
-                        <input type="checkbox" id="time-3">
-                        <p>20:00 - 21:00</p>
-                    </section>
-                    <section class="timetable-checkbox">
-                        <input type="checkbox" id="time-4">
-                        <p>21:00 - 22:00</p>
-                    </section>
+                    <input type="checkbox" id="time-1">
+                    <p>18:00 - 19:00</p>
+                    <input type="checkbox" id="time-2">
+                    <p>19:00 - 20:00</p>   
+                    <input type="checkbox" id="time-3">
+                    <p>20:00 - 21:00</p>
+                    <input type="checkbox" id="time-4">
+                    <p>21:00 - 22:00</p>
                 </ul>
                 <section id="timetable-info">
                     <section>   
@@ -55,9 +47,9 @@
             <section id="number-of-persons">
                 <h2>Aantal personen</h2>
                 <ul>
-                    <li id="person-1"><p>1 persoon</p></li>
-                    <li id="person-2"><p>2 personen</p></li>
-                    <li id="person-3"><p>3 personen</p></li>
+                    <input type="checkbox" id="person-1"><p>1 persoon</p>
+                    <input type="checkbox" id="person-2"><p>2 personen</p>
+                    <input type="checkbox" id="person-3"><p>3 personen</p>
                 </ul>
                 <p>Selecteer met hoeveel personen u wilt komen</p>
             </section>
