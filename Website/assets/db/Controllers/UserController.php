@@ -96,6 +96,10 @@ class UserController extends Database {
 
             // Check if any rows exist with that specific token
             if($rowCount > 0) {
+                // Check if user has logged in before
+                if($row['loggedin'] == 1) {
+                    die("<script>alert('U heeft al een keer ingelogd waardoor uw token ongeldig is!')</script>");
+                }
                 session_unset();
                 $_SESSION['username'] = $row['naam'];
                 $_SESSION['class_id'] = $row['klas_id'];
@@ -112,11 +116,20 @@ class UserController extends Database {
 
                 if($rowCountMentor > 0) {
                     $_SESSION['mentor_id'] = $rowMentor['id'];
-                    echo $_SESSION['mentor_id'];
                 } else {
                     $_SESSION['errormsg'] = "Kon geen mentor vinden die gelinkt is aan uw klas.";
                     return false;
                 }
+
+                // Update loggedin in to 1
+                $query = "UPDATE student SET loggedin=1 WHERE id=$id";
+                if(mysqli_query($this->mysqli, $query)) {
+                    return true;
+                } else {
+                    $_SESSION['errormsg'] = "Loggedin kon niet worden aangepast!";
+                    return false;
+                }
+
                 return true;
             } else {
                 // Error message
