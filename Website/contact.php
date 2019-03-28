@@ -100,7 +100,7 @@
                 <label id="contact-bericht">Uw bericht</label>
                 <textarea name="bericht"></textarea>
                 
-                <input type="submit" value="Verzenden" class="sendButton" name="btnSubmit">
+                <input type="submit" value="Verzenden" onclick="validate()" class="sendButton" name="btnSubmit">
             </form>
         </article>
     </main>
