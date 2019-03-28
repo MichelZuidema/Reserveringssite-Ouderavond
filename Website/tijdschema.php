@@ -3,20 +3,25 @@
         $pageTitle = "Inschrijving ouderavond | Grafisch Lyceum Rotterdam";
         //selected navigation link
         $selectedLink = "tijdschema";
-        //header
-        require 'assets/include/header.php';
+        // Start the session to get the logged in user details
+        session_start();
+
+        // Header
+        if($_SESSION['role'] == 1) {
+            require 'assets/include/headerMentor.php';
+        } else {
+            require 'assets/include/header.php';
+        }
     ?>
     <main id="tijdschema">
         <form action="bestaatNogNoiet.php" method="POST" onsubmit="return false">
             <section id="choose-time">
                 <h2>Kies een Datum</h2>
-
                     <input type="checkbox">
                     <section id="checkbox-text">
                         <p>Donderdag</p>
                         <p>28/04/2019</p>
                     </section>
-
                 <p><strong>Click</strong> de gewenste datum aan a.u.b</p>
             </section>
             <article id="timetable">

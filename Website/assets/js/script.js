@@ -25,9 +25,16 @@ $(window).resize(function() {
 
 $(document).ready(function(){
 
+<<<<<<< HEAD
 ///////////////////////////////////
 /////// choose a day
 
+=======
+
+///////////////////////////////////
+/////// choose a day
+
+>>>>>>> 8b5102f358dc719edf2426b1aecd4349b23448cd
   $("input[type='checkbox'], #checkbox-text").on('click', function(event){
     $("input[type='checkbox']").toggleClass("selectedBox");
     scrollDown(200,"#time-2");
@@ -42,10 +49,27 @@ $(document).ready(function(){
 
     if($("#time-2, #time-3, #time-4").hasClass("selectedBox")){
        $("#time-2, #time-3, #time-4").removeClass("selectedBox");
+<<<<<<< HEAD
+=======
+
     }
 
   });
 
+
+
+  $("#time-2").on('click', function(event){
+    scrollDown(200,"#person-2");
+    $(this).addClass("selectedBox");    
+
+    if($("#time-1, #time-3, #time-4").hasClass("selectedBox")){
+       $("#time-1, #time-3, #time-4").removeClass("selectedBox");
+>>>>>>> 8b5102f358dc719edf2426b1aecd4349b23448cd
+    }
+
+  });
+
+<<<<<<< HEAD
 
   $("#time-2").on('click', function(event){
     scrollDown(200,"#person-2");
@@ -58,6 +82,8 @@ $(document).ready(function(){
   });
 
 
+=======
+>>>>>>> 8b5102f358dc719edf2426b1aecd4349b23448cd
   $("#time-3").on('click', function(event){
     scrollDown(200,"#person-2");
     $(this).addClass("selectedBox");    
@@ -117,7 +143,6 @@ $("#person-3").on('click', function(event){
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //scroll down function
-
 var scrollBy;
 var scrollTo;
 
