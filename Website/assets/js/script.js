@@ -25,12 +25,12 @@ $(window).resize(function() {
 
 $(document).ready(function(){
 
+
 ///////////////////////////////////
 /////// choose a day
 
-  $("#choose-time div").on('click', function(event){
-    $(this).toggleClass("selectedBox");
-
+  $("input[type='checkbox'], #checkbox-text").on('click', function(event){
+    $("input[type='checkbox']").toggleClass("selectedBox");
     scrollDown(200,"#time-2");
   });
 
@@ -45,24 +45,9 @@ $(document).ready(function(){
        $("#time-2, #time-3, #time-4").removeClass("selectedBox");
 
     }
+
   });
 
-//////////////////////////////////
-/////// Timetable 
-
-  $("#time-1 , #time-2, #time-3, #time-4").on('click', function(event){
-    if($("#time-1 , #time-2, #time-3, #time-4").hasClass("selectedBox")){
-       $(this).removeClass("selectedBox");
-    }else{
-       $(this).addClass("selectedBox");
-       if(this.hash !== ''){
-        event.preventDefault();
-        $("html, body").animate({
-          scrollTop: $("#available-1").offset().top + 100
-        }, 1300);
-      }
-    }
-  });
 
 
   $("#time-2").on('click', function(event){
@@ -74,7 +59,6 @@ $(document).ready(function(){
     }
 
   });
-
 
   $("#time-3").on('click', function(event){
     scrollDown(200,"#person-2");
@@ -108,25 +92,10 @@ $("#person-1").on('click', function(event){
   if($("#person-2, #person-3").hasClass("selectedBox")){
     $("#person-2, #person-3").removeClass("selectedBox");  
  }
-});
 
-///////////////////////////////////
-/////// persons scroll buttons
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//scroll down function
 
-$("#person-1 , #person-2, #person-3").on('click', function(event){
-  if($("#person-1 , #person-2, #person-3").hasClass("selectedBox")){
-    $(this).removeClass("selectedBox");
- }else{
-    $(this).addClass("selectedBox");
-    if(this.hash !== ''){
-     event.preventDefault();
-     $("html, body").animate({
-       scrollTop: $("#ask-question textarea").offset().top + 100
-     }, 1300);
-   }
- }
-});
-});
 
 $("#person-2").on('click', function(event){
   $(this).addClass("selectedBox");    
@@ -152,7 +121,6 @@ $("#person-3").on('click', function(event){
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //scroll down function
-
 var scrollBy;
 var scrollTo;
 

@@ -11,35 +11,40 @@
         margin: 0 auto 0 auto;
         position: relative;
 
-        :nth-child(3){
-            position: absolute;
-            white-space: nowrap;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        :nth-child(3){
-            bottom: 6rem;
-        }
 
         @include setQeury($lg){
             @include blackContainer(40rem, 0);  
             margin: 0 auto 0 auto;
         }
              //button for choosing a time
-            div{
-                @include greenButton(30%, 50%,15rem,15rem);
 
-                :nth-child(1){
-                    margin: 4rem 0 0 0;
-                }
 
-                p{
-                    font-size: 2rem;
-                    padding: .5rem;
+            input[type="checkbox"]{
+                appearance: none;
+                @include greenButton(45%, 50%,15rem,15rem);
+
+                @include setQeury($sm){
+                    @include greenButton(40%, 50%,15rem,15rem);
                 }
             }
+
+            #checkbox-text{
+                position: absolute;
+                left: 50%;
+                top: 22rem;
+                transform: translateX(-50%);
+                
+                @include setQeury($sm){
+                    top: 20rem;
+                }
+
+                    p{
+                        font-size: 2rem;
+                        padding: .5rem;
+                    }
+            }
     }
+    
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////timetable

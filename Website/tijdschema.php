@@ -10,21 +10,32 @@
         <form action="bestaatNogNoiet.php" method="POST" onsubmit="return false">
             <section id="choose-time">
                 <h2>Kies een Datum</h2>
-                <div>
-                    <a>
+                    <input type="checkbox">
+                    <section id="checkbox-text">
                         <p>Donderdag</p>
                         <p>28/04/2019</p>
-                    </a>
-                </div>
+                    </section>
                 <p><strong>Click</strong> de gewenste datum aan a.u.b</p>
             </section>
             <article id="timetable">
                 <h2>Tijdschema</h2>
                 <ul>
-                    <li id="time-1"><a>18:00 - 19:00</a></li>
-                    <li id="time-2"><a>19:00 - 20:00</a></li>
-                    <li id="time-3"><a>20:00 - 21:00</a></li>
-                    <li id="time-4"><a>21:00 - 22:00</a></li>
+                    <section class="timetable-checkbox">
+                        <input type="checkbox" id="time-1">
+                        <p>18:00 - 19:00</p>
+                    </section>
+                    <section class="timetable-checkbox">
+                        <input type="checkbox" id="time-2">
+                        <p>19:00 - 20:00</p>
+                    </section>
+                    <section class="timetable-checkbox">    
+                        <input type="checkbox" id="time-3">
+                        <p>20:00 - 21:00</p>
+                    </section>
+                    <section class="timetable-checkbox">
+                        <input type="checkbox" id="time-4">
+                        <p>21:00 - 22:00</p>
+                    </section>
                 </ul>
                 <section id="timetable-info">
                     <section>   
