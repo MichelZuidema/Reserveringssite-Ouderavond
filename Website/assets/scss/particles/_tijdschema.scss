@@ -11,35 +11,40 @@
         margin: 0 auto 0 auto;
         position: relative;
 
-        :nth-child(3){
-            position: absolute;
-            white-space: nowrap;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        :nth-child(3){
-            bottom: 6rem;
-        }
 
         @include setQeury($lg){
             @include blackContainer(40rem, 0);  
             margin: 0 auto 0 auto;
         }
              //button for choosing a time
-            div{
-                @include greenButton(30%, 50%,15rem,15rem);
 
-                :nth-child(1){
-                    margin: 4rem 0 0 0;
-                }
 
-                p{
-                    font-size: 2rem;
-                    padding: .5rem;
+            input[type="checkbox"]{
+                appearance: none;
+                @include greenButton(45%, 50%,15rem,15rem);
+
+                @include setQeury($sm){
+                    @include greenButton(40%, 50%,15rem,15rem);
                 }
             }
+
+            #checkbox-text{
+                position: absolute;
+                left: 50%;
+                top: 22rem;
+                transform: translateX(-50%);
+                
+                @include setQeury($sm){
+                    top: 20rem;
+                }
+
+                    p{
+                        font-size: 2rem;
+                        padding: .5rem;
+                    }
+            }
     }
+    
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////timetable
@@ -60,23 +65,28 @@
                 width: 50rem;
             }
             
-            li{
+            input[type="checkbox"]{
+                appearance: none;
                 display: flex; 
                 @include blackContainer(7rem,1);
                 border: none;
                 margin: 1rem 0 0 0;
                 cursor: pointer;
 
+                
                 :hover{
                     background: rgb(19, 19, 19);
                 }
+            }
 
-                P{
-                    text-align: center;
-                    width: 100%;
-                    padding: 2.5rem 0 0 0;
-                    font-size: 2rem;
-                }
+            p{
+                text-decoration: none;
+                color: #fff;
+                text-align: center;
+                width: 100%;
+                font-size: 2rem;
+                position: absolute;
+                
             }
 
             #time-1{
@@ -176,13 +186,13 @@
             }
 
             //made buttons and set them vertical for mobile 
-            #person-1{
+            #person-1 {
                 @include greenButton(25%, 50%,12rem,12rem);            
             }
-            #person-2{
+            #person-2 {
                 @include greenButton(50%, 50%, 12rem, 12rem);
             }
-            #person-3{
+            #person-3{ 
                 @include greenButton(75%, 50%, 12rem, 12rem);
             }
 

@@ -1,7 +1,7 @@
 #homepage{
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     display: grid;
-
+    //desktop homepage grid: min 20rem max 1fr 
     @include setQeury($lg){
     grid-template: minmax(20rem, 1fr) minmax(20rem, 1fr) minmax(20rem, 1fr) / 1fr 1fr;
     width: 90%;    
