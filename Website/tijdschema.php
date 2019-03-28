@@ -7,7 +7,7 @@
         require 'assets/include/header.php';
     ?>
     <main id="tijdschema">
-        <form action="#" method="POST">
+        <form action="bestaatNogNoiet.php" method="POST" onsubmit="return false">
             <section id="choose-time">
                 <h2>Kies een Datum</h2>
                 <div>
@@ -52,8 +52,8 @@
             <article id="ask-question">
                 <h2>Opmerking of vraag</h2>
                 <textarea cols="30" rows="10" placeholder="Hier komt uw vraag/opmerking"></textarea>
-                <input type="" class="sendButton" value="Aanmelding versturen">
-                <input type="" id="showButton" value="Bekijk mijn huidige aanmelding">
+                <input type="submit" class="sendButton" value="Aanmelding versturen">
+                <input type="button" id="showButton" value="Bekijk mijn huidige aanmelding">
             </article>
             <article id="summary">
                 <section>
