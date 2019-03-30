@@ -3,8 +3,16 @@
         $pageTitle = "Inschrijving ouderavond | Grafisch Lyceum Rotterdam";
         //selected navigation link
         $selectedLink = "tijdschema";
-        //header
-        require 'assets/include/header.php';
+
+        // Start the session to get the logged in user details
+        session_start();
+
+        // Header
+        if($_SESSION['role'] == 1) {
+            require 'assets/include/headerMentor.php';
+        } else {
+            require 'assets/include/header.php';
+        }
     ?>
     <main class="mentorpage">
         <section class="select--student">

@@ -21,6 +21,7 @@ $(window).resize(function() {
 });
 
 
+
 //////////////////////////////////////v//////////////////////////////////////Checkboxes
 
 var checkbox = document.querySelector(".day-choosing__checkbox");
@@ -46,8 +47,8 @@ $("#summary").hide();
 //when send button is clicked show the popup
 // $(".sendButton").click(function(){
 function sendReservation() {
-  $(".popup").css.display = "block";
-  $(".popup")
+  $(".questionPopup").css.display = "block";
+  $(".questionPopup")
     .slideDown(500)
     .delay(4000)
     .slideUp(1000);

@@ -31,7 +31,7 @@
                 <li><a href="contact.php" class="<?php if($selectedLink == "contact"){ echo $selectedLinkActive;} ?>">Contactpagina</a></li>
             </ul>
         </nav>
-        <section><span><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Ingelogt als:"; } ?></span></section>
+        <section><span><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Onbekend"; } ?></span></section>
         <section>
             <h1>Inschrijving</h1>
             <h1>Ouderavond</h1>
