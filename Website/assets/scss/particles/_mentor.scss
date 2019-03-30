@@ -1,17 +1,17 @@
-#mentor{
+.mentorpage{
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     h2{
         font-size: $title-size-big;
     }
 
-    img{
+    .student__img{
         width: 15rem;
         height: 15rem;
     }
     
     //mobile grid
-    #selectStudent{
+    .select--student{
         display: grid;
         grid-template-areas: 
             ". . title . ."
@@ -37,11 +37,11 @@
             margin: 0 auto 0 auto;
         }
 
-        h2{
+        .student__img__container{
             grid-area: title;
         }
 
-        #foto{
+        .student__img__container{
             grid-area: foto;
 
             img{
@@ -51,7 +51,7 @@
         }
         
         //options
-        select{
+        .student__container, .class__container{
             width: 20rem;
             height: 5rem;
             background: $black-container;  
@@ -59,26 +59,26 @@
             font-size: 2rem;
         }
 
-        #klas{
-            grid-area: klas;
-
-            select{
-                width: 20rem;
-                height: 5rem;
-                position: relative;
-
-                option{
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    right: 0;
-                    z-index: 100;   
-                    font-size: 2rem;
-                }
-            } 
+        .class{
+            grid-area: klas; 
         }
 
-        #student{
+        .class__select{
+            width: 20rem;
+            height: 5rem;
+            position: relative;
+        }
+
+        .select--option{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 100;   
+            font-size: 2rem;
+        }
+
+        .student{
             grid-area: student;
         }
     }

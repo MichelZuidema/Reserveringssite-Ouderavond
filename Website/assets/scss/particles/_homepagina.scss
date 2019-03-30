@@ -1,4 +1,4 @@
-#homepage{
+.homepage{
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     display: grid;
     //desktop homepage grid: min 20rem max 1fr 
@@ -16,7 +16,7 @@
     }
 
     //articles homepage
-    article{
+    .article{
         @include blackContainer(100%, 1);
         min-height: 40rem;
         margin: 0 auto 0 auto;
@@ -26,29 +26,33 @@
             border: 0px;
             box-shadow: none;
         }
-        
-        div{
-            width: 50rem;
-            max-width: 90vw;
-            text-align: left;
-            margin: 0 auto 1.5rem auto;
+    }
 
-            p{
-                padding: 0 2rem;
-            }
+    //Algemene information
+    .information__container{
+        width: 50rem;
+        max-width: 90vw;
+        text-align: left;
+        margin: 0 auto 1.5rem auto;
 
+        .information__container--text{
+            padding: 0 2rem;
         }
+    }
 
-        li{
+    //How to register
+    .register{
+        .register__list__item{
             line-height: 4rem;
             font-family: $text-font;
             font-size: 2rem;
             padding: 1.5rem 2rem;
         }
     }
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //blend images
-        #main-image-1, #main-image-2, #main-image-3{
+        .article__image--1, .article__image--2, .article__image--3{
             @include blackContainer(100%, 1);
             margin: 0 auto 0 auto;
             background-color: rgba(9, 231, 9, 0.212);
@@ -64,15 +68,15 @@
         }
 
         //background images
-        #main-image-1{
+        .article__image--1{
             background-image: url(../img/layout-picture.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-        #main-image-2{
-            @extend #main-image-1;
+        .article__image--2{
+            @extend .article__image--1;
             background-image: url(../img/layout-picture3.jpg);
             @include setQeury($lg){
                 grid-column: 1/2;
@@ -80,8 +84,8 @@
             }
         }
 
-        #main-image-3{
-            @extend #main-image-1;
+        .article__image--3{
+            @extend .article__image--1;
             background-image: url(../img/layout-picture4.jpg), url(../img/GLRlogo_RGB.png);
             background-size: cover, calc(15rem + 10vw);
             transform: rotate(0,0,45deg);
@@ -93,7 +97,7 @@
         }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //diagram 
-        #main-diagram-grid{
+        .diagram__grid{
             display: grid;
             grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
             grid-template-rows: minmax(8rem, 25rem) 35%;
@@ -106,15 +110,12 @@
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
             }
 
-            h2{
+            .diagram__heading{
                 grid-column: 1/10;
             }
-
-            
-
         }
 
-        .main-diagram-1, .main-diagram-2, .main-diagram-3, .main-diagram-4{
+        .diagram__grid__item--1, .diagram__grid__item--2, .diagram__grid__item--3, .diagram__grid__item--4{
             width: 100%;
             background: #f1f1f1;
             border-top-left-radius: 3rem;
@@ -171,29 +172,28 @@
                 color: $glr-green;
             }
 
-            :nth-child(1){
+            .diagram--time{
                 top: -3rem;
             }
 
-            :nth-child(4){
+            .diagram--fill{
                 bottom: -3rem;
             }
         }
 
-        .main-diagram-1{
+        .diagram__grid__item--1{
             grid-column: 2/3;
         }
 
-        .main-diagram-2{
+        .diagram__grid__item--2{
             grid-column: 3/4;
         }
 
-        .main-diagram-3{
+        .diagram__grid__item--3{
             grid-column: 4/5;
         }
 
-        .main-diagram-4{
+        .diagram__grid__item--4{
             grid-column: 5/6;
         }
-
 }

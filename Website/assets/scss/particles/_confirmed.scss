@@ -1,0 +1,12 @@
+.confirmed{
+
+    .confirmed__article{
+        @include blackContainer(auto,0);
+        padding: 2rem 8rem 8rem 8rem;
+        margin-top: 0!important;
+        
+        @include setQeury($lg){
+            @include blackContainer(auto,1);
+        }
+    }
+}

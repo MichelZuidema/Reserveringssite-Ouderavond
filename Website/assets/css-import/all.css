@@ -1211,13 +1211,13 @@ body > header figure img {
   }
 }
 
-#homepage {
+.homepage {
   display: -ms-grid;
   display: grid;
 }
 
 @media only screen and (min-width: 1024px) {
-  #homepage {
+  .homepage {
     -ms-grid-rows: minmax(20rem, 1fr) minmax(20rem, 1fr) minmax(20rem, 1fr);
     -ms-grid-columns: 1fr 1fr;
         grid-template: minmax(20rem, 1fr) minmax(20rem, 1fr) minmax(20rem, 1fr)/1fr 1fr;
@@ -1228,14 +1228,14 @@ body > header figure img {
 }
 
 @media only screen and (min-width: 1024px) {
-  #homepage {
+  .homepage {
     border: 5px solid #484646;
     -webkit-box-shadow: 1px 1.5px 6px #000;
             box-shadow: 1px 1.5px 6px #000;
   }
 }
 
-#homepage article {
+.homepage .article {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -1249,32 +1249,32 @@ body > header figure img {
 }
 
 @media only screen and (min-width: 1024px) {
-  #homepage article {
+  .homepage .article {
     border: 0px;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
 }
 
-#homepage article div {
+.homepage .information__container {
   width: 50rem;
   max-width: 90vw;
   text-align: left;
   margin: 0 auto 1.5rem auto;
 }
 
-#homepage article div p {
+.homepage .information__container .information__container--text {
   padding: 0 2rem;
 }
 
-#homepage article li {
+.homepage .register .register__list__item {
   line-height: 4rem;
   font-family: "Nunito Sans", sans-serif;
   font-size: 2rem;
   padding: 1.5rem 2rem;
 }
 
-#homepage #main-image-1, #homepage #main-image-2, #homepage #main-image-3, #homepage #main-image-2, #homepage #main-image-3 {
+.homepage .article__image--1, .homepage .article__image--2, .homepage .article__image--3, .homepage .article__image--2, .homepage .article__image--3 {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -1290,26 +1290,26 @@ body > header figure img {
 }
 
 @media only screen and (min-width: 1024px) {
-  #homepage #main-image-1, #homepage #main-image-2, #homepage #main-image-3, #homepage #main-image-2, #homepage #main-image-3 {
+  .homepage .article__image--1, .homepage .article__image--2, .homepage .article__image--3, .homepage .article__image--2, .homepage .article__image--3 {
     border: 0px;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
 }
 
-#homepage #main-image-1, #homepage #main-image-2, #homepage #main-image-3 {
+.homepage .article__image--1, .homepage .article__image--2, .homepage .article__image--3 {
   background-image: url(../img/layout-picture.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#homepage #main-image-2 {
+.homepage .article__image--2 {
   background-image: url(../img/layout-picture3.jpg);
 }
 
 @media only screen and (min-width: 1024px) {
-  #homepage #main-image-2 {
+  .homepage .article__image--2 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
@@ -1319,7 +1319,7 @@ body > header figure img {
   }
 }
 
-#homepage #main-image-3 {
+.homepage .article__image--3 {
   background-image: url(../img/layout-picture4.jpg), url(../img/GLRlogo_RGB.png);
   background-size: cover, calc(15rem + 10vw);
   -webkit-transform: rotate(0, 0, 45deg);
@@ -1327,12 +1327,12 @@ body > header figure img {
 }
 
 @media only screen and (min-width: 1024px) {
-  #homepage #main-image-3 {
+  .homepage .article__image--3 {
     background-size: cover, 25.5rem;
   }
 }
 
-#homepage #main-diagram-grid {
+.homepage .diagram__grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 5% 1fr 1fr 1fr 1fr 5%;
@@ -1345,20 +1345,20 @@ body > header figure img {
 }
 
 @media only screen and (min-width: 720px) {
-  #homepage #main-diagram-grid {
+  .homepage .diagram__grid {
     margin: 5rem 0;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
-#homepage #main-diagram-grid h2 {
+.homepage .diagram__grid .diagram__heading {
   -ms-grid-column: 1;
   -ms-grid-column-span: 9;
   grid-column: 1/10;
 }
 
-#homepage .main-diagram-1, #homepage .main-diagram-2, #homepage .main-diagram-3, #homepage .main-diagram-4 {
+.homepage .diagram__grid__item--1, .homepage .diagram__grid__item--2, .homepage .diagram__grid__item--3, .homepage .diagram__grid__item--4 {
   width: 100%;
   background: #f1f1f1;
   border-top-left-radius: 3rem;
@@ -1369,7 +1369,7 @@ body > header figure img {
   position: relative;
 }
 
-#homepage .main-diagram-1 section, #homepage .main-diagram-2 section, #homepage .main-diagram-3 section, #homepage .main-diagram-4 section {
+.homepage .diagram__grid__item--1 section, .homepage .diagram__grid__item--2 section, .homepage .diagram__grid__item--3 section, .homepage .diagram__grid__item--4 section {
   position: absolute;
   background: #8FE501;
   width: 100%;
@@ -1378,23 +1378,23 @@ body > header figure img {
   bottom: 0;
 }
 
-#homepage .main-diagram-1 #diagram-1, #homepage .main-diagram-2 #diagram-1, #homepage .main-diagram-3 #diagram-1, #homepage .main-diagram-4 #diagram-1 {
+.homepage .diagram__grid__item--1 #diagram-1, .homepage .diagram__grid__item--2 #diagram-1, .homepage .diagram__grid__item--3 #diagram-1, .homepage .diagram__grid__item--4 #diagram-1 {
   height: 20%;
 }
 
-#homepage .main-diagram-1 #diagram-2, #homepage .main-diagram-2 #diagram-2, #homepage .main-diagram-3 #diagram-2, #homepage .main-diagram-4 #diagram-2 {
+.homepage .diagram__grid__item--1 #diagram-2, .homepage .diagram__grid__item--2 #diagram-2, .homepage .diagram__grid__item--3 #diagram-2, .homepage .diagram__grid__item--4 #diagram-2 {
   height: 40%;
 }
 
-#homepage .main-diagram-1 #diagram-3, #homepage .main-diagram-2 #diagram-3, #homepage .main-diagram-3 #diagram-3, #homepage .main-diagram-4 #diagram-3 {
+.homepage .diagram__grid__item--1 #diagram-3, .homepage .diagram__grid__item--2 #diagram-3, .homepage .diagram__grid__item--3 #diagram-3, .homepage .diagram__grid__item--4 #diagram-3 {
   height: 60%;
 }
 
-#homepage .main-diagram-1 #diagram-4, #homepage .main-diagram-2 #diagram-4, #homepage .main-diagram-3 #diagram-4, #homepage .main-diagram-4 #diagram-4 {
+.homepage .diagram__grid__item--1 #diagram-4, .homepage .diagram__grid__item--2 #diagram-4, .homepage .diagram__grid__item--3 #diagram-4, .homepage .diagram__grid__item--4 #diagram-4 {
   height: 80%;
 }
 
-#homepage .main-diagram-1 h3, #homepage .main-diagram-2 h3, #homepage .main-diagram-3 h3, #homepage .main-diagram-4 h3 {
+.homepage .diagram__grid__item--1 h3, .homepage .diagram__grid__item--2 h3, .homepage .diagram__grid__item--3 h3, .homepage .diagram__grid__item--4 h3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1407,7 +1407,7 @@ body > header figure img {
   z-index: 1000;
 }
 
-#homepage .main-diagram-1 p, #homepage .main-diagram-2 p, #homepage .main-diagram-3 p, #homepage .main-diagram-4 p {
+.homepage .diagram__grid__item--1 p, .homepage .diagram__grid__item--2 p, .homepage .diagram__grid__item--3 p, .homepage .diagram__grid__item--4 p {
   color: #000;
   z-index: 1000;
   position: absolute;
@@ -1417,82 +1417,82 @@ body > header figure img {
   color: #8FE501;
 }
 
-#homepage .main-diagram-1 :nth-child(1), #homepage .main-diagram-2 :nth-child(1), #homepage .main-diagram-3 :nth-child(1), #homepage .main-diagram-4 :nth-child(1) {
+.homepage .diagram__grid__item--1 .diagram--time, .homepage .diagram__grid__item--2 .diagram--time, .homepage .diagram__grid__item--3 .diagram--time, .homepage .diagram__grid__item--4 .diagram--time {
   top: -3rem;
 }
 
-#homepage .main-diagram-1 :nth-child(4), #homepage .main-diagram-2 :nth-child(4), #homepage .main-diagram-3 :nth-child(4), #homepage .main-diagram-4 :nth-child(4) {
+.homepage .diagram__grid__item--1 .diagram--fill, .homepage .diagram__grid__item--2 .diagram--fill, .homepage .diagram__grid__item--3 .diagram--fill, .homepage .diagram__grid__item--4 .diagram--fill {
   bottom: -3rem;
 }
 
-#homepage .main-diagram-1 {
+.homepage .diagram__grid__item--1 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
 }
 
-#homepage .main-diagram-2 {
+.homepage .diagram__grid__item--2 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
 }
 
-#homepage .main-diagram-3 {
+.homepage .diagram__grid__item--3 {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4/5;
 }
 
-#homepage .main-diagram-4 {
+.homepage .diagram__grid__item--4 {
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
   grid-column: 5/6;
 }
 
-#tijdschema h2 {
+.timetable h2 {
   font-size: calc(4rem);
 }
 
-#tijdschema #choose-time {
+.timetable .day-choosing {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
-  height: 40rem;
+  height: auto;
   background: #1C1C1C;
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
   border-top: 3px solid #484646;
+  padding: 0 2rem 4rem 2rem;
   margin: 0 auto 0 auto;
   position: relative;
 }
 
 @media only screen and (min-width: 1024px) {
-  #tijdschema #choose-time {
+  .timetable .day-choosing {
     width: 100%;
     max-width: 80rem;
     margin: 5rem auto 0 auto;
-    height: 40rem;
+    height: auto;
     background: #1C1C1C;
     -webkit-box-shadow: 1px 1.5px 6px #000;
             box-shadow: 1px 1.5px 6px #000;
     border: 3px solid #484646;
     margin: 8rem auto 0 auto;
-    margin: 0 auto 0 auto;
   }
 }
 
-#tijdschema #choose-time input[type="checkbox"] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 45%;
-  height: 15rem;
-  width: 15rem;
+.timetable .day-choosing .day-choosing__checkbox {
+  display: none;
+}
+
+.timetable .day-choosing .checkbox__label {
   background: #1C1C1C;
+  display: inline-block;
+  height: auto;
+  padding: 6.1rem 0;
+  width: 20rem;
+  margin: 4rem;
+  text-align: center;
   color: #f1f1f1;
   -webkit-box-shadow: 1px 1.5px 6px black;
           box-shadow: 1px 1.5px 6px black;
@@ -1500,87 +1500,34 @@ body > header figure img {
   border: 3px solid #484646;
 }
 
-#tijdschema #choose-time input[type="checkbox"]:hover {
-  background: #131313;
+.timetable .day-choosing .checkbox__label:hover {
+  background: #111;
 }
 
-#tijdschema #choose-time input[type="checkbox"] p {
-  font-weight: 1000;
+.timetable .day-choosing .day__text {
+  font-size: 2.2rem;
+  line-height: 1.2;
 }
 
-@media only screen and (min-width: 720px) {
-  #tijdschema #choose-time input[type="checkbox"] p {
-    font-size: 2.1rem;
-  }
-}
-
-@media only screen and (min-width: 480px) {
-  #tijdschema #choose-time input[type="checkbox"] {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    top: 40%;
-    height: 15rem;
-    width: 15rem;
-    background: #1C1C1C;
-    color: #f1f1f1;
-    -webkit-box-shadow: 1px 1.5px 6px black;
-            box-shadow: 1px 1.5px 6px black;
-    cursor: pointer;
-    border: 3px solid #484646;
-  }
-  #tijdschema #choose-time input[type="checkbox"]:hover {
-    background: #131313;
-  }
-  #tijdschema #choose-time input[type="checkbox"] p {
-    font-weight: 1000;
-  }
-}
-
-@media only screen and (min-width: 480px) and (min-width: 720px) {
-  #tijdschema #choose-time input[type="checkbox"] p {
-    font-size: 2.1rem;
-  }
-}
-
-#tijdschema #choose-time #checkbox-text {
-  position: absolute;
-  left: 50%;
-  top: 22rem;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-@media only screen and (min-width: 480px) {
-  #tijdschema #choose-time #checkbox-text {
-    top: 20rem;
-  }
-}
-
-#tijdschema #choose-time #checkbox-text p {
-  font-size: 2rem;
-  padding: .5rem;
-}
-
-#tijdschema #timetable {
+.timetable .timetable {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
-  height: 50rem;
+  height: auto;
   background: #1C1C1C;
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
   border-top: 3px solid #484646;
+  padding: 1rem 4rem 8rem 4rem;
   position: relative;
 }
 
 @media only screen and (min-width: 1024px) {
-  #tijdschema #timetable {
+  .timetable .timetable {
     width: 100%;
     max-width: 80rem;
     margin: 5rem auto 0 auto;
-    height: 50rem;
+    height: auto;
     background: #1C1C1C;
     -webkit-box-shadow: 1px 1.5px 6px #000;
             box-shadow: 1px 1.5px 6px #000;
@@ -1589,75 +1536,38 @@ body > header figure img {
   }
 }
 
-#tijdschema #timetable ul {
-  width: 30rem;
-  margin: 3rem auto;
+.timetable .timetable .timetable__radio {
+  display: none;
 }
 
-@media only screen and (min-width: 720px) {
-  #tijdschema #timetable ul {
-    width: 50rem;
-  }
-}
-
-#tijdschema #timetable ul input[type="checkbox"] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  max-width: 80rem;
-  margin: 5rem auto 0 auto;
-  height: 7rem;
+.timetable .timetable .radio__label {
+  display: block;
   background: #1C1C1C;
-  -webkit-box-shadow: 1px 1.5px 6px #000;
-          box-shadow: 1px 1.5px 6px #000;
-  border-top: 3px solid #484646;
-  border: none;
-  margin: 1rem 0 0 0;
-  cursor: pointer;
-}
-
-#tijdschema #timetable ul input[type="checkbox"] :hover {
-  background: #131313;
-}
-
-#tijdschema #timetable ul p {
-  text-decoration: none;
-  color: #fff;
+  width: calc(100% - 2rem);
+  height: auto;
+  padding: 3rem 0;
+  margin: 1rem;
   text-align: center;
-  width: 100%;
-  font-size: 2rem;
-  position: absolute;
+  color: #f1f1f1;
+  -webkit-box-shadow: 1px 1.5px 6px black;
+          box-shadow: 1px 1.5px 6px black;
+  cursor: pointer;
+  border: 3px solid #484646;
 }
 
-#tijdschema #timetable ul #time-1 {
-  border: 3px solid orangered;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.timetable .timetable .radio__label:hover {
+  background: #111;
 }
 
-#tijdschema #timetable ul #time-2 {
-  border: 3px solid #3d3d3d;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.timetable .timetable #time--1:checked ~ label[for="time--1"],
+.timetable .timetable #time--2:checked ~ label[for="time--2"],
+.timetable .timetable #time--3:checked ~ label[for="time--3"],
+.timetable .timetable #time--4:checked ~ label[for="time--4"] {
+  background: #8FE501;
+  color: #111;
 }
 
-#tijdschema #timetable ul #time-3 {
-  border: 3px solid green;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-#tijdschema #timetable ul #time-4 {
-  border: 3px solid #3d3d3d;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-#tijdschema #timetable #timetable-info {
+.timetable .timetable-guidance {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -1675,20 +1585,21 @@ body > header figure img {
   bottom: -5rem;
 }
 
-#tijdschema #timetable #timetable-info section {
+.timetable .timetable-guidance .guidance__container {
   display: -ms-grid;
   display: grid;
+  height: 100%;
   -ms-grid-rows: 1fr;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template: 1fr/ 1fr 1fr 1fr;
 }
 
-#tijdschema #timetable #timetable-info p {
+.timetable .timetable-guidance .guidance__container p {
   display: inline-block;
   padding: 1rem;
 }
 
-#tijdschema #timetable #timetable-info #available-1::before, #tijdschema #timetable #timetable-info #available-2::before, #tijdschema #timetable #timetable-info #available-3::before {
+.timetable .timetable-guidance .guidance__container .guidance--free::before, .timetable .timetable-guidance .guidance__container .guidance--almost::before, .timetable .timetable-guidance .guidance__container .guidance--full::before {
   content: '';
   margin: 1rem 25%;
   -webkit-transform: translateX(25%);
@@ -1699,293 +1610,15 @@ body > header figure img {
   background: green;
 }
 
-#tijdschema #timetable #timetable-info #available-2::before {
+.timetable .timetable-guidance .guidance__container .guidance--almost::before {
   background: orangered;
 }
 
-#tijdschema #timetable #timetable-info #available-3::before {
+.timetable .timetable-guidance .guidance__container .guidance--full::before {
   background: #3d3d3d;
 }
 
-#tijdschema #number-of-persons {
-  width: 100%;
-  max-width: 80rem;
-  margin: 5rem auto 0 auto;
-  height: 60rem;
-  background: #1C1C1C;
-  -webkit-box-shadow: 1px 1.5px 6px #000;
-          box-shadow: 1px 1.5px 6px #000;
-  border-top: 3px solid #484646;
-  position: relative;
-  margin: 10rem auto 0 auto;
-}
-
-@media only screen and (min-width: 720px) {
-  #tijdschema #number-of-persons {
-    height: 45rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  #tijdschema #number-of-persons {
-    width: 100%;
-    max-width: 80rem;
-    margin: 5rem auto 0 auto;
-    height: 40rem;
-    background: #1C1C1C;
-    -webkit-box-shadow: 1px 1.5px 6px #000;
-            box-shadow: 1px 1.5px 6px #000;
-    border: 3px solid #484646;
-    margin: 8rem auto 0 auto;
-  }
-}
-
-#tijdschema #number-of-persons p {
-  margin: 2.5rem 0 0 0;
-}
-
-#tijdschema #number-of-persons ul li {
-  font-size: 2rem;
-  padding: .5rem;
-}
-
-#tijdschema #number-of-persons ul li p {
-  margin: 4rem  0 0 0;
-  font-size: 2rem;
-}
-
-#tijdschema #number-of-persons ul #person-1 {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 25%;
-  height: 12rem;
-  width: 12rem;
-  background: #1C1C1C;
-  color: #f1f1f1;
-  -webkit-box-shadow: 1px 1.5px 6px black;
-          box-shadow: 1px 1.5px 6px black;
-  cursor: pointer;
-  border: 3px solid #484646;
-}
-
-#tijdschema #number-of-persons ul #person-1:hover {
-  background: #131313;
-}
-
-#tijdschema #number-of-persons ul #person-1 p {
-  font-weight: 1000;
-}
-
-@media only screen and (min-width: 720px) {
-  #tijdschema #number-of-persons ul #person-1 p {
-    font-size: 2.1rem;
-  }
-}
-
-#tijdschema #number-of-persons ul #person-2 {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 50%;
-  height: 12rem;
-  width: 12rem;
-  background: #1C1C1C;
-  color: #f1f1f1;
-  -webkit-box-shadow: 1px 1.5px 6px black;
-          box-shadow: 1px 1.5px 6px black;
-  cursor: pointer;
-  border: 3px solid #484646;
-}
-
-#tijdschema #number-of-persons ul #person-2:hover {
-  background: #131313;
-}
-
-#tijdschema #number-of-persons ul #person-2 p {
-  font-weight: 1000;
-}
-
-@media only screen and (min-width: 720px) {
-  #tijdschema #number-of-persons ul #person-2 p {
-    font-size: 2.1rem;
-  }
-}
-
-#tijdschema #number-of-persons ul #person-3 {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 75%;
-  height: 12rem;
-  width: 12rem;
-  background: #1C1C1C;
-  color: #f1f1f1;
-  -webkit-box-shadow: 1px 1.5px 6px black;
-          box-shadow: 1px 1.5px 6px black;
-  cursor: pointer;
-  border: 3px solid #484646;
-}
-
-#tijdschema #number-of-persons ul #person-3:hover {
-  background: #131313;
-}
-
-#tijdschema #number-of-persons ul #person-3 p {
-  font-weight: 1000;
-}
-
-@media only screen and (min-width: 720px) {
-  #tijdschema #number-of-persons ul #person-3 p {
-    font-size: 2.1rem;
-  }
-}
-
-@media only screen and (min-width: 720px) {
-  #tijdschema #number-of-persons ul #person-1 {
-    left: 25%;
-  }
-  #tijdschema #number-of-persons ul #person-2 {
-    left: 50%;
-  }
-  #tijdschema #number-of-persons ul #person-3 {
-    left: 75%;
-  }
-  #tijdschema #number-of-persons ul li {
-    top: 40% !important;
-    height: 14rem !important;
-    width: 14rem !important;
-  }
-  #tijdschema #number-of-persons ul li p {
-    margin: 5.5rem  0 0 0;
-  }
-}
-
-#tijdschema #questionPopup {
-  height: 10rem;
-  width: 90%;
-  max-width: 80rem;
-  position: fixed;
-  left: 50%;
-  top: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: #8FE501;
-  border-radius: 1rem;
-}
-
-@media only screen and (min-width: 720px) {
-  #tijdschema #questionPopup {
-    width: 100%;
-  }
-}
-
-#tijdschema #questionPopup div p {
-  font-size: calc(2.2rem - .5rem);
-  font-family: "Montserrat", sans-serif;
-  color: black;
-}
-
-@media only screen and (min-width: 480px) {
-  #tijdschema #questionPopup div p {
-    font-size: calc(2.2rem - .2rem);
-  }
-}
-
-@media only screen and (min-width: 720px) {
-  #tijdschema #questionPopup div p {
-    font-size: 2.2rem;
-  }
-}
-
-#tijdschema #questionPopup div :nth-child(1) {
-  padding: 1.3rem 0;
-}
-
-@media only screen and (min-width: 480px) {
-  #tijdschema #questionPopup div :nth-child(1) {
-    padding: 1.5rem 0;
-  }
-}
-
-@media only screen and (min-width: 720px) {
-  #tijdschema #questionPopup div :nth-child(1) {
-    padding: 2rem 0;
-  }
-}
-
-#tijdschema #ask-question {
-  width: 100%;
-  max-width: 80rem;
-  margin: 5rem auto 0 auto;
-  height: 45rem;
-  background: #1C1C1C;
-  -webkit-box-shadow: 1px 1.5px 6px #000;
-          box-shadow: 1px 1.5px 6px #000;
-  border-top: 3px solid #484646;
-}
-
-@media only screen and (min-width: 1024px) {
-  #tijdschema #ask-question {
-    width: 100%;
-    max-width: 80rem;
-    margin: 5rem auto 0 auto;
-    height: 45rem;
-    background: #1C1C1C;
-    -webkit-box-shadow: 1px 1.5px 6px #000;
-            box-shadow: 1px 1.5px 6px #000;
-    border: 3px solid #484646;
-    margin: 8rem auto 0 auto;
-  }
-}
-
-#tijdschema #ask-question textarea {
-  height: 20rem;
-  width: 35rem;
-}
-
-@media only screen and (min-width: 720px) {
-  #tijdschema #ask-question textarea {
-    width: 50rem;
-    height: 22rem;
-  }
-}
-
-#tijdschema #ask-question input {
-  width: 35rem;
-  height: 4rem;
-  margin: 2rem auto 0 auto;
-  background: #1C1C1C;
-  font-size: 2rem;
-  border: 2px solid #707070;
-  -webkit-box-shadow: 1px 1.5px 6px #111;
-          box-shadow: 1px 1.5px 6px #111;
-  color: #fff;
-  font-weight: 900;
-}
-
-#tijdschema #ask-question input:hover {
-  background: #131313;
-}
-
-@media only screen and (min-width: 480px) {
-  #tijdschema #ask-question input {
-    width: 35rem;
-    height: 4.5rem;
-  }
-}
-
-@media only screen and (min-width: 720px) {
-  #tijdschema #ask-question input {
-    width: 50rem;
-  }
-}
-
-#tijdschema #summary {
-  display: none;
+.timetable .persons {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -1994,10 +1627,12 @@ body > header figure img {
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
   border-top: 3px solid #484646;
+  margin: 10rem auto 0 auto;
+  padding: .5rem;
 }
 
 @media only screen and (min-width: 1024px) {
-  #tijdschema #summary {
+  .timetable .persons {
     width: 100%;
     max-width: 80rem;
     margin: 5rem auto 0 auto;
@@ -2010,55 +1645,174 @@ body > header figure img {
   }
 }
 
-#tijdschema #summary ul {
-  width: 95%;
-  margin: 0 auto;
+.timetable .persons .persons--info {
   padding: 2rem;
+  word-wrap: none;
 }
 
-@media only screen and (min-width: 720px) {
-  #tijdschema #summary ul {
-    width: 80%;
+@media only screen and (min-width: 480px) {
+  .timetable .persons .persons--info {
+    font-size: 2.2rem;
   }
 }
 
-#tijdschema #summary ul li, #tijdschema #summary ul h3, #tijdschema #summary ul blockquote {
+.timetable .persons .persons__radio {
+  display: none;
+}
+
+.timetable .persons .checkbox__label {
+  background: #1C1C1C;
+  display: inline-block;
+  width: 15rem;
+  height: auto;
+  padding: 6.1rem 0;
+  margin: 1rem;
+  text-align: center;
+  color: #f1f1f1;
+  -webkit-box-shadow: 1px 1.5px 6px black;
+          box-shadow: 1px 1.5px 6px black;
+  cursor: pointer;
+  border: 3px solid #484646;
+}
+
+.timetable .persons .checkbox__label:hover {
+  background: #111;
+}
+
+.timetable .persons #person--1:checked ~ label[for="person--1"],
+.timetable .persons #person--2:checked ~ label[for="person--2"],
+.timetable .persons #person--3:checked ~ label[for="person--3"] {
+  background: #8FE501;
+  color: #111;
+}
+
+.timetable .popup {
+  height: auto;
+  padding: 0 2rem 3rem 2rem;
+  width: 90%;
+  max-width: 80rem;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #8FE501;
+  border-radius: 1rem;
+  z-index: 1000;
+}
+
+@media only screen and (min-width: 720px) {
+  .timetable .popup {
+    width: 100%;
+  }
+}
+
+.timetable .popup .popup__text {
+  font-size: calc(2.2rem - .5rem);
   font-family: "Montserrat", sans-serif;
-  font-size: 2.2rem;
-  padding: 1rem;
-  text-align: left;
+  color: black;
 }
 
-#tijdschema #summary ul li span {
-  padding: 1rem;
-  line-height: 2;
+@media only screen and (min-width: 480px) {
+  .timetable .popup .popup__text {
+    font-size: calc(2.2rem - .2rem);
+  }
 }
 
-#tijdschema #summary ul span {
-  color: #8FE501;
+@media only screen and (min-width: 720px) {
+  .timetable .popup .popup__text {
+    font-size: 2.2rem;
+  }
 }
 
-#tijdschema #summary ul h3 {
-  color: #8FE501;
+.timetable .popup :nth-child(1) {
+  padding: 1.3rem 0;
 }
 
-#tijdschema #summary ul blockquote {
-  font-size: 1.6rem;
-  line-height: 1.5;
-  text-align: left;
+@media only screen and (min-width: 480px) {
+  .timetable .popup :nth-child(1) {
+    padding: 1.5rem 0;
+  }
 }
 
-#tijdschema #summary p {
-  color: #8FE501;
-  padding: 0 0 2rem 0;
-  font-size: 2.5rem;
+@media only screen and (min-width: 720px) {
+  .timetable .popup :nth-child(1) {
+    padding: 2rem 0;
+  }
 }
 
-#contact {
+.timetable .question {
+  width: 100%;
+  max-width: 80rem;
+  margin: 5rem auto 0 auto;
+  height: 45rem;
+  background: #1C1C1C;
+  -webkit-box-shadow: 1px 1.5px 6px #000;
+          box-shadow: 1px 1.5px 6px #000;
+  border-top: 3px solid #484646;
+}
+
+@media only screen and (min-width: 1024px) {
+  .timetable .question {
+    width: 100%;
+    max-width: 80rem;
+    margin: 5rem auto 0 auto;
+    height: 45rem;
+    background: #1C1C1C;
+    -webkit-box-shadow: 1px 1.5px 6px #000;
+            box-shadow: 1px 1.5px 6px #000;
+    border: 3px solid #484646;
+    margin: 8rem auto 0 auto;
+  }
+}
+
+.timetable .question .question__textarea {
+  height: 20rem;
+  width: 35rem;
+}
+
+@media only screen and (min-width: 720px) {
+  .timetable .question .question__textarea {
+    width: 50rem;
+    height: 22rem;
+  }
+}
+
+.timetable .question .question__button--send {
+  width: 35rem;
+  height: 4rem;
+  margin: 2rem auto 0 auto;
+  background: #1C1C1C;
+  font-size: 2rem;
+  border: 2px solid #707070;
+  -webkit-box-shadow: 1px 1.5px 6px #111;
+          box-shadow: 1px 1.5px 6px #111;
+  color: #fff;
+  font-weight: 900;
+}
+
+.timetable .question .question__button--send:hover {
+  background: #131313;
+}
+
+@media only screen and (min-width: 480px) {
+  .timetable .question .question__button--send {
+    width: 35rem;
+    height: 4.5rem;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .timetable .question .question__button--send {
+    width: 50rem;
+  }
+}
+
+.contact {
   margin-top: 0;
 }
 
-#contact article {
+.contact .contact__article {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -2070,12 +1824,12 @@ body > header figure img {
   margin: 0 auto !important;
 }
 
-#contact article h2 {
+.contact .contact__article .contact__article--heading {
   font-size: 4rem;
 }
 
 @media only screen and (min-width: 1024px) {
-  #contact article {
+  .contact .contact__article {
     width: 100%;
     max-width: 80rem;
     margin: 5rem auto 0 auto;
@@ -2088,7 +1842,7 @@ body > header figure img {
   }
 }
 
-#contact article form {
+.contact .contact__article .contact__form {
   width: 95%;
   height: 80%;
   font-size: 2rem;
@@ -2101,83 +1855,83 @@ body > header figure img {
 }
 
 @media only screen and (min-width: 720px) {
-  #contact article form {
+  .contact .contact__article .contact__form {
     -ms-grid-columns: 5% 40% 50% 5%;
         grid-template-columns: 5% 40% 50% 5%;
         grid-template-areas: ". voornaam inputvoornaam  ." ". achternaam inputachternaam  ." ". email inputemail ." ". telefoon inputtelefoon ." ". kind inputkind ." ". uwBericht . . " ". textarea  textarea ." ". button button .";
   }
 }
 
-#contact article label {
+.contact .contact__article label {
   text-align: left;
 }
 
-#contact article input {
+.contact .contact__article input {
   width: 100%;
   height: 3rem;
 }
 
-#contact article input[name="voornaam"] {
+.contact .contact__article .form__input--voornaam {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: inputvoornaam;
 }
 
-#contact article #contact-voornaam {
+.contact .contact__article .form__label--voornaam {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: voornaam;
 }
 
-#contact article input[name="achternaam"] {
+.contact .contact__article .form__input--achternaam {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: inputachternaam;
 }
 
-#contact article #contact-achternaam {
+.contact .contact__article .form__label--achternaam {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: achternaam;
 }
 
-#contact article input[name="email"] {
+.contact .contact__article .form__input--email {
   -ms-grid-row: 6;
   -ms-grid-column: 2;
   grid-area: inputemail;
 }
 
-#contact article #contact-email {
+.contact .contact__article .form__label--email {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: email;
 }
 
-#contact article input[name="telefoon"] {
+.contact .contact__article .form__input--telefoon {
   -ms-grid-row: 8;
   -ms-grid-column: 2;
   grid-area: inputtelefoon;
 }
 
-#contact article #contact-telefoon {
+.contact .contact__article .form__label--telefoon {
   -ms-grid-row: 7;
   -ms-grid-column: 2;
   grid-area: telefoon;
 }
 
-#contact article input[name="kind"] {
+.contact .contact__article .form__input--kind {
   -ms-grid-row: 10;
   -ms-grid-column: 2;
   grid-area: inputkind;
 }
 
-#contact article #contact-kind {
+.contact .contact__article .form__label--kind {
   -ms-grid-row: 9;
   -ms-grid-column: 2;
   grid-area: kind;
 }
 
-#contact article input[type="submit"] {
+.contact .contact__article .form__button--send {
   -ms-grid-row: 13;
   -ms-grid-column: 2;
   grid-area: button;
@@ -2188,18 +1942,18 @@ body > header figure img {
   border: 2px solid #707070;
 }
 
-#contact article input[type="submit"]:hover {
+.contact .contact__article .form__button--send:hover {
   background: #8FE501;
   color: #1C1C1C;
 }
 
-#contact article #contact-bericht {
+.contact .contact__article .form__label--bericht {
   -ms-grid-row: 11;
   -ms-grid-column: 2;
   grid-area: uwBericht;
 }
 
-#contact article textarea {
+.contact .contact__article .form_textarea--bericht {
   -ms-grid-row: 12;
   -ms-grid-column: 2;
   grid-area: textarea;
@@ -2208,16 +1962,16 @@ body > header figure img {
   font-size: 2rem;
 }
 
-#mentor h2 {
+.mentorpage h2 {
   font-size: calc(4rem);
 }
 
-#mentor img {
+.mentorpage .student__img {
   width: 15rem;
   height: 15rem;
 }
 
-#mentor #selectStudent {
+.mentorpage .select--student {
   display: -ms-grid;
   display: grid;
       grid-template-areas: ". . title . ." ". . foto . ." ". . klas . ." ". . student . .";
@@ -2233,14 +1987,14 @@ body > header figure img {
 }
 
 @media only screen and (min-width: 720px) {
-  #mentor #selectStudent {
+  .mentorpage .select--student {
     padding: 0 3rem 3rem 3rem;
         grid-template-areas: ". . title . ." ". . foto . ." ". klas . student .";
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  #mentor #selectStudent {
+  .mentorpage .select--student {
     width: 100%;
     max-width: 80rem;
     margin: 5rem auto 0 auto;
@@ -2254,24 +2008,24 @@ body > header figure img {
   }
 }
 
-#mentor #selectStudent h2 {
+.mentorpage .select--student .student__img__container {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: title;
 }
 
-#mentor #selectStudent #foto {
+.mentorpage .select--student .student__img__container {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: foto;
 }
 
-#mentor #selectStudent #foto img {
+.mentorpage .select--student .student__img__container img {
   border: .7rem solid transparent;
   outline: 3px solid white;
 }
 
-#mentor #selectStudent select {
+.mentorpage .select--student .student__container, .mentorpage .select--student .class__container {
   width: 20rem;
   height: 5rem;
   background: #1C1C1C;
@@ -2279,19 +2033,19 @@ body > header figure img {
   font-size: 2rem;
 }
 
-#mentor #selectStudent #klas {
+.mentorpage .select--student .class {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: klas;
 }
 
-#mentor #selectStudent #klas select {
+.mentorpage .select--student .class__select {
   width: 20rem;
   height: 5rem;
   position: relative;
 }
 
-#mentor #selectStudent #klas select option {
+.mentorpage .select--student .select--option {
   position: absolute;
   top: 100%;
   left: 0;
@@ -2300,13 +2054,13 @@ body > header figure img {
   font-size: 2rem;
 }
 
-#mentor #selectStudent #student {
+.mentorpage .select--student .student {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: student;
 }
 
-#mentor #studentInfo {
+.mentorpage #studentInfo {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -2319,7 +2073,7 @@ body > header figure img {
 }
 
 @media only screen and (min-width: 1024px) {
-  #mentor #studentInfo {
+  .mentorpage #studentInfo {
     width: 100%;
     max-width: 80rem;
     margin: 5rem auto 0 auto;
@@ -2332,22 +2086,22 @@ body > header figure img {
   }
 }
 
-#mentor #studentInfo section {
+.mentorpage #studentInfo section {
   text-align: left;
   line-height: 1.5;
   margin: 2rem;
 }
 
-#mentor #studentInfo section label {
+.mentorpage #studentInfo section label {
   color: #8FE501;
 }
 
-#mentor #studentInfo section p {
+.mentorpage #studentInfo section p {
   line-height: 1.5;
   font-size: 2rem;
 }
 
-#mentor #studentInfo section button {
+.mentorpage #studentInfo section button {
   display: block;
   width: 35rem;
   height: 4rem;
@@ -2361,11 +2115,11 @@ body > header figure img {
   font-weight: 900;
 }
 
-#mentor #studentInfo section button:hover {
+.mentorpage #studentInfo section button:hover {
   background: #131313;
 }
 
-#mentor #studentInfo section #mentor-notities {
+.mentorpage #studentInfo section #mentor-notities {
   width: 100%;
   height: 15rem;
   max-width: 80rem;
@@ -2373,7 +2127,7 @@ body > header figure img {
   font-size: 2rem;
 }
 
-#mentor #studentInfo section #mentor-wijzig {
+.mentorpage #studentInfo section #mentor-wijzig {
   width: 35rem;
   height: 4rem;
   margin: 2rem auto 0 auto;
@@ -2386,11 +2140,11 @@ body > header figure img {
   font-weight: 900;
 }
 
-#mentor #studentInfo section #mentor-wijzig:hover {
+.mentorpage #studentInfo section #mentor-wijzig:hover {
   background: #131313;
 }
 
-#mentor #planningStudent {
+.mentorpage #planningStudent {
   position: relative;
   width: 100%;
   max-width: 80rem;
@@ -2404,7 +2158,7 @@ body > header figure img {
 }
 
 @media only screen and (min-width: 1024px) {
-  #mentor #planningStudent {
+  .mentorpage #planningStudent {
     width: 100%;
     max-width: 80rem;
     margin: 5rem auto 0 auto;
@@ -2417,11 +2171,11 @@ body > header figure img {
   }
 }
 
-#mentor #planningStudent h2 {
+.mentorpage #planningStudent h2 {
   margin: 2rem 0 4rem 0;
 }
 
-#mentor #planningStudent #planningGrid ul {
+.mentorpage #planningStudent #planningGrid ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -2433,31 +2187,31 @@ body > header figure img {
   grid-gap: 1rem;
 }
 
-#mentor #planningStudent #planningGrid ul :nth-child(1) {
+.mentorpage #planningStudent #planningGrid ul :nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
 
-#mentor #planningStudent #planningGrid ul :nth-child(2) {
+.mentorpage #planningStudent #planningGrid ul :nth-child(2) {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
 
-#mentor #planningStudent #planningGrid ul :nth-child(3) {
+.mentorpage #planningStudent #planningGrid ul :nth-child(3) {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
 }
 
-#mentor #planningStudent #planningGrid ul :nth-child(4) {
+.mentorpage #planningStudent #planningGrid ul :nth-child(4) {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
 }
 
-#mentor #planningStudent #planningGrid ul li {
+.mentorpage #planningStudent #planningGrid ul li {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -2474,19 +2228,19 @@ body > header figure img {
   border: 1px solid #707070;
 }
 
-#mentor #planningStudent #planningGrid ul li p {
+.mentorpage #planningStudent #planningGrid ul li p {
   margin: 3.5rem auto;
   font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 720px) {
-  #mentor #planningStudent #planningGrid ul li p {
+  .mentorpage #planningStudent #planningGrid ul li p {
     margin: 4rem auto;
     font-size: 2rem;
   }
 }
 
-#mentor #planningStudent #planningInfo {
+.mentorpage #planningStudent #planningInfo {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -2504,12 +2258,12 @@ body > header figure img {
   bottom: -5rem;
 }
 
-#mentor #planningStudent #planningInfo p {
+.mentorpage #planningStudent #planningInfo p {
   display: inline-block;
   padding: 0 3rem;
 }
 
-#mentor #planningStudent #planningInfo :nth-child(1)::before {
+.mentorpage #planningStudent #planningInfo :nth-child(1)::before {
   content: '';
   margin: 2rem 25% 1rem 25%;
   -webkit-transform: translateX(-25%);
@@ -2520,7 +2274,7 @@ body > header figure img {
   background: #111111;
 }
 
-#mentor #planningStudent #planningInfo :nth-child(2)::before {
+.mentorpage #planningStudent #planningInfo :nth-child(2)::before {
   content: '';
   margin: 2rem 75% 1rem 75%;
   -webkit-transform: translateX(-75%);
@@ -2529,6 +2283,33 @@ body > header figure img {
   height: 3rem;
   width: 3rem;
   background: #8FE501;
+}
+
+.confirmed .confirmed__article {
+  width: 100%;
+  max-width: 80rem;
+  margin: 5rem auto 0 auto;
+  height: auto;
+  background: #1C1C1C;
+  -webkit-box-shadow: 1px 1.5px 6px #000;
+          box-shadow: 1px 1.5px 6px #000;
+  border: 3px solid #484646;
+  margin: 8rem auto 0 auto;
+  padding: 2rem 8rem 8rem 8rem;
+  margin-top: 0 !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  .confirmed .confirmed__article {
+    width: 100%;
+    max-width: 80rem;
+    margin: 5rem auto 0 auto;
+    height: auto;
+    background: #1C1C1C;
+    -webkit-box-shadow: 1px 1.5px 6px #000;
+            box-shadow: 1px 1.5px 6px #000;
+    border-top: 3px solid #484646;
+  }
 }
 
 body > footer {
