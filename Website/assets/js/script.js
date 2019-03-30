@@ -4,6 +4,7 @@
 //open navigation menu
 $("#header-hamburger").click(function(){
         $("header nav").addClass("toggleOn");
+        $(".toggleOn").slideDown(2000);
         $("body").addClass("overflow");
       });
 //close navigation menu
@@ -19,61 +20,46 @@ $(window).resize(function() {
   }
 });
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////// anker links 
 
-$(document).ready(function(){
-  $("#choose-time div").on('click', function(event){
-    $(this).toggleClass("selectedBox");
+//////////////////////////////////////v//////////////////////////////////////Checkboxes
 
-    if(this.hash !== ''){
-      event.preventDefault();
-      var hash = this.hash;
+var checkbox = document.querySelector(".day-choosing__checkbox");
+var checkboxContainer = document.querySelector(".checkbox__label");
 
-      $("html, body").animate({
-        scrollTop: $(hash).offset().top - 220
-      }, 900);
-    }
-
-  });
+checkbox.addEventListener("click", function(){
+  if(checkbox.checked === true){
+    checkboxContainer.style.backgroundColor = "#8FE501";
+    checkboxContainer.style.color = "#111";    
+  }else{
+    checkboxContainer.style.backgroundColor = ""; 
+    checkboxContainer.style.color = "#fff";    
+  }
 });
-
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////// tijdschema message
-<<<<<<< HEAD
 
 
 //hides the popup and the summary
 $("#summary").hide();
 
 //when send button is clicked show the popup
-$(".sendButton").click(function(){
-  $(".questionPopup").css.display = "block";
-  $(".questionPopup")
-=======
-
-
-//hides the popup and the summary
-$("#questionPopup").hide();
-$("#summary").hide();
-
-//when send button is clicked show the popup
-$("#sendButton").click(function(){
-  $("#questionPopup")
->>>>>>> 3cdc58b107ef3a4069ab607d12047f637ad71d7e
+// $(".sendButton").click(function(){
+function sendReservation() {
+  $(".popup").css.display = "block";
+  $(".popup")
     .slideDown(500)
     .delay(4000)
     .slideUp(1000);
-});
+
+    // return false; // moet alleen als er fouten zijn gevonden
+}
+// });
 
 //when clicked show button: the current info is show
 $("#showButton").click(function(){
-<<<<<<< HEAD
   $("#summary").css.display = "block";
 
-=======
->>>>>>> 3cdc58b107ef3a4069ab607d12047f637ad71d7e
   var clicks = $(this).data('clicks');
 
   //oneven 
@@ -89,7 +75,3 @@ $("#showButton").click(function(){
   
   $(this).data("clicks", !clicks);
 });
-
-
-
-

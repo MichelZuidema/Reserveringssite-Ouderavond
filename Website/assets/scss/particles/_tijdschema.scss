@@ -1,4 +1,4 @@
-#tijdschema{
+.timetable{
     
     h2{
         font-size: $title-size-big;
@@ -6,102 +6,100 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////choose a time
 
-    #choose-time{
-        @include blackContainer(40rem,1);
+    .day-choosing{
+        //mobile
+        @include blackContainer(auto,1);
+        padding: 0 2rem 4rem 2rem;
         margin: 0 auto 0 auto;
         position: relative;
 
-        :nth-child(3){
-            position: absolute;
-            white-space: nowrap;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        :nth-child(3){
-            bottom: 6rem;
-        }
-
+        //desktop
         @include setQeury($lg){
-            @include blackContainer(40rem, 0);  
-            margin: 0 auto 0 auto;
+            @include blackContainer(auto, 0);  
         }
-             //button for choosing a time
-            div{
-                @include greenButton(30%, 50%,15rem,15rem);
 
-                :nth-child(1){
-                    margin: 4rem 0 0 0;
-                }
+        //hidde checkbox
+        .day-choosing__checkbox{
+            display: none;
+        }
 
-                p{
-                    font-size: 2rem;
-                    padding: .5rem;
-                }
+        //remove the standard radio buttons
+        .checkbox__label{
+            background: $black-container;
+            display: inline-block;
+            height: auto;
+            padding: 6.1rem 0;
+            width: 20rem;
+            margin: 4rem;
+            text-align: center;
+            color: #f1f1f1;
+            box-shadow: 1px 1.5px 6px black;
+            cursor: pointer;
+            border: 3px solid $black-container-border; 
+
+            &:hover{
+                background: #111;
             }
+        }
+
+        .day__text{
+            font-size: $normal-text-size;
+            line-height: 1.2;
+        }
     }
+    
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////timetable
 
-    #timetable{
-        @include blackContainer(50rem,1);
+    .timetable{
+        @include blackContainer(auto,1);
+        padding: 1rem 4rem 8rem 4rem;
         position: relative;
 
         @include setQeury($lg){
-            @include blackContainer(50rem, 0);  
+            @include blackContainer(auto, 0);  
         }
 
-        ul{
-            width: 30rem;
-            margin: 3rem auto;
+        //hidde radio buttons
+        .timetable__radio{
+            display: none;
+        }
 
-            @include setQeury($md){
-                width: 50rem;
-            }
-            
-            li{
-                display: flex; 
-                @include blackContainer(7rem,1);
-                border: none;
-                margin: 1rem 0 0 0;
-                cursor: pointer;
+        //create custom radio buttons with labels        
+        .radio__label{
+            display: block;
+            background: $black-container;
+            width: calc(100% - 2rem);
+            height: auto;
+            padding: 3rem 0;
+            margin: 1rem;
+            text-align: center;
+            color: #f1f1f1;
+            box-shadow: 1px 1.5px 6px black;
+            cursor: pointer;
+            border: 3px solid $black-container-border; 
 
-                :hover{
-                    background: rgb(19, 19, 19);
-                }
-
-                P{
-                    text-align: center;
-                    width: 100%;
-                    padding: 2.5rem 0 0 0;
-                    font-size: 2rem;
-                }
-            }
-
-            #time-1{
-                border: 3px solid orangered;
-                box-shadow: none;
-            }
-
-            #time-2{
-                border: 3px solid rgb(61, 61, 61);
-                box-shadow: none;
-            }
-
-            #time-3{
-                border: 3px solid green;
-                box-shadow: none;
-            }
-
-            #time-4{
-                border: 3px solid rgb(61, 61, 61);
-                box-shadow: none;
+            &:hover{
+                background: #111;
             }
         }
 
-        // vrij, bijna vol, vol
-        #timetable-info{
+        //styles for a checked radio button
+        #time--1:checked ~ label[for="time--1"],
+        #time--2:checked ~ label[for="time--2"],
+        #time--3:checked ~ label[for="time--3"],
+        #time--4:checked ~ label[for="time--4"]{
+            background: $glr-green;
+            color: #111;
+        }
+
+    }
+
+/////////////////////////////////////////////////////////////
+//////guidance information       
+
+        .timetable-guidance{
             @include blackContainer(10rem, 0);  
             width: 30rem;
             position: absolute;
@@ -109,17 +107,18 @@
             transform: translateX(-50%);
             bottom: -5rem; 
             
-            section{
+            .guidance__container{
                 display: grid;
+                height: 100%;
                 grid-template: 1fr/ 1fr 1fr 1fr;
-            }
+            
 
             p{
                 display: inline-block;
                 padding: 1rem;
             }
 
-            #available-1::before{
+            .guidance--free::before{
                 content: '';
                 margin: 1rem 25%;
                 transform: translateX(25%);
@@ -129,97 +128,82 @@
                 background: green;
             }
 
-            #available-2::before{
-                @extend #available-1::before;
+            .guidance--almost::before{
+                @extend .guidance--free::before;
                 background: orangered;
             }
 
-            #available-3::before{
-                @extend #available-1::before;
+            .guidance--full::before{
+                @extend .guidance--free::before;                
                 background: rgb(61, 61, 61);
             }
         }
     }
 
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////number of person
 
-    #number-of-persons{
-        @include blackContainer(60rem,1);
-        position: relative;
+    .persons{
+        //height mobile
+        @include blackContainer(auto,1);
         margin: 10rem auto 0 auto;
+        padding: .5rem;
 
-        @include setQeury($md){
-            height: 45rem;
-        }
-
+        //height rest
         @include setQeury($lg){
-            @include blackContainer(40rem, 0);  
+            @include blackContainer(auto, 0);  
         }
 
         //info text
-        p{
-            margin: 2.5rem 0 0 0;
+        .persons--info{
+            padding: 2rem;
+            word-wrap: none;
+
+            @include setQeury($sm){
+                font-size: $normal-text-size;
+            }
         }
 
-        //container for the buttons
-        ul{
-            
-            li{
-                font-size: 2rem;
-                padding: .5rem;
-
-                p{
-                    margin: 4rem  0 0 0;
-                    font-size: 2rem;
-                }
-            }
-
-            //made buttons and set them vertical for mobile 
-            #person-1{
-                @include greenButton(25%, 50%,12rem,12rem);            
-            }
-            #person-2{
-                @include greenButton(50%, 50%, 12rem, 12rem);
-            }
-            #person-3{
-                @include greenButton(75%, 50%, 12rem, 12rem);
-            }
-
-
-            //sets buttons horizontal
-            @include setQeury($md){
-
-                #person-1{
-                    left: 25%;
-                }
-                #person-2{
-                    left: 50%;
-                }
-                #person-3{
-                    left: 75%;
-                }
-
-                //!important so that it over rules css specificity from the pseudo elements
-                li{
-                    top: 40%!important;
-                    height: 14rem!important;
-                    width: 14rem!important;
-
-                    p{
-                        margin: 5.5rem  0 0 0;
-                    }
-                }
-            
-            }      
+        //remove the standard radio buttons
+        .persons__radio{
+            display: none;
         }
 
+        //create custom radio buttons with labels
+        .checkbox__label{
+            background: $black-container;
+            display: inline-block;
+            width: 15rem;
+            height: auto;
+            padding: 6.1rem 0;
+            margin: 1rem;
+            text-align: center;
+            color: #f1f1f1;
+            box-shadow: 1px 1.5px 6px black;
+            cursor: pointer;
+            border: 3px solid $black-container-border; 
+
+            &:hover{
+                background: #111;
+            }
+        }
+
+        //styles for a checked radio button
+        #person--1:checked ~ label[for="person--1"],
+        #person--2:checked ~ label[for="person--2"],
+        #person--3:checked ~ label[for="person--3"]{
+            background: $glr-green;
+            color: #111;
+        }
     }
+        
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////question popup
 
-#questionPopup{
-    height: 10rem;
+.popup{
+    height: auto;
+    padding: 0 2rem 3rem 2rem;
     width: 90%;
     max-width: 80rem;
     position: fixed;
@@ -228,55 +212,55 @@
     transform: translateX(-50%);
     background: $glr-green;
     border-radius: 1rem;
+    z-index: 1000;
 
 
     @include setQeury($md){
         width: 100%;
     }
 
-    div{
 
-        p{
-            font-size: calc(2.2rem - .5rem);
-            font-family: $title-font;
-            color: black;
+    .popup__text{
+        font-size: calc(2.2rem - .5rem);
+        font-family: $title-font;
+        color: black;
 
-            @include setQeury($sm){
-                font-size: calc(2.2rem - .2rem);
-            }
-
-            @include setQeury($md){
-                font-size: $normal-text-size;            
-            }
+        @include setQeury($sm){
+            font-size: calc(2.2rem - .2rem);
         }
 
-        :nth-child(1){
-            padding: 1.3rem 0;       
-
-            @include setQeury($sm){
-                padding: 1.5rem 0;
-            }
-            
-            @include setQeury($md){
-                padding: 2rem 0;
-            }
+        @include setQeury($md){
+            font-size: $normal-text-size;            
         }
-
     }
+
+    :nth-child(1){
+        padding: 1.3rem 0;       
+
+        @include setQeury($sm){
+            padding: 1.5rem 0;
+        }
+        
+        @include setQeury($md){
+            padding: 2rem 0;
+        }
+    }
+
+    
 }
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////ask question
     
-    #ask-question{
+    .question{
         @include blackContainer(45rem,1);
 
         @include setQeury($lg){
             @include blackContainer(45rem, 0);  
         }
 
-        textarea{
+        .question__textarea{
             height: 20rem;
             width: 35rem;
 
@@ -286,7 +270,7 @@
             }
         }
 
-        input{
+        .question__button--send{
             width: 35rem;
             height: 4rem;
             margin: 2rem auto 0 auto;
@@ -311,62 +295,5 @@
             }
         }
     }
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////// return aanmelding
-
-#summary{
-    display: none;
-    @include blackContainer(auto,1);
-
-    @include setQeury($lg){
-        @include blackContainer(auto,0);
-    }
-
-    ul{
-        width: 95%;
-        margin: 0 auto;
-        padding: 2rem;
-
-        @include setQeury($md){
-            width: 80%;
-        }
-        
-        li,h3, blockquote{
-            font-family: $title-font;
-            font-size: $normal-text-size;            
-            padding: 1rem;
-            text-align: left;
-
-        }
-
-        li span{
-            padding: 1rem;
-            line-height: 2;
-        }
-
-        span{
-            color: $glr-green;
-        }
-
-        h3{
-            color: $glr-green;
-        }
-
-        blockquote{
-            font-size: 1.6rem;
-            line-height: 1.5;
-            text-align: left;
-        }
-    }
-
-    p{
-        color: $glr-green;
-        padding: 0 0 2rem 0;
-        font-size: 2.5rem;
-    }
-}
-
-
 //end
 }

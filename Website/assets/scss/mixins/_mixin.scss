@@ -46,8 +46,7 @@ $leftLength: 50%;
 }
 
 
-@mixin greenButton($topLenght, $leftLenght,$height,$width) {
-    @include centerAbs($topLenght,$leftLenght);
+@mixin greenButton($height,$width) {
     height: $height;
     width: $width;
     background: $black-container;

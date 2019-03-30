@@ -1,11 +1,11 @@
-#contact{
+.contact{
     margin-top: 0;
 
-    article{
+    .contact__article{
             @include blackContainer(80rem,1);
             margin:  0 auto!important;
 
-            h2{
+            .contact__article--heading{
                 font-size: 4rem;
             }
 
@@ -13,9 +13,11 @@
                 @include blackContainer(80rem,0);
         }
 
-        form{
+        //mobile grid
+        .contact__form{
             width: 95%;
             height: 80%;
+            font-size: 2rem;
             margin: 4rem auto 0 auto;
             display: grid;
             grid-template-columns: 5% 1fr 5%;
@@ -34,6 +36,7 @@
             ". textarea ."
             ". button . ";
 
+            //desktop grid
             @include setQeury($md){
                 grid-template-columns: 5% 40% 50% 5%;
                 grid-template-areas: 
@@ -57,47 +60,48 @@
             height: 3rem;
         }
 
-        input[name="voornaam"]{
+        //grid-area items
+        .form__input--voornaam{
             grid-area: inputvoornaam;
         }
 
-        #contact-voornaam{
+        .form__label--voornaam{
             grid-area: voornaam;
         }
 
-        input[name="achternaam"]{
+        .form__input--achternaam{
             grid-area: inputachternaam;
         }
 
-        #contact-achternaam{
+        .form__label--achternaam{
             grid-area: achternaam;
         }
 
-        input[name="email"]{
+        .form__input--email{
             grid-area: inputemail;
         }
 
-        #contact-email{
+        .form__label--email{
             grid-area: email;
         }
 
-        input[name="telefoon"]{
+        .form__input--telefoon{
             grid-area: inputtelefoon;
         }
 
-        #contact-telefoon{
+        .form__label--telefoon{
             grid-area: telefoon;
         }
 
-        input[name="kind"]{
+        .form__input--kind{
             grid-area: inputkind;
         }
 
-        #contact-kind{
+        .form__label--kind{
             grid-area: kind;
         }
 
-        input[type="submit"]{
+        .form__button--send{
             grid-area: button;
             background: $black-container;
             color: #f1f1f1;
@@ -111,14 +115,15 @@
             }
         }
 
-        #contact-bericht{
+        .form__label--bericht{
             grid-area: uwBericht;
         }
 
-        textarea{
+        .form_textarea--bericht{
             grid-area: textarea;
             width: 100%;
             height: 10rem;
+            font-size: 2rem;
         }
 
     }
