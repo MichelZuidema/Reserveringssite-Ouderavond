@@ -95,7 +95,7 @@
  ////// student info
 
 
-  #studentInfo{
+  .studentInfo{
       @include blackContainer(auto,1);
       padding: 0 2rem 6rem 2rem;
 
@@ -103,23 +103,23 @@
           @include blackContainer(auto,0);
       }
 
-      section{
+      .studentInfo__section{
         text-align: left;
         line-height: 1.5;
         margin: 2rem;
 
-        label{
+        .studentInfo__label{
             color: $glr-green;
         }
 
-        p{
+        .studentInfo__text{
             line-height: 1.5;
             font-size: 2rem;
         }
         
-        button{
+        .studentIno__button{
             display: block;
-            width: 35rem;
+            width: 100%;
             height: 4rem;
             margin: 2rem 0 0 0;
             background: $black-container;
@@ -128,6 +128,10 @@
             box-shadow: 1px 1.5px 6px #111;
             color: #fff;
             font-weight: 900;
+
+            @include setQeury($sm){
+                width: 35rem;
+            }
 
             &:hover{
                 background: rgb(19, 19, 19);
@@ -142,8 +146,8 @@
             font-size: 2rem;
         }
 
-        #mentor-wijzig{
-            width: 35rem;
+        .studentInfo__button--send{
+            width: 100%;
             height: 4rem;
             margin: 2rem auto 0 auto;
             background: $black-container;

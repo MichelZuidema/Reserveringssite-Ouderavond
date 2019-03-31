@@ -2051,7 +2051,7 @@ body > header figure img {
   grid-area: student;
 }
 
-.mentorpage #studentInfo {
+.mentorpage .studentInfo {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -2064,7 +2064,7 @@ body > header figure img {
 }
 
 @media only screen and (min-width: 1024px) {
-  .mentorpage #studentInfo {
+  .mentorpage .studentInfo {
     width: 100%;
     max-width: 80rem;
     margin: 5rem auto 0 auto;
@@ -2077,24 +2077,24 @@ body > header figure img {
   }
 }
 
-.mentorpage #studentInfo section {
+.mentorpage .studentInfo .studentInfo__section {
   text-align: left;
   line-height: 1.5;
   margin: 2rem;
 }
 
-.mentorpage #studentInfo section label {
+.mentorpage .studentInfo .studentInfo__section .studentInfo__label {
   color: #8FE501;
 }
 
-.mentorpage #studentInfo section p {
+.mentorpage .studentInfo .studentInfo__section .studentInfo__text {
   line-height: 1.5;
   font-size: 2rem;
 }
 
-.mentorpage #studentInfo section button {
+.mentorpage .studentInfo .studentInfo__section .studentIno__button {
   display: block;
-  width: 35rem;
+  width: 100%;
   height: 4rem;
   margin: 2rem 0 0 0;
   background: #1C1C1C;
@@ -2106,11 +2106,17 @@ body > header figure img {
   font-weight: 900;
 }
 
-.mentorpage #studentInfo section button:hover {
+@media only screen and (min-width: 480px) {
+  .mentorpage .studentInfo .studentInfo__section .studentIno__button {
+    width: 35rem;
+  }
+}
+
+.mentorpage .studentInfo .studentInfo__section .studentIno__button:hover {
   background: #131313;
 }
 
-.mentorpage #studentInfo section #mentor-notities {
+.mentorpage .studentInfo .studentInfo__section #mentor-notities {
   width: 100%;
   height: 15rem;
   max-width: 80rem;
@@ -2118,8 +2124,8 @@ body > header figure img {
   font-size: 2rem;
 }
 
-.mentorpage #studentInfo section #mentor-wijzig {
-  width: 35rem;
+.mentorpage .studentInfo .studentInfo__section .studentInfo__button--send {
+  width: 100%;
   height: 4rem;
   margin: 2rem auto 0 auto;
   background: #1C1C1C;
@@ -2131,7 +2137,7 @@ body > header figure img {
   font-weight: 900;
 }
 
-.mentorpage #studentInfo section #mentor-wijzig:hover {
+.mentorpage .studentInfo .studentInfo__section .studentInfo__button--send:hover {
   background: #131313;
 }
 
