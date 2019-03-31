@@ -2311,7 +2311,9 @@ label {
   }
 }
 
-body > footer {
+
+.footer {
+
   position: relative;
   height: 54rem;
   width: 100vw;
@@ -2321,18 +2323,18 @@ body > footer {
 }
 
 @media only screen and (min-width: 480px) {
-  body > footer {
+  .footer {
     height: 40rem;
   }
 }
 
 @media only screen and (min-width: 720px) {
-  body > footer {
+  .footer {
     height: 26rem;
   }
 }
 
-body > footer #footer-container {
+.footer .footer__container {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -2347,18 +2349,18 @@ body > footer #footer-container {
 }
 
 @media only screen and (min-width: 480px) {
-  body > footer #footer-container {
+  .footer .footer__container {
     height: 44rem;
   }
 }
 
 @media only screen and (min-width: 720px) {
-  body > footer #footer-container {
+  .footer .footer__container {
     height: 26rem;
   }
 }
 
-body > footer #footer-socialmedia {
+.footer .footer__socialmedia {
   margin: 2rem auto;
   position: absolute;
   left: 14rem;
@@ -2368,51 +2370,51 @@ body > footer #footer-socialmedia {
 }
 
 @media only screen and (min-width: 480px) {
-  body > footer #footer-socialmedia {
+  .footer .footer__socialmedia {
     left: 13rem;
     top: 0;
   }
 }
 
 @media only screen and (min-width: 720px) {
-  body > footer #footer-socialmedia {
+  .footer .footer__socialmedia {
     left: 60%;
     top: -1rem;
   }
 }
 
-body > footer figure {
+.footer .socialmedia__figure {
   padding: 1rem 0;
 }
 
-body > footer figure a {
+.footer .socialmedia__figure .socialmedia__icon {
   text-decoration: none;
   color: #f1f1f1;
 }
 
 @media only screen and (min-width: 480px) {
-  body > footer figure {
+  .footer .socialmedia__figure {
     padding: 0;
   }
 }
 
-body > footer figure img {
+.footer .socialmedia__figure .socialmedia__icon__img {
   width: 6rem;
   height: 6rem;
 }
 
-body > footer figure section {
+.footer .socialmedia__figure .socialmedia__text__container {
   width: 15rem;
   display: inline-block;
 }
 
 @media only screen and (min-width: 720px) {
-  body > footer figure section {
+  .footer .socialmedia__figure .socialmedia__text__container {
     width: 20rem;
   }
 }
 
-body > footer figure p {
+.footer .socialmedia__figure .socialmedia__text {
   font-size: 1.9rem;
   text-align: left;
   padding: 1rem;
@@ -2420,12 +2422,12 @@ body > footer figure p {
 }
 
 @media only screen and (min-width: 1024px) {
-  body > footer figure p {
+  .footer .socialmedia__figure .socialmedia__text {
     font-size: 2.2rem;
   }
 }
 
-body > footer #footer-contact {
+.footer .footer__contact {
   font-size: calc(15rem * 1vw);
   position: absolute;
   font-size: 1.7rem;
@@ -2434,70 +2436,70 @@ body > footer #footer-contact {
   bottom: 7rem;
 }
 
-body > footer #footer-contact li {
+.footer .footer__contact .contact-li {
   padding: .5rem;
   line-height: 2rem;
 }
 
 @media only screen and (min-width: 720px) {
-  body > footer #footer-contact li {
+  .footer .footer__contact .contact-li {
     line-height: 3rem;
   }
 }
 
 @media only screen and (min-width: 480px) {
-  body > footer #footer-contact {
+  .footer .footer__contact {
     bottom: 2rem;
     left: 0;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  body > footer #footer-contact {
+  .footer .footer__contact {
     font-size: 2.2rem;
   }
 }
 
-body > footer #footer-logo {
+.footer .footer__logo {
   position: absolute;
   right: 2rem;
   bottom: 2rem;
 }
 
 @media only screen and (min-width: 720px) {
-  body > footer #footer-logo {
+  .footer .footer__logo {
     top: 4.5rem;
     right: 2rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  body > footer #footer-logo {
+  .footer .footer__logo {
     right: 4.5rem;
   }
 }
 
-body > footer #footer-logo img {
+.footer .footer__logo .footer__logo--img {
   width: 10rem;
   height: 10rem;
 }
 
 @media only screen and (min-width: 480px) {
-  body > footer #footer-logo img {
+  .footer .footer__logo .footer__logo--img {
     width: 14rem;
     height: 14rem;
   }
 }
 
 @media only screen and (min-width: 720px) {
-  body > footer #footer-logo img {
+  .footer .footer__logo .footer__logo--img {
     width: 15rem;
     height: 15rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  body > footer #footer-logo img {
+  .footer .footer__logo .footer__logo--img {
     width: 17rem;
     height: 17rem;
   }
