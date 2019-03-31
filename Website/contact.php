@@ -84,7 +84,6 @@
                     <p>Wij zullen zo spoedig mogelijk contact opnemen!</p>
                 </div>
             </section>
-<<<<<<< HEAD
         <article class="contact__article">
             <h2 class="contact__article--heading">Neem contact op</h2>
             <form action="" method="post" class="contact__form">
@@ -109,33 +108,6 @@
                 <textarea class="form_textarea--bericht"></textarea>
                 <!-- submit button -->                
                 <input type="submit" onclick="validate()" value="Verzenden" class="form__button--send">
-=======
-        <article>
-            <h2>Neem contact op</h2>
-            <form action="" method="POST">
-                <label id="contact-voornaam">Voornaam:</label>
-                <input type="text" id="voornaam" name="voornaam" require>
-
-                <label id="contact-achternaam">Achternaam:</label>
-                <input type="text" name="achternaam" require>
-
-
-                <label id="contact-email">E-mail:</label>
-                <input type="text" name="email" require>
-
-                
-                <label id="contact-telefoon">Telefoonummer:</label>
-                <input type="number" name="telefoon">
-
-
-                <label id="contact-kind">Betreft kind:</label>
-                <input type="text" name="kind" require>
-                
-                <label id="contact-bericht">Uw bericht</label>
-                <textarea name="bericht"></textarea>
-                
-                <input type="submit" value="Verzenden" onclick="validate()" class="sendButton" name="btnSubmit">
->>>>>>> 118995e75918c8442b9ab21a47d8c70f047a8176
             </form>
         </article>
     </main>
