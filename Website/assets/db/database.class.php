@@ -15,7 +15,7 @@ class Database {
     public function __construct() {
         $this->Connect();
     }
-    
+
     // Connection Function
     public function Connect() {
         // Database Credentials
@@ -44,17 +44,6 @@ class Database {
 
         // Return the data that was requested
         return $row[$specificRow];
-    }
-
-    public function GetSpecificRowFromTable($specificRow, $table) {
-        // SQL Select 
-        $sql = "SELECT $specificRow FROM $table";
-        // Execute the query into the database
-        $result = mysqli_query($this->mysqli, $sql);
-        
-        while($rij = mysqli_fetch_array($result)) {
-            echo $rij[$specificRow] . "<br>";
-        }
     }
 
     // Close Connection Function

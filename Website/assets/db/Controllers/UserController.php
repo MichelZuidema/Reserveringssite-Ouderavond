@@ -1,4 +1,4 @@
-    <?php
+<?php
 /*
     This class extends the Database class
     The functions in this class are all the functions the user will need to talk to the database except connecting etc.
@@ -143,7 +143,7 @@ class UserController extends Database {
         // Unset all variables in session
         if(session_unset()) {
             // Destroy session
-            session_destroy();  
+            session_destroy();
             return true;
         } else {
             $_SESSION['errormsg'] = "Er is iets foutgegegaan met het uitloggen!";

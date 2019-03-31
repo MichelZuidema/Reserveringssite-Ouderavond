@@ -1,7 +1,7 @@
 <?php
 
 // Require database class
-require("../database.class.php");
+require __DIR__ . "/../database.class.php";
 
 // Start session
 if(session_id() == '') {
@@ -22,7 +22,7 @@ class TimeTableController extends Database {
         // SQL to get the row 'bezet' whith the ID of the mentor
         $sql = "SELECT bezet FROM tijdstip WHERE id='$timeID'";
         // Execute the SQL Query into the database
-        $result = mysqli_query($this->mysqli, $sql);   
+        $result = mysqli_query($this->mysqli, $sql);
         // Get array of the result
         $row = mysqli_fetch_assoc($result);
 
@@ -33,7 +33,7 @@ class TimeTableController extends Database {
     // Function to check all dates and their timeSEs for a specific mentor
     public function GetDates($mentorID) {
         // SQL Query to get the datum, tijd_start, tijd_einde with a specific mentor ID
-        $sql = "SELECT datum, tijd_start, tijd_einde FROM tijdstip WHERE mentor_id='$mentorID'"; 
+        $sql = "SELECT datum, tijd_start, tijd_einde FROM tijdstip WHERE mentor_id='$mentorID'";
         // Execute the query into the database
         $result = mysqli_query($this->mysqli, $sql);
 
@@ -80,18 +80,18 @@ class TimeTableController extends Database {
         $timeBegin = $timeArray[0];
         $timeEnd = $timeArray[1];
         $class_id = $_SESSION['class_id'];
-        
+
         // Sql query to get the tijdstip_id from the database
         $sql = "SELECT id FROM tijdstip WHERE tijd_start='$timeBegin' AND tijd_einde='$timeEnd' AND mentor_id= ( SELECT id FROM mentor WHERE klas_id='$class_id')";
         $result = mysqli_query($this->mysqli, $sql);
         $rij = mysqli_fetch_array($result);
         $tijdstip_id = $rij['id'];
-        
+
         // Check if the logged in user already has a reservation
         $duplicateCheck = "SELECT * FROM reservering WHERE student_id='$student_id'";
         $duplicateResult = mysqli_query($this->mysqli, $duplicateCheck);
         $duplicateRowCount = mysqli_num_rows($duplicateResult);
-        
+
         // If any duplicates exist, give error
         if($duplicateRowCount > 0) {
             $_SESSION['errormsg'] = "U heeft al een reservering!";
