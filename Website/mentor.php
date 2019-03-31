@@ -16,7 +16,7 @@
     ?>
     <main class="mentorpage">
         <section class="select--student">
-            <h2 class="student__heading">Kies uw klas</h2>
+            <h2 class="student__heading">Kies een student</h2>
             <section class="student__img__container">
                 <img src="assets/img/GLRlogo_RGB.png" alt="GLR-logo" class="student__img">
             </section>
