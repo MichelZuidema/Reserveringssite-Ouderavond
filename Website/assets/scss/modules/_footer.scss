@@ -1,11 +1,10 @@
 body>footer{
-    position: absolute;
-    bottom: -10rem;
+    position: relative;
     height: 54rem;
     width: 100vw;
     background: $glr-green;
     font-family: $text-font;
-    margin: 10rem 0 0 0;
+    margin: 20rem 0 0 0;
 
     @include setQeury($sm){
         height: 40rem;
