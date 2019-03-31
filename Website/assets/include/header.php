@@ -19,23 +19,23 @@
     <link rel="stylesheet" href="assets/css-import/all.css">    
 </head>
 <body>
-    <header>
-        <section id="header-hamburger"><section></section></section>
-        <nav>
-            <article><div></div></article>
-            <ul>
+    <header class="header">
+        <section class="header__icon--hamburger"><section class="icon__hamburger--bars"></section></section>
+        <nav class="header__nav">
+            <article class="header__icon--cross"><div class="icon__cross--bars"></div></article>
+            <ul class="header__ul">
                 <!-- changes styles depening on the page -->
-                <li><a href="index.php" class="<?php if($selectedLink == "index"){ echo $selectedLinkActive;} ?>">Homepagina</a></li>
-                <li><a href="tijdschema.php" class="<?php if($selectedLink == "tijdschema"){ echo $selectedLinkActive;} ?>">Tijdschema</a></li>
-                <li><a href="https://www.glr.nl/">GLR website</a></li>
-                <li><a href="contact.php" class="<?php if($selectedLink == "contact"){ echo $selectedLinkActive;} ?>">Contactpagina</a></li>
+                <li class="header__li"><a href="index.php" class="<?php if($selectedLink == "index"){ echo $selectedLinkActive;} ?> header__anker">Homepagina</a></li>
+                <li class="header__li"><a href="tijdschema.php" class="<?php if($selectedLink == "tijdschema"){ echo $selectedLinkActive;} ?> header__anker">Tijdschema</a></li>
+                <li class="header__li"><a href="https://www.glr.nl/" class="header__anker">GLR website</a></li>
+                <li class="header__li"><a href="contact.php" class="<?php if($selectedLink == "contact"){ echo $selectedLinkActive;} ?> header__anker">Contactpagina</a></li>
             </ul>
         </nav>
-        <section><span><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Onbekend"; } ?></span></section>
-        <section>
-            <h1>Inschrijving</h1>
-            <h1>Ouderavond</h1>
+        <section class="header__user"><span><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Onbekend"; } ?></span></section>
+        <section class="header__title">
+            <h1 class="header__title__h1 title--1">Inschrijving</h1>
+            <h1 class="header__title__h1 title--2">Ouderavond</h1>
         </section>
         <!-- school logo -->
-        <figure><a href="index.php"><img src="assets/img/school.jpg" alt="School-image"></a></figure>
+        <figure class="header__logo"><a href="index.php"><img src="assets/img/school.jpg" alt="School-image" class="header__logo--img"></a></figure>
     </header>
