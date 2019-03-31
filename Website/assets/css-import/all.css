@@ -2141,7 +2141,7 @@ body > header figure img {
   background: #131313;
 }
 
-.mentorpage #planningStudent {
+#planningStudent {
   position: relative;
   width: 100%;
   max-width: 80rem;
@@ -2151,11 +2151,12 @@ body > header figure img {
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
   border-top: 3px solid #484646;
+  margin: 0 auto !important;
   padding: 0 2rem 6rem 2rem;
 }
 
 @media only screen and (min-width: 1024px) {
-  .mentorpage #planningStudent {
+  #planningStudent {
     width: 100%;
     max-width: 80rem;
     margin: 5rem auto 0 auto;
@@ -2168,11 +2169,11 @@ body > header figure img {
   }
 }
 
-.mentorpage #planningStudent h2 {
+#planningStudent h2 {
   margin: 2rem 0 4rem 0;
 }
 
-.mentorpage #planningStudent #planningGrid ul {
+#planningStudent #planningGrid ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -2184,31 +2185,31 @@ body > header figure img {
   grid-gap: 1rem;
 }
 
-.mentorpage #planningStudent #planningGrid ul :nth-child(1) {
+#planningStudent #planningGrid ul :nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
 }
 
-.mentorpage #planningStudent #planningGrid ul :nth-child(2) {
+#planningStudent #planningGrid ul :nth-child(2) {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
 
-.mentorpage #planningStudent #planningGrid ul :nth-child(3) {
+#planningStudent #planningGrid ul :nth-child(3) {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
 }
 
-.mentorpage #planningStudent #planningGrid ul :nth-child(4) {
+#planningStudent #planningGrid ul :nth-child(4) {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
 }
 
-.mentorpage #planningStudent #planningGrid ul li {
+#planningStudent #planningGrid ul li {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -2225,19 +2226,19 @@ body > header figure img {
   border: 1px solid #707070;
 }
 
-.mentorpage #planningStudent #planningGrid ul li p {
+#planningStudent #planningGrid ul li p {
   margin: 3.5rem auto;
   font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 720px) {
-  .mentorpage #planningStudent #planningGrid ul li p {
+  #planningStudent #planningGrid ul li p {
     margin: 4rem auto;
     font-size: 2rem;
   }
 }
 
-.mentorpage #planningStudent #planningInfo {
+#planningStudent #planningInfo {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -2255,12 +2256,12 @@ body > header figure img {
   bottom: -5rem;
 }
 
-.mentorpage #planningStudent #planningInfo p {
+#planningStudent #planningInfo p {
   display: inline-block;
   padding: 0 3rem;
 }
 
-.mentorpage #planningStudent #planningInfo :nth-child(1)::before {
+#planningStudent #planningInfo :nth-child(1)::before {
   content: '';
   margin: 2rem 25% 1rem 25%;
   -webkit-transform: translateX(-25%);
@@ -2271,7 +2272,7 @@ body > header figure img {
   background: #111111;
 }
 
-.mentorpage #planningStudent #planningInfo :nth-child(2)::before {
+#planningStudent #planningInfo :nth-child(2)::before {
   content: '';
   margin: 2rem 75% 1rem 75%;
   -webkit-transform: translateX(-75%);
