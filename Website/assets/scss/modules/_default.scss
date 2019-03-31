@@ -31,16 +31,3 @@ label{
     font-family: $text-font;
     font-size: $normal-text-size;
 }
-
-//bottom margin for the main
-main{
-    margin:  0 0 64rem 0;
-
-    @include setQeury($sm){
-        margin:  0 0 50rem 0;
-        
-    }
-    @include setQeury($md){
-        margin:  0 0 36rem 0;
-    }
-}

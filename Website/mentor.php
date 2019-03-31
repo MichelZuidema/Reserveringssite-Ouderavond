@@ -16,7 +16,7 @@
     ?>
     <main class="mentorpage">
         <section class="select--student">
-            <h2 class="student__heading">Kies uw klas</h2>
+            <h2 class="student__heading">Kies een student</h2>
             <section class="student__img__container">
                 <img src="assets/img/GLRlogo_RGB.png" alt="GLR-logo" class="student__img">
             </section>
@@ -46,35 +46,35 @@
                 </select>
             </section>
         </section>
-        <form id="studentInfo">
+        <form class="studentInfo">
             <h2>Inschrijvings info</h2>
-            <section>
-                <label>Naam:</label>
-                <p>klaas</p>
+            <section class="studentInfo__section">
+                <label class="studentInfo__label">Naam:</label>
+                <p class="studentInfo__text">klaas</p>
             </section>
-            <section>
-                <label>Aantal personen:</label>
-                <p>3</p>
+            <section class="studentInfo__section">
+                <label class="studentInfo__label">Aantal personen:</label>
+                <p class="studentInfo__text">3</p>
             </section>
-            <section>
-                <label>Gewenste tijd:</label>
-                <p>18:00 t/m 19:00</p>
+            <section class="studentInfo__section">
+                <label class="studentInfo__label">Gewenste tijd:</label>
+                <p class="studentInfo__text">18:00 t/m 19:00</p>
             </section>
-            <section>
-                <label>Ingeschreven tijd:</label>
-                <button>18:00 t/m 18:15</button>
-                <button>18:00 t/m 18:15</button>
-                <button>18:00 t/m 18:15</button>
-                <button>18:00 t/m 18:15</button>
+            <section class="studentInfo__section">
+                <label class="studentInfo__label">Ingeschreven tijd:</label>
+                <button class="studentIno__button">18:00 t/m 18:15</button>
+                <button class="studentIno__button">18:00 t/m 18:15</button>
+                <button class="studentIno__button">18:00 t/m 18:15</button>
+                <button class="studentIno__button">18:00 t/m 18:15</button>
             </section>
-            <section>
-                <label>Opmerking of vraag:</label>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corporis dignissimos nostrum accusamus dolor iste accusantium repellendus? Unde</p>
+            <section class="studentInfo__section">
+                <label class="studentInfo__label">Opmerking of vraag:</label>
+                <p class="studentInfo__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corporis dignissimos nostrum accusamus dolor iste accusantium repellendus? Unde</p>
             </section>
-            <section>
-                <label>Notities mentor:</label>
+            <section class="studentInfo__section">
+                <label class="studentInfo__label">Notities mentor:</label>
                 <textarea id="mentor-notities"></textarea>
-                <input type="submit" id="mentor-wijzig" value="Opslaan">
+                <input type="submit" class="studentInfo__button--send" value="Opslaan">
             </section>
         </form>
         <form id="planningStudent" method="POST">
