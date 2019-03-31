@@ -767,10 +767,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 img {
   max-width: 100vw;
 }
@@ -1203,11 +1199,11 @@ body > header figure img {
 
 @media only screen and (min-width: 1024px) {
   .homepage {
-    -ms-grid-rows: minmax(20rem, 1fr) minmax(20rem, 1fr) minmax(20rem, 1fr);
+    -ms-grid-rows: auto auto auto;
     -ms-grid-columns: 1fr 1fr;
-        grid-template: minmax(20rem, 1fr) minmax(20rem, 1fr) minmax(20rem, 1fr)/1fr 1fr;
+        grid-template: auto auto auto / 1fr 1fr;
     width: 90%;
-    height: 100%;
+    max-width: 160rem;
     margin: 0 auto 34rem auto;
   }
 }
@@ -1448,7 +1444,7 @@ body > header figure img {
           box-shadow: 1px 1.5px 6px #000;
   border-top: 3px solid #484646;
   padding: 0 2rem 4rem 2rem;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 0 auto !important;
   position: relative;
 }
 
@@ -2303,7 +2299,7 @@ body > footer {
   width: 100vw;
   background: #8FE501;
   font-family: "Nunito Sans", sans-serif;
-  margin: 10rem 0 0 0;
+  margin: 20rem 0 0 0;
 }
 
 @media only screen and (min-width: 480px) {
