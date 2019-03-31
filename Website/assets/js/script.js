@@ -2,7 +2,7 @@
 /////// Navigation menu
 
 //open navigation menu
-$("#header-hamburger").click(function(){
+$(".header__icon--hamburger").click(function(){
         $("header nav").addClass("toggleOn");
         $(".toggleOn").slideDown(2000);
         $("body").addClass("overflow");

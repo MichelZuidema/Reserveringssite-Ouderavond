@@ -1,11 +1,10 @@
-body>footer{
-    position: absolute;
-    bottom: -10rem;
+.footer{
+    position: relative;
     height: 54rem;
     width: 100vw;
     background: $glr-green;
     font-family: $text-font;
-    margin: 10rem 0 0 0;
+    margin: 20rem 0 0 0;
 
     @include setQeury($sm){
         height: 40rem;
@@ -18,7 +17,7 @@ body>footer{
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  //black container
 
-    #footer-container{
+    .footer__container{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -41,7 +40,7 @@ body>footer{
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //social media icons 
 
-    #footer-socialmedia{
+    .footer__socialmedia{
         margin: 2rem auto;
         position: absolute;
         left: 14rem;
@@ -59,10 +58,10 @@ body>footer{
         }
     }
 
-    figure{ 
+    .socialmedia__figure{ 
         padding: 1rem 0;
 
-        a{
+        .socialmedia__icon{
             text-decoration: none;
             color: #f1f1f1;
         }
@@ -71,13 +70,13 @@ body>footer{
             padding: 0;
         }
         
-        img{
+        .socialmedia__icon__img{
             width: 6rem;
             height: 6rem;
             
         }
 
-        section{
+        .socialmedia__text__container{
             width: 15rem;
             display: inline-block;
 
@@ -86,7 +85,7 @@ body>footer{
             }
         }
 
-        p{
+        .socialmedia__text{
             font-size: 1.9rem;
             text-align: left;
             padding: 1rem;
@@ -102,7 +101,7 @@ body>footer{
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // footer contact info
 
-    #footer-contact{
+    .footer__contact{
         font-size: $footer-text;
         position: absolute;
         font-size: 1.7rem;
@@ -110,7 +109,7 @@ body>footer{
         margin: 2.5rem;
         bottom: 7rem;
 
-        li{
+        .contact-li{
             padding: .5rem;
             line-height: 2rem;
 
@@ -132,7 +131,7 @@ body>footer{
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //school logo
 
-    #footer-logo{
+    .footer__logo{
         position: absolute;
         right: 2rem;
         bottom: 2rem;
@@ -146,7 +145,7 @@ body>footer{
             right: 4.5rem;
         }
 
-        img{
+        .footer__logo--img{
             width: 10rem;
             height: 10rem;
 
