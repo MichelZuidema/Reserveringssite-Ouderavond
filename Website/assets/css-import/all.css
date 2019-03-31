@@ -810,12 +810,13 @@ label {
   font-size: 2.2rem;
 }
 
-body > header {
+.header {
+
   position: relative;
   height: 40rem;
 }
 
-body > header section:nth-child(1) {
+.header .header__icon--hamburger {
   width: 50px;
   height: 50px;
   position: relative;
@@ -823,14 +824,14 @@ body > header section:nth-child(1) {
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header section:nth-child(1) {
+  .header .header__icon--hamburger {
     display: none;
   }
 }
 
-body > header section:nth-child(1) section,
-body > header section:nth-child(1) section:before,
-body > header section:nth-child(1) section:after {
+.header .header__icon--hamburger .icon__hamburger--bars,
+.header .header__icon--hamburger .icon__hamburger--bars:before,
+.header .header__icon--hamburger .icon__hamburger--bars:after {
   content: '';
   display: block;
   background: #f1f1f1;
@@ -839,7 +840,7 @@ body > header section:nth-child(1) section:after {
   border-radius: 0.3rem;
 }
 
-body > header section:nth-child(1) section {
+.header .header__icon--hamburger .icon__hamburger--bars {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -847,22 +848,22 @@ body > header section:nth-child(1) section {
   top: 45%;
 }
 
-body > header section:nth-child(1) section:after {
+.header .header__icon--hamburger .icon__hamburger--bars:after {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
 }
 
-body > header section:nth-child(1) section:before {
+.header .header__icon--hamburger .icon__hamburger--bars:before {
   -webkit-transform: translateY(-6px);
           transform: translateY(-6px);
 }
 
-body > header nav {
-  display: block;
+.header .header__nav {
+  display: none;
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header nav {
+  .header .header__nav {
     width: 90vw;
     -webkit-transition: width 2s;
     transition: width 2s;
@@ -882,18 +883,18 @@ body > header nav {
 }
 
 @media only screen and (min-width: 2000px) {
-  body > header nav {
+  .header .header__nav {
     width: 70vw;
   }
 }
 
-body > header nav article {
+.header .header__nav .header__icon--cross {
   position: absolute;
   width: 7rem;
   height: 6rem;
 }
 
-body > header nav div {
+.header .header__nav .icon__cross--bars {
   background: #1C1C1C;
   height: 3rem;
   position: relative;
@@ -905,12 +906,12 @@ body > header nav div {
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header nav div {
+  .header .header__nav .icon__cross--bars {
     display: none;
   }
 }
 
-body > header nav div:after {
+.header .header__nav .icon__cross--bars:after {
   background: #1C1C1C;
   content: "";
   height: .6rem;
@@ -920,7 +921,7 @@ body > header nav div:after {
   width: 3rem;
 }
 
-body > header nav ul {
+.header .header__nav .header__ul {
   height: 100%;
   display: -ms-grid;
   display: grid;
@@ -932,7 +933,7 @@ body > header nav ul {
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header nav ul {
+  .header .header__nav .header__ul {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -945,14 +946,14 @@ body > header nav ul {
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header nav ul li {
+  .header .header__nav .header__ul .header__li {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
 }
 
-body > header nav ul li a {
+.header .header__nav .header__ul .header__li .header__anker {
   opacity: .7;
   color: #1C1C1C;
   font-size: 4rem;
@@ -960,20 +961,20 @@ body > header nav ul li a {
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header nav ul li a {
+  .header .header__nav .header__ul .header__li .header__anker {
     color: #f1f1f1;
     font-size: 2.8rem;
   }
 }
 
-body > header nav ul li a:hover {
+.header .header__nav .header__ul .header__li .header__anker:hover {
   opacity: 1;
   -webkit-transition: opacity 500ms;
   transition: opacity 500ms;
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header nav ul li a:hover {
+  .header .header__nav .header__ul .header__li .header__anker:hover {
     color: #8FE501;
     -webkit-transition: all 500ms;
     transition: all 500ms;
@@ -982,13 +983,13 @@ body > header nav ul li a:hover {
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header nav ul li a:not(:hover) {
+  .header .header__nav .header__ul .header__li .header__anker:not(:hover) {
     -webkit-transition: 500ms;
     transition: 500ms;
   }
 }
 
-body > header nav ul li a:after {
+.header .header__nav .header__ul .header__li .header__anker:after {
   opacity: .7;
   content: '';
   display: block;
@@ -998,20 +999,20 @@ body > header nav ul li a:after {
   width: 60%;
 }
 
-body > header nav ul li a:after :hover {
+.header .header__nav .header__ul .header__li .header__anker:after :hover {
   opacity: 1;
   -webkit-transition: opacity 500ms;
   transition: opacity 500ms;
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header nav ul li a:after {
+  .header .header__nav .header__ul .header__li .header__anker:after {
     background: #f1f1f1;
     width: calc(10rem + 4vw);
   }
 }
 
-body > header section:nth-child(3) {
+.header .header__user {
   padding: .5rem;
   font-size: calc(2.6rem + .5vw);
   position: absolute;
@@ -1022,7 +1023,7 @@ body > header section:nth-child(3) {
 }
 
 @media only screen and (min-width: 720px) {
-  body > header section:nth-child(3) {
+  .header .header__user {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     left: unset;
@@ -1031,7 +1032,7 @@ body > header section:nth-child(3) {
   }
 }
 
-body > header section:nth-child(4) {
+.header .header__title {
   font-family: "Montserrat", sans-serif;
   color: #8FE501;
   text-transform: uppercase;
@@ -1039,7 +1040,7 @@ body > header section:nth-child(4) {
   text-shadow: 1px 1.5px 6px #000;
 }
 
-body > header h1 {
+.header .header__title__h1 {
   font-size: calc(2.8rem + 1vw);
   position: absolute;
   left: 50%;
@@ -1049,19 +1050,19 @@ body > header h1 {
 }
 
 @media only screen and (min-width: 1440px) {
-  body > header h1 {
+  .header .header__title__h1 {
     font-weight: bold;
   }
 }
 
 @media only screen and (min-width: 2000px) {
-  body > header h1 {
+  .header .header__title__h1 {
     font-size: calc(4rem + 1vw);
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header h1:nth-child(1) {
+  .header .title--1 {
     position: absolute;
     left: 25%;
     -webkit-transform: translateX(-50%);
@@ -1071,7 +1072,7 @@ body > header h1 {
 }
 
 @media only screen and (min-width: 2000px) {
-  body > header h1:nth-child(1) {
+  .header .title--1 {
     position: absolute;
     left: 30%;
     -webkit-transform: translateX(-50%);
@@ -1080,12 +1081,12 @@ body > header h1 {
   }
 }
 
-body > header h1:nth-child(2) {
+.header .title--2 {
   top: 65%;
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header h1:nth-child(2) {
+  .header .title--2 {
     position: absolute;
     left: 75%;
     -webkit-transform: translateX(-50%);
@@ -1095,7 +1096,7 @@ body > header h1:nth-child(2) {
 }
 
 @media only screen and (min-width: 2000px) {
-  body > header h1:nth-child(2) {
+  .header .title--2 {
     position: absolute;
     left: 70%;
     -webkit-transform: translateX(-50%);
@@ -1104,7 +1105,7 @@ body > header h1:nth-child(2) {
   }
 }
 
-body > header figure {
+.header .header__logo {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1113,10 +1114,10 @@ body > header figure {
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header figure {
+  .header .header__logo {
     top: 2rem;
   }
-  body > header figure :hover {
+  .header .header__logo :hover {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     -webkit-transition: 1200ms;
@@ -1124,7 +1125,7 @@ body > header figure {
   }
 }
 
-body > header figure img {
+.header .header__logo .header__logo--img {
   width: 20rem;
   border: 4px solid #8FE501;
   -webkit-box-shadow: 1px 1.5px 6px #000;
@@ -1132,7 +1133,7 @@ body > header figure img {
 }
 
 @media only screen and (min-width: 1024px) {
-  body > header figure img {
+  .header .header__logo .header__logo--img {
     border-radius: 100%;
     width: 17em;
     height: 17rem;
