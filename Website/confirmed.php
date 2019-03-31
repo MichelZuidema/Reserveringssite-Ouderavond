@@ -8,15 +8,21 @@
     ?>
     <main class="confirmed">
         <article class="confirmed__article">
-        <section>
-            <h2>Gegevens van uw aanmelding</h2>
-            <ul>
-                <li>Datum: <span>28/4/2020</span></li>
-                <li>gewenste tijd: <span>18:00 t/m 19:00</span></li>
-                <li>Uw opmerking bericht:<blockquote></blockquote></li>
-            </ul>
-            <p>Wij hebben u ook een mail gestuurd met uw gegevens</p>
-        </section>
+            <h2 class="confirmed__heading">Gegevens van uw aanmelding</h2>
+
+            <label class="confirmed__date--label">Datum:</label>
+            <input type="text" value="28/4/2020" class="confirmed__date--input">
+
+            <label class="confirmed__time--label">Gewenste tijd:</label>
+            <input type="text" value="18:00 t/m 19:00" class="confirmed__time--input">
+
+            <label class="confirmed__person--label">Aantal personen</label>
+            <input type="text" value="3 personen" class="confirmed__person--input">
+
+            <label class="confirmed__message--label">Uw opmerking bericht:</label>
+            <textarea class="confirmed__message--input">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit autem accusamus quaerat placeat! Consequuntur nam dolore qui perferendis ratione impedit hic molestiae quos unde sint labore reiciendis quas, ipsam accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia provident, nesciunt eveniet consequatur nostrum et unde ab adipisci fugit pariatur sed doloribus cupiditate molestiae! Eum eius dolor qui eligendi quo! dolor sit amet consectetur adipisicing elit. Eos aperiam recusandae, consequatur voluptatem accusamus inventore quae sunt enim ab quasi excepturi maxime suscipit possimus rerum deserunt ut aliquid et veritatis!</textarea>
+
+            <p class="confirmed__text">Wij hebben u ook een mail gestuurd met uw gegevens</p>
         </article>
     </main>
     <?php

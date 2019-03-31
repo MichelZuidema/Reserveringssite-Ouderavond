@@ -2292,10 +2292,18 @@ label {
   background: #1C1C1C;
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
-  border: 3px solid #484646;
-  margin: 8rem auto 0 auto;
-  padding: 2rem 8rem 8rem 8rem;
+  border-top: 3px solid #484646;
+  padding: 2rem;
   margin-top: 0 !important;
+  text-align: left;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr auto 20rem 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr auto 20rem 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "heading heading" "dateLabel dateInput" "timeLabel timeInput" "personLabel personInput" " messageLabel messageLabel" "messageInput messageInput" "messageText messageText";
+  grid-gap: .5rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -2307,10 +2315,114 @@ label {
     background: #1C1C1C;
     -webkit-box-shadow: 1px 1.5px 6px #000;
             box-shadow: 1px 1.5px 6px #000;
-    border-top: 3px solid #484646;
+    border: 3px solid #484646;
+    margin: 8rem auto 0 auto;
+    padding: 2rem 10rem 6rem 10rem;
   }
 }
 
+
+.confirmed .confirmed__article label {
+  word-wrap: none;
+}
+
+.confirmed .confirmed__article input, .confirmed .confirmed__article textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: transparent;
+  text-shadow: 0 0 0 #fff;
+  cursor: default;
+  border: none;
+  margin: 0 0 0 auto;
+  width: auto;
+  height: 3rem;
+  font-size: 2rem;
+  background: #1C1C1C;
+}
+
+@media only screen and (min-width: 480px) {
+  .confirmed .confirmed__article input, .confirmed .confirmed__article textarea {
+    margin: 0 auto 0 0;
+  }
+}
+
+.confirmed .confirmed__article input :focus, .confirmed .confirmed__article textarea :focus {
+  outline: none;
+}
+
+.confirmed .confirmed__article .confirmed__heading {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: heading;
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.confirmed .confirmed__article .confirmed__date--label {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: dateLabel;
+}
+
+.confirmed .confirmed__article .confirmed__date--input {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: dateInput;
+}
+
+.confirmed .confirmed__article .confirmed__time--label {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: timeLabel;
+}
+
+.confirmed .confirmed__article .confirmed__time--input {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: timeInput;
+}
+
+.confirmed .confirmed__article .confirmed__person--label {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: personLabel;
+}
+
+.confirmed .confirmed__article .confirmed__person--input {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: personInput;
+}
+
+.confirmed .confirmed__article .confirmed__message--label {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: messageLabel;
+}
+
+.confirmed .confirmed__article .confirmed__message--input {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: messageInput;
+  height: auto;
+  padding: 2rem;
+  border: 1.5px solid #707070;
+  margin: 0 0 2rem 0;
+  width: auto;
+}
+
+.confirmed .confirmed__article .confirmed__text {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: messageText;
+  color: #8FE501;
+  font-size: 2.2rem;
+}
 
 .footer {
 
