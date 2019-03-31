@@ -1,4 +1,4 @@
-body>header{
+.header{
     position: relative;
     height: 40rem;
 
@@ -6,7 +6,7 @@ body>header{
 // hamburger menu 
     
     // background 
-    section:nth-child(1){
+    .header__icon--hamburger{
         width: 50px;
         height: 50px;
         position: relative;
@@ -18,9 +18,9 @@ body>header{
         }
         
     // white bars
-        section,
-        section:before,
-        section:after{
+        .icon__hamburger--bars,
+        .icon__hamburger--bars:before,
+        .icon__hamburger--bars:after{
             content: '';
             display: block;
             background: #f1f1f1;
@@ -30,16 +30,16 @@ body>header{
         }
 
         // center white bars in the background
-        section{
+        .icon__hamburger--bars{
             @include centerAbs(45%,50%);
         }
         
         // separates the white bars
-        section:after{
+        .icon__hamburger--bars:after{
             transform: translateY(3px);
         }
 
-        section:before{
+        .icon__hamburger--bars:before{
             transform: translateY(-6px);
         }
     }
@@ -47,12 +47,12 @@ body>header{
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // navigation
     %toggleOff{
-        display: block;
     }
     
     // ul swicht of for mobile view
-    nav{
-        @extend %toggleOff;
+    .header__nav{
+        display: none;
+
 
         @include setQeury($lg){
             width: 90vw;
@@ -71,17 +71,16 @@ body>header{
         }
 
 
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // CSS shape: CROSS
 
-        article{
+        .header__icon--cross{
             position: absolute;
             width: 7rem;
             height: 6rem;
         }
 
-        div{
+        .icon__cross--bars{
             background: $navigation-color;
             height: 3rem;
             position: relative;
@@ -96,7 +95,7 @@ body>header{
             }
         }
 
-        div:after{
+        .icon__cross--bars:after{
             background: $navigation-color;
             content: "";
             height: .6rem;
@@ -108,7 +107,7 @@ body>header{
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // unorderd list
 
-        ul{
+        .header__ul{
             height: 100%;
             display: grid;
             grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -121,12 +120,12 @@ body>header{
                 flex-direction: row;
             }
 
-            li{
+            .header__li{
                 @include setQeury($lg){
                     grid-row: 2/3;
                 }
 
-                a{
+                .header__anker{
                     opacity: .7;
                     color: $navigation-color;
                     font-size: $navigation-mobile-size;
@@ -142,7 +141,7 @@ body>header{
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // hover animation for navigation links
 
-            a:hover{
+            .header__anker:hover{
                 opacity: 1; 
                 transition: opacity 500ms;
 
@@ -153,13 +152,13 @@ body>header{
                 }
             }
 
-            a:not(:hover){
+            .header__anker:not(:hover){
                 @include setQeury($lg){
                     transition: 500ms;
                 }
             }
 
-            a:after{
+            .header__anker:after{
                 opacity: .7;
                 content: '';
                 display: block;
@@ -185,7 +184,7 @@ body>header{
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // current user
 
-    section:nth-child(3){
+    .header__user{
         padding: .5rem;
         font-size: $login-size;
         @include centerAbs(85%,50%);
@@ -201,7 +200,7 @@ body>header{
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Page TITLE
 
-    section:nth-child(4){
+    .header__title{
         font-family: $title-font;
         color: $glr-green;
         text-transform: uppercase;
@@ -210,7 +209,7 @@ body>header{
     }
 
     // standard lengths(top,left)
-    h1{
+    .header__title__h1{
         font-size: $title-size;
         @include centerAbs(10%,50%);
 
@@ -225,7 +224,7 @@ body>header{
     }
 
     // Left title (inschrijving)
-    h1:nth-child(1) {   
+    .title--1{   
         @include setQeury($lg){
         @include centerAbs(8.5rem, 25%);
         }
@@ -236,7 +235,7 @@ body>header{
     }
 
     // right title (ouderavond) 
-    h1:nth-child(2){
+    .title--2{
         top: 65%;
 
         @include setQeury($lg){
@@ -252,7 +251,7 @@ body>header{
 // logo header
 
     // school figure
-    figure{
+    .header__logo{
             @include centerAbs(9rem,50%);
 
             @include setQeury($lg){
@@ -265,7 +264,7 @@ body>header{
 
         }
 
-        img{
+        .header__logo--img{
             width: 20rem;
             border: 4px solid $glr-green;
             box-shadow: 1px 1.5px 6px #000;
