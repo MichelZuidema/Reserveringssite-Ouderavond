@@ -23,7 +23,7 @@ class TimeTableController extends Database {
         // SQL to get the row 'bezet' whith the ID of the mentor
         $sql = "SELECT bezet FROM tijdstip WHERE id='$timeID'";
         // Execute the SQL Query into the database
-        $result = mysqli_query($this->mysqli, $sql);   
+        $result = mysqli_query($this->mysqli, $sql);
         // Get array of the result
         $row = mysqli_fetch_assoc($result);
 
