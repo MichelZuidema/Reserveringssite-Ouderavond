@@ -4,14 +4,20 @@
         //selected navigation link
         $selectedLink = "tijdschema";
 
-        // Start the session to get the logged in user details
-        session_start();
-
         // Header
         if($_SESSION['role'] == 1) {
             require 'assets/include/headerMentor.php';
         } else {
             require 'assets/include/header.php';
+        }
+
+        require("assets/db/Controllers/TimeTableController.php");
+        $time = new TimeTableController();
+
+        if(isset($_POST['inputClass'])) {
+            $class_id = $_POST['inputClass'];
+            $query = "SELECT * FROM student WHERE klas_id = $class_id";
+            $class_result = mysqli_query($time->mysqli, $query);
         }
     ?>
     <main class="mentorpage">
@@ -21,28 +27,31 @@
                 <img src="assets/img/GLRlogo_RGB.png" alt="GLR-logo" class="student__img">
             </section>
             <section class="class">
-                <select class="class__container">
-                    <option value="" class="select--option">Kies een klas</option>
-                    <option value="" class="select--option">i1a</option>
-                    <option value="" class="select--option">i1b</option>
-                    <option value="" class="select--option">i1c</option>
-                    <option value="" class="select--option">i1d</option>
-                    <option value="" class="select--option">i1d</option>
-                </select>
+                <form action="?" method="POST">
+                    <select class="class__container" name="inputClass" onchange="this.form.submit()">
+                        <option value="" class="select--option">Kies een klas</option>
+                        <?php
+                            $query = "SELECT * FROM klas";
+                            $result = mysqli_query($time->mysqli, $query);
+
+                            while($row = mysqli_fetch_array($result)) {
+                                echo "<option value='" . $row['id'] . "' class='select--option'>" . $row['naam'] ."</option>";
+                            }
+                        ?>
+                    </select>
+                </form>
             </section>
             <section class="student">
                 <select class="student__container">
-                    <option value="" class="select--option">Kies een student</option>
-                    <option value="" class="select--option">piet</option>
-                    <option value="" class="select--option">klaas</option>
-                    <option value="" class="select--option">henk</option>
-                    <option value="" class="select--option">bob</option>
-                    <option value="" class="select--option">kevin</option>
-                    <option value="" class="select--option">jan</option>
-                    <option value="" class="select--option">dirk</option>
-                    <option value="" class="select--option">tom</option>
-                    <option value="" class="select--option">kees</option>
-                    <option value="" class="select--option">stefan</option>
+                    <option value="" class="select--option">Geen klas geselecteerd!</option>
+                </select>
+                <select class="student__container">
+                    <option value="" class="select--option">Geen klas geselecteerd!</option>
+                    <?php
+                        while($class_row = mysqli_fetch_array($class_result)) {
+                            echo "<option value='" . $class_row['id'] . "' class='select--option'>" . $class_row['naam'] . "</option>";
+                        }
+                    ?>
                 </select>
             </section>
         </section>

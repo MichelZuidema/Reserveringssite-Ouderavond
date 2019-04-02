@@ -1,6 +1,9 @@
 <?php
     // Start the session to get the logged in user details
-    session_start();
+    // Start session
+    if(session_id() == '') {
+        session_start();
+    }
 
     //stores string for toggling classes
     $selectedLinkActive = "selectedLinkActive";
