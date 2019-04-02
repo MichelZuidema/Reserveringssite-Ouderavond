@@ -811,7 +811,6 @@ label {
 }
 
 .header {
-  
   position: relative;
   height: 40rem;
 }
@@ -2321,7 +2320,6 @@ label {
   }
 }
 
-
 .confirmed .confirmed__article label {
   word-wrap: none;
 }
@@ -2425,7 +2423,6 @@ label {
 }
 
 .footer {
-
   position: relative;
   height: 54rem;
   width: 100vw;
