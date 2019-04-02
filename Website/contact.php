@@ -105,9 +105,9 @@
                 <!-- inputfield + label uw bericht -->                
                 <label class="form__label--bericht">Uw bericht</label>
                 <!-- textarea voor een bericht -->
-                <textarea class="form_textarea--bericht"></textarea>
+                <textarea class="form_textarea--bericht" name="bericht  "></textarea>
                 <!-- submit button -->                
-                <input type="submit" onclick="validate()" value="Verzenden" class="form__button--send">
+                <input type="submit" value="Verzenden" class="form__button--send" name="btnSubmit">
             </form>
         </article>
     </main>

@@ -3,8 +3,6 @@
         $pageTitle = "Inschrijving ouderavond | Grafisch Lyceum Rotterdam";
         //selected navigation link
         $selectedLink = "tijdschema";
-        // Start the session to get the logged in user details
-        session_start();
 
         require("assets/db/Controllers/TimeTableController.php");
         $time = new TimeTableController();
@@ -19,16 +17,17 @@
         if(isset($_POST['formSubmit'])) {
             $time->CreateReservation();
         }
-
-        if($_SESSION['errormsg'] == "") {
-            echo $_SESSION['errormsg'];
-        }
     ?>
     <main class="timetable">
         <!-- form -->
         <form action="?" method="POST">
             <!-- Choose your date -->
             <section class="day-choosing">
+                <?php
+                    if(!empty($_SESSION['errormsg'])) {
+                        echo "<h2>" . $_SESSION['errormsg'] . "</h2>";
+                    }
+                ?>
                 <h2>Kies een Datum</h2>
                 <!-- checkbox + label -->
                 <?php
@@ -38,8 +37,8 @@
                     $row = mysqli_fetch_array($result);
 
                     for($x = 1; $x < count($row); $x++) {
-                        //echo '<input type="checkbox" name="checkbox" class="day-choosing__checkbox" id="day__checkbox">';
-                        echo "<input type='checkbox' name='inputDate' class='checkbox__label' id='day__checkbox' value='" . $row['datum'] . "'>";
+                        echo '<input type="checkbox" name="checkbox" class="day-choosing__checkbox" id="day__checkbox">';
+                        //echo "<input type='checkbox' name='inputDate' class='checkbox__label' id='day__checkbox' value='" . $row['datum'] . "'>";
                         echo "<label class='checkbox__label' for='day__checkbox'>" . $row['datum'] . "</label>\n";
                     }
                 ?>

@@ -58,6 +58,7 @@ class UserController extends Database {
         // Password validation
         if($rowcount > 0) {
             if(password_verify($password, $row['wachtwoord'])) {
+                $_SESSION['id'] = $row['id'];
                 $_SESSION['username'] = $row['naam'];
                 $_SESSION['role'] = 1;
                 return true;
