@@ -1,26 +1,63 @@
-<?php 
-        //page title
-        $pageTitle = "Inschrijving ouderavond | Grafisch Lyceum Rotterdam";
-        //selected navigation link
-        $selectedLink = "tijdschema";
+<?php
+//page title
+$pageTitle = "Inschrijving ouderavond | Grafisch Lyceum Rotterdam";
+//selected navigation link
+$selectedLink = "tijdschema";
 
-        // Header
-        if($_SESSION['role'] == 1) {
-            require 'assets/include/headerMentor.php';
-        } else {
-            require 'assets/include/header.php';
-        }
+// Header
+if ($_SESSION['role'] == 1) {
+    require 'assets/include/headerMentor.php';
+} else {
+    require 'assets/include/header.php';
+}
 
-        require("assets/db/Controllers/TimeTableController.php");
-        $time = new TimeTableController();
+require("assets/db/Controllers/TimeTableController.php");
+$time = new TimeTableController();
 
-        if(isset($_POST['inputClass'])) {
-            $class_id = $_POST['inputClass'];
-            $query = "SELECT * FROM student WHERE klas_id = $class_id";
-            $class_result = mysqli_query($time->mysqli, $query);
-        }
-    ?>
+if (isset($_POST['inputClass'])) {
+    $class_id = $_POST['inputClass'];
+    $query = "SELECT * FROM student WHERE klas_id = $class_id";
+    $class_result = mysqli_query($time->mysqli, $query);
+}
+
+if (isset($_POST['inputStudent'])) {
+    // Reservering table
+    $student_id = $_POST['inputStudent'];
+    $query = "SELECT * FROM reservering WHERE student_id = $student_id";
+    $reservering_result = mysqli_query($time->mysqli, $query);
+    $reservering_row = mysqli_fetch_array($reservering_result);
+
+    // Student table
+    $query = "SELECT * FROM student WHERE id = $student_id";
+    $student_result = mysqli_query($time->mysqli, $query);
+    $student_row = mysqli_fetch_array($student_result);
+
+    // Tijdstip table
+    $tijdstip_id = $reservering_row['tijdstip_id'];
+    $query = "SELECT * FROM tijdstip WHERE id = $tijdstip_id";
+    $tijdstip_result = mysqli_query($time->mysqli, $query);
+    $tijdstip_row = mysqli_fetch_array($tijdstip_result);
+}
+
+if (isset($_POST['mentorSubmit'])) {
+    $mentor_remarking = $_POST['mentorRemark'];
+    $id = $_POST['student_id'];
+    $query = "UPDATE reservering SET mentor_opmerking = $mentor_remarking WHERE student_id = $id";
+
+    echo $query;
+}
+?>
     <main class="mentorpage">
+            <?php
+                if(!empty($_SESSION['errormsg'])) {
+                    echo "<h2 style=\'text-align: center;\'>" . $_SESSION['errormsg'] . "</h2>";
+                } else {
+                    if(!empty($_SESSION['succmsg'])) {
+                        echo "<h2 style=\'text-align: center;\'>" . $_SESSION['succmsg'] . "</h2>";
+                    }
+                }
+            ?>
+        </h2>
         <section class="select--student">
             <h2 class="student__heading">Kies een student</h2>
             <section class="student__img__container">
@@ -31,43 +68,87 @@
                     <select class="class__container" name="inputClass" onchange="this.form.submit()">
                         <option value="" class="select--option">Kies een klas</option>
                         <?php
-                            $query = "SELECT * FROM klas";
-                            $result = mysqli_query($time->mysqli, $query);
+                        $selectedKlas = $_POST['inputClass'];
+                        $query = "SELECT * FROM klas";
+                        $result = mysqli_query($time->mysqli, $query);
+                        $selected = $_POST['inputClass'];
 
-                            while($row = mysqli_fetch_array($result)) {
-                                echo "<option value='" . $row['id'] . "' class='select--option'>" . $row['naam'] ."</option>";
+                        while ($row = mysqli_fetch_array($result)) {
+                            if ($selectedKlas == $row['id']) {
+                                echo "<option selected value='" . $row['id'] . "' class='select--option'>" . $row['naam'] . "</option>";
+
+                            } else {
+                                echo "<option value='" . $row['id'] . "' class='select--option'>" . $row['naam'] . "</option>";
+
                             }
+                        }
                         ?>
                     </select>
                 </form>
             </section>
             <section class="student">
-                <select class="student__container">
-                    <option value="" class="select--option">Geen klas geselecteerd!</option>
-                </select>
-                <select class="student__container">
-                    <option value="" class="select--option">Geen klas geselecteerd!</option>
-                    <?php
-                        while($class_row = mysqli_fetch_array($class_result)) {
-                            echo "<option value='" . $class_row['id'] . "' class='select--option'>" . $class_row['naam'] . "</option>";
+                <form action="?" method="POST">
+                    <select class="student__container" name="inputStudent" onchange="this.form.submit()">
+                        <option value="" class="select--option">
+                            <?php
+                            if (empty($selectedKlas)) {
+                                echo "Selecteer een klas!";
+                            } else {
+                                echo "Selecteer een student!";
+                            }
+                            ?>
+                        </option>
+                        <?php
+                        $selectedStudent = $_POST['inputStudent'];
+                        while ($class_row = mysqli_fetch_array($class_result)) {
+                            if ($selectedKlas == $class_row['id']) {
+                                echo "<option selected value='" . $class_row['id'] . "' class='select--option'>" . $class_row['naam'] . "</option>";
+                            } else {
+                                echo "<option value='" . $class_row['id'] . "' class='select--option'>" . $class_row['naam'] . "</option>";
+                            }
                         }
-                    ?>
-                </select>
+                        ?>
+                    </select>
+                </form>
             </section>
         </section>
-        <form class="studentInfo">
+        <form class="studentInfo" method="POST" action="?">
             <h2>Inschrijvings info</h2>
             <section class="studentInfo__section">
                 <label class="studentInfo__label">Naam:</label>
-                <p class="studentInfo__text">klaas</p>
+                <p class="studentInfo__text">
+                    <?php
+                    if ($student_row['naam']) {
+                        echo $student_row['naam'];
+                    } else {
+                        echo "Selecteer een student!";
+                    }
+                    ?>
+                </p>
             </section>
             <section class="studentInfo__section">
                 <label class="studentInfo__label">Aantal personen:</label>
-                <p class="studentInfo__text">3</p>
+                <p class="studentInfo__text">
+                    <?php
+                    if ($reservering_row['personen']) {
+                        echo $reservering_row['personen'];
+                    } else {
+                        echo "Selecteer een student!";
+                    }
+                    ?>
+                </p>
             </section>
             <section class="studentInfo__section">
                 <label class="studentInfo__label">Gewenste tijd:</label>
-                <p class="studentInfo__text">18:00 t/m 19:00</p>
+                <p class="studentInfo__text">
+                    <?php
+                    if ($tijdstip_row['tijd_start']) {
+                        echo $tijdstip_row['tijd_start'] . " - " . $tijdstip_row['tijd_einde'];
+                    } else {
+                        echo "Selecteer een student!";
+                    }
+                    ?>
+                </p>
             </section>
             <section class="studentInfo__section">
                 <label class="studentInfo__label">Ingeschreven tijd:</label>
@@ -78,16 +159,27 @@
             </section>
             <section class="studentInfo__section">
                 <label class="studentInfo__label">Opmerking of vraag:</label>
-                <p class="studentInfo__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corporis dignissimos nostrum accusamus dolor iste accusantium repellendus? Unde</p>
+                <p class="studentInfo__text">
+                    <?php
+                    if ($reservering_row['opmerking']) {
+                        echo $reservering_row['opmerking'];
+                    } else {
+                        echo "Selecteer een student!";
+                    }
+                    ?>
+                </p>
             </section>
             <section class="studentInfo__section">
                 <label class="studentInfo__label">Notities mentor:</label>
-                <textarea id="mentor-notities"></textarea>
-                <input type="submit" class="studentInfo__button--send" value="Opslaan">
+                <textarea id="mentor-notities" name="mentorRemark">
+                    <?php echo $reservering_row['mentor_opmerking']; ?>
+                </textarea>
+                <input type="hidden" name="student_id" value="<?php echo $student_row['id']; ?>">
+                <input type="submit" class="studentInfo__button--send" value="Opslaan" name="mentorSubmit">
             </section>
         </form>
     </main>
-    <?php
-        // footer
-        require 'assets/include/footer.php';
-    ?>
+<?php
+// footer
+require 'assets/include/footer.php';
+?>

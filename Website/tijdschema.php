@@ -7,6 +7,13 @@
         require("assets/db/Controllers/TimeTableController.php");
         $time = new TimeTableController();
 
+        if(empty($_SESSION['username'])) {
+            die("<script>
+                alert('U moet ingelogd zijn om op deze pagina te komen!');
+                location=\"index.php\";
+                </script>");
+        }
+
         // Header
         if($_SESSION['role'] == 1) {
             require 'assets/include/headerMentor.php';
