@@ -40,3 +40,71 @@
     color: rgb(19, 19, 19) !important;
     font-weight: 900;
 }
+
+///////////////////////////////////////////////////////////////////
+// login popup
+
+.header__login{
+    height: auto;
+    padding: 0 2rem 2rem 2rem;
+    @include blackContainer(auto,0);
+    width: 100%!important;
+    max-width: 60rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    @include setQeury($md){
+        width: 75%!important;
+    }
+    
+
+
+    color: white;
+    
+    z-index: 101;
+
+    input, label{
+        width: 100%;
+        height: 40px;
+    }
+    
+    label{
+        margin: 0 100% auto 0
+    }
+
+    input{
+        margin: 2rem auto;
+    }
+    
+    .login__submit{
+        width: 100%;
+        display: block;
+        height: 4rem;
+        margin: 2rem auto 0 auto;
+        background: $black-container;
+        font-size: 2rem;
+        border: 2px solid $border-color;
+        box-shadow: 1px 1.5px 6px #111;
+        color: #fff;
+        font-weight: 900;
+
+        &:hover{
+            background: #111;
+        }
+    }
+}
+
+.bodyDarken{
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.788); 
+    z-index: 100; 
+    cursor: pointer; 
+}
