@@ -22,21 +22,6 @@ $(window).resize(function() {
 
 
 
-//////////////////////////////////////v//////////////////////////////////////Checkboxes
-
-var checkbox = document.querySelector(".day-choosing__checkbox");
-var checkboxContainer = document.querySelector(".checkbox__label");
-
-checkbox.addEventListener("click", function(){
-  if(checkbox.checked === true){
-    checkboxContainer.style.backgroundColor = "#8FE501";
-    checkboxContainer.style.color = "#111";    
-  }else{
-    checkboxContainer.style.backgroundColor = ""; 
-    checkboxContainer.style.color = "#fff";    
-  }
-});
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////// tijdschema message
 

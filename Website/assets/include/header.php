@@ -34,11 +34,19 @@
                 <li class="header__li"><a href="contact.php" class="<?php if($selectedLink == "contact"){ echo $selectedLinkActive;} ?> header__anker">Contactpagina</a></li>
             </ul>
         </nav>
-        <section class="header__user"><span><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Onbekend"; } ?></span></section>
+        <section class="header__user"><span class="header__user__login"><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Login"; } ?></span></section>
         <section class="header__title">
             <h1 class="header__title__h1 title--1">Inschrijving</h1>
             <h1 class="header__title__h1 title--2">Ouderavond</h1>
         </section>
         <!-- school logo -->
         <figure class="header__logo"><a href="index.php"><img src="assets/img/school.jpg" alt="School-image" class="header__logo--img"></a></figure>
+        <form class="header__login" method="POST">
+            <h2>Inloggen</h2>
+            <label for="login--username" class="inlog__label--username">Gebruikersnaam:</label>
+            <input type="text" id="login--username">
+            <label for="login--password" class="inlog__label--password">Wachtwoord:</label>
+            <input type="login--password">
+            <input type="submit" class="login__submit">
+        </form>
     </header>
