@@ -1,6 +1,6 @@
 <?php
 // Display errors
-ini_set('display_errors', 'On');
+//  6ini_set('display_errors', 'On');
 
 // Database Class
 class Database {
