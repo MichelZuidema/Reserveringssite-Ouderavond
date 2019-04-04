@@ -30,11 +30,6 @@
         <form action="?" method="POST">
             <!-- Choose your date -->
             <section class="day-choosing">
-                <?php
-                    if(!empty($_SESSION['errormsg'])) {
-                        echo "<h2>" . $_SESSION['errormsg'] . "</h2>";
-                    }
-                ?>
                 <h2>Kies een Datum</h2>
                 <!-- checkbox + label -->
                 <?php
@@ -93,8 +88,16 @@
                 <p class="persons--info">Selecteer met hoeveel personen u wilt komen</p>
             </section>
             <section class="popup">
-                    <p class="popup__text">Bedankt voor uw aanmelding!</p>
-                    <p class="popup__text">Wij hebben u een mail gestuurd met uw gegevens</p>
+                    <?php
+                    if(!empty($_SESSION['errormsg'])) {
+                        echo '<p class="popup__text">Er is een fout opgetreden!</p>';
+                        echo "<p class='popup__text'>" . $_SESSION['errormsg'] ."</p>";
+                        unset($_SESSION['errormsg']);
+                    } else {
+                        echo '<p class="popup__text">Bedankt voor uw aanmelding!</p>';
+                        echo '<p class="popup__text">Wij hebben u een mail gestuurd met uw gegevens</p>';
+                    }
+                    ?>
             </section>
             <!-- Add a qeustion to your registery -->
             <article class="question">

@@ -1,4 +1,7 @@
-<form class="header__login" method="POST" onsubmit="return inlogValidatie()">
+<?php
+
+?>
+<form class="header__login" method="POST" onsubmit="return inlogValidatie()" action="?">
         <h2>Inloggen</h2>
         <label for="login--username" class="inlog__label--username">Gebruikersnaam:</label>
         <input type="text" id="login--username">
