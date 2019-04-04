@@ -99,7 +99,7 @@ class TimeTableController extends Database {
         $bezetCount = $bezetRow['bezet'] + 1;
 
         $bezetUpdateQuery = "UPDATE tijdstip SET bezet = '$bezetCount' WHERE id = $tijdstip_id";
-        mysqli_query($this->mysqli, $bezetUpdateQuery);
+        mysqli_query($this->mysqli, $bezetUpdateQuery); 
 
         // Sql query to insert the reservation into the database
         $query = "INSERT INTO reservering (id, student_id, mentor_id, tijdstip_id, personen, opmerking, mentor_opmerking) VALUES (NULL, '$student_id', '$mentor_id', '$tijdstip_id', '$personen', '$opmerking', NULL)";
