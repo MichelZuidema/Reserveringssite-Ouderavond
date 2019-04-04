@@ -91,6 +91,16 @@ class TimeTableController extends Database {
             return false;
         }
 
+        // Bezet row in table tijstip + 1
+
+        $bezetQuery = "SELECT bezet FROM tijdstip WHERE id = $tijdstip_id";
+        $bezetResult = mysqli_query($this->mysqli, $bezetQuery);
+        $bezetRow = mysqli_fetch_array($bezetResult);
+        $bezetCount = $bezetRow['bezet'] + 1;
+
+        $bezetUpdateQuery = "UPDATE tijdstip SET bezet = '$bezetCount' WHERE id = $tijdstip_id";
+        mysqli_query($this->mysqli, $bezetUpdateQuery);
+
         // Sql query to insert the reservation into the database
         $query = "INSERT INTO reservering (id, student_id, mentor_id, tijdstip_id, personen, opmerking, mentor_opmerking) VALUES (NULL, '$student_id', '$mentor_id', '$tijdstip_id', '$personen', '$opmerking', NULL)";
 
