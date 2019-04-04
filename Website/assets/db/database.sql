@@ -110,6 +110,7 @@ CREATE TABLE `reservering` (
   `personen` int(2) NOT NULL,
   `opmerking` varchar(255) NOT NULL,
   `mentor_opmerking` varchar(255) DEFAULT NULL,
+  `specific_time` varchar(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -120,7 +121,7 @@ CREATE TABLE `reservering` (
 
 LOCK TABLES `reservering` WRITE;
 /*!40000 ALTER TABLE `reservering` DISABLE KEYS */;
-INSERT INTO `reservering` VALUES (7,36,2,8,2,'Joe joe',NULL),(8,37,2,8,3,'Ik kom gezelli gjoh  a mattie',NULL);
+INSERT INTO `reservering` VALUES (7,36,2,7,2,'Joe joe','                                        Joe                                ','17:45-18:00'),(8,37,2,8,3,'Ik kom gezelli gjoh  a mattie','                    Dit gaat geen leuk gesprek worden!                ','18:15-18:30');
 /*!40000 ALTER TABLE `reservering` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -148,7 +149,7 @@ CREATE TABLE `student` (
 
 LOCK TABLES `student` WRITE;
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES (24,'Zegert Boele',1,'',NULL,0),(26,'Julian de Man',1,'',NULL,0),(27,'Sam Heijder',1,'',NULL,0),(28,'Jarno de Man',1,'',NULL,0),(29,'Matthew Groenendijk',1,'',NULL,0),(30,'Rein Timmermans',1,'',NULL,0),(31,'Jimmy van Putten',1,'',NULL,0),(32,'Jordy van de Wijngaarden',1,'',NULL,0),(35,'Bram Krikke',3,'',NULL,0),(36,'Michel Zuidema',1,'c5b312884352253d711492452af163832ae777a9','36.jpeg',1),(37,'Sebastian Tramper',1,'b7978eba62455e47dee77ec010b7027de4b8aba2','37.jpeg',1);
+INSERT INTO `student` VALUES (24,'Zegert Boele',1,'',NULL,0),(26,'Julian de Man',1,'',NULL,0),(27,'Sam Heijder',1,'',NULL,0),(28,'Jarno de Man',1,'',NULL,0),(29,'Matthew Groenendijk',1,'',NULL,0),(30,'Rein Timmermans',1,'',NULL,0),(31,'Jimmy van Putten',1,'',NULL,0),(32,'Jordy van de Wijngaarden',1,'',NULL,0),(35,'Bram Krikke',3,'',NULL,0),(36,'Michel Zuidema',1,'c5b312884352253d711492452af163832ae777a9','36.jpeg',1),(37,'Sebastian Tramper',1,'b7978eba62455e47dee77ec010b7027de4b8aba2','37.jpeg',0);
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -176,7 +177,7 @@ CREATE TABLE `tijdstip` (
 
 LOCK TABLES `tijdstip` WRITE;
 /*!40000 ALTER TABLE `tijdstip` DISABLE KEYS */;
-INSERT INTO `tijdstip` VALUES (7,2,'2019-04-28','17:00','18:00',2),(8,2,'2019-04-28','18:00','19:00',2),(9,2,'2019-04-28','19:00','20:00',2),(10,3,'2019-04-28','17:00','18:00',2),(11,3,'2019-04-28','18:00','19:00',2),(12,3,'2019-04-28','19:00','20:00',2);
+INSERT INTO `tijdstip` VALUES (7,2,'2019-04-28','17:00','18:00',0),(8,2,'2019-04-28','18:00','19:00',0),(9,2,'2019-04-28','19:00','20:00',0),(10,3,'2019-04-28','17:00','18:00',0),(11,3,'2019-04-28','18:00','19:00',0),(12,3,'2019-04-28','19:00','20:00',0);
 /*!40000 ALTER TABLE `tijdstip` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -189,4 +190,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-04-02 14:02:48
+-- Dump completed on 2019-04-04 15:56:00
