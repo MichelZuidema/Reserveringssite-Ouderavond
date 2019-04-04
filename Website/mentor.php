@@ -32,6 +32,10 @@ if (isset($_POST['inputStudent'])) {
     $student_result = mysqli_query($time->mysqli, $query);
     $student_row = mysqli_fetch_array($student_result);
 
+    if ($student_row['foto']) {
+        $student_img = "assets/img/profielfotos/" . $student_row['foto'];
+    }
+
     // Tijdstip table
     $tijdstip_id = $reservering_row['tijdstip_id'];
     $query = "SELECT * FROM tijdstip WHERE id = $tijdstip_id";
@@ -41,27 +45,40 @@ if (isset($_POST['inputStudent'])) {
 
 if (isset($_POST['mentorSubmit'])) {
     $mentor_remarking = $_POST['mentorRemark'];
+    $specific_time = $_POST['mentor_hour'];
     $id = $_POST['student_id'];
-    $query = "UPDATE reservering SET mentor_opmerking = $mentor_remarking WHERE student_id = $id";
+    $query = "UPDATE reservering SET mentor_opmerking = '$mentor_remarking', specific_time = '$specific_time' WHERE student_id = $id";
 
-    echo $query;
+    if (mysqli_query($time->mysqli, $query)) {
+        $_SESSION['succmsg'] = "Reservering is aangepast!";
+    } else {
+        $_SESSION['errormsg'] = "Er is iets foutgegaan bij het aanpassen van de reservering!";
+    }
 }
 ?>
     <main class="mentorpage">
-            <?php
-                if(!empty($_SESSION['errormsg'])) {
-                    echo "<h2 style=\'text-align: center;\'>" . $_SESSION['errormsg'] . "</h2>";
-                } else {
-                    if(!empty($_SESSION['succmsg'])) {
-                        echo "<h2 style=\'text-align: center;\'>" . $_SESSION['succmsg'] . "</h2>";
-                    }
-                }
-            ?>
+        <?php
+        if (!empty($_SESSION['errormsg'])) {
+            echo "<h2 style=\'text-align: center;\'>" . $_SESSION['errormsg'] . "</h2>";
+            unset($_SESSION['errormsg']);
+        } else {
+            if (!empty($_SESSION['succmsg'])) {
+                echo "<h2 style=\'text-align: center;\'>" . $_SESSION['succmsg'] . "</h2>";
+                unset($_SESSION['succmsg']);
+            }
+        }
+        ?>
         </h2>
         <section class="select--student">
             <h2 class="student__heading">Kies een student</h2>
             <section class="student__img__container">
-                <img src="assets/img/GLRlogo_RGB.png" alt="GLR-logo" class="student__img">
+                <!--                <img src="assets/img/GLRlogo_RGB.png" alt="GLR-logo" class="student__img">-->
+                <img src="
+                <?php if (empty($student_img)) {
+                    echo "assets/img/GLRlogo_RGB.png";
+                } else {
+                    echo $student_img;
+                } ?>" align="GLR-logo" class="student__img">
             </section>
             <section class="class">
                 <form action="?" method="POST">
@@ -76,10 +93,8 @@ if (isset($_POST['mentorSubmit'])) {
                         while ($row = mysqli_fetch_array($result)) {
                             if ($selectedKlas == $row['id']) {
                                 echo "<option selected value='" . $row['id'] . "' class='select--option'>" . $row['naam'] . "</option>";
-
                             } else {
                                 echo "<option value='" . $row['id'] . "' class='select--option'>" . $row['naam'] . "</option>";
-
                             }
                         }
                         ?>
@@ -151,11 +166,43 @@ if (isset($_POST['mentorSubmit'])) {
                 </p>
             </section>
             <section class="studentInfo__section">
-                <label class="studentInfo__label">Ingeschreven tijd:</label>
-                <button class="studentIno__button">18:00 t/m 18:15</button>
-                <button class="studentIno__button">18:00 t/m 18:15</button>
-                <button class="studentIno__button">18:00 t/m 18:15</button>
-                <button class="studentIno__button">18:00 t/m 18:15</button>
+                <label class="studentInfo__label">Ingeschreven Tijd:</label>
+                <?php
+                $tijdstip_hour = explode(":", $tijdstip_row['tijd_start'])[0];
+                $current_hour = $tijdstip_hour;
+                $new_hour = $tijdstip_hour + 1;
+
+                for ($x = 15; $x <= 60; $x += 15) {
+                    if ($x == 15) {
+                        if($tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour == $reservering_row['specific_time']) {
+                            echo "<input type='radio' class='studentIno__button' value='" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour' checked='checked'>" . $tijdstip_hour . ":" . "00" . " t/m " . $tijdstip_hour . ":" . $x . "";
+                        } else {
+                            echo "<input type='radio' class='studentIno__button' value='" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour'>" . $tijdstip_hour . ":" . "00" . " t/m " . $tijdstip_hour . ":" . $x . "";
+                        }
+                    } else if ($x == 60) {
+                        if($current_hour . "-" . $new_hour . ":00" == $reservering_row['specific_time']) {
+                            echo "<input type='radio' class='studentIno__button' value='" . $current_hour . "-" . $new_hour . ":00" . "' name='mentor_hour' checked='checked'>" . $current_hour . " t/m " . $new_hour . ":00" . "";
+                        } else {
+                            echo "<input type='radio' class='studentIno__button' value='" . $current_hour . "-" . $new_hour . ":00" . "' name='mentor_hour'>" . $current_hour . " t/m " . $new_hour . ":00" . "";
+                        }
+                    } else {
+                        if($current_hour . "-" . $tijdstip_hour . ":" . $x == $reservering_row['specific_time']) {
+                            echo "<input type='radio' class='studentIno__button' value='" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour' checked='checked'>" . $current_hour . " t/m " . $tijdstip_hour . ":" . $x . "";
+                        } else {
+                            echo "<input type='radio' class='studentIno__button' value='" . $current_hour . "-" . $tijdstip_hour . ":" . $x ."' name='mentor_hour'>" . $current_hour . " t/m " . $tijdstip_hour . ":" . $x . "";
+                        }
+                    }
+
+//                    if ($x == 15) {
+//                        echo "<input type='radio' class='studentIno__button' value='" . $tijdstip_hour . ":" . "00" . " t/m " . $tijdstip_hour . ":" . $x . "' name='mentor_hour'>" . $tijdstip_hour . ":" . "00" . " t/m " . $tijdstip_hour . ":" . $x . "";
+//                    } else if ($x == 60) {
+//                        echo "<input type='radio' class='studentIno__button' value='" . $current_hour . " t/m " . $new_hour . ":00" . "' name='mentor_hour'>" . $current_hour . " t/m " . $new_hour . ":00" . "";
+//                    } else {
+//                        echo "<input type='radio' class='studentIno__button' value='" . $current_hour . " t/m " . $tijdstip_hour . ":" . $x ."' name='mentor_hour'>" . $current_hour . " t/m " . $tijdstip_hour . ":" . $x . "";
+//                    }
+                    $current_hour = $tijdstip_hour . ":" . $x;
+                }
+                ?>
             </section>
             <section class="studentInfo__section">
                 <label class="studentInfo__label">Opmerking of vraag:</label>
