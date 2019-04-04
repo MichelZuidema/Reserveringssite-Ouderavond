@@ -41,12 +41,8 @@
         </section>
         <!-- school logo -->
         <figure class="header__logo"><a href="index.php"><img src="assets/img/school.jpg" alt="School-image" class="header__logo--img"></a></figure>
-        <form class="header__login" method="POST">
-            <h2>Inloggen</h2>
-            <label for="login--username" class="inlog__label--username">Gebruikersnaam:</label>
-            <input type="text" id="login--username">
-            <label for="login--password" class="inlog__label--password">Wachtwoord:</label>
-            <input type="login--password">
-            <input type="submit" class="login__submit">
-        </form>
+        <!-- inlog form -->
+        <?php
+            require "inlog.php";
+        ?>
     </header>
