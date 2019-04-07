@@ -1,4 +1,5 @@
 <?php
+        ini_set('display_errors', 'On');
         //page title
         $pageTitle = "Inschrijving ouderavond | Grafisch Lyceum Rotterdam";
         //selected navigation link

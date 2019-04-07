@@ -43,6 +43,8 @@
         <figure class="header__logo"><a href="index.php"><img src="assets/img/school.jpg" alt="School-image" class="header__logo--img"></a></figure>
         <!-- inlog form -->
         <?php
-            require "inlog.php";
+            if(!$_SESSION['username']) {
+                require "inlog.php";
+            }
         ?>
     </header>

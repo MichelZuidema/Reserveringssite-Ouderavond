@@ -1,11 +1,13 @@
 <?php
 // Require database class
-require($_SERVER['DOCUMENT_ROOT'] . "/Ouderavond/Website/assets/db/database.class.php");
+//require($_SERVER['DOCUMENT_ROOT'] . "/Ouderavond/Website/assets/db/database.class.php");
 
 // Start session
 if(session_id() == '') {
     session_start();
 }
+
+require_once 'assets/db/database.class.php';
 
 class TimeTableController extends Database {
 
