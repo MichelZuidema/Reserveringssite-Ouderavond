@@ -46,13 +46,13 @@
 
 .header__login{
     height: auto;
-    display: none;
+    display: block;
     padding: 0 2rem 2rem 2rem;
     @include blackContainer(auto,0);
     width: 100%!important;
     max-width: 60rem;
     position: absolute;
-    top: 50%;
+    top: -300px;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
