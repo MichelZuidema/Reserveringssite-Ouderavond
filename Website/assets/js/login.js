@@ -2,35 +2,30 @@ var loginButton = document.querySelector(".header__user__login");
 var headerLogin = document.querySelector(".header__login");
 var body = document.querySelector("body");
 
-
 //var to move the dialog
 var mover = 0;
 
 //function to move inlog dialog
-
 function step(timestamp){
     body.style.overflow = "hidden";
     headerLogin.style.top = mover;
-    mover+=5;
+    mover+=8;
     var progess = requestAnimationFrame(step);
     if(mover >= 250){
         cancelAnimationFrame(progess);
-        mover-=5;
+        mover-=8;
     }
 }
 
-
 //function to move dailog back out the screen
-
 function stepBack(timestamp){
     body.style.overflow = "scroll";
     headerLogin.style.top = mover;
-    mover-=5;
+    mover-=10;
     var progess = requestAnimationFrame(stepBack);
-
-    if(mover <= -300){
+    if(mover <= -400){
         cancelAnimationFrame(progess);
-        mover+=5;
+        mover+=10;
     }
 }
 
@@ -40,12 +35,15 @@ loginButton.addEventListener("click", function(event){
     //hiddes the loginbutton when login dialog is opent. to prevent problems
     loginButton.style.display = "none";
 
-
     window.addEventListener("mouseup", function(event){
-        if(event.target != headerLogin){
+
+        //close the inlog dialog when somewhere else is clicked
+        if(event.target != headerLogin && event.target.parentNode != headerLogin){
+            stepBack()
             loginButton.style.display = "block";
-            stepBack();
         }
+
+
     });
 });
 
