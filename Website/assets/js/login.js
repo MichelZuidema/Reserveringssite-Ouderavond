@@ -1,19 +1,40 @@
 var loginButton = document.querySelector(".header__user__login");
 var headerLogin = document.querySelector(".header__login");
+var body = document.querySelector("body");
 
-loginButton.addEventListener("click", function(){
+var mover = 0;
 
-    var clicks = $(this).data('clicks');
-
-    if(clicks){
-        headerLogin.style.display = "block";
-    }else{
-        headerLogin.style.display = "none";
+function step(timestamp){
+    body.style.overflow = "hidden";
+    headerLogin.style.top = mover;
+    mover+=5;
+    var progess = requestAnimationFrame(step);
+    if(mover >= 250){
+        cancelAnimationFrame(progess);
+        mover-=5;
     }
+}
 
-    $(this).data("clicks", !clicks);
-    
+function stepBack(timestamp){
+    body.style.overflow = "scroll";
+    headerLogin.style.top = mover;
+    mover-=5;
+    var progess = requestAnimationFrame(stepBack);
+    if(mover <= -800){
+        cancelAnimationFrame(progess);
+    }
+}
+
+loginButton.addEventListener("click", function(event){
+    step();
+
+    window.addEventListener("mouseup", function(event){
+        if(event.target != headerLogin){
+            stepBack();
+        }
+    });
 });
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -52,3 +73,7 @@ function inlogValidatie(){
 function preventJsInjection(replace){
     return (replace + '').replace(/[\\"']/g, '\\$&').replace(/\u0000/g, '\\0');
 }
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+/// animation
