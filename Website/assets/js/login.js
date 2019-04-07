@@ -35,7 +35,6 @@ loginButton.addEventListener("click", function(event){
     //hiddes the loginbutton when login dialog is opent. to prevent problems
     loginButton.style.display = "none";
 
-
     window.addEventListener("mouseup", function(event){
 
         //close the inlog dialog when somewhere else is clicked
@@ -43,6 +42,7 @@ loginButton.addEventListener("click", function(event){
             stepBack()
             loginButton.style.display = "block";
         }
+
 
     });
 });

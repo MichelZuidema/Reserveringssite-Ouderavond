@@ -6,13 +6,12 @@ $user = new UserController();
 ini_set('display_errors', 'On');
 
 if (isset($_GET["token"]) && preg_match('/\b([a-f0-9]{40})\b/', $_GET['token'])) {
-    if($user->UniqueLinkValidation($_GET['token'])) {
+    if ($user->UniqueLinkValidation($_GET['token'])) {
         echo "Ingelogd als " . $_SESSION['username'] . " van klas: " . $_SESSION['class_id'];
     } else {
         echo $_SESSION['errormsg'];
     }
-}
-else {
+} else {
     echo "U heeft geen geldige token ingevoerd!";
 }
 
