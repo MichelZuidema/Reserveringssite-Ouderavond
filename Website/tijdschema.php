@@ -53,10 +53,24 @@ if (isset($_POST['formSubmit'])) {
                 <!-- heading -->
                 <h2>Tijdschema</h2>
                 <?php
+                $mentor_id = $_SESSION['mentor_id'];
+                $query = "SELECT bezet FROM tijdstip WHERE mentor_id = $mentor_id";
+                $result = mysqli_query($time->mysqli, $query);
+
                 $time->GetDates($_SESSION['mentor_id']);
+
                 // Radio Buttons
                 for ($x = 0; $x < count($time->dates); $x++) {
-                    echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
+                    while($row = mysqli_fetch_array($result)) {
+                        if($row['bezet'] == 4) {
+                            echo "<input type='radio' style='border: 1px solid red' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
+                        }
+                        if($row['bezet'] == 3) {
+                            echo "<input type='radio' style='border: 1px solid orange' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
+                        } else {
+                            echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
+                        }
+                    }
                 }
 
                 // Labels
