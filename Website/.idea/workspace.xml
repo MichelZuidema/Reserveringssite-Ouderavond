@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="654761ec-fff8-4e7b-baf3-d4cd7046a9b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/db/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/database.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/database.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/include/inlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/include/inlog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tijdschema.php" beforeDir="false" afterPath="$PROJECT_DIR$/tijdschema.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,20 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tijdschema.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+            <state relative-caret-position="754">
+              <caret line="59" column="84" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="84" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/db/Controllers/TimeTableController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="88" />
+            <state relative-caret-position="234">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -46,8 +43,9 @@
       <list>
         <option value="$PROJECT_DIR$/assets/include/inlog.php" />
         <option value="$PROJECT_DIR$/assets/db/database.class.php" />
-        <option value="$PROJECT_DIR$/tijdschema.php" />
         <option value="$PROJECT_DIR$/assets/db/Controllers/TimeTableController.php" />
+        <option value="$PROJECT_DIR$/assets/include/header.php" />
+        <option value="$PROJECT_DIR$/tijdschema.php" />
       </list>
     </option>
   </component>
@@ -141,12 +139,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554661277560</updated>
-      <workItem from="1554661279219" duration="626000" />
+      <workItem from="1554661279219" duration="1580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="626000" />
+    <option name="totallyTimeSpent" value="1580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -202,25 +200,29 @@
     <entry file="file://$PROJECT_DIR$/mentor.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/include/header.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/include/headerMentor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-372" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tijdschema.php">
+    <entry file="file://$PROJECT_DIR$/assets/include/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        <state relative-caret-position="754">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/db/Controllers/TimeTableController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="88" />
+        <state relative-caret-position="234">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tijdschema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="59" column="84" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="84" />
         </state>
       </provider>
     </entry>

@@ -7,25 +7,27 @@
 // Require database class
 require($_SERVER['DOCUMENT_ROOT'] . "/Ouderavond/Website/assets/db/database.class.php");
 // Start session
-if(session_id() == '') {
+if (session_id() == '') {
     session_start();
 }
 
-class UserController extends Database {
+class UserController extends Database
+{
     // Function to add array of students
-    public function AddStudents($studentArray, $classArray) {
+    public function AddStudents($studentArray, $classArray)
+    {
         // Combine both arrays into a associative array
         $studentAndClass = array_combine($studentArray, $classArray);
 
         // Loop through the students and classes
-        foreach($studentAndClass as $student => $class) {
+        foreach ($studentAndClass as $student => $class) {
             // Generate unique token
             $token = $this->UniqueLinkGenerator();
             // SQL INSERT Query
             $sql = "INSERT INTO `student` (id, naam, klas_id, uniqueLink) VALUES (NULL, '$student', $class, '$token')";
 
             // Execute into database and check for errors
-            if(mysqli_query($this->mysqli, $sql)) {
+            if (mysqli_query($this->mysqli, $sql)) {
                 echo "Students Added";
             } else {
                 die(mysqli_error($this->mysqli));
@@ -35,13 +37,14 @@ class UserController extends Database {
     }
 
     // Login function for a 'mentor'
-    public function MentorLoginProcess($username, $password) {
+    public function MentorLoginProcess($username, $password)
+    {
         // Input checks
-        if($username == "") {
+        if ($username == "") {
             $_SESSION['errormsg'] = "U heeft geen naam ingevuld!";
         }
 
-        if($password == "") {
+        if ($password == "") {
             $_SESSION['errormsg'] = "U heeft geen wachtwoord ingevuld!";
         }
 
@@ -56,8 +59,8 @@ class UserController extends Database {
         $rowcount = mysqli_num_rows($result);
 
         // Password validation
-        if($rowcount > 0) {
-            if(password_verify($password, $row['wachtwoord'])) {
+        if ($rowcount > 0) {
+            if (password_verify($password, $row['wachtwoord'])) {
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['username'] = $row['naam'];
                 $_SESSION['role'] = 1;
@@ -73,7 +76,8 @@ class UserController extends Database {
     }
 
     // Unique login link generator
-    public function UniqueLinkGenerator($length = 100) {
+    public function UniqueLinkGenerator($length = 100)
+    {
         // Charactars possible for the unique link
         $charactars = "abcdefghijklmnopqrstuvwzyxABCDEFGHIJKLMNOPQRSTUVWXYZ012345678!@#$%^&*()-=_+";
 
@@ -82,9 +86,10 @@ class UserController extends Database {
     }
 
     // Unique link validator
-    public function UniqueLinkValidation($token = "") {
+    public function UniqueLinkValidation($token = "")
+    {
         // Check if token is empty
-        if($token == "") {
+        if ($token == "") {
             // If empty, send a error message back.
             $_SESSION['errormsg'] = "Er is geen token ingevuld.";
             return false;
@@ -96,9 +101,9 @@ class UserController extends Database {
             $rowCount = mysqli_num_rows($result);
 
             // Check if any rows exist with that specific token
-            if($rowCount > 0) {
+            if ($rowCount > 0) {
                 // Check if user has logged in before
-                if($row['loggedin'] == 1) {
+                if ($row['loggedin'] == 1) {
                     die("<script>alert('U heeft al een keer ingelogd waardoor uw token ongeldig is!')</script>");
                 }
                 session_unset();
@@ -115,7 +120,7 @@ class UserController extends Database {
                 $rowMentor = mysqli_fetch_array($resultMentor);
                 $rowCountMentor = mysqli_num_rows($resultMentor);
 
-                if($rowCountMentor > 0) {
+                if ($rowCountMentor > 0) {
                     $_SESSION['mentor_id'] = $rowMentor['id'];
                 } else {
                     $_SESSION['errormsg'] = "Kon geen mentor vinden die gelinkt is aan uw klas.";
@@ -124,7 +129,7 @@ class UserController extends Database {
 
                 // Update loggedin in to 1
                 $query = "UPDATE student SET loggedin=1 WHERE id=$id";
-                if(mysqli_query($this->mysqli, $query)) {
+                if (mysqli_query($this->mysqli, $query)) {
                     return true;
                 } else {
                     $_SESSION['errormsg'] = "Loggedin kon niet worden aangepast!";
@@ -140,9 +145,10 @@ class UserController extends Database {
         }
     }
 
-    public function Logout() {
+    public function Logout()
+    {
         // Unset all variables in session
-        if(session_unset()) {
+        if (session_unset()) {
             // Destroy session
             session_destroy();
             return true;
