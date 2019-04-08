@@ -59,3 +59,4 @@ window.addEventListener("scroll", function(){
 window.addEventListener("load", function(){
   textAppear(".information__container--text");
 })
+
