@@ -30,3 +30,8 @@ $(".question__button--send").click(function () {
     $(".popup").css.display = "block";
     $(".popup").slideDown(500).delay(10000).slideUp(1000);
 });
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+///text effects

@@ -75,6 +75,14 @@
         .socialmedia__icon__img{
             width: 6rem;
             height: 6rem;
+
+            &:hover{
+                transform: rotate(360deg);
+                width: 8rem;
+                height: 8rem;
+                filter: saturate(3);
+                transition: 1000ms transform, width, height;
+            }
             
         }
 
