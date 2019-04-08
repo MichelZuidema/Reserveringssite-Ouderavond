@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans");
+@import url("https://fonts.googleapis.com/css?family=Merienda");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -741,7 +742,7 @@ template {
 
 .header__login {
   height: auto;
-  display: none;
+  display: block;
   padding: 0 2rem 2rem 2rem;
   width: 100%;
   max-width: 80rem;
@@ -755,7 +756,7 @@ template {
   width: 100% !important;
   max-width: 60rem;
   position: absolute;
-  top: 50%;
+  top: -300px;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
@@ -1092,23 +1093,40 @@ label {
 }
 
 .header .header__user {
-  padding: .5rem;
+  width: 20rem;
+  height: auto;
+  border: 2px solid #707070;
+  padding: 1.2rem 0;
+  cursor: pointer;
   font-size: calc(2.6rem + .5vw);
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 85%;
+  top: 80%;
+  text-shadow: 1px 1.4px 6px #111;
 }
 
-@media only screen and (min-width: 720px) {
+.header .header__user:hover {
+  background: #111;
+}
+
+@media only screen and (min-width: 1024px) {
   .header .header__user {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     left: unset;
     right: 2.5rem;
-    top: 2.5rem;
+    top: 1rem;
   }
+}
+
+.header .header__user .header__user__login {
+  color: #8FE501;
+}
+
+.header .header__user .header__user__login:hover {
+  color: #f1f1f1;
 }
 
 .header .header__title {
@@ -1128,7 +1146,7 @@ label {
   top: 10%;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1300px) {
   .header .header__title__h1 {
     font-weight: bold;
   }
@@ -1277,7 +1295,7 @@ label {
   display: grid;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1300px) {
   .homepage {
     -ms-grid-rows: auto auto auto;
     -ms-grid-columns: 1fr 1fr;
@@ -1288,7 +1306,7 @@ label {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1300px) {
   .homepage {
     border: 5px solid #484646;
     -webkit-box-shadow: 1px 1.5px 6px #000;
@@ -1309,7 +1327,7 @@ label {
   margin: 0 auto 0 auto;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1300px) {
   .homepage .article {
     border: 0px;
     -webkit-box-shadow: none;
@@ -1318,19 +1336,27 @@ label {
 }
 
 .homepage .information__container {
-  width: 50rem;
+  width: 60rem;
   max-width: 90vw;
   text-align: left;
   margin: 0 auto 1.5rem auto;
 }
 
 .homepage .information__container .information__container--text {
-  padding: 0 2rem;
+  padding: 0  2rem 2rem 2rem;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.homepage .register {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
 }
 
 .homepage .register .register__list__item {
   line-height: 4rem;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Merienda", cursive;
   font-size: 2rem;
   padding: 1.5rem 2rem;
 }
@@ -1912,14 +1938,14 @@ label {
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
       grid-template-columns: 5% 1fr 5%;
-      grid-template-areas: ". voornaam .  " ". inputvoornaam . " ". achternaam  ." ". inputachternaam ." ". email ." ". inputemail ." ". telefoon ." ". inputtelefoon ." ". kind ." ". inputkind ." ". uwBericht . " ". textarea ." ". button . ";
+      grid-template-areas: ". voornaam .  " ". inputvoornaam . " ". achternaam  ." ". inputachternaam ." ". email ." ". inputemail ." ". telefoon ." ". inputtelefoon ." ". kind ." ". inputkind ." ". uwBericht . " ". textarea ." ". button . ";
 }
 
 @media only screen and (min-width: 720px) {
   .contact .contact__article .contact__form {
     -ms-grid-columns: 5% 40% 50% 5%;
         grid-template-columns: 5% 40% 50% 5%;
-        grid-template-areas: ". voornaam inputvoornaam  ." ". achternaam inputachternaam  ." ". email inputemail ." ". telefoon inputtelefoon ." ". kind inputkind ." ". uwBericht . . " ". textarea  textarea ." ". button button .";
+        grid-template-areas: ". voornaam inputvoornaam  ." ". achternaam inputachternaam  ." ". email inputemail ." ". telefoon inputtelefoon ." ". kind inputkind ." ". uwBericht . . " ". textarea  textarea ." ". button button .";
   }
 }
 
@@ -2038,7 +2064,7 @@ label {
   display: grid;
   -ms-grid-columns: 1fr 1fr auto 1fr 1fr;
       grid-template-columns: 1fr 1fr auto 1fr 1fr;
-      grid-template-areas: ". . title . ." ". . foto . ." ". . klas . ." ". . student . .";
+      grid-template-areas: ". . title . ." ". . foto . ." ". . klas . ." ". . student . .";
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -2053,7 +2079,7 @@ label {
 @media only screen and (min-width: 720px) {
   .mentorpage .select--student {
     padding: 2rem 4rem 4rem 4rem;
-        grid-template-areas: ". . title . ." ". . foto . ." ". klas . student .";
+        grid-template-areas: ". . title . ." ". . foto . ." ". klas . student .";
   }
 }
 
@@ -2381,7 +2407,7 @@ label {
       grid-template-rows: 1fr 1fr 1fr 1fr auto 20rem 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "heading heading" "dateLabel dateInput" "timeLabel timeInput" "personLabel personInput" " messageLabel messageLabel" "messageInput messageInput" "messageText messageText";
+      grid-template-areas: "heading heading" "dateLabel dateInput" "timeLabel timeInput" "personLabel personInput" " messageLabel messageLabel" "messageInput messageInput" "messageText messageText";
   grid-gap: .5rem;
 }
 
@@ -2590,6 +2616,19 @@ label {
 .footer .socialmedia__figure .socialmedia__icon__img {
   width: 6rem;
   height: 6rem;
+}
+
+.footer .socialmedia__figure .socialmedia__icon__img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  width: 8rem;
+  height: 8rem;
+  -webkit-filter: saturate(3);
+          filter: saturate(3);
+  -webkit-transition: width, height, 1000ms -webkit-transform;
+  transition: width, height, 1000ms -webkit-transform;
+  transition: 1000ms transform, width, height;
+  transition: 1000ms transform, width, height, 1000ms -webkit-transform;
 }
 
 .footer .socialmedia__figure .socialmedia__text__container {

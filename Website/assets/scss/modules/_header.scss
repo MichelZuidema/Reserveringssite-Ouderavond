@@ -185,15 +185,32 @@
 // current user
 
     .header__user{
-        padding: .5rem;
+        width: 20rem;
+        height: auto;
+        border: 2px solid $border-color;
+        padding:  1.2rem 0;
+        cursor: pointer;
         font-size: $login-size;
-        @include centerAbs(85%,50%);
+        @include centerAbs(80%,50%);
+        text-shadow: 1px 1.4px 6px #111;
+
+        &:hover{
+            background: #111;
+        }
         
-        @include setQeury($md){
+        @include setQeury($lg){
             transform: translateX(0);
             left: unset;
             right: 2.5rem;
-            top: 2.5rem;
+            top: 1rem;
+        }
+
+        .header__user__login{
+            color: $glr-green;
+
+            &:hover{
+                color: #f1f1f1;
+            }
         }
     }
 
