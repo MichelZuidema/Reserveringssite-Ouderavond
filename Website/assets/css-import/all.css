@@ -2592,6 +2592,19 @@ label {
   height: 6rem;
 }
 
+.footer .socialmedia__figure .socialmedia__icon__img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  width: 8rem;
+  height: 8rem;
+  -webkit-filter: saturate(3);
+          filter: saturate(3);
+  -webkit-transition: width, height, 1000ms -webkit-transform;
+  transition: width, height, 1000ms -webkit-transform;
+  transition: 1000ms transform, width, height;
+  transition: 1000ms transform, width, height, 1000ms -webkit-transform;
+}
+
 .footer .socialmedia__figure .socialmedia__text__container {
   width: 15rem;
   display: inline-block;
