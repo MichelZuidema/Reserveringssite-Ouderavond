@@ -31,11 +31,14 @@
                 <li class="header__li"><a href="mentorTijdschema.php" class="<?php if($selectedLink == "contact"){ echo $selectedLinkActive;} ?> header__anker">Contactpagina</a></li>
             </ul>
         </nav>
-        <section class="header__user"><span><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Onbekend"; } ?></span></section>
+        <section class="header__user"><span class="header__user__login"><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Inloggen"; } ?></span></section>
         <section class="header__title">
             <h1 class="header__title__h1 title--1">Inschrijving</h1>
             <h1 class="header__title__h1 title--2">Ouderavond</h1>
         </section>
         <!-- school logo -->
         <figure class="header__logo"><a href="index.php"><img src="assets/img/school.jpg" alt="School-image" class="header__logo--img"></a></figure>
+        <?php
+            require "inlog.php";
+        ?>
     </header>

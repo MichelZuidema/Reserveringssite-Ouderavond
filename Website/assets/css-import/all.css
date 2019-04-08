@@ -1093,23 +1093,40 @@ label {
 }
 
 .header .header__user {
-  padding: .5rem;
+  width: 20rem;
+  height: auto;
+  border: 2px solid #707070;
+  padding: 1.2rem 0;
+  cursor: pointer;
   font-size: calc(2.6rem + .5vw);
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 85%;
+  top: 80%;
+  text-shadow: 1px 1.4px 6px #111;
 }
 
-@media only screen and (min-width: 720px) {
+.header .header__user:hover {
+  background: #111;
+}
+
+@media only screen and (min-width: 1024px) {
   .header .header__user {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     left: unset;
     right: 2.5rem;
-    top: 2.5rem;
+    top: 1rem;
   }
+}
+
+.header .header__user .header__user__login {
+  color: #8FE501;
+}
+
+.header .header__user .header__user__login:hover {
+  color: #f1f1f1;
 }
 
 .header .header__title {
