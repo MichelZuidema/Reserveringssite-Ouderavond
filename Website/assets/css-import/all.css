@@ -1885,14 +1885,33 @@ label {
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
       grid-template-columns: 5% 1fr 5%;
-      grid-template-areas: ". voornaam .  " ". inputvoornaam . " ". achternaam  ." ". inputachternaam ." ". email ." ". inputemail ." ". telefoon ." ". inputtelefoon ." ". kind ." ". inputkind ." ". uwBericht . " ". textarea ." ". button . ";
+      grid-template-areas: ". voornaam .  "
+ ". inputvoornaam . "
+ ". achternaam  ."
+ ". inputachternaam ."
+ ". email ."
+ ". inputemail ."
+ ". telefoon ."
+ ". inputtelefoon ."
+ ". kind ."
+ ". inputkind ."
+ ". uwBericht . "
+ ". textarea ."
+ ". button . ";
 }
 
 @media only screen and (min-width: 720px) {
   .contact .contact__article .contact__form {
     -ms-grid-columns: 5% 40% 50% 5%;
         grid-template-columns: 5% 40% 50% 5%;
-        grid-template-areas: ". voornaam inputvoornaam  ." ". achternaam inputachternaam  ." ". email inputemail ." ". telefoon inputtelefoon ." ". kind inputkind ." ". uwBericht . . " ". textarea  textarea ." ". button button .";
+        grid-template-areas: ". voornaam inputvoornaam  ."
+ ". achternaam inputachternaam  ."
+ ". email inputemail ."
+ ". telefoon inputtelefoon ."
+ ". kind inputkind ."
+ ". uwBericht . . "
+ ". textarea  textarea ."
+ ". button button .";
   }
 }
 
@@ -2011,7 +2030,10 @@ label {
   display: grid;
   -ms-grid-columns: 1fr 1fr auto 1fr 1fr;
       grid-template-columns: 1fr 1fr auto 1fr 1fr;
-      grid-template-areas: ". . title . ." ". . foto . ." ". . klas . ." ". . student . .";
+      grid-template-areas: ". . title . ."
+ ". . foto . ."
+ ". . klas . ."
+ ". . student . .";
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -2026,7 +2048,9 @@ label {
 @media only screen and (min-width: 720px) {
   .mentorpage .select--student {
     padding: 2rem 4rem 4rem 4rem;
-        grid-template-areas: ". . title . ." ". . foto . ." ". klas . student .";
+        grid-template-areas: ". . title . ."
+ ". . foto . ."
+ ". klas . student .";
   }
 }
 
@@ -2354,7 +2378,13 @@ label {
       grid-template-rows: 1fr 1fr 1fr 1fr auto 20rem 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "heading heading" "dateLabel dateInput" "timeLabel timeInput" "personLabel personInput" " messageLabel messageLabel" "messageInput messageInput" "messageText messageText";
+      grid-template-areas: "heading heading"
+ "dateLabel dateInput"
+ "timeLabel timeInput"
+ "personLabel personInput"
+ " messageLabel messageLabel"
+ "messageInput messageInput"
+ "messageText messageText";
   grid-gap: .5rem;
 }
 
