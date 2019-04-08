@@ -32,6 +32,7 @@
                         <li class="register__list__item">2. Natus assumenda quaerat beatae quia a dolorum eligendi</li>
                         <li class="register__list__item">3. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
                         <li class="register__list__item">4. tenetur, perferendis quae quia asperiores aut.</li>
+                        <li class="register__list__item">4. met consectetur adipisicing eliis quae quia asperiores aut.</li>
                     </ol>
             </article>
             <!-- background image -->
