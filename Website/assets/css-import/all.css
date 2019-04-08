@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans");
+@import url("https://fonts.googleapis.com/css?family=Merienda");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1128,7 +1129,7 @@ label {
   top: 10%;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1300px) {
   .header .header__title__h1 {
     font-weight: bold;
   }
@@ -1277,7 +1278,7 @@ label {
   display: grid;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1300px) {
   .homepage {
     -ms-grid-rows: auto auto auto;
     -ms-grid-columns: 1fr 1fr;
@@ -1288,7 +1289,7 @@ label {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1300px) {
   .homepage {
     border: 5px solid #484646;
     -webkit-box-shadow: 1px 1.5px 6px #000;
@@ -1309,7 +1310,7 @@ label {
   margin: 0 auto 0 auto;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1300px) {
   .homepage .article {
     border: 0px;
     -webkit-box-shadow: none;
@@ -1318,19 +1319,27 @@ label {
 }
 
 .homepage .information__container {
-  width: 50rem;
+  width: 60rem;
   max-width: 90vw;
   text-align: left;
   margin: 0 auto 1.5rem auto;
 }
 
 .homepage .information__container .information__container--text {
-  padding: 0 2rem;
+  padding: 0  2rem 2rem 2rem;
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.homepage .register {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
 }
 
 .homepage .register .register__list__item {
   line-height: 4rem;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Merienda", cursive;
   font-size: 2rem;
   padding: 1.5rem 2rem;
 }

@@ -2,7 +2,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     display: grid;
     //desktop homepage grid: min 20rem max 1fr 
-    @include setQeury($lg){
+    @include setQeury($xlg){
     grid-template: auto auto auto / 1fr 1fr;
     width: 90%;    
     max-width: 160rem;
@@ -10,7 +10,7 @@
     }
 
 
-    @include setQeury($lg){
+    @include setQeury($xlg){
         border: 5px solid $black-container-border;
         box-shadow: 1px 1.5px 6px #000;
     }
@@ -22,7 +22,7 @@
         margin: 0 auto 0 auto;
         
 
-        @include setQeury($lg){
+        @include setQeury($xlg){
             border: 0px;
             box-shadow: none;
         }
@@ -30,21 +30,24 @@
 
     //Algemene information
     .information__container{
-        width: 50rem;
+        width: 60rem;
         max-width: 90vw;
         text-align: left;
         margin: 0 auto 1.5rem auto;
 
         .information__container--text{
-            padding: 0 2rem;
+            padding: 0  2rem 2rem 2rem;
+            font-size: 1.8rem;
+            line-height: 1.7;
         }
     }
 
     //How to register
     .register{
+        grid-row: 3/4;
         .register__list__item{
             line-height: 4rem;
-            font-family: $text-font;
+            font-family: $special-font;
             font-size: 2rem;
             padding: 1.5rem 2rem;
         }
