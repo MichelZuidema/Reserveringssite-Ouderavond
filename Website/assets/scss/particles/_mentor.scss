@@ -95,15 +95,15 @@
  ////// student info
 
 
-  .studentInfo{
-      @include blackContainer(auto,1);
-      padding: 0 2rem 6rem 2rem;
+.studentInfo{
+    @include blackContainer(auto,1);
+    padding: 0 2rem 6rem 2rem;
 
-      @include setQeury($lg){
-          @include blackContainer(auto,0);
-      }
+    @include setQeury($lg){
+        @include blackContainer(auto,0);
+    }
 
-      .studentInfo__section{
+    .studentInfo__section{
         text-align: left;
         line-height: 1.5;
         margin: 2rem;
@@ -161,6 +161,6 @@
                 background: rgb(19, 19, 19);
             }
         }
-      }
-  }
+    }
+}
 }
