@@ -4,7 +4,7 @@
                 <!-- socialmedia section -->
                 <section class="footer__socialmedia">
                     <figure class="socialmedia__figure">
-                        <a href="facebook.com" class="socialmedia__icon">
+                        <a href="https://facebook.com" class="socialmedia__icon">
                             <img src="assets/img/footer-facebook.png" class="socialmedia__icon__img" alt="Facebook logo">
                             <section class="socialmedia__text__container">
                                 <p class="socialmedia__text">GLR Facebook</p>
@@ -12,7 +12,7 @@
                         </a>
                     </figure>
                     <figure class="socialmedia__figure">
-                        <a href="instagram.com" class="socialmedia__icon">
+                        <a href="https://instagram.com" class="socialmedia__icon">
                             <img src="assets/img/footer-instagram.png" alt="Instagram logo" class="socialmedia__icon__img">
                             <section class="socialmedia__text__container">
                                 <p class="socialmedia__text">GLR Instagram</p>
