@@ -1293,12 +1293,41 @@ label {
   padding: 0  2rem 2rem 2rem;
   font-size: 1.8rem;
   line-height: 1.7;
+
+  opacity: 0;
+  -webkit-transform: translateY(4rem);
+          transform: translateY(4rem);
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+}
+
+.homepage .information__container .appear {
+  opacity: 1;
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+
 }
 
 .homepage .register {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+
+}
+
+.homepage .register .register__list {
+  opacity: 0;
+  -webkit-transform: translateY(4rem);
+          transform: translateY(4rem);
+  -webkit-transition: 500ms all ease-in-out;
+  transition: 500ms all ease-in-out;
+}
+
+.homepage .register .appear {
+  opacity: 1;
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+
 }
 
 .homepage .register .register__list__item {
@@ -1885,6 +1914,7 @@ label {
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
       grid-template-columns: 5% 1fr 5%;
+
       grid-template-areas: ". voornaam .  "
  ". inputvoornaam . "
  ". achternaam  ."
@@ -1898,13 +1928,15 @@ label {
  ". uwBericht . "
  ". textarea ."
  ". button . ";
+
 }
 
 @media only screen and (min-width: 720px) {
   .contact .contact__article .contact__form {
     -ms-grid-columns: 5% 40% 50% 5%;
         grid-template-columns: 5% 40% 50% 5%;
-        grid-template-areas: ". voornaam inputvoornaam  ."
+        grid-template-areas: 
+ ". voornaam inputvoornaam  ."
  ". achternaam inputachternaam  ."
  ". email inputemail ."
  ". telefoon inputtelefoon ."
@@ -1912,6 +1944,7 @@ label {
  ". uwBericht . . "
  ". textarea  textarea ."
  ". button button .";
+
   }
 }
 
@@ -2030,10 +2063,12 @@ label {
   display: grid;
   -ms-grid-columns: 1fr 1fr auto 1fr 1fr;
       grid-template-columns: 1fr 1fr auto 1fr 1fr;
+
       grid-template-areas: ". . title . ."
  ". . foto . ."
  ". . klas . ."
  ". . student . .";
+
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -2048,6 +2083,11 @@ label {
 @media only screen and (min-width: 720px) {
   .mentorpage .select--student {
     padding: 2rem 4rem 4rem 4rem;
+
+        grid-template-areas: ". . title . ."
+ ". . foto . ."
+ ". klas . student .";
+
         grid-template-areas: ". . title . ."
  ". . foto . ."
  ". klas . student .";
@@ -2378,6 +2418,7 @@ label {
       grid-template-rows: 1fr 1fr 1fr 1fr auto 20rem 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+
       grid-template-areas: "heading heading"
  "dateLabel dateInput"
  "timeLabel timeInput"
@@ -2385,6 +2426,7 @@ label {
  " messageLabel messageLabel"
  "messageInput messageInput"
  "messageText messageText";
+
   grid-gap: .5rem;
 }
 

@@ -39,11 +39,35 @@
             padding: 0  2rem 2rem 2rem;
             font-size: 1.8rem;
             line-height: 1.7;
+            opacity: 0;
+            transform: translateY(4rem);
+            transition: 500ms all ease-in-out;
+        }
+
+        //class envoked when page load
+        .appear{
+            opacity: 1;
+            transform: translateY(0rem);
+
         }
     }
 
     //How to register
     .register{
+
+        //begin state 
+        .register__list{
+            opacity: 0;
+            transform: translateY(4rem);
+            transition: 500ms all ease-in-out;
+        }
+
+        //class envoked when scrolling over it
+        .appear{
+            opacity: 1;
+            transform: translateY(0rem);
+        }
+
         grid-row: 3/4;
         .register__list__item{
             line-height: 4rem;
