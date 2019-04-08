@@ -1,0 +1,76 @@
+///////////////////////////////////////////////////////////////////
+// login 
+
+.header__login{
+    height: auto;
+    display: block;
+    padding: 0 2rem 2rem 2rem;
+    @include blackContainer(auto,0);
+    width: 100%!important;
+    max-width: 60rem;
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    @include setQeury($md){
+        width: 75%!important;
+    }
+
+    color: white;
+    z-index: 101;
+
+    input, label{
+        width: 100%;
+        height: 40px;
+    }
+    
+    label{
+        margin: 0 100% auto 0
+    }
+
+    input{
+        margin: 2rem auto;
+        font-size: $normal-text-size;
+    }
+    
+    .login__submit{
+        width: 100%;
+        display: block;
+        height: 4rem;
+        margin: 2rem auto 0 auto;
+        background: $black-container;
+        font-size: 2rem;
+        border: 2px solid $border-color;
+        box-shadow: 1px 1.5px 6px #111;
+        color: #fff;
+        font-weight: 900;
+
+        &:hover{
+            background: #111;
+        }
+    }
+
+
+    ////////////////////////////
+    ///error messages
+
+    .inlog__error--cijfer,.inlog__error--empty,.inlog__error--password{
+        color: red;
+        text-align: left;
+        margin: 0 0 2rem 0;
+    }
+
+    .inlog__error--cijfer{
+        display: none;
+    }
+
+    .inlog__error--empty{
+        display: none;
+    }
+
+    .inlog__error--password{
+        display: none;
+    }
+
+}

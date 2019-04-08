@@ -43,6 +43,7 @@ loginButton.addEventListener("click", function(event){
             stepBack()
             loginButton.style.display = "block";
         }
+
     });
 });
 
