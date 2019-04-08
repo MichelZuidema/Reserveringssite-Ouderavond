@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
 
 // Here we set all typography styles
 
@@ -23,3 +24,6 @@ $navigation-mobile-size: 4rem;
 $navigation-desktop-size: 2.8rem;
 $normal-text-size: 2.2rem;
 $footer-text: calc(15rem * 1vw);
+
+$special-font: 'Merienda', cursive;
+
