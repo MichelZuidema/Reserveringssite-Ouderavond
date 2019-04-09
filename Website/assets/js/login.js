@@ -15,6 +15,8 @@ function step(timestamp){
         cancelAnimationFrame(progess);
         mover-=8;
     }
+
+    console.log(mover);
 }
 
 //function to move dailog back out the screen

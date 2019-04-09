@@ -2,21 +2,21 @@
 //toggle overflow for mobile
 
 .overflow{
-    overflow: hidden;
+    overflow: hidden!important;
 }
 
 //////////////////////////////////////////////////////////////
 // placeholder for navbar swichts
 
 .toggleOn{
-    top: 0;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background: $glr-green;
-    z-index: 1000;
-    overflow: hidden;
-    display: block;
+    top: 0!important;
+    position: absolute!important;
+    height: 100vh!important;
+    width: 100vw!important;
+    background: $glr-green!important;
+    z-index: 1000!important;
+    overflow: hidden!important;
+    display: block!important;
 }
 
 //////////////////////////////////////////////////////////////
