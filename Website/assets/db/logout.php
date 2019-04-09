@@ -2,6 +2,13 @@
 
 require("Controllers/UserController.php");
 $user = new UserController();
-$user->Logout();
+
+try {
+    $user->Logout();
+    return true;
+} catch (Exception $e) {
+    $_SESSION['errormsg'] = $e;
+    return false;
+}
 
 ?>
