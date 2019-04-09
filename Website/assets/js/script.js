@@ -2,36 +2,32 @@
 /////// Navigation menu
 
 //open navigation menu
-$(".header__icon--hamburger").click(function(){
-        $("header nav").addClass("toggleOn");
-        $(".toggleOn").slideDown(2000);
-        $("body").addClass("overflow");
-      });
-//close navigation menu
-$("header nav article").click(function(){
-    $("header nav").removeClass("toggleOn");
-    $("body").removeClass("overflow");
-})
-//close navagition menu if windows gets bigger
-$(window).resize(function() {
-  if ($(window).width() > 1023) {
-    $("header nav").removeClass("toggleOn");
-    $("body").removeClass("overflow");
+
+var navContainer = document.querySelector(".header__nav");
+var hamburgerButton = document.querySelector(".header__icon--hamburger");
+var bodyContainer = document.querySelector("body");
+var cross = document.querySelector(".header__icon--cross");
+
+var widthOfScreen = window.innerWidth;
+
+hamburgerButton.addEventListener("click", function(){
+    navContainer.classList.add("toggleOn");
+    bodyContainer.classList.add("overflow");
+    console.log("width" + widthOfScreen);
+
+});
+
+cross.addEventListener("click", function(){
+    navContainer.classList.remove("toggleOn");
+    bodyContainer.classList.remove("overflow");
+});
+
+window.addEventListener("resize", function(){
+  if(widthOfScreen > 1023){
+    navContainer.classList.remove("toggleOn");
+    bodyContainer.classList.remove("overflow");
   }
 });
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////// tijdschema message
-
-//when send button is clicked show the popup
-$(".question__button--send").click(function () {
-    $(".popup").css.display = "block";
-    $(".popup").slideDown(500).delay(10000).slideUp(1000);
-});
-
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///text effects
@@ -58,5 +54,5 @@ window.addEventListener("scroll", function(){
 //onload of the page text appear
 window.addEventListener("load", function(){
   textAppear(".information__container--text");
-})
+});
 
