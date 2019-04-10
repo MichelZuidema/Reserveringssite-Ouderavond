@@ -5,14 +5,13 @@ $pageTitle = "Inschrijving ouderavond | Grafisch Lyceum Rotterdam";
 //selected navigation link
 $selectedLink = "tijdschema";
 
-require("assets/db/Controllers/TimeTableController.php");
-$time = new TimeTableController();
+require_once 'classes.php';
 
 if (empty($_SESSION['username'])) {
     die("<script>
-                alert('U moet ingelogd zijn om op deze pagina te komen!');
-                location=\"index.php\";
-                </script>");
+            alert('U moet ingelogd zijn om op deze pagina te komen!');
+            location=\"index.php\";
+        </script>");
 }
 
 // Header

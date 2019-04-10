@@ -3,9 +3,6 @@
     This class extends the Database class
     The functions in this class are all the functions the user will need to talk to the database except connecting etc.
 */
-
-// Require database class
-require($_SERVER['DOCUMENT_ROOT'] . "/Ouderavond/Website/assets/db/database.class.php");
 // Start session
 if (session_id() == '') {
     session_start();

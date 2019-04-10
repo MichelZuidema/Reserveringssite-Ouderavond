@@ -1,8 +1,7 @@
 <?php
 ini_set('display_errors', 'On');
-require("assets/db/Controllers/UserController.php");
 
-$user = new UserController();
+require_once 'classes.php';
 
 // Check if submit button has been clicked
 if(isset($_POST['submit'])) {

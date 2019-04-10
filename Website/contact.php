@@ -7,14 +7,14 @@ $selectedLink = "contact";
 // Start the session to get the logged in user details
 session_start();
 
+require_once 'classes.php';
+
 // Header
 if ($_SESSION['role'] == 1) {
     require 'assets/include/headerMentor.php';
 } else {
     require 'assets/include/header.php';
 }
-
-require("assets/db/Controllers/ContactController.php");
 
 if (isset($_POST['btnSubmit'])) {
     if ($_POST['voornaam'] == "") {
