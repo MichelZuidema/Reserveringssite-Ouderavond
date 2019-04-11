@@ -1,9 +1,9 @@
 <?php
+ini_set('display_errors', 1);
 
-require("Controllers/UserController.php");
+require_once 'database.class.php';
+require_once 'Controllers/UserController.php';
 $user = new UserController();
-
-ini_set('display_errors', 'On');
 
 if (isset($_GET["token"]) && preg_match('/\b([a-f0-9]{40})\b/', $_GET['token'])) {
     if ($user->UniqueLinkValidation($_GET['token'])) {
