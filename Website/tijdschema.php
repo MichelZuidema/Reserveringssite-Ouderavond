@@ -64,12 +64,25 @@ if (isset($_POST['formSubmit'])) {
                 $time->GetDates($_SESSION['mentor_id']);
 
                 // Radio Buttons
-                for ($x = 0; $x < count($time->dates); $x++) {
-                    while($row = mysqli_fetch_array($result)) {
-                        if($row['bezet'] == 4) {
+//                for ($x = 0; $x < count($time->dates); $x++) {
+//                    while($row = mysqli_fetch_array($result)) {
+//                        if($row['bezet'] == 4) {
+//                            echo "<input type='radio' style='border: 1px solid red' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
+//                        }
+//                        if($row['bezet'] == 3) {
+//                            echo "<input type='radio' style='border: 1px solid orange' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
+//                        } else {
+//                            echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
+//                        }
+//                    }
+//                }
+
+                while($row = mysqli_fetch_array($result)) {
+                    for ($x = 0; $x < count($time->dates); $x++) {
+                        if ($row['bezet'] == 4) {
                             echo "<input type='radio' style='border: 1px solid red' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
                         }
-                        if($row['bezet'] == 3) {
+                        if ($row['bezet'] == 3) {
                             echo "<input type='radio' style='border: 1px solid orange' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
                         } else {
                             echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";

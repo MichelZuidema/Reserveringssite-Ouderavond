@@ -8,8 +8,6 @@ if (session_id() == '') {
     session_start();
 }
 
-require_once($_SERVER['DOCUMENT_ROOT'] . "/Ouderavond/Website/assets/db/database.class.php");
-
 class UserController extends Database
 {
     // Function to add array of students
@@ -39,12 +37,14 @@ class UserController extends Database
     public function MentorLoginProcess($username, $password)
     {
         // Input checks
-        if ($username == "") {
+        if (empty($username)) {
             $_SESSION['errormsg'] = "U heeft geen naam ingevuld!";
+            return false;
         }
 
-        if ($password == "") {
+        if (empty($password)) {
             $_SESSION['errormsg'] = "U heeft geen wachtwoord ingevuld!";
+            return false;
         }
 
         // SQL Query: Search in database for rows with the username

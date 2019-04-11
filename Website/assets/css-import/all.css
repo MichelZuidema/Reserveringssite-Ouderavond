@@ -1619,10 +1619,10 @@ label {
   background: #111;
 }
 
+.timetable .timetable #time--0:checked ~ label[for="time--0"],
 .timetable .timetable #time--1:checked ~ label[for="time--1"],
 .timetable .timetable #time--2:checked ~ label[for="time--2"],
-.timetable .timetable #time--3:checked ~ label[for="time--3"],
-.timetable .timetable #time--4:checked ~ label[for="time--4"] {
+.timetable .timetable #time--3:checked ~ label[for="time--3"] {
   background: #8FE501;
   color: #111;
 }
