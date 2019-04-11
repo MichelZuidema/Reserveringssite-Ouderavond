@@ -8,6 +8,8 @@ if (session_id() == '') {
     session_start();
 }
 
+require_once($_SERVER['DOCUMENT_ROOT'] . "/Ouderavond/Website/assets/db/database.class.php");
+
 class UserController extends Database
 {
     // Function to add array of students

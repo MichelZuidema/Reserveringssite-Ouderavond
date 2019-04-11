@@ -1,7 +1,7 @@
 <?php
 ini_set('display_errors', 'On');
 
-require_once 'classes.php';
+require_once($_SERVER['DOCUMENT_ROOT'] . "/Ouderavond/Website/assets/db/Controllers/UserController.php");
 
 // Check if submit button has been clicked
 if(isset($_POST['submit'])) {

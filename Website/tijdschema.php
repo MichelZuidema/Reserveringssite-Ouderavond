@@ -5,7 +5,11 @@ $pageTitle = "Inschrijving ouderavond | Grafisch Lyceum Rotterdam";
 //selected navigation link
 $selectedLink = "tijdschema";
 
-require_once 'classes.php';
+require 'assets/db/database.class.php';
+require 'assets/db/Controllers/TimeTableController.php';
+$time = new TimeTableController();
+
+unset($_SESSION['errormsg']);
 
 if (empty($_SESSION['username'])) {
     die("<script>
