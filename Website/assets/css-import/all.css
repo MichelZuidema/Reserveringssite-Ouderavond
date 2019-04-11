@@ -1880,6 +1880,7 @@ label {
           transform: translateX(-50%);
   padding: 3rem 0;
   position: fixed;
+  display: none;
   background: #8FE501;
   top: -10rem;
   -webkit-transition: 500ms ease-in-out;
