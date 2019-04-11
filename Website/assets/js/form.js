@@ -116,12 +116,14 @@
         function popupStart(){
             errorMessage.style.display = "block";
             popupContainer.style.top = "0";
+            popupContainer.style.display = "block";
             popupContainer.style.backgroundColor = "red";
         }
 
         //close the popup
         function popupStop(){
             errorMessage.style.display = "none";
+            popupContainer.style.display = "none";
             popupContainer.style.top = "-200px";
         }
 

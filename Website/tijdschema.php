@@ -10,12 +10,12 @@ require_once 'assets/db/database.class.php';
 
 $time = new TimeTableController();
 
-if (empty($_SESSION['username'])) {
-    die("<script>
-            alert('U moet ingelogd zijn om op deze pagina te komen!');
-            location=\"index.php\";
-        </script>");
-}
+// if (empty($_SESSION['username'])) {
+//     die("<script>
+//             alert('U moet ingelogd zijn om op deze pagina te komen!');
+//             location=\"index.php\";
+//         </script>");
+// }
 
 // Header
 if ($_SESSION['role'] == 1) {
@@ -46,6 +46,8 @@ if (isset($_POST['formSubmit'])) {
                     //echo "<input type='checkbox' name='inputDate' class='checkbox__label' id='day__checkbox' value='" . $row['datum'] . "'>";
                     echo "<label class='checkbox__label' for='day__checkbox'>" . $row['datum'] . "</label>\n";
                 }
+                echo '<input type="checkbox" name="checkbox" class="day-choosing__checkbox" id="day__checkbox">';
+                echo "<label class='checkbox__label' for='day__checkbox'>19:00 t/m 20:00</label>\n";
                 ?>
                 <!-- text -->
                 <p class="day__text"><strong>Click</strong> de gewenste datum aan a.u.b</p>
@@ -75,10 +77,10 @@ if (isset($_POST['formSubmit'])) {
                     }
                 }
 
-                // Labels
-                for ($x = 0; $x < count($time->dates); $x++) {
-                    echo "<label class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
-                }
+                echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--1'>";
+                echo "<label class='radio__label' for='time--1'>19:00 t/m 1900</label>" 
+
+                
                 ?>
                 <!-- guideance how to use timeTable -->
                 <section class="timetable-guidance">
