@@ -4,8 +4,6 @@ if (session_id() == '') {
     session_start();
 }
 
-require_once '../database.class.php';
-
 class ContactController extends Database
 {
     private $ownEmail = "michelgzuidema@gmail.com";
