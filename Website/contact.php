@@ -7,7 +7,8 @@ $selectedLink = "contact";
 // Start the session to get the logged in user details
 session_start();
 
-require("assets/db/Controllers/ContactController.php");
+require_once 'assets/db/database.class.php';
+require_once 'assets/db/Controllers/ContactController.php';
 
 // Header
 if ($_SESSION['role'] == 1) {
