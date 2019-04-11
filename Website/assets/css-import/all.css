@@ -759,9 +759,10 @@ html {
 body {
   background: #1D1D1D;
   color: #f1f1f1;
-  max-width: 100vw;
+  max-width: 100%;
   text-align: center;
   height: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -1871,11 +1872,38 @@ label {
   margin-top: 0;
 }
 
+.contact .questionPopup {
+  width: 90%;
+  left: 50%;
+  border-radius: 2rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 3rem 0;
+  position: fixed;
+  background: #8FE501;
+  top: -10rem;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+}
+
+.contact .questionPopup .popup__good {
+  color: #0e0e0e;
+  display: none;
+}
+
+.contact .questionPopup .error__form--firstname, .contact .questionPopup .error__form--firstname--number, .contact .questionPopup .error__form--lastname--number, .contact .questionPopup .error__form--lastname, .contact .questionPopup .error__form--lastname, .contact .questionPopup .error__form--email, .contact .questionPopup .error__form--phone, .contact .questionPopup .error__form--child, .contact .questionPopup .error__form--child--number {
+  display: none;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.6;
+  font-size: 2rem;
+}
+
 .contact .contact__article {
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
-  height: 80rem;
+  height: auto;
   background: #1C1C1C;
   -webkit-box-shadow: 1px 1.5px 6px #000;
           box-shadow: 1px 1.5px 6px #000;
@@ -1885,6 +1913,7 @@ label {
 
 .contact .contact__article .contact__article--heading {
   font-size: 4rem;
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1910,88 +1939,110 @@ label {
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
       grid-template-columns: 5% 1fr 5%;
-      grid-template-areas: ". voornaam .  " ". inputvoornaam . " ". achternaam  ." ". inputachternaam ." ". email ." ". inputemail ." ". telefoon ." ". inputtelefoon ." ". kind ." ". inputkind ." ". uwBericht . " ". textarea ." ". button . ";
+      grid-template-areas: ". obligated ." ". voornaam .  " ". inputvoornaam . " ". achternaam  ." ". inputachternaam ." ". email ." ". inputemail ." ". telefoon ." ". inputtelefoon ." ". kind ." ". inputkind ." ". uwBericht . " ". textarea ." ". button . ";
 }
 
 @media only screen and (min-width: 720px) {
   .contact .contact__article .contact__form {
     -ms-grid-columns: 5% 40% 50% 5%;
         grid-template-columns: 5% 40% 50% 5%;
-        grid-template-areas: ". voornaam inputvoornaam  ." ". achternaam inputachternaam  ." ". email inputemail ." ". telefoon inputtelefoon ." ". kind inputkind ." ". uwBericht . . " ". textarea  textarea ." ". button button .";
+    grid-gap: 1rem;
+        grid-template-areas: ". obligated obligated ." ". voornaam inputvoornaam  ." ". achternaam inputachternaam  ." ". email inputemail ." ". telefoon inputtelefoon ." ". kind inputkind ." ". uwBericht . . " ". textarea  textarea ." ". button button .";
   }
 }
 
 .contact .contact__article label {
   text-align: left;
+  padding: 1rem 0;
+}
+
+@media only screen and (min-width: 720px) {
+  .contact .contact__article label {
+    padding: 0;
+  }
 }
 
 .contact .contact__article input {
   width: 100%;
   height: 3rem;
+  margin: 0 0 1rem 0;
+}
+
+.contact .contact__article .contact__obligated {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: obligated;
+  color: #ff1414;
+  font-size: 1.9rem;
+  height: 5rem;
+}
+
+.contact .contact__article .contact__obligated span {
+  color: #f1f1f1;
 }
 
 .contact .contact__article .form__input--voornaam {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: inputvoornaam;
 }
 
 .contact .contact__article .form__label--voornaam {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: voornaam;
 }
 
 .contact .contact__article .form__input--achternaam {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 2;
   grid-area: inputachternaam;
 }
 
 .contact .contact__article .form__label--achternaam {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: achternaam;
 }
 
 .contact .contact__article .form__input--email {
-  -ms-grid-row: 6;
+  -ms-grid-row: 7;
   -ms-grid-column: 2;
   grid-area: inputemail;
 }
 
 .contact .contact__article .form__label--email {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 2;
   grid-area: email;
 }
 
 .contact .contact__article .form__input--telefoon {
-  -ms-grid-row: 8;
+  -ms-grid-row: 9;
   -ms-grid-column: 2;
   grid-area: inputtelefoon;
 }
 
 .contact .contact__article .form__label--telefoon {
-  -ms-grid-row: 7;
+  -ms-grid-row: 8;
   -ms-grid-column: 2;
   grid-area: telefoon;
 }
 
 .contact .contact__article .form__input--kind {
-  -ms-grid-row: 10;
+  -ms-grid-row: 11;
   -ms-grid-column: 2;
   grid-area: inputkind;
 }
 
 .contact .contact__article .form__label--kind {
-  -ms-grid-row: 9;
+  -ms-grid-row: 10;
   -ms-grid-column: 2;
   grid-area: kind;
 }
 
 .contact .contact__article .form__button--send {
-  -ms-grid-row: 13;
+  -ms-grid-row: 14;
   -ms-grid-column: 2;
   grid-area: button;
   background: #1C1C1C;
@@ -1999,25 +2050,26 @@ label {
   font-size: 3.2rem;
   height: 5rem;
   border: 2px solid #707070;
+  margin: 2rem auto;
 }
 
 .contact .contact__article .form__button--send:hover {
-  background: #8FE501;
-  color: #1C1C1C;
+  background: #111;
+  color: #f1f1f1;
 }
 
 .contact .contact__article .form__label--bericht {
-  -ms-grid-row: 11;
+  -ms-grid-row: 12;
   -ms-grid-column: 2;
   grid-area: uwBericht;
 }
 
 .contact .contact__article .form_textarea--bericht {
-  -ms-grid-row: 12;
+  -ms-grid-row: 13;
   -ms-grid-column: 2;
   grid-area: textarea;
   width: 100%;
-  height: 10rem;
+  height: 21rem;
   font-size: 2rem;
 }
 
