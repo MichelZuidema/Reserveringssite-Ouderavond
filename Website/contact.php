@@ -80,35 +80,53 @@ if (isset($_POST['btnSubmit'])) {
 ?>
     <script src="assets/js/form.js"></script>
     <main class="contact">
+        <!-- popup to inform the user about his email -->
         <section class="questionPopup">
-            <div>
-                <p>Bedankt voor uw mail.
-                <p>
-                <p>Wij zullen zo spoedig mogelijk contact opnemen!</p>
+
+                <!-- Good submit -->
+                <p class="popup__good">Bedankt voor uw mail!<p>
+                <p class="popup__good">Wij zullen zo spoedig mogelijk contact met u opnemen!</p>
+
+                <!-- firstname errors -->
+                <p class="error__form--message">Het voornaam veld mag niet leeg zijn of beginnen met een getal!</p>
             </div>
         </section>
+        <!-- contact form -->
         <article class="contact__article">
             <h2 class="contact__article--heading">Neem contact op</h2>
-            <form action="" method="post" class="contact__form">
+            <form action="" method="post" class="contact__form" onsubmit="return validate();">
+                
+                <p class="contact__obligated">Verplichte velden beginnen met een: <span>*<span></p>
+
                 <!-- inputfield + label voornaam -->
-                <label class="form__label--voornaam">Voornaam:</label>
-                <input type="text" class="form__input--voornaam" name="voornaam" require>
+                <label class="form__label--voornaam">Voornaam:*</label>
+                <input type="text" class="form__input--voornaam" name="voornaam" maxlength="40" autofocus require>
+                
+                
                 <!-- inputfield + label achternaam -->
-                <label class="form__label--achternaam">Achternaam:</label>
-                <input type="text" name="achternaam" class="form__input--achternaam" require>
+                <label class="form__label--achternaam">Achternaam:*</label>
+                <input type="text" name="achternaam" class="form__input--achternaam" maxlength="40" require>
+                
+                
                 <!-- inputfield + label email -->
-                <label class="form__label--email">E-mail:</label>
-                <input type="text" name="email" class="form__input--email" require>
+                <label class="form__label--email">E-mail:*</label>
+                <input type="email" name="email" class="form__input--email" maxlength="100" require>
+                
                 <!-- inputfield + label telefoon -->
                 <label class="form__label--telefoon">Telefoonummer:</label>
-                <input type="number" name="telefoon" class="form__input--telefoon">
+                <input type="number" name="telefoon" class="form__input--telefoon" maxlength="12">
+                
                 <!-- inputfield + label kind -->
-                <label class="form__label--kind">Betreft kind:</label>
-                <input type="text" name="kind" class="form__input--kind" require>
+                <label class="form__label--kind">Betreft kind:*</label>
+                <input type="text" name="kind" class="form__input--kind" maxlength="40" require>
+                
+                
                 <!-- inputfield + label uw bericht -->
-                <label class="form__label--bericht">Uw bericht</label>
+                <label class="form__label--bericht">Uw bericht:*</label>
+                
                 <!-- textarea voor een bericht -->
-                <textarea class="form_textarea--bericht" name="bericht"></textarea>
+                <textarea class="form_textarea--bericht" name="bericht" maxlength="400" ></textarea>
+                
                 <!-- submit button -->
                 <input type="submit" value="Verzenden" class="form__button--send" name="btnSubmit">
             </form>
@@ -118,3 +136,4 @@ if (isset($_POST['btnSubmit'])) {
 // footer
 require 'assets/include/footer.php';
 ?>
+<script src="assets/js/form.js"></script>
