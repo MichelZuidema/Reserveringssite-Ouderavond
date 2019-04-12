@@ -1,3 +1,6 @@
+// using the strict mode to envoke errors who be are often ignored
+"use strict";
+
 var loginButton = document.querySelector(".header__user");
 var headerLogin = document.querySelector(".header__login");
 var body = document.querySelector("body");
