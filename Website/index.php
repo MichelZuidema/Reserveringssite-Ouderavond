@@ -79,4 +79,4 @@
         // footer
         require 'assets/include/footer.php';
     ?>
-    <script src="assets/js/text"></script>
+    <script src="assets/js/text.js"></script>
