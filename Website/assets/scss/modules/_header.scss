@@ -51,10 +51,16 @@
     
     // ul swicht of for mobile view
     .header__nav{
-        display: none;
+        display: block;
+        height: 100vh;
+        position: absolute;
+        left: -100%;
+        opacity: 0;
+        
 
 
         @include setQeury($lg){
+            opacity: 1;
             width: 90vw;
             transition: width 2s;
             @include centerAbs(11rem,50%);

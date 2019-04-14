@@ -719,8 +719,19 @@ template {
   width: 100vw !important;
   background: #8FE501 !important;
   z-index: 1000 !important;
+  left: 0 !important;
   overflow: hidden !important;
   display: block !important;
+  opacity: 1 !important;
+  -webkit-transition: left 600ms cubic-bezier(1, 0.14, 0, 1.31), opacity 1000ms ease !important;
+  transition: left 600ms cubic-bezier(1, 0.14, 0, 1.31), opacity 1000ms ease !important;
+}
+
+.toggleOff {
+  left: -100% !important;
+  opacity: 0 !important;
+  -webkit-transition: left 600ms cubic-bezier(1, 0.14, 0, 1.31), opacity 1000ms ease !important;
+  transition: left 600ms cubic-bezier(1, 0.14, 0, 1.31), opacity 1000ms ease !important;
 }
 
 .selectedLinkActive {
@@ -860,11 +871,16 @@ label {
 }
 
 .header .header__nav {
-  display: none;
+  display: block;
+  height: 100vh;
+  position: absolute;
+  left: -100%;
+  opacity: 0;
 }
 
 @media only screen and (min-width: 1024px) {
   .header .header__nav {
+    opacity: 1;
     width: 90vw;
     -webkit-transition: width 2s;
     transition: width 2s;
@@ -1940,7 +1956,7 @@ label {
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
       grid-template-columns: 5% 1fr 5%;
-      grid-template-areas: ". obligated ." ". voornaam .  " ". inputvoornaam . " ". achternaam  ." ". inputachternaam ." ". email ." ". inputemail ." ". telefoon ." ". inputtelefoon ." ". kind ." ". inputkind ." ". uwBericht . " ". textarea ." ". button . ";
+      grid-template-areas: ". obligated ." ". voornaam .  " ". inputvoornaam . " ". achternaam  ." ". inputachternaam ." ". email ." ". inputemail ." ". telefoon ." ". inputtelefoon ." ". kind ." ". inputkind ." ". uwBericht . " ". textarea ." ". button . ";
 }
 
 @media only screen and (min-width: 720px) {
@@ -1948,7 +1964,7 @@ label {
     -ms-grid-columns: 5% 40% 50% 5%;
         grid-template-columns: 5% 40% 50% 5%;
     grid-gap: 1rem;
-        grid-template-areas: ". obligated obligated ." ". voornaam inputvoornaam  ." ". achternaam inputachternaam  ." ". email inputemail ." ". telefoon inputtelefoon ." ". kind inputkind ." ". uwBericht . . " ". textarea  textarea ." ". button button .";
+        grid-template-areas: ". obligated obligated ." ". voornaam inputvoornaam  ." ". achternaam inputachternaam  ." ". email inputemail ." ". telefoon inputtelefoon ." ". kind inputkind ." ". uwBericht . . " ". textarea  textarea ." ". button button .";
   }
 }
 
@@ -2089,7 +2105,7 @@ label {
   display: grid;
   -ms-grid-columns: 1fr 1fr auto 1fr 1fr;
       grid-template-columns: 1fr 1fr auto 1fr 1fr;
-      grid-template-areas: ". . title . ." ". . foto . ." ". . klas . ." ". . student . .";
+      grid-template-areas: ". . title . ." ". . foto . ." ". . klas . ." ". . student . .";
   width: 100%;
   max-width: 80rem;
   margin: 5rem auto 0 auto;
@@ -2104,7 +2120,7 @@ label {
 @media only screen and (min-width: 720px) {
   .mentorpage .select--student {
     padding: 2rem 4rem 4rem 4rem;
-        grid-template-areas: ". . title . ." ". . foto . ." ". klas . student .";
+        grid-template-areas: ". . title . ." ". . foto . ." ". klas . student .";
   }
 }
 
@@ -2432,7 +2448,7 @@ label {
       grid-template-rows: 1fr 1fr 1fr 1fr auto 20rem 1fr;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-      grid-template-areas: "heading heading" "dateLabel dateInput" "timeLabel timeInput" "personLabel personInput" " messageLabel messageLabel" "messageInput messageInput" "messageText messageText";
+      grid-template-areas: "heading heading" "dateLabel dateInput" "timeLabel timeInput" "personLabel personInput" " messageLabel messageLabel" "messageInput messageInput" "messageText messageText";
   grid-gap: .5rem;
 }
 
