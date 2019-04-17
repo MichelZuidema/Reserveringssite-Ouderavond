@@ -19,24 +19,53 @@
         <form id="planningStudent" method="POST">
             <h2>Tijdschema</h2>
             <section id="planningGrid">
-                <ul>
-                    <li><p>18:00 t/m 18:15</p></li>
-                    <li><p>18:15 t/m 18:30</p></li>
-                    <li><p>18:30 t/m 18:45</p></li>
-                    <li><p>18:45 t/m 19:00</p></li>
-                    <li><p>19:00 t/m 19:15</p></li>
-                    <li><p>19:15 t/m 19:30</p></li>
-                    <li><p>19:30 t/m 19:45</p></li>
-                    <li><p>19:45 t/m 20:00</p></li>
-                    <li><p>20:00 t/m 20:15</p></li>
-                    <li><p>20:15 t/m 20:30</p></li>
-                    <li><p>20:30 t/m 20:45</p></li>
-                    <li><p>20:45 t/m 21:00</p></li>
-                    <li><p>21:00 t/m 21:15</p></li>
-                    <li><p>21:15 t/m 21:30</p></li>
-                    <li><p>21:30 t/m 21:45</p></li>
-                    <li><p>21:45 t/m 22:00</p></li>
-                </ul>
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--1">
+                <label for="radio--1" class="planning__input--label">18:00 t/m 18:15</label>
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--2">
+                <label for="radio--2" class="planning__input--label">18:15 t/m 18:30</label>
+
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--3">
+                <label for="radio--3" class="planning__input--label">18:30 t/m 18:45</label>
+                
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--4">
+                <label for="radio--4" class="planning__input--label">18:45 t/m 19:00</label>
+
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--5">
+                <label for="radio--5" class="planning__input--label">19:00 t/m 19:15</label>
+
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--6">
+                <label for="radio--6" class="planning__input--label">19:15 t/m 19:30</label>
+
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--7">
+                <label for="radio--7" class="planning__input--label">19:30 t/m 19:45</label>
+
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--8">
+                <label for="radio--8" class="planning__input--label">19:45 t/m 20:00</label>
+              
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--9">
+                <label for="radio--9" class="planning__input--label">20:00 t/m 20:15</label>
+                
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--10">
+                <label for="radio--10" class="planning__input--label">20:15 t/m 20:30</label>
+                
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--11">
+                <label for="radio--11" class="planning__input--label">20:30 t/m 20:45</label>
+
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--12">
+                <label for="radio--12" class="planning__input--label">20:45 t/m 21:00</label>
+
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--13">
+                <label for="radio--13" class="planning__input--label">21:00 t/m 21:15</label>
+
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--14">
+                <label for="radio--14" class="planning__input--label">21:15 t/m 21:30</label>
+
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--15">
+                <label for="radio--15" class="planning__input--label">21:30 t/m 21:45</label>
+
+                <input type="radio" name="radio" class="planning__input--radio" id="radio--16">
+                <label for="radio--16" class="planning__input--label">21:45 t/m 22:00</label>
+
             </section>
             <section id="planningInfo">   
                     <p>vrij</p>
