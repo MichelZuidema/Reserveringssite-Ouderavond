@@ -31,8 +31,13 @@ class ContactController extends Database
         }
     }
 
-    public function SendMailConfirmation($mentor_id, $tijdstip_id, $personen, $opmerking)
+    public function SendMailConfirmation()
     {
+        $mentor_id = $_POST['mentor_id'];
+        $tijdstip_id = $_POST['inputTime'];
+        $personen = $_POST['inputPersonen'];
+        $opmerking = $_POST['inputRemark'];
+
         $subject = "GLR Ouderavond - Confirmatie Reservering";
         $headers = "Content-Type: text/html; charset=UTF-8\r\n";
 
