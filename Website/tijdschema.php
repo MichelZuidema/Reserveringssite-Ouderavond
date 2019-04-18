@@ -28,13 +28,10 @@ if ($_SESSION['role'] == 1) {
 
 if (isset($_POST['formSubmit'])) {
     if ($time->CreateReservation()) {
-        if ($contact->SendMailConfirmation()) {
-            echo "Mail sent!";
-        } else {
-            echo $_SESSION['errormsg'];
+        if($contact->SendMailConfirmation()) {
+            $user_id = $_SESSION['student_id'];
+            header('Location: confirmed.php?id='. $user_id);
         }
-    } else {
-        echo $_SESSION['errormsg'];
     }
 }
 ?>
@@ -73,17 +70,23 @@ if (isset($_POST['formSubmit'])) {
 
                 while ($row = mysqli_fetch_array($result)) {
                     for ($x = 0; $x < count($time->dates); $x++) {
-                        echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
+                        if ($time->dates[$x]['bezet'] == 4) {
+                            echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "' disabled>\n";
+                        } else if ($time->dates[$x]['bezet'] == 3) {
+                            echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
+                        } else {
+                            echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
+                        }
                     }
                 }
 
                 for ($x = 0; $x < count($time->dates); $x++) {
                     if ($time->dates[$x]['bezet'] == 4) {
-                        echo "<label style='background-color: red;' class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
+                        echo "<label style='cursor: not-allowed;' class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
                     } else if ($time->dates[$x]['bezet'] == 3) {
-                        echo "<label style='background-color: orange;' class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
+                        echo "<label style='border: 2px solid red;' class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
                     } else {
-                        echo "<label class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
+                        echo "<label style='border: 2px solid green;' class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
                     }
                 }
                 ?>
@@ -111,18 +114,20 @@ if (isset($_POST['formSubmit'])) {
                 <!-- text -->
                 <p class="persons--info">Selecteer met hoeveel personen u wilt komen</p>
             </section>
-            <section class="popup">
                 <?php
                 if (!empty($_SESSION['errormsg'])) {
+                    echo '<section class="popup" style="background-color: red;">';
                     echo '<p class="popup__text">Er is een fout opgetreden!</p>';
                     echo "<p class='popup__text'>" . $_SESSION['errormsg'] . "</p>";
+                    echo '</section>';
                     unset($_SESSION['errormsg']);
                 } else {
+                    echo '<section class="popup">';
                     echo '<p class="popup__text">Bedankt voor uw aanmelding!</p>';
                     echo '<p class="popup__text">Wij hebben u een mail gestuurd met uw gegevens</p>';
+                    echo '</section>';
                 }
                 ?>
-            </section>
             <!-- Add a qeustion to your registery -->
             <article class="question">
                 <h2>Opmerking of vraag</h2>

@@ -69,6 +69,11 @@ class TimeTableController extends Database
             $mentor_id = $_SESSION['mentor_id'];
         }
 
+        if($_POST['checkbox'] == "") {
+            $_SESSION['errormsg'] = "U heeft geen datum geselecteerd!";
+            return false;
+        }
+
         if ($_POST['inputTime'] == "") {
             $_SESSION['errormsg'] = "U heeft geen tijd ingevuld!";
             return false;

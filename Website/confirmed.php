@@ -5,22 +5,38 @@
         $selectedLink = "";
         //header
         require 'assets/include/header.php';
+        require_once 'assets/db/database.class.php';
+
+        $db = new Database();
+
+        if(!$_GET['id'] == "") {
+            $id = $_GET['id'];
+        }
+
+        $queryTijdstip = "SELECT * FROM tijdstip WHERE id = (SELECT tijdstip_id FROM reservering WHERE student_id = '$id')";
+        $queryReservering = "SELECT * FROM reservering WHERE student_id = '$id'";
+
+        $result = mysqli_query($db->mysqli, $queryTijdstip);
+        $resultReservering = mysqli_query($db->mysqli, $queryReservering);
+
+        $row = mysqli_fetch_array($result);
+        $rowRes = mysqli_fetch_array($resultReservering);
     ?>
     <main class="confirmed">
         <article class="confirmed__article">
             <h2 class="confirmed__heading">Gegevens van uw aanmelding</h2>
 
             <label class="confirmed__date--label">Datum:</label>
-            <input type="text" value="28/4/2020" class="confirmed__date--input">
+            <input type="text" value="<?php echo $row['datum'];?>" class="confirmed__date--input">
 
             <label class="confirmed__time--label">Gewenste tijd:</label>
-            <input type="text" value="18:00 t/m 19:00" class="confirmed__time--input">
+            <input type="text" value="<?php echo $row['tijd_start'];?> t/m <?php echo $row['tijd_einde']; ?>" class="confirmed__time--input">
 
             <label class="confirmed__person--label">Aantal personen</label>
-            <input type="text" value="3 personen" class="confirmed__person--input">
+            <input type="text" value="<?php echo $rowRes['personen']; ?> personen" class="confirmed__person--input">
 
             <label class="confirmed__message--label">Uw opmerking bericht:</label>
-            <textarea class="confirmed__message--input">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit autem accusamus quaerat placeat! Consequuntur nam dolore qui perferendis ratione impedit hic molestiae quos unde sint labore reiciendis quas, ipsam accusantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia provident, nesciunt eveniet consequatur nostrum et unde ab adipisci fugit pariatur sed doloribus cupiditate molestiae! Eum eius dolor qui eligendi quo! dolor sit amet consectetur adipisicing elit. Eos aperiam recusandae, consequatur voluptatem accusamus inventore quae sunt enim ab quasi excepturi maxime suscipit possimus rerum deserunt ut aliquid et veritatis!</textarea>
+            <textarea class="confirmed__message--input"><?php echo $rowRes['opmerking']; ?></textarea>
 
             <p class="confirmed__text">Wij hebben u ook een mail gestuurd met uw gegevens</p>
         </article>
