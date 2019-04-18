@@ -35,7 +35,7 @@ class TimeTableController extends Database
     public function GetDates($mentorID)
     {
         // SQL Query to get the datum, tijd_start, tijd_einde with a specific mentor ID
-        $sql = "SELECT id, datum, tijd_start, tijd_einde FROM tijdstip WHERE mentor_id='$mentorID'";
+        $sql = "SELECT id, datum, tijd_start, tijd_einde, bezet FROM tijdstip WHERE mentor_id='$mentorID'";
         // Execute the query into the database
         $result = mysqli_query($this->mysqli, $sql);
 
@@ -46,7 +46,8 @@ class TimeTableController extends Database
                 'id' => $row['id'],
                 'datum' => $row['datum'],
                 'tijd_start' => $row['tijd_start'],
-                'tijd_einde' => $row['tijd_einde']
+                'tijd_einde' => $row['tijd_einde'],
+                'bezet' => $row['bezet']
             );
         }
     }

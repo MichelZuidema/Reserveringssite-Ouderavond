@@ -27,8 +27,8 @@ if ($_SESSION['role'] == 1) {
 }
 
 if (isset($_POST['formSubmit'])) {
-    if($time->CreateReservation()) {
-        if($contact->SendMailConfirmation()) {
+    if ($time->CreateReservation()) {
+        if ($contact->SendMailConfirmation()) {
             echo "Mail sent!";
         } else {
             echo $_SESSION['errormsg'];
@@ -70,38 +70,23 @@ if (isset($_POST['formSubmit'])) {
                 $result = mysqli_query($time->mysqli, $query);
 
                 $time->GetDates($_SESSION['mentor_id']);
-//                WORKING VERSION
 
-//                while($row = mysqli_fetch_array($result)) {
-//                    for ($x = 0; $x < count($time->dates); $x++) {
-//                        if ($row['bezet'] == 4) {
-//                            echo "<input type='radio' style='border: 1px solid red' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
-//                        }
-//                        if ($row['bezet'] == 3) {
-//                            echo "<input type='radio' style='border: 1px solid orange' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
-//                        } else {
-//                            echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
-//                        }
-//                    }
-//                }
-
-                while($row = mysqli_fetch_array($result)) {
+                while ($row = mysqli_fetch_array($result)) {
                     for ($x = 0; $x < count($time->dates); $x++) {
-                        if ($row['bezet'] == 4) {
-                            echo "<input type='radio' style='border: 1px solid red' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
-                        }
-                        if ($row['bezet'] == 3) {
-                            echo "<input type='radio' style='border: 1px solid orange' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
-                        } else {
-                            echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
-                        }
-                        echo $row['bezet'];
+                        echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
                     }
                 }
 
                 for ($x = 0; $x < count($time->dates); $x++) {
-                    echo "<label class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
+                    if($time->dates[$x]['bezet'] == 4) {
+                        echo "<label style='background-color: red;' class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
+                    } else if($time->dates[$x]['bezet'] == 3) {
+                        echo "<label style='background-color: orange;' class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
+                    } else {
+                        echo "<label class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
+                    }
                 }
+
                 ?>
                 <!-- guideance how to use timeTable -->
                 <section class="timetable-guidance">
