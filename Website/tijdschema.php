@@ -5,10 +5,12 @@ $pageTitle = "Inschrijving ouderavond | Grafisch Lyceum Rotterdam";
 //selected navigation link
 $selectedLink = "tijdschema";
 
-require_once 'assets/db/Controllers/TimeTableController.php';
 require_once 'assets/db/database.class.php';
+require_once 'assets/db/Controllers/ContactController.php';
+require_once 'assets/db/Controllers/TimeTableController.php';
 
 $time = new TimeTableController();
+$contact = new ContactController();
 
 if (empty($_SESSION['username'])) {
     die("<script>
@@ -25,7 +27,15 @@ if ($_SESSION['role'] == 1) {
 }
 
 if (isset($_POST['formSubmit'])) {
-    $time->CreateReservation();
+    if($time->CreateReservation()) {
+        if($contact->SendMailConfirmation()) {
+            echo "Mail sent!";
+        } else {
+            echo $_SESSION['errormsg'];
+        }
+    } else {
+        echo $_SESSION['errormsg'];
+    }
 }
 ?>
     <main class="timetable">
@@ -60,14 +70,14 @@ if (isset($_POST['formSubmit'])) {
                 $result = mysqli_query($time->mysqli, $query);
 
                 $time->GetDates($_SESSION['mentor_id']);
+//                WORKING VERSION
 
-                // Radio Buttons
-//                for ($x = 0; $x < count($time->dates); $x++) {
-//                    while($row = mysqli_fetch_array($result)) {
-//                        if($row['bezet'] == 4) {
+//                while($row = mysqli_fetch_array($result)) {
+//                    for ($x = 0; $x < count($time->dates); $x++) {
+//                        if ($row['bezet'] == 4) {
 //                            echo "<input type='radio' style='border: 1px solid red' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
 //                        }
-//                        if($row['bezet'] == 3) {
+//                        if ($row['bezet'] == 3) {
 //                            echo "<input type='radio' style='border: 1px solid orange' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
 //                        } else {
 //                            echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
@@ -85,10 +95,11 @@ if (isset($_POST['formSubmit'])) {
                         } else {
                             echo "<input type='radio' name='inputTime' class='timetable__radio' id='time--" . $x . "' value='" . $time->dates[$x]['id'] . "'>\n";
                         }
+                        echo $row['bezet'];
                     }
                 }
 
-                for ($x = 0; $x < count($time->dates); $x++) {	          
+                for ($x = 0; $x < count($time->dates); $x++) {
                     echo "<label class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
                 }
                 ?>
