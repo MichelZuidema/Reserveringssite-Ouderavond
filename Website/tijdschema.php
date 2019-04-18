@@ -88,7 +88,7 @@ if (isset($_POST['formSubmit'])) {
                     }
                 }
 
-                for ($x = 0; $x < count($time->dates); $x++) {	          
+                for ($x = 0; $x < count($time->dates); $x++) {
                     echo "<label class='radio__label' for='time--" . $x . "'>" . $time->dates[$x]['tijd_start'] . " - " . $time->dates[$x]['tijd_einde'] . "</label>\n";
                 }
                 ?>
