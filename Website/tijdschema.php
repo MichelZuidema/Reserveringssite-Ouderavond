@@ -47,6 +47,25 @@ if (isset($_POST['formSubmit'])) {
                 <!-- checkbox + label -->
                 <?php
                 $mentor_id = $_SESSION['mentor_id'];
+                $query = "SELECT DISTINCT datum FROM tijdstip WHERE mentor_id = $mentor_id";
+                $result = mysqli_query($time->mysqli, $query);
+                $row = mysqli_fetch_array($result);
+
+                for ($x = 1; $x < count($row); $x++) {
+                    echo '<input type="checkbox" name="checkbox" class="day-choosing__checkbox" id="day__checkbox">';
+                    //echo "<input type='checkbox' name='inputDate' class='checkbox__label' id='day__checkbox' value='" . $row['datum'] . "'>";
+                    echo "<label class='checkbox__label' for='day__checkbox'>" . $row['datum'] . "</label>\n";
+                }
+                ?>
+                <!-- text -->
+                <p class="day__text"><strong>Click</strong> de gewenste datum aan a.u.b</p>
+            </section>
+            <!-- timetable -->
+            <article class="timetable">
+                <!-- heading -->
+                <h2>Tijdschema</h2>
+                <?php
+                $mentor_id = $_SESSION['mentor_id'];
                 $query = "SELECT bezet FROM tijdstip WHERE mentor_id = $mentor_id";
                 $result = mysqli_query($time->mysqli, $query);
 
