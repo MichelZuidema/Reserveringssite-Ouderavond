@@ -10,6 +10,13 @@
         <article class="confirmed__article">
             <h2 class="confirmed__heading">Gegevens van uw aanmelding</h2>
 
+            <section class="confirmed__student--container">
+            <img src="assets/img/GLRlogo_RGB.png" alt="GLR-logo" class="confirmed__student--picture">
+            </section>
+
+            <label class="confirmed__student--label">student:</label>
+            <input type="text" value="piet jan klaas" class="confirmed__student--input">
+
             <label class="confirmed__date--label">Datum:</label>
             <input type="text" value="28/4/2020" class="confirmed__date--input">
 
