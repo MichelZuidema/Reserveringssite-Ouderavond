@@ -7,12 +7,14 @@ $user = new UserController();
 
 if (isset($_GET["token"]) && preg_match('/\b([a-f0-9]{40})\b/', $_GET['token'])) {
     if ($user->UniqueLinkValidation($_GET['token'])) {
-        echo "Ingelogd als " . $_SESSION['username'] . " van klas: " . $_SESSION['class_id'];
+        header("../../index.php");
     } else {
-        echo $_SESSION['errormsg'];
+        echo "<script>alert('" . $_SESSION['errormsg'] . "')</script>";
     }
 } else {
     echo "U heeft geen geldige token ingevoerd!";
+    echo "<script>alert('U heeft geen geldige token ingevoerd!')</script>";
+    header( "refresh:0;url=../../index.php");
 }
 
 // Michel - c5b312884352253d711492452af163832ae777a9
