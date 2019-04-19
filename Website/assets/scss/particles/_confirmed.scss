@@ -1,15 +1,17 @@
 .confirmed{
 
     .confirmed__article{
-        @include blackContainer(auto,1);
+        @include blackContainer(85rem,1);
         padding: 2rem;
         margin-top: 0!important;
         text-align: left;
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr auto 20rem 1fr;
+        grid-template-rows: 1fr auto 1fr 1fr 1fr 1fr auto 20rem 1fr ;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
             "heading heading"
+            "studentPicture studentPicture"
+            "nameLabel nameinput"
             "dateLabel dateInput"
             "timeLabel timeInput"
             "personLabel personInput"
@@ -21,12 +23,17 @@
 
 
         @include setQeury($lg){
-            @include blackContainer(auto,0);
+            @include blackContainer(90rem,0);
             padding: 2rem 10rem 6rem 10rem;
         }
 
         label{
             word-wrap: none;
+            justify-self: center;
+        }
+
+        input{
+            height: 2rem;
         }
 
         input, textarea{
@@ -37,12 +44,6 @@
             border: none;
             margin: 0 0 0 auto;
             width: auto;
-
-            @include setQeury($sm){
-                margin: 0 auto 0 0;
-            }
-
-            height: 3rem;
             font-size: 2rem;
             background: $black-container;
 
@@ -51,11 +52,32 @@
             }
         }
 
+
         .confirmed__heading{
             grid-area: heading;
             text-align: center;
             margin: 2rem 0 4rem 0;
 
+        }
+
+        .confirmed__student--container{
+            grid-area: studentPicture;
+            justify-self: center;
+            border: .7rem solid transparent;
+            outline: 3px solid white;
+            margin: 0 0 6rem 0;
+            img{
+                width: 15rem;
+                height: 15rem;
+            }
+        }
+
+        .confirmed__student--label{
+            grid-area: nameLabel;
+        }
+
+        .confirmed__student--input{
+            grid-area: nameinput;
         }
 
         .confirmed__date--label{
@@ -84,6 +106,7 @@
 
         .confirmed__message--label{
             grid-area: messageLabel;
+            justify-self: left;
         }
 
         .confirmed__message--input{
