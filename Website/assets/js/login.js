@@ -11,15 +11,21 @@ var mover = 0;
 //function to move inlog dialog
 function step(timestamp){
     body.style.overflow = "hidden";
-    headerLogin.style.top = mover;
+    // headerLogin.style.top = mover;
+    var screenDistance = headerLogin.getBoundingClientRect().top;
+
     mover+=8;
     var progess = requestAnimationFrame(step);
-    if(mover >= 250){
+    if(mover >= 450){
         cancelAnimationFrame(progess);
         mover-=8;
     }
 
-    console.log(mover);
+    headerLogin.style.transform = `translate(-50%, ${mover})`;
+
+
+    console.log("screenDistance: " + screenDistance);
+    console.log("moving " + mover);
 }
 
 //function to move dailog back out the screen

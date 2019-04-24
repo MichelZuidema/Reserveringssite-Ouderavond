@@ -40,16 +40,16 @@ window.addEventListener("resize", function(){
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///Checkbox
 
-var label = document.querySelector(".checkbox__label");
-var checkbox = document.querySelector("#day__checkbox");
+// var label = document.querySelector(".checkbox__label");
+// var checkbox = document.querySelector("#day__checkbox");
 
-label.addEventListener("click", function() {
-  if(checkbox.checked === false) {
-    label.style.backgroundColor = "#8FE501";
-    label.style.color = "#111";
-  } else {
-      label.style.backgroundColor = "#1c1c1c";
-      label.style.color = "#fff";
-  }
-});
+// label.addEventListener("click", function() {
+//   if(checkbox.checked === false) {
+//     label.style.backgroundColor = "#8FE501";
+//     label.style.color = "#111";
+//   } else {
+//       label.style.backgroundColor = "#1c1c1c";
+//       label.style.color = "#fff";
+//   }
+// });
 
