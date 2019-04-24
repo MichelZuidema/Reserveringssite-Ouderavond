@@ -112,15 +112,17 @@
             color: $glr-green;
         }
 
+ 
         .studentInfo__text{
             line-height: 1.5;
             font-size: 2rem;
         }
         
-        .studentIno__button{
+        .studentInfo__button{
             display: block;
+            text-align: center;
             width: 100%;
-            height: 4rem;
+            padding: 2rem 0;
             margin: 2rem 0 0 0;
             background: $black-container;
             font-size: 2rem;
@@ -136,6 +138,10 @@
             &:hover{
                 background: rgb(19, 19, 19);
             }
+        }
+
+        .studentInfo__radio{
+            display: none;
         }
         
         #mentor-notities{
