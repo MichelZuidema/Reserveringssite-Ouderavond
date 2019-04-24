@@ -1,0 +1,25 @@
+{
+  "name": "ouderavond",
+  "version": "1.0.0",
+  "description": "Reserverings website ouderavond",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichelZuidema/Reserveringssite-Ouderavond.git"
+  },
+  "author": "Michel Zuidema & Sebastian Tramper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichelZuidema/Reserveringssite-Ouderavond/issues"
+  },
+  "homepage": "https://github.com/MichelZuidema/Reserveringssite-Ouderavond#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.4",
+    "gulp": "^4.0.1",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-sass": "^4.0.2"
+  }
+}

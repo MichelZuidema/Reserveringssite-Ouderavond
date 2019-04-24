@@ -1,0 +1,53 @@
+
+//////////////////////////////////////////////////////////////
+//toggle overflow for mobile
+
+.overflow{
+    overflow: hidden!important;
+}
+
+//////////////////////////////////////////////////////////////
+// placeholder for navbar swichts
+
+.toggleOn{
+    top: 0!important;
+    position: absolute!important;
+    height: 100vh!important;
+    width: 100vw!important;
+    background: $glr-green!important;
+    z-index: 1000!important;
+    left: 0!important;
+    overflow: hidden!important;
+    display: block!important;
+    opacity: 1!important;
+    transition: left 600ms cubic-bezier(1, 0.14, 0, 1.31),opacity 1000ms ease!important;
+}
+
+.toggleOff{
+    left: -100%!important;
+    opacity: 0!important;
+    transition: left 600ms cubic-bezier(1, 0.14, 0, 1.31),opacity 1000ms ease!important;
+}
+
+
+//////////////////////////////////////////////////////////////
+// selectedLink
+
+.selectedLinkActive{
+    opacity: 1;
+
+    @include setQeury($lg){
+        color: $glr-green;
+        font-size: 3rem;
+    }    
+}
+
+///////////////////////////////////////////////////////////////////
+// timeschedule select time/persons/day
+
+.selectedBox{
+    background: $glr-green!important;
+    color: rgb(19, 19, 19) !important;
+    font-weight: 900;
+}
+
