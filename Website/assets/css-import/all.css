@@ -987,7 +987,7 @@ label {
     font-weight: 900; }
     .header__login .login__submit:hover {
       background: #111; }
-  .header__login .inlog__error--cijfer, .header__login .inlog__error--empty, .header__login .inlog__error--password {
+  .header__login .inlog__error--cijfer, .header__login .inlog__error--empty, .header__login .inlog__error--password, .header__login .inlog__error--user {
     color: red;
     text-align: left;
     margin: 0 0 2rem 0; }
@@ -997,6 +997,14 @@ label {
     display: none; }
   .header__login .inlog__error--password {
     display: none; }
+  .header__login .inlog__error--user {
+    display: none; }
+  .header__login .inlog__error--user--on {
+    display: block;
+    color: red;
+    text-align: left;
+    margin: 0 0 2rem 0;
+    font-size: 2.1rem; }
 
 .homepage {
   display: grid; }

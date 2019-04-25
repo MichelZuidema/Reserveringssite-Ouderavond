@@ -62,4 +62,12 @@ function preventJsInjection(replace){
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-/// animation
+/// Wrong login credetials!
+
+//The class inlog__error--user--on can be found on line 90 in login.scss
+function wrongUserCredtials(){
+    var errorMessage = document.querySelector(".inlog__error--user");
+    errorMessage.classList.add("inlog__error--user--on");
+}
+//this needs te be triggered when username and or password are wrong
+wrongUserCredtials();ç
