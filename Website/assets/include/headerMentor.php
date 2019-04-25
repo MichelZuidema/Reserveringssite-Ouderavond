@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="assets/css-import/all.css">    
 </head>
 <body>
+        <?php
+            require "inlog.php";
+        ?>
+    <section class="login__blur">
     <header class="header">
         <section class="header__icon--hamburger"><section class="icon__hamburger--bars"></section></section>
         <?php
@@ -31,7 +35,4 @@
         </section>
         <!-- school logo -->
         <figure class="header__logo"><a href="index.php"><img src="assets/img/school.jpg" alt="School-image" class="header__logo--img"></a></figure>
-        <?php
-            require "inlog.php";
-        ?>
     </header>
