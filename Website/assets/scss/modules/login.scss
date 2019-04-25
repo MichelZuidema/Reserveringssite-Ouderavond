@@ -1,6 +1,16 @@
 ///////////////////////////////////////////////////////////////////
 // login 
 
+.login__blur{
+    filter: blur(3px);
+}
+
+.header__login--on{
+    transform: translateX(-50%) translateY(0rem)!important;
+    transition: 500ms transform ease-in-out;
+    filter: blur(0px)!important;
+}
+
 .header__login{
     height: auto;
     display: block;
@@ -9,9 +19,9 @@
     width: 100%!important;
     max-width: 60rem;
     position: absolute;
-    // top: -30rem;
     left: 50%;
     transform: translateX(-50%) translateY(-60rem);
+    transition: 500ms transform ease-in-out;
 
     @include setQeury($md){
         width: 75%!important;

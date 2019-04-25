@@ -175,21 +175,25 @@ if (isset($_POST['mentorSubmit'])) {
                 for ($x = 15; $x <= 60; $x += 15) {
                     if ($x == 15) {
                         if ($tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour == $reservering_row['specific_time']) {
-                            echo "<input type='radio' class='studentIno__button' value='" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour' checked='checked'>" . $tijdstip_hour . ":" . "00" . " t/m " . $tijdstip_hour . ":" . $x . "";
+                            echo "<input type='radio' class='studentInfo__radio' id='studentInfo--1' value='" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour' checked='checked'>" . $tijdstip_hour . ":" . "00" . " t/m " . $tijdstip_hour . ":" . $x . "";
+                            //added this one                        
+                            echo "<label for='studentInfo--1' class='studentInfo__button'>19:00 t/m 19:15</label>";
                         } else {
-                            echo "<input type='radio' class='studentIno__button' value='" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour'>" . $tijdstip_hour . ":" . "00" . " t/m " . $tijdstip_hour . ":" . $x . "";
+                            echo "<input type='radio' class='studentInfo__radio' id='studentInfo--1' value='" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour'>" . $tijdstip_hour . ":" . "00" . " t/m " . $tijdstip_hour . ":" . $x . "";
+                            //added this one
+                            echo "<label for='studentInfo--1' class='studentInfo__button'>19:00 t/m 19:15</label>";
                         }
                     } else if ($x == 60) {
                         if ($current_hour . "-" . $new_hour . ":00" == $reservering_row['specific_time']) {
-                            echo "<input type='radio' class='studentIno__button' value='" . $current_hour . "-" . $new_hour . ":00" . "' name='mentor_hour' checked='checked'>" . $current_hour . " t/m " . $new_hour . ":00" . "";
+                            echo "<input type='radio' class='studentInfo__button' value='" . $current_hour . "-" . $new_hour . ":00" . "' name='mentor_hour' checked='checked'>" . $current_hour . " t/m " . $new_hour . ":00" . "";
                         } else {
-                            echo "<input type='radio' class='studentIno__button' value='" . $current_hour . "-" . $new_hour . ":00" . "' name='mentor_hour'>" . $current_hour . " t/m " . $new_hour . ":00" . "";
+                            echo "<input type='radio' class='studentInfo__button' value='" . $current_hour . "-" . $new_hour . ":00" . "' name='mentor_hour'>" . $current_hour . " t/m " . $new_hour . ":00" . "";
                         }
                     } else {
                         if ($current_hour . "-" . $tijdstip_hour . ":" . $x == $reservering_row['specific_time']) {
-                            echo "<input type='radio' class='studentIno__button' value='" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour' checked='checked'>" . $current_hour . " t/m " . $tijdstip_hour . ":" . $x . "";
+                            echo "<input type='radio' class='studentInfo__button' value='" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour' checked='checked'>" . $current_hour . " t/m " . $tijdstip_hour . ":" . $x . "";
                         } else {
-                            echo "<input type='radio' class='studentIno__button' value='" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour'>" . $current_hour . " t/m " . $tijdstip_hour . ":" . $x . "";
+                            echo "<input type='radio' class='studentInfo__button' value='" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour'>" . $current_hour . " t/m " . $tijdstip_hour . ":" . $x . "";
                         }
                     }
                     $current_hour = $tijdstip_hour . ":" . $x;
