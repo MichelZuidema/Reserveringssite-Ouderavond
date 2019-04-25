@@ -11,7 +11,7 @@ loginButton.addEventListener('click',function(){
     headerLogin.classList.add("header__login--on");
     //blurring the background when triggerd
     blur.classList.add("login__blur");
-});
+
 
 window.addEventListener("mouseup", function(event){
 
@@ -21,7 +21,9 @@ window.addEventListener("mouseup", function(event){
         loginButton.style.display = "block";
         blur.classList.remove("login__blur");
     }
-});   
+    });
+});
+   
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Validatie inlog form 
