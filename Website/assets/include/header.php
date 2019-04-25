@@ -34,7 +34,13 @@
         <?php
             require "nav.php";
         ?>
+        <!-- And this is the user who is logged in -->
+        <p class="header__login__name">Mentors name</p>
+        
+        <!-- this is the login button -->
         <section class="header__user"><span class="header__user__login"><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Login"; } ?></span></section>
+        
+
         <section class="header__title">
             <h1 class="header__title__h1 title--1">Inschrijving</h1>
             <h1 class="header__title__h1 title--2">Ouderavond</h1>

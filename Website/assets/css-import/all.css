@@ -724,7 +724,7 @@ label {
 
 .header {
   position: relative;
-  height: 40rem; }
+  height: 50rem; }
   .header .header__icon--hamburger {
     width: 50px;
     height: 50px;
@@ -852,7 +852,7 @@ label {
     border: 2px solid #707070;
     padding: 1.2rem 0;
     cursor: pointer;
-    font-size: calc(2.6rem + .5vw);
+    font-size: 2.8rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -870,6 +870,17 @@ label {
       color: #8FE501; }
       .header .header__user .header__user__login:hover {
         color: #f1f1f1; }
+  .header .header__login__name {
+    font-size: 3rem;
+    position: absolute;
+    color: #8FE501;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15rem; }
+    @media only screen and (min-width: 1024px) {
+      .header .header__login__name {
+        top: 3.5rem;
+        left: 12rem; } }
   .header .header__title {
     font-family: "Montserrat", sans-serif;
     color: #8FE501;
@@ -888,20 +899,22 @@ label {
     @media only screen and (min-width: 2000px) {
       .header .header__title__h1 {
         font-size: calc(4rem + 1vw); } }
-  @media only screen and (min-width: 1024px) {
-    .header .title--1 {
-      position: absolute;
-      left: 25%;
-      transform: translateX(-50%);
-      top: 8.5rem; } }
-  @media only screen and (min-width: 2000px) {
-    .header .title--1 {
-      position: absolute;
-      left: 30%;
-      transform: translateX(-50%);
-      top: 7rem; } }
+  .header .title--1 {
+    top: 8%; }
+    @media only screen and (min-width: 1024px) {
+      .header .title--1 {
+        position: absolute;
+        left: 25%;
+        transform: translateX(-50%);
+        top: 8.5rem; } }
+    @media only screen and (min-width: 2000px) {
+      .header .title--1 {
+        position: absolute;
+        left: 30%;
+        transform: translateX(-50%);
+        top: 7rem; } }
   .header .title--2 {
-    top: 65%; }
+    top: 51%; }
     @media only screen and (min-width: 1024px) {
       .header .title--2 {
         position: absolute;
@@ -987,7 +1000,7 @@ label {
     font-weight: 900; }
     .header__login .login__submit:hover {
       background: #111; }
-  .header__login .inlog__error--cijfer, .header__login .inlog__error--empty, .header__login .inlog__error--password {
+  .header__login .inlog__error--cijfer, .header__login .inlog__error--empty, .header__login .inlog__error--password, .header__login .inlog__error--user {
     color: red;
     text-align: left;
     margin: 0 0 2rem 0; }
@@ -997,6 +1010,14 @@ label {
     display: none; }
   .header__login .inlog__error--password {
     display: none; }
+  .header__login .inlog__error--user {
+    display: none; }
+  .header__login .inlog__error--user--on {
+    display: block;
+    color: red;
+    text-align: left;
+    margin: 0 0 2rem 0;
+    font-size: 2.1rem; }
 
 .homepage {
   display: grid; }

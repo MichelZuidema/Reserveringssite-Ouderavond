@@ -65,7 +65,7 @@
     ////////////////////////////
     ///error messages
 
-    .inlog__error--cijfer,.inlog__error--empty,.inlog__error--password{
+    .inlog__error--cijfer,.inlog__error--empty,.inlog__error--password,.inlog__error--user{
         color: red;
         text-align: left;
         margin: 0 0 2rem 0;
@@ -81,6 +81,19 @@
 
     .inlog__error--password{
         display: none;
+    }
+
+    .inlog__error--user{
+        display: none;
+    }
+    
+    //this needs to be toggled on when wrong username/password is enter
+    .inlog__error--user--on{
+        display: block;
+        color: rgb(255, 0, 0);
+        text-align: left;
+        margin: 0 0 2rem 0;
+        font-size: 2.1rem;
     }
 
 }

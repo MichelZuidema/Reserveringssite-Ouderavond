@@ -11,7 +11,7 @@ loginButton.addEventListener('click',function(){
     headerLogin.classList.add("header__login--on");
     //blurring the background when triggerd
     blur.classList.add("login__blur");
-});
+
 
 window.addEventListener("mouseup", function(event){
 
@@ -21,7 +21,9 @@ window.addEventListener("mouseup", function(event){
         loginButton.style.display = "block";
         blur.classList.remove("login__blur");
     }
-});   
+    });
+});
+   
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Validatie inlog form 
@@ -62,4 +64,12 @@ function preventJsInjection(replace){
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-/// animation
+/// Wrong login credetials!
+
+//The class inlog__error--user--on can be found on line 90 in login.scss
+function wrongUserCredtials(){
+    var errorMessage = document.querySelector(".inlog__error--user");
+    errorMessage.classList.add("inlog__error--user--on");
+}
+//this needs te be triggered when username and or password are wrong
+wrongUserCredtials();ç
