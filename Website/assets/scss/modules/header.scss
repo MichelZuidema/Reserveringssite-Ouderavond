@@ -2,6 +2,10 @@
     position: relative;
     height: 50rem;
 
+    @include setQeury($lg){
+        height: 40rem;
+    }
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // hamburger menu 
     
@@ -232,7 +236,7 @@
         bottom: 15rem;
 
         @include setQeury($lg){
-            top: 3.5rem;
+            top: 2.5rem;
             left: 12rem;
         }
     }

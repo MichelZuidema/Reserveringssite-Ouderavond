@@ -19,8 +19,10 @@
         <form id="planningStudent" method="POST">
             <h2>Tijdschema</h2>
             <section id="planningGrid">
+
                 <input type="radio" name="radio" class="planning__input--radio" id="radio--1">
                 <label for="radio--1" class="planning__input--label">18:00 t/m 18:15</label>
+
                 <input type="radio" name="radio" class="planning__input--radio" id="radio--2">
                 <label for="radio--2" class="planning__input--label">18:15 t/m 18:30</label>
 
@@ -72,6 +74,17 @@
                     <p>vol</p>
             </section>
         </form>
+        <article class="appointment__info">
+            <h2>Afspraak:</h2>
+            <p class="appointment__text">Naam:</p>
+            <p class="appointment__text">Klas:</p>
+            <p class="appointment__text">Ingeplande tijd:</p>
+            <p class="appointment__text">Aantal personen:</p>
+            <p class="appointment__text">Vraag/opmerking:</p>
+            <textarea name="notities" class="appointment__question" disabled></textarea>
+            <p class="appointment__text">Notities mentor:</p>
+            <textarea name="notities" class="appointment__notities"></textarea>
+        </article>
     </main>
     <?php
         // footer
