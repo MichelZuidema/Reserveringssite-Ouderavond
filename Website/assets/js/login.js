@@ -65,7 +65,7 @@ function preventJsInjection(replace){
 window.addEventListener("load", function(){
     var error = document.querySelector(".inlog__error--php");
     
-    if(error.innerHTML !== ""){
+    if(!isNaN(error.innerHTML)){
         loginButton.style.display = "none";
         headerLogin.classList.add("header__login--on");
         //blurring the background when triggerd
@@ -81,4 +81,4 @@ window.addEventListener("load", function(){
             }
             });
     }
-}) 
+}); 
