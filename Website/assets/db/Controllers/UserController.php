@@ -74,6 +74,19 @@ class UserController extends Database
         }
     }
 
+    public function MentorCredentialsError() {
+        $errormessages = array(
+            'Uw ingevulde wachtwoord is niet correct!',
+            'Er bestaan geen mentoren met de ingevulde naam.'
+        );
+
+        if(in_array($_SESSION['errormsg'], $errormessages)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     // Unique login link generator
     public function UniqueLinkGenerator($length = 100)
     {
