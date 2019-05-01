@@ -74,7 +74,7 @@
                     <p>vol</p>
             </section>
         </form>
-        <article class="appointment__info">
+        <form class="appointment__info">
             <h2>Afspraak:</h2>
             <p class="appointment__text">Naam:</p>
             <p class="appointment__text">Klas:</p>
@@ -84,7 +84,8 @@
             <textarea name="notities" class="appointment__question" disabled></textarea>
             <p class="appointment__text">Notities mentor:</p>
             <textarea name="notities" class="appointment__notities"></textarea>
-        </article>
+            <input type="submit" value="Opslaan" class="appointment__submit">
+        </form>
     </main>
     <?php
         // footer

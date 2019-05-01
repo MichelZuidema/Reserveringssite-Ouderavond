@@ -1,6 +1,17 @@
+.mentorTijdschema{
+
+    h2{
+        margin: 2rem 0 4rem 0;
+
+        @include setQeury($lg){
+            font-size: 4rem;
+        }
+    }
+}
+
+
 /////////////////////////////////////////////////////////////////////////////////
 //////// planning student 
-
 #planningStudent{
     position: relative;
     @include blackContainer(auto,1);
@@ -9,10 +20,6 @@
 
     @include setQeury($lg){
         @include blackContainer(auto,0);
-    }
-    
-    h2{
-        margin: 2rem 0 4rem 0;
     }
 
     #planningGrid{
@@ -44,11 +51,11 @@
             border: 0px;
             background: #111;
             border: 1px solid $border-color;
-            font-size: 1rem;
+            font-size: 1.5rem;
             cursor: pointer;
 
             @include setQeury($md){
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
 
             &:hover{
@@ -123,7 +130,8 @@
 
 .appointment__info{
     @include blackContainer(auto,1);
-    padding: 0 2rem 6rem 2rem;
+    padding: 0 3rem 6rem 3rem;
+    margin: 10rem auto 0 auto;
 
 
     @include setQeury($md){
@@ -159,4 +167,22 @@
     h2{
         margin-bottom: 4rem;
     }
+
+    .appointment__submit{
+        width: 100%;
+        height: 4rem;
+        margin: 2rem auto 0 auto;
+        background: $black-container;
+        font-size: 2rem;
+        border: 2px solid $border-color;
+        box-shadow: 1px 1.5px 6px #111;
+        color: #fff;
+        font-weight: 900;
+
+        &:hover{
+            background: rgb(19, 19, 19);
+        }
+    }
 }
+
+
