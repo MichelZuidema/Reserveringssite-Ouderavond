@@ -22,12 +22,12 @@
         @include blackContainer(auto,0);
     }
 
-    #planningGrid{
+    #planningGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
-        
-        @include setQeury($md){        
+
+        @include setQeury($md) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 10rem 10rem 10rem 10rem;
         }
@@ -36,13 +36,13 @@
         height: auto;
         grid-gap: 1rem;
 
-        .planning__input--radio{
+        .planning__input--radio {
             display: none;
         }
 
         //label
-        .planning__input--label{
-            @include blackContainer(5rem,0);
+        .planning__input--label {
+            @include blackContainer(5rem, 0);
             align-self: center;
             box-sizing: border-box;
             margin: 0;
@@ -54,39 +54,26 @@
             font-size: 1.5rem;
             cursor: pointer;
 
-            @include setQeury($md){
+            @include setQeury($md) {
                 font-size: 2rem;
             }
 
-            &:hover{
+            &:hover {
                 background: rgba(0, 0, 0, 0.815);
             }
         }
-        
-    
-    //styles for a checked radio button
-    #radio--1:checked ~ label[for="radio--1"],
-    #radio--2:checked ~ label[for="radio--2"],
-    #radio--3:checked ~ label[for="radio--3"],
-    #radio--4:checked ~ label[for="radio--4"],
-    #radio--5:checked ~ label[for="radio--5"],
-    #radio--6:checked ~ label[for="radio--6"],
-    #radio--7:checked ~ label[for="radio--7"],
-    #radio--8:checked ~ label[for="radio--8"],
-    #radio--9:checked ~ label[for="radio--9"],
-    #radio--10:checked ~ label[for="radio--10"],
-    #radio--11:checked ~ label[for="radio--11"],
-    #radio--12:checked ~ label[for="radio--12"],
-    #radio--13:checked ~ label[for="radio--13"],
-    #radio--14:checked ~ label[for="radio--14"],
-    #radio--15:checked ~ label[for="radio--15"],
-    #radio--16:checked ~ label[for="radio--16"]{
-        background: $glr-green;
-        color: #111;
-    }        
-        
-    }
 
+        $max: 60 * 24;
+        $step: 15;
+        @for $y from 0 through 4 {
+            @for $x from 0 through ceil($max/$step) {
+                #radio--#{$y}--#{$x}:checked ~ label[for="radio--#{$y}--#{$x}"] {
+                    background: $glr-green;
+                    color: #111;
+                }
+            }
+        }
+    }
 
     //info about color from tijdschema
     #planningInfo{

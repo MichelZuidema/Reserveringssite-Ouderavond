@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="637b362f-0a4d-4950-8b3a-f451316685ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Website/assets/css-import/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/css-import/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/assets/scss/modules/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/scss/modules/login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/mentorTijdschema.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/mentorTijdschema.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/Website/composer.json</pharConfigPath>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/mentorTijdschema.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="682">
+              <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>u heeft geen geldi</find>
+      <find>ge</find>
+      <find>item</find>
+      <find>student</find>
+      <find>bericht</find>
+      <find>login</find>
+      <find>mentor_hour</find>
+      <find>reserva</find>
+      <find>popup</find>
+      <find>popup`</find>
+      <find>u heeft</find>
+      <find>subje</find>
+      <find>dates</find>
+      <find>mentor</find>
+      <find>mentorlo</find>
+      <find>mentorl</find>
+      <find>rADIO--</find>
+      <find>radio--</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Website/assets/js/form.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4b875e11-7d47-4de5-8786-e70d1da5ea2f/console.sql" />
+        <option value="$PROJECT_DIR$/Website/assets/include/header.php" />
+        <option value="$PROJECT_DIR$/Website/assets/include/headerMentor.php" />
+        <option value="$PROJECT_DIR$/Website/assets/db/database.class.php" />
+        <option value="$PROJECT_DIR$/Website/mentor.php" />
+        <option value="$PROJECT_DIR$/Website/classes.php" />
+        <option value="$PROJECT_DIR$/Website/assets/db/classes.php" />
+        <option value="$PROJECT_DIR$/Website/assets/db/logout.php" />
+        <option value="$PROJECT_DIR$/Website/assets/include/emailTemplate.html" />
+        <option value="$PROJECT_DIR$/Website/contact.php" />
+        <option value="$PROJECT_DIR$/Website/assets/js/script.js" />
+        <option value="$PROJECT_DIR$/Website/assets/include/confirmatieTemplate.html" />
+        <option value="$PROJECT_DIR$/Website/assets/db/loginToken.php" />
+        <option value="$PROJECT_DIR$/Website/tijdschema.php" />
+        <option value="$PROJECT_DIR$/Website/assets/db/Controllers/ContactController.php" />
+        <option value="$PROJECT_DIR$/Website/confirmed.php" />
+        <option value="$PROJECT_DIR$/Website/assets/include/footer.php" />
+        <option value="$PROJECT_DIR$/Website/assets/db/login.php" />
+        <option value="$PROJECT_DIR$/Website/assets/js/test.js" />
+        <option value="$PROJECT_DIR$/Website/assets/include/inlog.php" />
+        <option value="$PROJECT_DIR$/Website/assets/js/login.js" />
+        <option value="$PROJECT_DIR$/Website/assets/db/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/Website/index.php" />
+        <option value="$PROJECT_DIR$/Website/assets/scss/modules/login.scss" />
+        <option value="$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php" />
+        <option value="$PROJECT_DIR$/Website/mentorTijdschema.php" />
+        <option value="$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="5f940bb7-6cb5-4342-8ce7-811146ac68ca" name="localhost" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/Website/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/Website/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/Website/vendor/gitonomy/gitlib" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/Website/vendor/composer" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/Website/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/Website/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/Website/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/Website/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/Website/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/Website/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/Website/vendor/phpro/grumphp" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="27" />
+    <option name="width" value="1080" />
+    <option name="height" value="1893" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="profielfotos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ouderavond" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ouderavond" type="462c0819:PsiDirectoryNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="particles" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Script.ContactController.php">
+    <configuration name="ContactController.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Website/assets/db/Controllers/ContactController.php" scriptParameters="2, 9, 3, 'Hoi hoi'">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/Ouderavond">
+      <method v="2" />
+    </configuration>
+    <configuration name="localhost" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="localhost" start_url="/Ouderavond/Website/">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.ContactController.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="637b362f-0a4d-4950-8b3a-f451316685ce" name="Default Changelist" comment="" />
+      <created>1553727556904</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553727556904</updated>
+      <workItem from="1553727557978" duration="10000" />
+      <workItem from="1553728340811" duration="1490000" />
+      <workItem from="1553769480660" duration="46000" />
+      <workItem from="1553776319187" duration="3781000" />
+      <workItem from="1553780498176" duration="6856000" />
+      <workItem from="1553942768063" duration="58000" />
+      <workItem from="1554061144379" duration="176000" />
+      <workItem from="1554061321167" duration="5654000" />
+      <workItem from="1554122120184" duration="4140000" />
+      <workItem from="1554203010280" duration="4440000" />
+      <workItem from="1554281991407" duration="20000" />
+      <workItem from="1554289586619" duration="1554000" />
+      <workItem from="1554291430790" duration="5133000" />
+      <workItem from="1554376616898" duration="12243000" />
+      <workItem from="1554474709815" duration="281000" />
+      <workItem from="1554894319642" duration="6794000" />
+      <workItem from="1554980915299" duration="11102000" />
+      <workItem from="1555050757472" duration="878000" />
+      <workItem from="1555501981699" duration="3791000" />
+      <workItem from="1555582641796" duration="6291000" />
+      <workItem from="1555608534507" duration="2602000" />
+      <workItem from="1555686043092" duration="1707000" />
+      <workItem from="1556701236229" duration="5884000" />
+      <workItem from="1556709242658" duration="2798000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="87729000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23319103" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.121816166" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3599114" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32890365" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32977587" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23052295" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.121816166" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3599114" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32890365" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32977587" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Website/assets/js/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/testing/reservering.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4b875e11-7d47-4de5-8786-e70d1da5ea2f/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="56" lean-forward="true" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/vendor/phpro/grumphp/doc/tasks/securitychecker.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/include/headerMentor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/vendor/justinrainbow/json-schema/demo/data.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/grumphp.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5460" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/vendor/seld/phar-utils/src/Timestamps.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/sessions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/vendor/symfony/contracts/Service/ServiceSubscriberTrait.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/vendor/symfony/dependency-injection/Tests/Dumper/PhpDumperTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="775" lean-forward="true" selection-start-line="775" selection-end-line="775" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/classes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/include/nav.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/classes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/testing/reservering_uitlees.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/database.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/include/emailTemplate.php" />
+    <entry file="file://$PROJECT_DIR$/Website/assets/include/emailTemplate.html" />
+    <entry file="file://$PROJECT_DIR$/Website/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/css-import/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18980">
+          <caret line="730" selection-start-line="730" selection-end-line="730" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/include/confirmatieTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/loginToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/Controllers/ContactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/confirmed.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="44" column="66" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/database.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/include/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/js/test.js" />
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/include/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1066">
+          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/js/MentorCredentials.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/scss/modules/login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/include/inlog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/mentor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1508">
+          <caret line="83" column="23" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/tijdschema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/mentorTijdschema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

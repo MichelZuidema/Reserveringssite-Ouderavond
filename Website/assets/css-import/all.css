@@ -1021,6 +1021,8 @@ label {
     text-align: left;
     margin: 0 0 2rem 0;
     font-size: 2.1rem; }
+  .header__login .inlog__error--php {
+    visibility: hidden; }
 
 .homepage {
   display: grid; }
@@ -1734,22 +1736,1459 @@ label {
           font-size: 2rem; } }
       #planningStudent #planningGrid .planning__input--label:hover {
         background: rgba(0, 0, 0, 0.815); }
-    #planningStudent #planningGrid #radio--1:checked ~ label[for="radio--1"],
-    #planningStudent #planningGrid #radio--2:checked ~ label[for="radio--2"],
-    #planningStudent #planningGrid #radio--3:checked ~ label[for="radio--3"],
-    #planningStudent #planningGrid #radio--4:checked ~ label[for="radio--4"],
-    #planningStudent #planningGrid #radio--5:checked ~ label[for="radio--5"],
-    #planningStudent #planningGrid #radio--6:checked ~ label[for="radio--6"],
-    #planningStudent #planningGrid #radio--7:checked ~ label[for="radio--7"],
-    #planningStudent #planningGrid #radio--8:checked ~ label[for="radio--8"],
-    #planningStudent #planningGrid #radio--9:checked ~ label[for="radio--9"],
-    #planningStudent #planningGrid #radio--10:checked ~ label[for="radio--10"],
-    #planningStudent #planningGrid #radio--11:checked ~ label[for="radio--11"],
-    #planningStudent #planningGrid #radio--12:checked ~ label[for="radio--12"],
-    #planningStudent #planningGrid #radio--13:checked ~ label[for="radio--13"],
-    #planningStudent #planningGrid #radio--14:checked ~ label[for="radio--14"],
-    #planningStudent #planningGrid #radio--15:checked ~ label[for="radio--15"],
-    #planningStudent #planningGrid #radio--16:checked ~ label[for="radio--16"] {
+    #planningStudent #planningGrid #radio--0--0:checked ~ label[for="radio--0--0"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--1:checked ~ label[for="radio--0--1"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--2:checked ~ label[for="radio--0--2"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--3:checked ~ label[for="radio--0--3"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--4:checked ~ label[for="radio--0--4"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--5:checked ~ label[for="radio--0--5"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--6:checked ~ label[for="radio--0--6"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--7:checked ~ label[for="radio--0--7"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--8:checked ~ label[for="radio--0--8"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--9:checked ~ label[for="radio--0--9"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--10:checked ~ label[for="radio--0--10"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--11:checked ~ label[for="radio--0--11"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--12:checked ~ label[for="radio--0--12"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--13:checked ~ label[for="radio--0--13"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--14:checked ~ label[for="radio--0--14"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--15:checked ~ label[for="radio--0--15"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--16:checked ~ label[for="radio--0--16"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--17:checked ~ label[for="radio--0--17"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--18:checked ~ label[for="radio--0--18"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--19:checked ~ label[for="radio--0--19"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--20:checked ~ label[for="radio--0--20"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--21:checked ~ label[for="radio--0--21"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--22:checked ~ label[for="radio--0--22"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--23:checked ~ label[for="radio--0--23"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--24:checked ~ label[for="radio--0--24"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--25:checked ~ label[for="radio--0--25"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--26:checked ~ label[for="radio--0--26"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--27:checked ~ label[for="radio--0--27"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--28:checked ~ label[for="radio--0--28"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--29:checked ~ label[for="radio--0--29"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--30:checked ~ label[for="radio--0--30"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--31:checked ~ label[for="radio--0--31"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--32:checked ~ label[for="radio--0--32"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--33:checked ~ label[for="radio--0--33"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--34:checked ~ label[for="radio--0--34"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--35:checked ~ label[for="radio--0--35"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--36:checked ~ label[for="radio--0--36"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--37:checked ~ label[for="radio--0--37"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--38:checked ~ label[for="radio--0--38"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--39:checked ~ label[for="radio--0--39"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--40:checked ~ label[for="radio--0--40"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--41:checked ~ label[for="radio--0--41"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--42:checked ~ label[for="radio--0--42"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--43:checked ~ label[for="radio--0--43"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--44:checked ~ label[for="radio--0--44"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--45:checked ~ label[for="radio--0--45"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--46:checked ~ label[for="radio--0--46"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--47:checked ~ label[for="radio--0--47"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--48:checked ~ label[for="radio--0--48"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--49:checked ~ label[for="radio--0--49"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--50:checked ~ label[for="radio--0--50"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--51:checked ~ label[for="radio--0--51"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--52:checked ~ label[for="radio--0--52"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--53:checked ~ label[for="radio--0--53"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--54:checked ~ label[for="radio--0--54"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--55:checked ~ label[for="radio--0--55"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--56:checked ~ label[for="radio--0--56"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--57:checked ~ label[for="radio--0--57"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--58:checked ~ label[for="radio--0--58"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--59:checked ~ label[for="radio--0--59"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--60:checked ~ label[for="radio--0--60"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--61:checked ~ label[for="radio--0--61"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--62:checked ~ label[for="radio--0--62"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--63:checked ~ label[for="radio--0--63"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--64:checked ~ label[for="radio--0--64"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--65:checked ~ label[for="radio--0--65"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--66:checked ~ label[for="radio--0--66"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--67:checked ~ label[for="radio--0--67"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--68:checked ~ label[for="radio--0--68"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--69:checked ~ label[for="radio--0--69"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--70:checked ~ label[for="radio--0--70"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--71:checked ~ label[for="radio--0--71"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--72:checked ~ label[for="radio--0--72"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--73:checked ~ label[for="radio--0--73"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--74:checked ~ label[for="radio--0--74"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--75:checked ~ label[for="radio--0--75"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--76:checked ~ label[for="radio--0--76"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--77:checked ~ label[for="radio--0--77"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--78:checked ~ label[for="radio--0--78"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--79:checked ~ label[for="radio--0--79"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--80:checked ~ label[for="radio--0--80"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--81:checked ~ label[for="radio--0--81"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--82:checked ~ label[for="radio--0--82"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--83:checked ~ label[for="radio--0--83"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--84:checked ~ label[for="radio--0--84"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--85:checked ~ label[for="radio--0--85"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--86:checked ~ label[for="radio--0--86"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--87:checked ~ label[for="radio--0--87"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--88:checked ~ label[for="radio--0--88"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--89:checked ~ label[for="radio--0--89"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--90:checked ~ label[for="radio--0--90"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--91:checked ~ label[for="radio--0--91"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--92:checked ~ label[for="radio--0--92"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--93:checked ~ label[for="radio--0--93"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--94:checked ~ label[for="radio--0--94"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--95:checked ~ label[for="radio--0--95"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--0--96:checked ~ label[for="radio--0--96"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--0:checked ~ label[for="radio--1--0"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--1:checked ~ label[for="radio--1--1"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--2:checked ~ label[for="radio--1--2"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--3:checked ~ label[for="radio--1--3"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--4:checked ~ label[for="radio--1--4"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--5:checked ~ label[for="radio--1--5"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--6:checked ~ label[for="radio--1--6"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--7:checked ~ label[for="radio--1--7"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--8:checked ~ label[for="radio--1--8"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--9:checked ~ label[for="radio--1--9"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--10:checked ~ label[for="radio--1--10"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--11:checked ~ label[for="radio--1--11"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--12:checked ~ label[for="radio--1--12"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--13:checked ~ label[for="radio--1--13"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--14:checked ~ label[for="radio--1--14"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--15:checked ~ label[for="radio--1--15"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--16:checked ~ label[for="radio--1--16"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--17:checked ~ label[for="radio--1--17"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--18:checked ~ label[for="radio--1--18"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--19:checked ~ label[for="radio--1--19"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--20:checked ~ label[for="radio--1--20"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--21:checked ~ label[for="radio--1--21"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--22:checked ~ label[for="radio--1--22"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--23:checked ~ label[for="radio--1--23"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--24:checked ~ label[for="radio--1--24"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--25:checked ~ label[for="radio--1--25"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--26:checked ~ label[for="radio--1--26"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--27:checked ~ label[for="radio--1--27"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--28:checked ~ label[for="radio--1--28"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--29:checked ~ label[for="radio--1--29"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--30:checked ~ label[for="radio--1--30"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--31:checked ~ label[for="radio--1--31"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--32:checked ~ label[for="radio--1--32"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--33:checked ~ label[for="radio--1--33"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--34:checked ~ label[for="radio--1--34"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--35:checked ~ label[for="radio--1--35"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--36:checked ~ label[for="radio--1--36"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--37:checked ~ label[for="radio--1--37"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--38:checked ~ label[for="radio--1--38"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--39:checked ~ label[for="radio--1--39"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--40:checked ~ label[for="radio--1--40"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--41:checked ~ label[for="radio--1--41"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--42:checked ~ label[for="radio--1--42"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--43:checked ~ label[for="radio--1--43"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--44:checked ~ label[for="radio--1--44"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--45:checked ~ label[for="radio--1--45"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--46:checked ~ label[for="radio--1--46"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--47:checked ~ label[for="radio--1--47"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--48:checked ~ label[for="radio--1--48"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--49:checked ~ label[for="radio--1--49"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--50:checked ~ label[for="radio--1--50"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--51:checked ~ label[for="radio--1--51"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--52:checked ~ label[for="radio--1--52"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--53:checked ~ label[for="radio--1--53"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--54:checked ~ label[for="radio--1--54"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--55:checked ~ label[for="radio--1--55"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--56:checked ~ label[for="radio--1--56"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--57:checked ~ label[for="radio--1--57"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--58:checked ~ label[for="radio--1--58"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--59:checked ~ label[for="radio--1--59"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--60:checked ~ label[for="radio--1--60"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--61:checked ~ label[for="radio--1--61"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--62:checked ~ label[for="radio--1--62"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--63:checked ~ label[for="radio--1--63"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--64:checked ~ label[for="radio--1--64"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--65:checked ~ label[for="radio--1--65"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--66:checked ~ label[for="radio--1--66"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--67:checked ~ label[for="radio--1--67"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--68:checked ~ label[for="radio--1--68"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--69:checked ~ label[for="radio--1--69"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--70:checked ~ label[for="radio--1--70"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--71:checked ~ label[for="radio--1--71"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--72:checked ~ label[for="radio--1--72"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--73:checked ~ label[for="radio--1--73"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--74:checked ~ label[for="radio--1--74"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--75:checked ~ label[for="radio--1--75"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--76:checked ~ label[for="radio--1--76"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--77:checked ~ label[for="radio--1--77"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--78:checked ~ label[for="radio--1--78"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--79:checked ~ label[for="radio--1--79"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--80:checked ~ label[for="radio--1--80"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--81:checked ~ label[for="radio--1--81"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--82:checked ~ label[for="radio--1--82"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--83:checked ~ label[for="radio--1--83"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--84:checked ~ label[for="radio--1--84"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--85:checked ~ label[for="radio--1--85"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--86:checked ~ label[for="radio--1--86"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--87:checked ~ label[for="radio--1--87"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--88:checked ~ label[for="radio--1--88"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--89:checked ~ label[for="radio--1--89"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--90:checked ~ label[for="radio--1--90"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--91:checked ~ label[for="radio--1--91"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--92:checked ~ label[for="radio--1--92"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--93:checked ~ label[for="radio--1--93"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--94:checked ~ label[for="radio--1--94"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--95:checked ~ label[for="radio--1--95"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--1--96:checked ~ label[for="radio--1--96"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--0:checked ~ label[for="radio--2--0"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--1:checked ~ label[for="radio--2--1"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--2:checked ~ label[for="radio--2--2"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--3:checked ~ label[for="radio--2--3"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--4:checked ~ label[for="radio--2--4"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--5:checked ~ label[for="radio--2--5"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--6:checked ~ label[for="radio--2--6"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--7:checked ~ label[for="radio--2--7"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--8:checked ~ label[for="radio--2--8"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--9:checked ~ label[for="radio--2--9"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--10:checked ~ label[for="radio--2--10"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--11:checked ~ label[for="radio--2--11"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--12:checked ~ label[for="radio--2--12"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--13:checked ~ label[for="radio--2--13"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--14:checked ~ label[for="radio--2--14"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--15:checked ~ label[for="radio--2--15"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--16:checked ~ label[for="radio--2--16"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--17:checked ~ label[for="radio--2--17"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--18:checked ~ label[for="radio--2--18"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--19:checked ~ label[for="radio--2--19"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--20:checked ~ label[for="radio--2--20"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--21:checked ~ label[for="radio--2--21"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--22:checked ~ label[for="radio--2--22"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--23:checked ~ label[for="radio--2--23"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--24:checked ~ label[for="radio--2--24"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--25:checked ~ label[for="radio--2--25"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--26:checked ~ label[for="radio--2--26"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--27:checked ~ label[for="radio--2--27"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--28:checked ~ label[for="radio--2--28"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--29:checked ~ label[for="radio--2--29"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--30:checked ~ label[for="radio--2--30"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--31:checked ~ label[for="radio--2--31"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--32:checked ~ label[for="radio--2--32"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--33:checked ~ label[for="radio--2--33"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--34:checked ~ label[for="radio--2--34"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--35:checked ~ label[for="radio--2--35"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--36:checked ~ label[for="radio--2--36"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--37:checked ~ label[for="radio--2--37"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--38:checked ~ label[for="radio--2--38"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--39:checked ~ label[for="radio--2--39"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--40:checked ~ label[for="radio--2--40"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--41:checked ~ label[for="radio--2--41"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--42:checked ~ label[for="radio--2--42"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--43:checked ~ label[for="radio--2--43"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--44:checked ~ label[for="radio--2--44"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--45:checked ~ label[for="radio--2--45"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--46:checked ~ label[for="radio--2--46"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--47:checked ~ label[for="radio--2--47"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--48:checked ~ label[for="radio--2--48"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--49:checked ~ label[for="radio--2--49"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--50:checked ~ label[for="radio--2--50"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--51:checked ~ label[for="radio--2--51"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--52:checked ~ label[for="radio--2--52"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--53:checked ~ label[for="radio--2--53"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--54:checked ~ label[for="radio--2--54"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--55:checked ~ label[for="radio--2--55"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--56:checked ~ label[for="radio--2--56"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--57:checked ~ label[for="radio--2--57"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--58:checked ~ label[for="radio--2--58"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--59:checked ~ label[for="radio--2--59"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--60:checked ~ label[for="radio--2--60"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--61:checked ~ label[for="radio--2--61"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--62:checked ~ label[for="radio--2--62"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--63:checked ~ label[for="radio--2--63"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--64:checked ~ label[for="radio--2--64"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--65:checked ~ label[for="radio--2--65"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--66:checked ~ label[for="radio--2--66"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--67:checked ~ label[for="radio--2--67"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--68:checked ~ label[for="radio--2--68"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--69:checked ~ label[for="radio--2--69"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--70:checked ~ label[for="radio--2--70"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--71:checked ~ label[for="radio--2--71"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--72:checked ~ label[for="radio--2--72"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--73:checked ~ label[for="radio--2--73"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--74:checked ~ label[for="radio--2--74"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--75:checked ~ label[for="radio--2--75"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--76:checked ~ label[for="radio--2--76"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--77:checked ~ label[for="radio--2--77"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--78:checked ~ label[for="radio--2--78"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--79:checked ~ label[for="radio--2--79"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--80:checked ~ label[for="radio--2--80"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--81:checked ~ label[for="radio--2--81"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--82:checked ~ label[for="radio--2--82"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--83:checked ~ label[for="radio--2--83"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--84:checked ~ label[for="radio--2--84"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--85:checked ~ label[for="radio--2--85"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--86:checked ~ label[for="radio--2--86"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--87:checked ~ label[for="radio--2--87"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--88:checked ~ label[for="radio--2--88"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--89:checked ~ label[for="radio--2--89"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--90:checked ~ label[for="radio--2--90"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--91:checked ~ label[for="radio--2--91"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--92:checked ~ label[for="radio--2--92"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--93:checked ~ label[for="radio--2--93"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--94:checked ~ label[for="radio--2--94"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--95:checked ~ label[for="radio--2--95"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--2--96:checked ~ label[for="radio--2--96"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--0:checked ~ label[for="radio--3--0"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--1:checked ~ label[for="radio--3--1"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--2:checked ~ label[for="radio--3--2"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--3:checked ~ label[for="radio--3--3"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--4:checked ~ label[for="radio--3--4"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--5:checked ~ label[for="radio--3--5"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--6:checked ~ label[for="radio--3--6"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--7:checked ~ label[for="radio--3--7"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--8:checked ~ label[for="radio--3--8"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--9:checked ~ label[for="radio--3--9"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--10:checked ~ label[for="radio--3--10"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--11:checked ~ label[for="radio--3--11"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--12:checked ~ label[for="radio--3--12"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--13:checked ~ label[for="radio--3--13"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--14:checked ~ label[for="radio--3--14"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--15:checked ~ label[for="radio--3--15"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--16:checked ~ label[for="radio--3--16"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--17:checked ~ label[for="radio--3--17"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--18:checked ~ label[for="radio--3--18"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--19:checked ~ label[for="radio--3--19"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--20:checked ~ label[for="radio--3--20"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--21:checked ~ label[for="radio--3--21"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--22:checked ~ label[for="radio--3--22"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--23:checked ~ label[for="radio--3--23"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--24:checked ~ label[for="radio--3--24"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--25:checked ~ label[for="radio--3--25"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--26:checked ~ label[for="radio--3--26"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--27:checked ~ label[for="radio--3--27"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--28:checked ~ label[for="radio--3--28"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--29:checked ~ label[for="radio--3--29"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--30:checked ~ label[for="radio--3--30"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--31:checked ~ label[for="radio--3--31"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--32:checked ~ label[for="radio--3--32"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--33:checked ~ label[for="radio--3--33"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--34:checked ~ label[for="radio--3--34"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--35:checked ~ label[for="radio--3--35"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--36:checked ~ label[for="radio--3--36"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--37:checked ~ label[for="radio--3--37"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--38:checked ~ label[for="radio--3--38"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--39:checked ~ label[for="radio--3--39"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--40:checked ~ label[for="radio--3--40"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--41:checked ~ label[for="radio--3--41"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--42:checked ~ label[for="radio--3--42"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--43:checked ~ label[for="radio--3--43"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--44:checked ~ label[for="radio--3--44"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--45:checked ~ label[for="radio--3--45"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--46:checked ~ label[for="radio--3--46"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--47:checked ~ label[for="radio--3--47"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--48:checked ~ label[for="radio--3--48"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--49:checked ~ label[for="radio--3--49"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--50:checked ~ label[for="radio--3--50"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--51:checked ~ label[for="radio--3--51"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--52:checked ~ label[for="radio--3--52"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--53:checked ~ label[for="radio--3--53"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--54:checked ~ label[for="radio--3--54"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--55:checked ~ label[for="radio--3--55"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--56:checked ~ label[for="radio--3--56"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--57:checked ~ label[for="radio--3--57"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--58:checked ~ label[for="radio--3--58"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--59:checked ~ label[for="radio--3--59"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--60:checked ~ label[for="radio--3--60"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--61:checked ~ label[for="radio--3--61"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--62:checked ~ label[for="radio--3--62"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--63:checked ~ label[for="radio--3--63"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--64:checked ~ label[for="radio--3--64"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--65:checked ~ label[for="radio--3--65"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--66:checked ~ label[for="radio--3--66"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--67:checked ~ label[for="radio--3--67"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--68:checked ~ label[for="radio--3--68"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--69:checked ~ label[for="radio--3--69"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--70:checked ~ label[for="radio--3--70"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--71:checked ~ label[for="radio--3--71"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--72:checked ~ label[for="radio--3--72"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--73:checked ~ label[for="radio--3--73"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--74:checked ~ label[for="radio--3--74"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--75:checked ~ label[for="radio--3--75"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--76:checked ~ label[for="radio--3--76"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--77:checked ~ label[for="radio--3--77"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--78:checked ~ label[for="radio--3--78"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--79:checked ~ label[for="radio--3--79"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--80:checked ~ label[for="radio--3--80"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--81:checked ~ label[for="radio--3--81"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--82:checked ~ label[for="radio--3--82"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--83:checked ~ label[for="radio--3--83"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--84:checked ~ label[for="radio--3--84"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--85:checked ~ label[for="radio--3--85"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--86:checked ~ label[for="radio--3--86"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--87:checked ~ label[for="radio--3--87"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--88:checked ~ label[for="radio--3--88"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--89:checked ~ label[for="radio--3--89"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--90:checked ~ label[for="radio--3--90"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--91:checked ~ label[for="radio--3--91"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--92:checked ~ label[for="radio--3--92"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--93:checked ~ label[for="radio--3--93"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--94:checked ~ label[for="radio--3--94"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--95:checked ~ label[for="radio--3--95"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--3--96:checked ~ label[for="radio--3--96"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--0:checked ~ label[for="radio--4--0"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--1:checked ~ label[for="radio--4--1"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--2:checked ~ label[for="radio--4--2"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--3:checked ~ label[for="radio--4--3"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--4:checked ~ label[for="radio--4--4"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--5:checked ~ label[for="radio--4--5"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--6:checked ~ label[for="radio--4--6"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--7:checked ~ label[for="radio--4--7"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--8:checked ~ label[for="radio--4--8"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--9:checked ~ label[for="radio--4--9"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--10:checked ~ label[for="radio--4--10"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--11:checked ~ label[for="radio--4--11"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--12:checked ~ label[for="radio--4--12"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--13:checked ~ label[for="radio--4--13"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--14:checked ~ label[for="radio--4--14"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--15:checked ~ label[for="radio--4--15"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--16:checked ~ label[for="radio--4--16"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--17:checked ~ label[for="radio--4--17"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--18:checked ~ label[for="radio--4--18"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--19:checked ~ label[for="radio--4--19"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--20:checked ~ label[for="radio--4--20"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--21:checked ~ label[for="radio--4--21"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--22:checked ~ label[for="radio--4--22"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--23:checked ~ label[for="radio--4--23"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--24:checked ~ label[for="radio--4--24"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--25:checked ~ label[for="radio--4--25"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--26:checked ~ label[for="radio--4--26"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--27:checked ~ label[for="radio--4--27"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--28:checked ~ label[for="radio--4--28"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--29:checked ~ label[for="radio--4--29"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--30:checked ~ label[for="radio--4--30"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--31:checked ~ label[for="radio--4--31"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--32:checked ~ label[for="radio--4--32"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--33:checked ~ label[for="radio--4--33"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--34:checked ~ label[for="radio--4--34"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--35:checked ~ label[for="radio--4--35"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--36:checked ~ label[for="radio--4--36"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--37:checked ~ label[for="radio--4--37"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--38:checked ~ label[for="radio--4--38"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--39:checked ~ label[for="radio--4--39"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--40:checked ~ label[for="radio--4--40"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--41:checked ~ label[for="radio--4--41"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--42:checked ~ label[for="radio--4--42"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--43:checked ~ label[for="radio--4--43"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--44:checked ~ label[for="radio--4--44"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--45:checked ~ label[for="radio--4--45"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--46:checked ~ label[for="radio--4--46"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--47:checked ~ label[for="radio--4--47"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--48:checked ~ label[for="radio--4--48"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--49:checked ~ label[for="radio--4--49"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--50:checked ~ label[for="radio--4--50"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--51:checked ~ label[for="radio--4--51"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--52:checked ~ label[for="radio--4--52"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--53:checked ~ label[for="radio--4--53"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--54:checked ~ label[for="radio--4--54"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--55:checked ~ label[for="radio--4--55"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--56:checked ~ label[for="radio--4--56"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--57:checked ~ label[for="radio--4--57"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--58:checked ~ label[for="radio--4--58"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--59:checked ~ label[for="radio--4--59"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--60:checked ~ label[for="radio--4--60"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--61:checked ~ label[for="radio--4--61"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--62:checked ~ label[for="radio--4--62"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--63:checked ~ label[for="radio--4--63"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--64:checked ~ label[for="radio--4--64"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--65:checked ~ label[for="radio--4--65"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--66:checked ~ label[for="radio--4--66"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--67:checked ~ label[for="radio--4--67"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--68:checked ~ label[for="radio--4--68"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--69:checked ~ label[for="radio--4--69"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--70:checked ~ label[for="radio--4--70"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--71:checked ~ label[for="radio--4--71"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--72:checked ~ label[for="radio--4--72"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--73:checked ~ label[for="radio--4--73"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--74:checked ~ label[for="radio--4--74"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--75:checked ~ label[for="radio--4--75"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--76:checked ~ label[for="radio--4--76"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--77:checked ~ label[for="radio--4--77"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--78:checked ~ label[for="radio--4--78"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--79:checked ~ label[for="radio--4--79"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--80:checked ~ label[for="radio--4--80"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--81:checked ~ label[for="radio--4--81"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--82:checked ~ label[for="radio--4--82"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--83:checked ~ label[for="radio--4--83"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--84:checked ~ label[for="radio--4--84"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--85:checked ~ label[for="radio--4--85"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--86:checked ~ label[for="radio--4--86"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--87:checked ~ label[for="radio--4--87"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--88:checked ~ label[for="radio--4--88"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--89:checked ~ label[for="radio--4--89"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--90:checked ~ label[for="radio--4--90"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--91:checked ~ label[for="radio--4--91"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--92:checked ~ label[for="radio--4--92"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--93:checked ~ label[for="radio--4--93"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--94:checked ~ label[for="radio--4--94"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--95:checked ~ label[for="radio--4--95"] {
+      background: #8FE501;
+      color: #111; }
+    #planningStudent #planningGrid #radio--4--96:checked ~ label[for="radio--4--96"] {
       background: #8FE501;
       color: #111; }
   #planningStudent #planningInfo {
