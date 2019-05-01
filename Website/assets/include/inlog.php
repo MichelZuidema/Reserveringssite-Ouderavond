@@ -36,8 +36,10 @@ if (isset($_POST['submit'])) {
     <p class="inlog__error--php">
         <?php     
             if($user->MentorCredentialsError()) {
-                echo "error";
-            } 
+                echo "noError";
+            }else{
+                echo "1";
+            }
         ?>
     </p>
 </form>
