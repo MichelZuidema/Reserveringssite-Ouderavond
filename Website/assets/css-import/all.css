@@ -1670,6 +1670,12 @@ label {
       .mentorpage .studentInfo .studentInfo__section .studentInfo__button--send:hover {
         background: #131313; }
 
+.mentorTijdschema h2 {
+  margin: 2rem 0 4rem 0; }
+  @media only screen and (min-width: 1024px) {
+    .mentorTijdschema h2 {
+      font-size: 4rem; } }
+
 #planningStudent {
   position: relative;
   width: 100%;
@@ -1691,8 +1697,6 @@ label {
       box-shadow: 1px 1.5px 6px #000;
       border: 3px solid #484646;
       margin: 8rem auto 0 auto; } }
-  #planningStudent h2 {
-    margin: 2rem 0 4rem 0; }
   #planningStudent #planningGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1723,11 +1727,11 @@ label {
       border: 0px;
       background: #111;
       border: 1px solid #707070;
-      font-size: 1rem;
+      font-size: 1.5rem;
       cursor: pointer; }
       @media only screen and (min-width: 720px) {
         #planningStudent #planningGrid .planning__input--label {
-          font-size: 1.5rem; } }
+          font-size: 2rem; } }
       #planningStudent #planningGrid .planning__input--label:hover {
         background: rgba(0, 0, 0, 0.815); }
     #planningStudent #planningGrid #radio--1:checked ~ label[for="radio--1"],
@@ -1790,7 +1794,8 @@ label {
   background: #1C1C1C;
   box-shadow: 1px 1.5px 6px #000;
   border-top: 3px solid #484646;
-  padding: 0 2rem 6rem 2rem; }
+  padding: 0 3rem 6rem 3rem;
+  margin: 10rem auto 0 auto; }
   @media only screen and (min-width: 720px) {
     .appointment__info {
       width: 100%;
@@ -1823,6 +1828,18 @@ label {
     margin: 3rem 0 0 0; }
   .appointment__info h2 {
     margin-bottom: 4rem; }
+  .appointment__info .appointment__submit {
+    width: 100%;
+    height: 4rem;
+    margin: 2rem auto 0 auto;
+    background: #1C1C1C;
+    font-size: 2rem;
+    border: 2px solid #707070;
+    box-shadow: 1px 1.5px 6px #111;
+    color: #fff;
+    font-weight: 900; }
+    .appointment__info .appointment__submit:hover {
+      background: #131313; }
 
 .confirmed .confirmed__article {
   width: 100%;
