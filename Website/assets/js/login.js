@@ -62,3 +62,23 @@ function preventJsInjection(replace){
     return (replace + '').replace(/[\\"']/g, '\\$&').replace(/\u0000/g, '\\0');
 }
 
+window.addEventListener("load", function(){
+    var error = document.querySelector(".inlog__error--php");
+    
+    if(error.innerHTML !== ""){
+        loginButton.style.display = "none";
+        headerLogin.classList.add("header__login--on");
+        //blurring the background when triggerd
+        blur.classList.add("login__blur");
+    
+        window.addEventListener("mouseup", function(event){
+
+            //close the inlog dialog when somewhere else is clicked
+            if(event.target != headerLogin && event.target.parentNode != headerLogin){
+                headerLogin.classList.remove("header__login--on");
+                loginButton.style.display = "block";
+                blur.classList.remove("login__blur");
+            }
+            });
+    }
+}) 
