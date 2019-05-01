@@ -1653,6 +1653,297 @@ label {
         background: #131313; }
     .mentorpage .studentInfo .studentInfo__section .studentInfo__radio {
       display: none; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--0:checked ~ label[for="studentInfo--0"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--1:checked ~ label[for="studentInfo--1"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--2:checked ~ label[for="studentInfo--2"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--3:checked ~ label[for="studentInfo--3"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--4:checked ~ label[for="studentInfo--4"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--5:checked ~ label[for="studentInfo--5"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--6:checked ~ label[for="studentInfo--6"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--7:checked ~ label[for="studentInfo--7"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--8:checked ~ label[for="studentInfo--8"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--9:checked ~ label[for="studentInfo--9"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--10:checked ~ label[for="studentInfo--10"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--11:checked ~ label[for="studentInfo--11"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--12:checked ~ label[for="studentInfo--12"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--13:checked ~ label[for="studentInfo--13"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--14:checked ~ label[for="studentInfo--14"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--15:checked ~ label[for="studentInfo--15"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--16:checked ~ label[for="studentInfo--16"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--17:checked ~ label[for="studentInfo--17"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--18:checked ~ label[for="studentInfo--18"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--19:checked ~ label[for="studentInfo--19"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--20:checked ~ label[for="studentInfo--20"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--21:checked ~ label[for="studentInfo--21"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--22:checked ~ label[for="studentInfo--22"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--23:checked ~ label[for="studentInfo--23"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--24:checked ~ label[for="studentInfo--24"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--25:checked ~ label[for="studentInfo--25"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--26:checked ~ label[for="studentInfo--26"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--27:checked ~ label[for="studentInfo--27"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--28:checked ~ label[for="studentInfo--28"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--29:checked ~ label[for="studentInfo--29"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--30:checked ~ label[for="studentInfo--30"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--31:checked ~ label[for="studentInfo--31"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--32:checked ~ label[for="studentInfo--32"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--33:checked ~ label[for="studentInfo--33"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--34:checked ~ label[for="studentInfo--34"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--35:checked ~ label[for="studentInfo--35"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--36:checked ~ label[for="studentInfo--36"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--37:checked ~ label[for="studentInfo--37"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--38:checked ~ label[for="studentInfo--38"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--39:checked ~ label[for="studentInfo--39"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--40:checked ~ label[for="studentInfo--40"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--41:checked ~ label[for="studentInfo--41"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--42:checked ~ label[for="studentInfo--42"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--43:checked ~ label[for="studentInfo--43"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--44:checked ~ label[for="studentInfo--44"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--45:checked ~ label[for="studentInfo--45"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--46:checked ~ label[for="studentInfo--46"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--47:checked ~ label[for="studentInfo--47"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--48:checked ~ label[for="studentInfo--48"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--49:checked ~ label[for="studentInfo--49"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--50:checked ~ label[for="studentInfo--50"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--51:checked ~ label[for="studentInfo--51"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--52:checked ~ label[for="studentInfo--52"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--53:checked ~ label[for="studentInfo--53"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--54:checked ~ label[for="studentInfo--54"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--55:checked ~ label[for="studentInfo--55"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--56:checked ~ label[for="studentInfo--56"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--57:checked ~ label[for="studentInfo--57"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--58:checked ~ label[for="studentInfo--58"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--59:checked ~ label[for="studentInfo--59"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--60:checked ~ label[for="studentInfo--60"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--61:checked ~ label[for="studentInfo--61"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--62:checked ~ label[for="studentInfo--62"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--63:checked ~ label[for="studentInfo--63"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--64:checked ~ label[for="studentInfo--64"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--65:checked ~ label[for="studentInfo--65"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--66:checked ~ label[for="studentInfo--66"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--67:checked ~ label[for="studentInfo--67"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--68:checked ~ label[for="studentInfo--68"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--69:checked ~ label[for="studentInfo--69"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--70:checked ~ label[for="studentInfo--70"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--71:checked ~ label[for="studentInfo--71"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--72:checked ~ label[for="studentInfo--72"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--73:checked ~ label[for="studentInfo--73"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--74:checked ~ label[for="studentInfo--74"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--75:checked ~ label[for="studentInfo--75"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--76:checked ~ label[for="studentInfo--76"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--77:checked ~ label[for="studentInfo--77"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--78:checked ~ label[for="studentInfo--78"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--79:checked ~ label[for="studentInfo--79"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--80:checked ~ label[for="studentInfo--80"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--81:checked ~ label[for="studentInfo--81"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--82:checked ~ label[for="studentInfo--82"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--83:checked ~ label[for="studentInfo--83"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--84:checked ~ label[for="studentInfo--84"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--85:checked ~ label[for="studentInfo--85"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--86:checked ~ label[for="studentInfo--86"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--87:checked ~ label[for="studentInfo--87"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--88:checked ~ label[for="studentInfo--88"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--89:checked ~ label[for="studentInfo--89"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--90:checked ~ label[for="studentInfo--90"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--91:checked ~ label[for="studentInfo--91"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--92:checked ~ label[for="studentInfo--92"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--93:checked ~ label[for="studentInfo--93"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--94:checked ~ label[for="studentInfo--94"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--95:checked ~ label[for="studentInfo--95"] {
+      background: #8FE501;
+      color: #111; }
+    .mentorpage .studentInfo .studentInfo__section #studentInfo--96:checked ~ label[for="studentInfo--96"] {
+      background: #8FE501;
+      color: #111; }
     .mentorpage .studentInfo .studentInfo__section #mentor-notities {
       width: 100%;
       height: 15rem;

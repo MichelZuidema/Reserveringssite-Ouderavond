@@ -143,6 +143,15 @@
         .studentInfo__radio{
             display: none;
         }
+
+        $max: 60 * 24;
+        $step: 15;
+        @for $x from 0 through ceil($max/$step) {
+            #studentInfo--#{$x}:checked ~ label[for="studentInfo--#{$x}"] {
+                background: $glr-green;
+                color: #111;
+            }
+        }
         
         #mentor-notities{
             width: 100%;
