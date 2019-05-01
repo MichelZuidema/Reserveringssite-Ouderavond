@@ -41,7 +41,6 @@ class TimeTableController extends Database
 
         // Loop through all the rows and put them in a multidimensional array
         while ($row = mysqli_fetch_array($result)) {
-            //$this->dates[] = array($row['id'], $row['datum'], $row['tijd_start'], $row['tijd_einde']);
             $this->dates[] = array(
                 'id' => $row['id'],
                 'datum' => $row['datum'],
@@ -69,7 +68,7 @@ class TimeTableController extends Database
             $mentor_id = $_SESSION['mentor_id'];
         }
 
-        if($_POST['checkbox'] == "") {
+        if ($_POST['checkbox'] == "") {
             $_SESSION['errormsg'] = "U heeft geen datum geselecteerd!";
             return false;
         }
