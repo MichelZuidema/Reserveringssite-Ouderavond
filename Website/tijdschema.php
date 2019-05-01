@@ -108,9 +108,9 @@ if (isset($_POST['formSubmit'])) {
                 <input type="radio" name="inputPerson" class="persons__radio" id="person--2" value="2">
                 <input type="radio" name="inputPerson" class="persons__radio" id="person--3" value="3">
                 <!-- labels -->
-                <label class="checkbox__label" for="person--1">1 persoon</label>
-                <label class="checkbox__label" for="person--2">2 personen</label>
-                <label class="checkbox__label" for="person--3">3 personen</label>
+                <label class="checkbox__label checkbox__label--1" for="person--1">1 persoon</label>
+                <label class="checkbox__label checkbox__label--1" for="person--2">2 personen</label>
+                <label class="checkbox__label checkbox__label--1" for="person--3">3 personen</label>
                 <!-- text -->
                 <p class="persons--info">Selecteer met hoeveel personen u wilt komen</p>
             </section>
@@ -141,3 +141,4 @@ if (isset($_POST['formSubmit'])) {
 // footer
 require 'assets/include/footer.php';
 ?>
+<script src="assets/js/scrolling.js"></script>
