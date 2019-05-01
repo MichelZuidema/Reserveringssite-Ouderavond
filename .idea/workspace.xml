@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="637b362f-0a4d-4950-8b3a-f451316685ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Website/assets/css-import/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/css-import/all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/assets/scss/modules/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/scss/modules/login.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/mentorTijdschema.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/mentorTijdschema.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/assets/scss/particles/mentor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/scss/particles/mentor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/mentor.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/mentor.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,29 +31,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/mentorTijdschema.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Website/mentor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="179" column="209" selection-start-line="179" selection-start-column="209" selection-end-line="179" selection-end-column="209" />
+              <folding>
+                <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/mentor.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="147" column="18" lean-forward="true" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+            <state relative-caret-position="260">
+              <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="74" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -89,6 +91,7 @@
       <find>mentorl</find>
       <find>rADIO--</find>
       <find>radio--</find>
+      <find>studentInfo__button</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,7 +105,6 @@
         <option value="$PROJECT_DIR$/Website/assets/include/header.php" />
         <option value="$PROJECT_DIR$/Website/assets/include/headerMentor.php" />
         <option value="$PROJECT_DIR$/Website/assets/db/database.class.php" />
-        <option value="$PROJECT_DIR$/Website/mentor.php" />
         <option value="$PROJECT_DIR$/Website/classes.php" />
         <option value="$PROJECT_DIR$/Website/assets/db/classes.php" />
         <option value="$PROJECT_DIR$/Website/assets/db/logout.php" />
@@ -124,7 +126,10 @@
         <option value="$PROJECT_DIR$/Website/assets/scss/modules/login.scss" />
         <option value="$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php" />
         <option value="$PROJECT_DIR$/Website/mentorTijdschema.php" />
+        <option value="$PROJECT_DIR$/Website/assets/css-import/all.css" />
         <option value="$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss" />
+        <option value="$PROJECT_DIR$/Website/mentor.php" />
+        <option value="$PROJECT_DIR$/Website/assets/scss/particles/mentor.scss" />
       </list>
     </option>
   </component>
@@ -331,12 +336,12 @@
       <workItem from="1555608534507" duration="2602000" />
       <workItem from="1555686043092" duration="1707000" />
       <workItem from="1556701236229" duration="5884000" />
-      <workItem from="1556709242658" duration="2798000" />
+      <workItem from="1556709242658" duration="4411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87729000" />
+    <option name="totallyTimeSpent" value="89342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -519,13 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/assets/css-import/all.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18980">
-          <caret line="730" selection-start-line="730" selection-end-line="730" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Website/assets/include/confirmatieTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -607,13 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/mentor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Website/assets/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -628,6 +619,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Website/tijdschema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="811">
+          <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/mentorTijdschema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -635,24 +643,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/tijdschema.php">
+    <entry file="file://$PROJECT_DIR$/Website/assets/css-import/all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+        <state relative-caret-position="52">
+          <caret line="3182" column="26" lean-forward="true" selection-start-line="3182" selection-start-column="26" selection-end-line="3189" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/mentorTijdschema.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="45" column="75" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/tijdschema.scss">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+        <state relative-caret-position="260">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="74" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/mentor.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="147" column="18" lean-forward="true" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/mentor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="179" column="209" selection-start-line="179" selection-start-column="209" selection-end-line="179" selection-end-column="209" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
