@@ -973,7 +973,7 @@ label {
   margin: 8rem auto 0 auto;
   width: 100% !important;
   max-width: 60rem;
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%) translateY(-60rem);
   transition: 500ms transform ease-in-out;
@@ -1140,14 +1140,9 @@ label {
       display: block;
       z-index: 999;
       bottom: 0; }
-    .homepage .diagram__grid__item--1 #diagram-1, .homepage .diagram__grid__item--2 #diagram-1, .homepage .diagram__grid__item--3 #diagram-1, .homepage .diagram__grid__item--4 #diagram-1 {
-      height: 20%; }
-    .homepage .diagram__grid__item--1 #diagram-2, .homepage .diagram__grid__item--2 #diagram-2, .homepage .diagram__grid__item--3 #diagram-2, .homepage .diagram__grid__item--4 #diagram-2 {
-      height: 40%; }
-    .homepage .diagram__grid__item--1 #diagram-3, .homepage .diagram__grid__item--2 #diagram-3, .homepage .diagram__grid__item--3 #diagram-3, .homepage .diagram__grid__item--4 #diagram-3 {
-      height: 60%; }
-    .homepage .diagram__grid__item--1 #diagram-4, .homepage .diagram__grid__item--2 #diagram-4, .homepage .diagram__grid__item--3 #diagram-4, .homepage .diagram__grid__item--4 #diagram-4 {
-      height: 80%; }
+    .homepage .diagram__grid__item--1 .diagram-height, .homepage .diagram__grid__item--2 .diagram-height, .homepage .diagram__grid__item--3 .diagram-height, .homepage .diagram__grid__item--4 .diagram-height {
+      height: 0%;
+      transition: height 1500ms cubic-bezier(0, 0, 0.43, 1.27); }
     .homepage .diagram__grid__item--1 h3, .homepage .diagram__grid__item--2 h3, .homepage .diagram__grid__item--3 h3, .homepage .diagram__grid__item--4 h3 {
       position: absolute;
       top: 50%;
@@ -1437,7 +1432,7 @@ label {
     display: none;
     background: #8FE501;
     top: -10rem;
-    transition: 500ms ease-in-out; }
+    transition: top 500ms ease-in-out; }
     .contact .questionPopup .popup__good {
       color: #0e0e0e;
       display: none; }
