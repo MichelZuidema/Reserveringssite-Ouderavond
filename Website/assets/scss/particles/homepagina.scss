@@ -160,22 +160,9 @@
                 bottom: 0;
             }
 
-            #diagram-1{
-                height: 20%;
-            }
-
-            #diagram-2{
-                height: 40%;
-            }
-
-
-            #diagram-3{
-                height: 60%;
-            }
-
-
-            #diagram-4{
-                height: 80%;
+            .diagram-height{
+                height: 0%;
+                transition: height 1500ms cubic-bezier(0, 0, 0.43, 1.27);
             }
 
             //diagram procentage

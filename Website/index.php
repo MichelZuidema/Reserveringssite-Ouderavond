@@ -45,29 +45,29 @@
                     <!-- diagram 2 -->
                     <section class="diagram__grid__item--1">
                         <p class="diagram--time">18:00</p>
-                        <section id="diagram-1"></section>
-                        <h3>60%</h3>
+                        <section class="diagram-height"></section>
+                        <h3 class="diagram__procentage">22%</h3>
                         <p class="diagram--fill">32/33</p>
                     </section>
                     <!-- diagram 2 -->
                     <section class="diagram__grid__item--2">
                         <p class="diagram--time">19:00</p>
-                        <section id="diagram-2"></section>
-                        <h3>60%</h3>
+                        <section class="diagram-height"></section>
+                        <h3 class="diagram__procentage">30%</h3>
                         <p class="diagram--fill">32/33</p>
                     </section>
                     <!-- diagram 3 -->
                     <section class="diagram__grid__item--3">
                         <p class="diagram--time">20:00</p>
-                        <section id="diagram-3"></section>
-                        <h3>60%</h3>
+                        <section class="diagram-height"></section>
+                        <h3 class="diagram__procentage">76%</h3>
                         <p class="diagram--fill">32/33</p>
                     </section>
                     <!-- diagram 4 -->
                     <section class="diagram__grid__item--4">
                         <p class="diagram--time">21:00</p>
-                        <section id="diagram-4"></section>
-                        <h3>60%</h3>
+                        <section class="diagram-height"></section>
+                        <h3 class="diagram__procentage">54%</h3>
                         <p class="diagram--fill">32/33</p>                
                     </section>
                 </section>
@@ -80,3 +80,4 @@
         require 'assets/include/footer.php';
     ?>
     <script src="assets/js/text.js"></script>
+    <script src="assets/js/diagram.js"></script>
