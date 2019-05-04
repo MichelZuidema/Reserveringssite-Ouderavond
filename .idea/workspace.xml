@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="637b362f-0a4d-4950-8b3a-f451316685ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/assets/scss/particles/mentor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/scss/particles/mentor.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/mentor.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/mentor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,15 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Website/mentor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="179" column="209" selection-start-line="179" selection-start-column="209" selection-end-line="179" selection-end-column="209" />
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="4272">
+              <caret line="178" column="32" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -47,8 +42,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/mentor.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="147" column="18" lean-forward="true" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
+            <state relative-caret-position="3528">
+              <caret line="147" column="18" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Website/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -56,7 +60,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="1560">
               <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="74" selection-end-column="9" />
             </state>
           </provider>
@@ -122,7 +126,6 @@
         <option value="$PROJECT_DIR$/Website/assets/include/inlog.php" />
         <option value="$PROJECT_DIR$/Website/assets/js/login.js" />
         <option value="$PROJECT_DIR$/Website/assets/db/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/Website/index.php" />
         <option value="$PROJECT_DIR$/Website/assets/scss/modules/login.scss" />
         <option value="$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php" />
         <option value="$PROJECT_DIR$/Website/mentorTijdschema.php" />
@@ -130,6 +133,7 @@
         <option value="$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss" />
         <option value="$PROJECT_DIR$/Website/mentor.php" />
         <option value="$PROJECT_DIR$/Website/assets/scss/particles/mentor.scss" />
+        <option value="$PROJECT_DIR$/Website/index.php" />
       </list>
     </option>
   </component>
@@ -164,10 +168,10 @@
       <path value="$PROJECT_DIR$/Website/vendor/phpro/grumphp" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="27" />
-    <option name="width" value="1080" />
-    <option name="height" value="1893" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="990" />
+    <option name="width" value="1577" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -268,12 +272,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -337,17 +343,20 @@
       <workItem from="1555686043092" duration="1707000" />
       <workItem from="1556701236229" duration="5884000" />
       <workItem from="1556709242658" duration="4411000" />
+      <workItem from="1556980291180" duration="761000" />
+      <workItem from="1556981068436" duration="373000" />
+      <workItem from="1557001264154" duration="163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89342000" />
+    <option name="totallyTimeSpent" value="90639000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="990" y="0" width="1577" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23319103" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16413975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -409,13 +418,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4b875e11-7d47-4de5-8786-e70d1da5ea2f/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="56" lean-forward="true" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4b875e11-7d47-4de5-8786-e70d1da5ea2f/console.sql" />
     <entry file="file://$PROJECT_DIR$/Website/vendor/phpro/grumphp/doc/tasks/securitychecker.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -591,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Website/assets/include/inlog.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -653,28 +649,31 @@
     <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/tijdschema.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss">
+    <entry file="file://$PROJECT_DIR$/Website/mentor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="74" selection-end-column="9" />
+        <state relative-caret-position="4272">
+          <caret line="178" column="32" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/mentor.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="147" column="18" lean-forward="true" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
+        <state relative-caret-position="3528">
+          <caret line="147" column="18" selection-start-line="147" selection-start-column="18" selection-end-line="147" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/mentor.php">
+    <entry file="file://$PROJECT_DIR$/Website/assets/scss/particles/mentorTijdschema.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="179" column="209" selection-start-line="179" selection-start-column="209" selection-end-line="179" selection-end-column="209" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="1560">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="74" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
         </state>
       </provider>
     </entry>
