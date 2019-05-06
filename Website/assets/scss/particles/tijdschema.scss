@@ -213,6 +213,7 @@
     background: $glr-green;
     border-radius: 1rem;
     z-index: 1000;
+    display: none;
 
 
     @include setQeury($md){

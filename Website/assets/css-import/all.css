@@ -1352,7 +1352,8 @@ label {
   transform: translateX(-50%);
   background: #8FE501;
   border-radius: 1rem;
-  z-index: 1000; }
+  z-index: 1000;
+  display: none; }
   @media only screen and (min-width: 720px) {
     .timetable .popup {
       width: 100%; } }
