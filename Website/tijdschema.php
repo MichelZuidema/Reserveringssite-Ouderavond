@@ -47,7 +47,7 @@ if (isset($_POST['formSubmit'])) {
         </section>
 
         <!-- form -->
-        <form action="?" method="POST">
+        <form action="?" method="POST" onsubmit="return tijdschema();">
             <!-- Choose your date -->
             <section class="day-choosing">
                 <h2>Kies een Datum</h2>
