@@ -1350,7 +1350,7 @@ label {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  background: #8FE501;
+  background: firebrick;
   border-radius: 1rem;
   z-index: 1000;
   display: none; }
