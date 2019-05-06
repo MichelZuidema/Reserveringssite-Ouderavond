@@ -37,7 +37,7 @@ if (isset($_POST['formSubmit'])) {
 ?>
     <main class="timetable">
         <!-- form -->
-        <form action="?" method="POST">
+        <form action="?" method="POST" onsubmit="return tijdschema();">
             <!-- Choose your date -->
             <section class="day-choosing">
                 <h2>Kies een Datum</h2>
@@ -116,7 +116,7 @@ if (isset($_POST['formSubmit'])) {
             </section>
                 <?php
                 if (!empty($_SESSION['errormsg'])) {
-                    echo '<section class="popup" style="background-color: red;">';
+                    echo '<section class="popup">';
                     echo '<p class="popup__text">Er is een fout opgetreden!</p>';
                     echo "<p class='popup__text'>" . $_SESSION['errormsg'] . "</p>";
                     echo '</section>';
@@ -142,3 +142,4 @@ if (isset($_POST['formSubmit'])) {
 require 'assets/include/footer.php';
 ?>
 <script src="assets/js/scrolling.js"></script>
+<script src="assets/js/popup.js"></script>
