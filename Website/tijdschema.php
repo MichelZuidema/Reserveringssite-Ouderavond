@@ -26,6 +26,7 @@ if ($_SESSION['role'] == 1) {
     require 'assets/include/header.php';
 }
 
+
 if (isset($_POST['formSubmit'])) {
     if ($time->CreateReservation()) {
         if($contact->SendMailConfirmation()) {
@@ -35,7 +36,16 @@ if (isset($_POST['formSubmit'])) {
     }
 }
 ?>
+<script src="assets/js/tijdschema.js"></script>
+
     <main class="timetable">
+
+        <!--popup  -->
+        <section class="popup">
+            <p class="popup__title">error title</p>
+            <p class="popup__body">error body</p>
+        </section>
+
         <!-- form -->
         <form action="?" method="POST">
             <!-- Choose your date -->
@@ -115,17 +125,11 @@ if (isset($_POST['formSubmit'])) {
                 <p class="persons--info">Selecteer met hoeveel personen u wilt komen</p>
             </section>
                 <?php
+
                 if (!empty($_SESSION['errormsg'])) {
-                    echo '<section class="popup" style="background-color: red;">';
-                    echo '<p class="popup__text">Er is een fout opgetreden!</p>';
-                    echo "<p class='popup__text'>" . $_SESSION['errormsg'] . "</p>";
-                    echo '</section>';
+                    $error = $_SESSION['errormsg'];
+                    echo "<script>showPopup('Er is een fout opgetreden!', '" . $error . "');</script>";
                     unset($_SESSION['errormsg']);
-                } else {
-                    echo '<section class="popup">';
-                    echo '<p class="popup__text">Bedankt voor uw aanmelding!</p>';
-                    echo '<p class="popup__text">Wij hebben u een mail gestuurd met uw gegevens</p>';
-                    echo '</section>';
                 }
                 ?>
             <!-- Add a qeustion to your registery -->

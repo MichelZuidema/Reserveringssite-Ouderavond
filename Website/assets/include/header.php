@@ -35,10 +35,10 @@
             require "nav.php";
         ?>
         <!-- And this is the user who is logged in -->
-        <p class="header__login__name">Mentors name</p>
+        <p class="header__login__name"><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } ?></p>
         
         <!-- this is the login button -->
-        <section class="header__user"><span class="header__user__login"><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } else { echo "Login"; } ?></span></section>
+        <section class="header__user"><span class="header__user__login"><?php  if(isset($_SESSION['username'])) { echo "<a href='assets/db/logout.php'>Logout</a>"; }else { echo "Login";}?></span></section>
         
 
         <section class="header__title">
