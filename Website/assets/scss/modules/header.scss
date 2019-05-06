@@ -5,7 +5,6 @@
     @include setQeury($lg){
         height: 40rem;
     }
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // hamburger menu 
     
@@ -222,6 +221,10 @@
             &:hover{
                 color: #f1f1f1;
             }
+        }
+
+        .header__user__logout {
+            @extend .header__user__login;
         }
     }
 

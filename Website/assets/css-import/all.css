@@ -869,9 +869,9 @@ label {
         left: unset;
         right: 2.5rem;
         top: 1rem; } }
-    .header .header__user .header__user__login {
+    .header .header__user .header__user__login, .header .header__user .header__user__logout {
       color: #8FE501; }
-      .header .header__user .header__user__login:hover {
+      .header .header__user .header__user__login:hover, .header .header__user .header__user__logout:hover {
         color: #f1f1f1; }
   .header .header__login__name {
     font-size: 3rem;

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="637b362f-0a4d-4950-8b3a-f451316685ce" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Website/mentorTijdschema.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/mentorTijdschema.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/assets/css-import/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/css-import/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/assets/db/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/db/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/assets/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/include/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/assets/include/headerMentor.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/include/headerMentor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/assets/scss/modules/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/scss/modules/header.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,28 +35,69 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/assets/db/Controllers/TimeTableController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1261">
-              <caret line="53" column="27" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Website/mentorTijdschema.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+            <state relative-caret-position="512">
+              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/assets/db/sessions.php">
+        <entry file="file://$PROJECT_DIR$/Website/assets/db/logout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state relative-caret-position="338">
+              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/assets/scss/modules/header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="225" column="30" lean-forward="true" selection-start-line="225" selection-start-column="30" selection-end-line="225" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/assets/css-import/all.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="875" column="6" lean-forward="true" selection-start-line="875" selection-start-column="6" selection-end-line="875" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/assets/scss/modules/base.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/assets/scss/modules/default.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Website/assets/include/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Website/assets/include/headerMentor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="35" column="178" selection-start-line="35" selection-start-column="178" selection-end-line="35" selection-end-column="178" />
             </state>
           </provider>
         </entry>
@@ -59,24 +105,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Website/assets/db/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1112">
-              <caret line="83" column="23" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="23" />
+            <state relative-caret-position="221">
+              <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/assets/include/inlog.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/assets/js/MentorCredentials.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -112,6 +144,8 @@
       <find>GetClassAmount</find>
       <find>creater</find>
       <find>Selecteer een tijdstip!</find>
+      <find>header__user__lo</find>
+      <find>header__user</find>
     </findStrings>
     <replaceStrings>
       <replace>GetClassAmountPercentage</replace>
@@ -126,12 +160,9 @@
       <list>
         <option value="$PROJECT_DIR$/Website/assets/js/form.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4b875e11-7d47-4de5-8786-e70d1da5ea2f/console.sql" />
-        <option value="$PROJECT_DIR$/Website/assets/include/header.php" />
-        <option value="$PROJECT_DIR$/Website/assets/include/headerMentor.php" />
         <option value="$PROJECT_DIR$/Website/assets/db/database.class.php" />
         <option value="$PROJECT_DIR$/Website/classes.php" />
         <option value="$PROJECT_DIR$/Website/assets/db/classes.php" />
-        <option value="$PROJECT_DIR$/Website/assets/db/logout.php" />
         <option value="$PROJECT_DIR$/Website/assets/include/emailTemplate.html" />
         <option value="$PROJECT_DIR$/Website/contact.php" />
         <option value="$PROJECT_DIR$/Website/assets/js/script.js" />
@@ -154,6 +185,11 @@
         <option value="$PROJECT_DIR$/Website/assets/scss/particles/mentor.scss" />
         <option value="$PROJECT_DIR$/Website/index.php" />
         <option value="$PROJECT_DIR$/Website/mentorTijdschema.php" />
+        <option value="$PROJECT_DIR$/Website/assets/db/logout.php" />
+        <option value="$PROJECT_DIR$/Website/assets/include/header.php" />
+        <option value="$PROJECT_DIR$/Website/assets/scss/modules/default.scss" />
+        <option value="$PROJECT_DIR$/Website/assets/scss/modules/header.scss" />
+        <option value="$PROJECT_DIR$/Website/assets/include/headerMentor.php" />
       </list>
     </option>
   </component>
@@ -370,7 +406,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94560000" />
+    <option name="totallyTimeSpent" value="94942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -398,7 +434,7 @@
       <window_info anchor="right" id="Database" order="3" weight="0.32977587" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23052295" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23585913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -444,13 +480,6 @@
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/assets/include/headerMentor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -516,8 +545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/assets/db/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        <state relative-caret-position="338">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -590,24 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/assets/include/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Website/assets/scss/modules/login.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="574">
           <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/assets/css-import/all.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="3182" column="26" lean-forward="true" selection-start-line="3182" selection-start-column="26" selection-end-line="3189" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -661,8 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/assets/db/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1112">
-          <caret line="83" column="23" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="23" />
+        <state relative-caret-position="221">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -692,8 +707,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/mentorTijdschema.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
+        <state relative-caret-position="512">
+          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/scss/modules/base.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/scss/modules/default.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/include/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/css-import/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="875" column="6" lean-forward="true" selection-start-line="875" selection-start-column="6" selection-end-line="875" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/scss/modules/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="225" column="30" lean-forward="true" selection-start-line="225" selection-start-column="30" selection-end-line="225" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/include/headerMentor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="35" column="178" selection-start-line="35" selection-start-column="178" selection-end-line="35" selection-end-column="178" />
         </state>
       </provider>
     </entry>
