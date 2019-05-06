@@ -33,15 +33,7 @@ if (isset($_POST['submit'])) {
     <input type="password" id="login--password" name="inputPassword" required>
     <p class="inlog__error--password">Je wachtwoord mag niet leeg zijn!</p>
     <input type="submit" class="login__submit" value="Inloggen" name="submit">
-    <p class="inlog__error--php">
-        <?php     
-            if($user->MentorCredentialsError()) {
-                echo "noError";
-            }else{
-                echo "1";
-            }
-        ?>
-    </p>
+    <p class="inlog__error--php"><?php if(isset($_SESSION['id'])) { echo "yeyeye"; } else { echo "1"; }  ?></p>
 </form>
 <?php
     if($user->MentorCredentialsError()) {
