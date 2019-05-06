@@ -7,7 +7,7 @@ $user = new UserController();
 
 if (isset($_GET["token"]) && preg_match('/\b([a-f0-9]{40})\b/', $_GET['token'])) {
     if ($user->UniqueLinkValidation($_GET['token'])) {
-        header("../../index.php");
+        Header("Location: ../../index.php");
     } else {
         echo "<script>alert('" . $_SESSION['errormsg'] . "')</script>";
     }

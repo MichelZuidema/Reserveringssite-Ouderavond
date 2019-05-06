@@ -2,10 +2,10 @@
 //page title
 $pageTitle = "Inschrijving ouderavond | Grafisch Lyceum Rotterdam";
 //selected navigation link
-$selectedLink = "tijdschema";
+$selectedLink = "mentor";
 
 // Header
-if ($_SESSION['role'] == 1) {
+if ($_SESSION['role'] == 0) {
     require 'assets/include/headerMentor.php';
 } else {
     require 'assets/include/header.php';

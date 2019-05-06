@@ -21,7 +21,7 @@ if (empty($_SESSION['username'])) {
 
 // Header
 if ($_SESSION['role'] == 1) {
-    require 'assets/include/headerMentor.php';
+    Header("Location: index.php");
 } else {
     require 'assets/include/header.php';
 }
