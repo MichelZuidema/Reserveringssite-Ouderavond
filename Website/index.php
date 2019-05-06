@@ -18,15 +18,26 @@ if ($_SESSION['username']) {
     require_once 'assets/db/database.class.php';
 }
 
-function GetClassAmount($class_id)
+function GetClassAmount($mentor_id)
 {
     $db = new Database();
-    $query = "SELECT COUNT(id) FROM student WHERE klas_id = '$class_id'";
+    $query = "SELECT COUNT(id) FROM reservering WHERE mentor_id = '$mentor_id'";
     $result = mysqli_query($db->mysqli, $query);
     $amount = mysqli_fetch_array($result)[0];
 
     return $amount / 30 * 100;
 }
+
+function GetClassAmountRegistered($mentor_id)
+{
+    $db = new Database();
+    $query = "SELECT COUNT(id) FROM reservering WHERE mentor_id = '$mentor_id'";
+    $result = mysqli_query($db->mysqli, $query);
+    $amount = mysqli_fetch_array($result)[0];
+
+    return $amount;
+}
+
 
 ?>
 <main class="homepage">
@@ -70,9 +81,9 @@ function GetClassAmount($class_id)
                 <p class="diagram--time">I1A</p>
                 <section class="diagram-height"></section>
                 <h3 class="diagram__procentage">
-                    <?php echo round(GetClassAmount(2), 1); ?>%
+                    <?php echo round(GetClassAmount(1), 1); ?>%
                 </h3>
-                <p class="diagram--fill">32/33</p>
+                <p class="diagram--fill"><?php echo GetClassAmountRegistered(1); ?>/30</p>
             </section>
             <!-- diagram 2 -->
             <section class="diagram__grid__item--2">
@@ -81,25 +92,25 @@ function GetClassAmount($class_id)
                 <h3 class="diagram__procentage">
                     <?php echo round(GetClassAmount(3), 1); ?>%
                 </h3>
-                <p class="diagram--fill">32/33</p>
+                <p class="diagram--fill"><?php echo GetClassAmountRegistered(3); ?>/30</p>
             </section>
             <!-- diagram 3 -->
             <section class="diagram__grid__item--3">
                 <p class="diagram--time">I1C</p>
                 <section class="diagram-height"></section>
                 <h3 class="diagram__procentage">
-                    <?php echo round(GetClassAmount(4), 1); ?>%
+                    <?php echo round(GetClassAmount(3), 1); ?>%
                 </h3>
-                <p class="diagram--fill">32/33</p>
+                <p class="diagram--fill"><?php echo GetClassAmountRegistered(3); ?>/30</p>
             </section>
             <!-- diagram 4 -->
             <section class="diagram__grid__item--4">
                 <p class="diagram--time">I1F</p>
                 <section class="diagram-height"></section>
                 <h3 class="diagram__procentage">
-                    <?php echo round(GetClassAmount(1), 1); ?>%
+                    <?php echo round(GetClassAmount(2), 1); ?>%
                 </h3>
-                <p class="diagram--fill">32/33</p>
+                <p class="diagram--fill"><?php echo GetClassAmountRegistered(2); ?>/30</p>
             </section>
         </section>
     </article>
