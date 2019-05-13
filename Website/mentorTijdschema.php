@@ -91,10 +91,6 @@ function GetStudentClass($student_id)
                     ?>
                 </form>
             </section>
-            <section id="planningInfo">
-                <p>vrij</p>
-                <p>vol</p>
-            </section>
         </form>
         <form class="appointment__info" action="?" method="POST">
             <h2>Afspraak:</h2>
@@ -141,27 +137,11 @@ function GetStudentClass($student_id)
             <p class="appointment__text">
                 Vraag/opmerking:
             </p>
-            <textarea name="notities" class="appointment__question" disabled>
-                <?php
-                    if(empty($reserveringInfo['opmerking'])) {
-                        echo "U heeft geen tijdstip geselecteerd of er is gen reservering gevonden.";
-                    } else {
-                        echo $reserveringInfo['opmerking'];
-                    }
-                ?>
-            </textarea>
+            <textarea name="notities" class="appointment__question" disabled> <?php if(empty($reserveringInfo['opmerking'])) { echo "U heeft geen tijdstip geselecteerd of er is gen reservering gevonden."; } else { echo $reserveringInfo['opmerking'];}?> </textarea>
             <p class="appointment__text">
                 Notities mentor:
             </p>
-            <textarea name="notities" class="appointment__notities">
-                <?php
-                    if(empty($reserveringInfo['mentor_opmerking'])) {
-                        echo "U heeft geen tijdstip geselecteerd of er is gen reservering gevonden.";
-                    } else {
-                        echo $reserveringInfo['mentor_opmerking'];
-                    }
-                ?>
-            </textarea>
+            <textarea name="notities" class="appointment__notities"><?php if(empty($reserveringInfo['mentor_opmerking'])) { echo "U heeft geen tijdstip geselecteerd of er is gen reservering gevonden."; } else { echo $reserveringInfo['mentor_opmerking']; } ?></textarea>
             <input type="hidden" value="<?php echo $reserveringInfo['student_id']; ?>" name="student_id">
             <input type="submit" value="Opslaan" class="appointment__submit" name="btnUpdate">
         </form>

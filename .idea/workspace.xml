@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="637b362f-0a4d-4950-8b3a-f451316685ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Website/assets/include/navMentor.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/assets/include/navMentor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/mentor.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/mentor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/mentorTijdschema.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/mentorTijdschema.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/tijdschema.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/tijdschema.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,30 +31,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Website/mentor.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Website/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,6 +66,9 @@
       <find>Selecteer een tijdstip!</find>
       <find>header__user__lo</find>
       <find>header__user</find>
+      <find>vrij</find>
+      <find>textare`</find>
+      <find>textare</find>
     </findStrings>
     <replaceStrings>
       <replace>GetClassAmountPercentage</replace>
@@ -129,9 +109,9 @@
         <option value="$PROJECT_DIR$/Website/assets/include/headerMentor.php" />
         <option value="$PROJECT_DIR$/Website/assets/scss/modules/header.scss" />
         <option value="$PROJECT_DIR$/Website/index.php" />
-        <option value="$PROJECT_DIR$/Website/mentorTijdschema.php" />
         <option value="$PROJECT_DIR$/Website/contact.php" />
         <option value="$PROJECT_DIR$/Website/assets/include/navMentor.php" />
+        <option value="$PROJECT_DIR$/Website/mentorTijdschema.php" />
         <option value="$PROJECT_DIR$/Website/tijdschema.php" />
         <option value="$PROJECT_DIR$/Website/mentor.php" />
       </list>
@@ -168,17 +148,17 @@
       <path value="$PROJECT_DIR$/Website/vendor/phpro/grumphp" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="990" />
-    <option name="width" value="1577" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="310" />
+    <option name="y" value="117" />
+    <option name="width" value="1070" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,6 +248,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,17 +327,17 @@
       <workItem from="1556980291180" duration="761000" />
       <workItem from="1556981068436" duration="373000" />
       <workItem from="1557001264154" duration="163000" />
+      <workItem from="1557730145150" duration="899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95446000" />
+    <option name="totallyTimeSpent" value="96345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23585913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18196371" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -520,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/confirmed.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="44" column="66" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Website/assets/db/database.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -577,13 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1742">
           <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Website/assets/include/inlog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -642,13 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Website/mentorTijdschema.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Website/contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -680,10 +640,31 @@
     <entry file="file://$PROJECT_DIR$/Website/assets/js/tijdschema.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Website/mentorTijdschema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="143" column="258" selection-start-line="143" selection-start-column="258" selection-end-line="143" selection-end-column="258" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Website/tijdschema.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        <state relative-caret-position="404">
+          <caret line="137" column="96" selection-start-line="137" selection-start-column="96" selection-end-line="137" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/confirmed.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Website/assets/include/inlog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="41" column="2" lean-forward="true" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -696,8 +677,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/mentor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="3406">
+          <caret line="203" column="77" selection-start-line="203" selection-start-column="77" selection-end-line="203" selection-end-column="77" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#!!top" expanded="true" />

@@ -135,8 +135,7 @@ if (isset($_POST['formSubmit'])) {
             <!-- Add a qeustion to your registery -->
             <article class="question">
                 <h2>Opmerking of vraag</h2>
-                <textarea placeholder="Hier komt uw vraag/opmerking" class="question__textarea"
-                          name="inputRemark"></textarea>
+                <textarea placeholder="Hier komt uw vraag/opmerking" class="question__textarea" name="inputRemark"></textarea>
                 <input type="submit" class="question__button--send" value="Aanmelding versturen" name="formSubmit">
             </article>
         </form>

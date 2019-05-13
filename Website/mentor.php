@@ -167,37 +167,41 @@ if (isset($_POST['mentorSubmit'])) {
             <section class="studentInfo__section">
                 <label class="studentInfo__label">Ingeschreven Tijd:</label>
                 <?php
-                $tijdstip_hour = explode(":", $tijdstip_row['tijd_start'])[0];
-                $current_hour = $tijdstip_hour;
-                $new_hour = $tijdstip_hour + 1;
+                if ($tijdstip_row['tijd_start']) {
+                    $tijdstip_hour = explode(":", $tijdstip_row['tijd_start'])[0];
+                    $current_hour = $tijdstip_hour;
+                    $new_hour = $tijdstip_hour + 1;
 
-                for ($x = 15; $x <= 60; $x += 15) {
-                    if ($x == 15) {
-                        if ($tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour == $reservering_row['specific_time']) {
-                            echo "<input type='radio' class='studentInfo__radio' id='studentInfo--" . $x . "' value='" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour' checked='checked'>";
-                            echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "</label>";
+                    for ($x = 15; $x <= 60; $x += 15) {
+                        if ($x == 15) {
+                            if ($tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour == $reservering_row['specific_time']) {
+                                echo "<input type='radio' class='studentInfo__radio' id='studentInfo--" . $x . "' value='" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour' checked='checked'>";
+                                echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "</label>";
+                            } else {
+                                echo "<input type='radio' class='studentInfo__radio' id='studentInfo--" . $x . "' value='" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour'>";
+                                echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "</label>";
+                            }
+                        } else if ($x == 60) {
+                            if ($current_hour . "-" . $new_hour . ":00" == $reservering_row['specific_time']) {
+                                echo "<input type='radio' id='studentInfo--" . $x . "' class='studentInfo__radio' value='" . $current_hour . "-" . $new_hour . ":00" . "' name='mentor_hour' checked='checked'>";
+                                echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $current_hour . "-" . $new_hour . ":00" . "</label>";
+                            } else {
+                                echo "<input type='radio' id='studentInfo--" . $x . "' class='studentInfo__radio' value='" . $current_hour . "-" . $new_hour . ":00" . "' name='mentor_hour'>";
+                                echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $current_hour . "-" . $new_hour . ":00" . "</label>";
+                            }
                         } else {
-                            echo "<input type='radio' class='studentInfo__radio' id='studentInfo--" . $x . "' value='" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour'>";
-                            echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $tijdstip_hour . ":" . "00" . "-" . $tijdstip_hour . ":" . $x . "</label>";
+                            if ($current_hour . "-" . $tijdstip_hour . ":" . $x == $reservering_row['specific_time']) {
+                                echo "<input type='radio' id='studentInfo--" . $x . "' class='studentInfo__radio' value='" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour' checked='checked'>";
+                                echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "</label>";
+                            } else {
+                                echo "<input type='radio' id='studentInfo--" . $x . "' class='studentInfo__radio' value='" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour'>";
+                                echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "</label>";
+                            }
                         }
-                    } else if ($x == 60) {
-                        if ($current_hour . "-" . $new_hour . ":00" == $reservering_row['specific_time']) {
-                            echo "<input type='radio' id='studentInfo--" . $x . "' class='studentInfo__radio' value='" . $current_hour . "-" . $new_hour . ":00" . "' name='mentor_hour' checked='checked'>";
-                            echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $current_hour . "-" . $new_hour . ":00" . "</label>";
-                        } else {
-                            echo "<input type='radio' id='studentInfo--" . $x . "' class='studentInfo__radio' value='" . $current_hour . "-" . $new_hour . ":00" . "' name='mentor_hour'>";
-                            echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $current_hour . "-" . $new_hour . ":00" . "</label>";
-                        }
-                    } else {
-                        if ($current_hour . "-" . $tijdstip_hour . ":" . $x == $reservering_row['specific_time']) {
-                            echo "<input type='radio' id='studentInfo--" . $x . "' class='studentInfo__radio' value='" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour' checked='checked'>";
-                            echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "</label>";
-                        } else {
-                            echo "<input type='radio' id='studentInfo--" . $x . "' class='studentInfo__radio' value='" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "' name='mentor_hour'>";
-                            echo "<label for='studentInfo--" . $x . "' class='studentInfo__button'>" . $current_hour . "-" . $tijdstip_hour . ":" . $x . "</label>";
-                        }
+                        $current_hour = $tijdstip_hour . ":" . $x;
                     }
-                    $current_hour = $tijdstip_hour . ":" . $x;
+                } else {
+                    echo "<p class='studentInfo__text'>Selecteer een student!</p>";
                 }
                 ?>
             </section>
@@ -215,9 +219,8 @@ if (isset($_POST['mentorSubmit'])) {
             </section>
             <section class="studentInfo__section">
                 <label class="studentInfo__label">Notities mentor:</label>
-                <textarea id="mentor-notities" name="mentorRemark">
-                    <?php echo $reservering_row['mentor_opmerking']; ?>
-                </textarea>
+                <textarea id="mentor-notities"
+                          name="mentorRemark"><?php echo $reservering_row['mentor_opmerking']; ?></textarea>
                 <input type="hidden" name="student_id" value="<?php echo $student_row['id']; ?>">
                 <input type="submit" class="studentInfo__button--send" value="Opslaan" name="mentorSubmit">
             </section>
