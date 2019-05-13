@@ -89,6 +89,10 @@ function GetStudentClass($student_id)
                         }
                     }
                     ?>
+                    <section id="planningInfo">
+                        <p>vrij</p>
+                        <p>vol</p>
+                    </section>
                 </form>
             </section>
         </form>
