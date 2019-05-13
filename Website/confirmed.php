@@ -50,7 +50,7 @@
             <label class="confirmed__time--label">Gewenste tijd:</label>
             <input type="text" value="<?php echo $row['tijd_start'];?> t/m <?php echo $row['tijd_einde']; ?>" class="confirmed__time--input">
 
-            <label class="confirmed__person--label">Aantal personen</label>
+            <label class="confirmed__person--label">Aantal personen:</label>
             <input type="text" value="<?php echo $rowRes['personen']; ?> personen" class="confirmed__person--input">
 
             <label class="confirmed__message--label">Uw opmerking bericht:</label>
