@@ -14,14 +14,3 @@
 
         return false;
     });
-
-
-    // //close the popup
-    // function popupTijdschemaStart(){
-    //     var popup = document.querySelector('popup');
-    //     var errorText = document.querySelector('popup__text');
-
-    //     errorText.style.display = "none";
-    //     popup.style.display = "none";
-    //     popup.style.top = "-200px";
-    // }
