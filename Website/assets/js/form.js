@@ -121,6 +121,11 @@
             popupContainer.style.top = "0";
             popupContainer.style.display = "block";
             popupContainer.style.backgroundColor = "red";
+
+        //popup dissapear after 5 seconds
+            setTimeout(function(){
+                popupContainer.style.display = "none";
+            }, 4000);
         }
 
         //close the popup
