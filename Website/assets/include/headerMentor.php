@@ -33,8 +33,9 @@
         <p class="header__login__name"><?php  if(isset($_SESSION['username'])) { echo $_SESSION['username']; } ?></p>
 
         <!-- this is the login button -->
-        <section class="header__user"><span class="header__user__login"><?php  if(isset($_SESSION['username'])) { echo "<a href='assets/db/logout.php' class='header__user__logout'>Logout</a>"; }else { echo "Login";}?></span></section>
-       
+        <a href='assets/db/logout.php'><section class="header__user"><span class="header__user__login"><?php  if(isset($_SESSION['username'])) { echo "Logout"; }else { echo "Login";}?></span></section></a>
+
+
         <section class="header__title">
             <h1 class="header__title__h1 title--1">Inschrijving</h1>
             <h1 class="header__title__h1 title--2">Ouderavond</h1>
