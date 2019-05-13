@@ -16,6 +16,7 @@ if (isset($_POST['submit'])) {
     // Login validation
     if ($user->MentorLoginProcess($username, $password)) {
         echo $_SESSION['succmsg'];
+        header('Location: '.$_SERVER['REQUEST_URI']);
     } else {
         echo $_SESSION['errormsg'];
     }

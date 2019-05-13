@@ -45,15 +45,6 @@ if (isset($_POST['btnSubmit'])) {
         $email = $_POST['email'];
     }
 
-    if ($_POST['telefoon'] == "") {
-        echo "<script>alert('U heeft geen telefoon ingevuld!')</script>";
-        unset($_POST);
-        header("refresh:0;url=contact.php");
-        die();
-    } else {
-        $telefoon = $_POST['telefoon'];
-    }
-
     if ($_POST['kind'] == "") {
         echo "<script>alert('U heeft geen kind ingevuld!')</script>";
         unset($_POST);
@@ -71,6 +62,8 @@ if (isset($_POST['btnSubmit'])) {
     } else {
         $bericht = $_POST['bericht'];
     }
+
+    $telefoon = $_POST['telefoon'];
 
     if (!new ContactController($voornaam, $achternaam, $email, $telefoon, $kind, $bericht)) {
         echo "<h1>Error: " . $_SESSION['errormsg'] . "</h1>";
