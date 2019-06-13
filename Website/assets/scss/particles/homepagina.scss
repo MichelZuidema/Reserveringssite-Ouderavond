@@ -20,12 +20,25 @@
         @include blackContainer(100%, 1);
         min-height: 40rem;
         margin: 0 auto 0 auto;
+        position: relative;
         
-
         @include setQeury($xlg){
             border: 0px;
             box-shadow: none;
         }
+    }
+
+    .CMS__paragraaf{
+        font-size: 3rem;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        background: #1C1C1C;
+        color: #f1f1f1;
+        border: 3px solid $black-container-border;
+        box-shadow: 1px 1.5px 6px #000; 
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
     }
 
     //Algemene information
@@ -85,6 +98,25 @@
             background-color: rgba(9, 231, 9, 0.212);
             background-blend-mode: screen, multiply; 
             min-height: 35rem;
+            position: relative;
+
+
+            .CMS__img{
+                position: absolute;
+                left: 1rem;
+                bottom: 1rem;
+                font-size: 3rem;
+                padding: 1rem 2rem;
+                cursor: pointer;
+                background: #1C1C1C;
+                color: #f1f1f1;
+                border: 3px solid $black-container-border;
+                box-shadow: 1px 1.5px 6px #000;
+
+                &:hover{
+                    background: #111;
+                }
+            }
 
 
             @include setQeury($lg){
@@ -122,6 +154,8 @@
                 background-size: cover, 25.5rem;
             }
         }
+
+        
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //diagram 
         .diagram__grid{

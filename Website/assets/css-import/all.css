@@ -1045,11 +1045,23 @@ label {
     box-shadow: 1px 1.5px 6px #000;
     border-top: 3px solid #484646;
     min-height: 40rem;
-    margin: 0 auto 0 auto; }
+    margin: 0 auto 0 auto;
+    position: relative; }
     @media only screen and (min-width: 1300px) {
       .homepage .article {
         border: 0px;
         box-shadow: none; } }
+  .homepage .CMS__paragraaf {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background: #1C1C1C;
+    color: #f1f1f1;
+    border: 3px solid #484646;
+    box-shadow: 1px 1.5px 6px #000;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem; }
   .homepage .information__container {
     width: 60rem;
     max-width: 90vw;
@@ -1090,7 +1102,21 @@ label {
     margin: 0 auto 0 auto;
     background-color: rgba(9, 231, 9, 0.212);
     background-blend-mode: screen, multiply;
-    min-height: 35rem; }
+    min-height: 35rem;
+    position: relative; }
+    .homepage .article__image--1 .CMS__img, .homepage .article__image--2 .CMS__img, .homepage .article__image--3 .CMS__img, .homepage .article__image--2 .CMS__img, .homepage .article__image--3 .CMS__img {
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem;
+      font-size: 3rem;
+      padding: 1rem 2rem;
+      cursor: pointer;
+      background: #1C1C1C;
+      color: #f1f1f1;
+      border: 3px solid #484646;
+      box-shadow: 1px 1.5px 6px #000; }
+      .homepage .article__image--1 .CMS__img:hover, .homepage .article__image--2 .CMS__img:hover, .homepage .article__image--3 .CMS__img:hover, .homepage .article__image--2 .CMS__img:hover, .homepage .article__image--3 .CMS__img:hover {
+        background: #111; }
     @media only screen and (min-width: 1024px) {
       .homepage .article__image--1, .homepage .article__image--2, .homepage .article__image--3, .homepage .article__image--2, .homepage .article__image--3 {
         border: 0px;

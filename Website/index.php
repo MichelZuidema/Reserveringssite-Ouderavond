@@ -55,9 +55,10 @@ function GetClassAmountRegistered($mentor_id)
                 letters bestaat, in uw tegenstelling tot “Hier uw tekst, hier uw tekst” wat het tot min of meer leesbaar
                 nederlands maakt. Veel desktop publishing pakketten en web pagina </p>
         </div>
+        <Button class="CMS__paragraaf">Change</Button>
     </article>
     <!-- backgroundimage -->
-    <section class="article__image--1"></section>
+    <section class="article__image--1"><Button class="CMS__img">Change</Button></section>
     <!-- register information -->
     <article class="register article">
         <h2 class="register--heading">Hoe schrijf ik me in</h2>
@@ -68,9 +69,10 @@ function GetClassAmountRegistered($mentor_id)
             <li class="register__list__item">4. tenetur, perferendis quae quia asperiores aut.</li>
             <li class="register__list__item">4. met consectetur adipisicing eliis quae quia asperiores aut.</li>
         </ol>
+        <Button class="CMS__paragraaf">Change</Button>
     </article>
     <!-- background image -->
-    <section class="article__image--2"></section>
+    <section class="article__image--2"><Button class="CMS__img">Change</Button></section>
     <!-- Fill diagram-->
     <article class="diagram article">
         <h2 class="diagram__heading">Ingeschreven ouders</h2>
@@ -115,7 +117,7 @@ function GetClassAmountRegistered($mentor_id)
         </section>
     </article>
     <!-- background image -->
-    <section class="article__image--3"></section>
+    <section class="article__image--3"><Button class="CMS__img">Change</Button></section>
 </main>
 <?php
 // footer
