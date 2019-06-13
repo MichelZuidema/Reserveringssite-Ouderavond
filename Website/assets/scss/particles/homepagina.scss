@@ -128,7 +128,6 @@
 
         //background images
         .article__image--1{
-            background-image: url(../img/layout-picture.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -136,7 +135,6 @@
 
         .article__image--2{
             @extend .article__image--1;
-            background-image: url(../img/layout-picture3.jpg);
             @include setQeury($lg){
                 grid-column: 1/2;
                 grid-row: 2/3;

@@ -46,6 +46,19 @@ class Database {
         return $row[$specificRow];
     }
 
+    // Get content from table
+    public function GetContent($position, $table = "content") {
+        // SQL Select
+        $sql = "SELECT content FROM $table WHERE position = '$position';";
+        // Execute the query into the database
+        $result = mysqli_query($this->mysqli, $sql);
+        // Make an array from the result
+        $row = mysqli_fetch_array($result);
+
+        // Return the data that was requested
+        return $row[0];
+    }
+
     // Close Connection Function
     public function CloseConnection() {
         // Check if closing the connection gets any error

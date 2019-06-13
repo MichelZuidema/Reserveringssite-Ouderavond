@@ -5,6 +5,9 @@
         session_start();
     }
 
+    require_once 'assets/db/database.class.php';
+    $db = new Database();
+
     //stores string for toggling classes
     $selectedLinkActive = "selectedLinkActive";
 ?>
@@ -47,5 +50,4 @@
         </section>
         <!-- school logo -->
         <figure class="header__logo"><a href="index.php"><img src="assets/img/school.jpg" alt="School-image" class="header__logo--img"></a></figure>
-        
     </header>
