@@ -63,6 +63,13 @@ class UserController extends Database
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['username'] = $row['naam'];
                 $_SESSION['role'] = 1;
+
+                if($row['admin_role']) {
+                    $_SESSION['admin_role'] = $row['admin_role'];
+                } else {
+                    $_SESSION['admin_role'] = NULL;
+                }
+
                 return true;
             } else {
                 $_SESSION['errormsg'] = "Uw ingevulde wachtwoord is niet correct!";
