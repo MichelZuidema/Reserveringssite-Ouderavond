@@ -23,6 +23,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php echo $pageTitle; ?></title>
     <link rel="stylesheet" href="assets/css-import/all.css">    
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js"></script>
 </head>
 <body>
     <!-- inlog form -->
@@ -31,6 +32,8 @@
                 require "inlog.php";
             }
     ?>
+    <?php require "cmsModel.php"; ?>
+
     <section class="blurring">
     <header class="header">
         <section class="header__icon--hamburger"><section class="icon__hamburger--bars"></section></section>

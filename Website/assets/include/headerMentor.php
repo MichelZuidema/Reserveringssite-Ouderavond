@@ -25,6 +25,8 @@
         <?php
             require "inlog.php";
         ?>
+    <?php require "cmsModel.php"; ?>
+    
     <section class="blurring">
     <header class="header">
         <section class="header__icon--hamburger"><section class="icon__hamburger--bars"></section></section>

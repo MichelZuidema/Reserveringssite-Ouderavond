@@ -38,6 +38,7 @@ function GetClassAmountRegistered($mentor_id)
     return $amount;
 }
 ?>
+
 <main class="homepage">
     <!-- General information -->
     <article class="information article">
@@ -67,7 +68,7 @@ function GetClassAmountRegistered($mentor_id)
         </div>
         <?php
             if($_SESSION['admin_role']) {
-                echo '<Button class="CMS__paragraaf">Change</Button>';
+                echo '<Button class="CMS__paragraaf CMS__active--1">Change</Button>';
             }
         ?>
     </article>
@@ -82,16 +83,10 @@ function GetClassAmountRegistered($mentor_id)
     <!-- register information -->
     <article class="register article">
         <h2 class="register--heading">Hoe schrijf ik me in</h2>
-        <ol class="register__list">
-            <li class="register__list__item">1. quidem asperiores expedita aliquam? In enim voluptas quidem.</li>
-            <li class="register__list__item">2. Natus assumenda quaerat beatae quia a dolorum eligendi</li>
-            <li class="register__list__item">3. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-            <li class="register__list__item">4. tenetur, perferendis quae quia asperiores aut.</li>
-            <li class="register__list__item">4. met consectetur adipisicing eliis quae quia asperiores aut.</li>
-        </ol>
+        <ol class="register__list"><li class="register__list__item">1. quidem asperiores expedita aliquam? In enim voluptas quidem.</li><li class="register__list__item">2. Natus assumenda quaerat beatae quia a dolorum eligendi</li><li class="register__list__item">3. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li><li class="register__list__item">4. tenetur, perferendis quae quia asperiores aut.</li><li class="register__list__item">4. met consectetur adipisicing eliis quae quia asperiores aut.</li></ol>
         <?php
             if($_SESSION['admin_role']) {
-                echo '<Button class="CMS__paragraaf">Change</Button>';
+                echo '<Button class="CMS__paragraaf CMS__active--2">Change</Button>';
             }
         ?>
     </article>
@@ -161,3 +156,5 @@ require 'assets/include/footer.php';
 ?>
 <script src="assets/js/text.js"></script>
 <script src="assets/js/diagram.js"></script>
+<script src="assets/js/cms.js"></script>
+
