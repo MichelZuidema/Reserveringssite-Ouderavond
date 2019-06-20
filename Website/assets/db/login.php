@@ -5,6 +5,7 @@ session_start();
 ini_set('display_errors', 'On');
 
 // Required files
+require_once 'database.class.php';
 require("Controllers/UserController.php");
 
 $user = new UserController();

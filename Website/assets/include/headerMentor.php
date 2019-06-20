@@ -2,6 +2,9 @@
     // Start the session to get the logged in user details
     session_start();
 
+    require_once 'assets/db/database.class.php';
+    $db = new Database();
+
     //stores string for toggling classes
     $selectedLinkActive = "selectedLinkActive";
 ?>
@@ -43,5 +46,6 @@
             <h1 class="header__title__h1 title--2">Ouderavond</h1>
         </section>
         <!-- school logo -->
-        <figure class="header__logo"><a href="index.php"><img src="assets/img/school.jpg" alt="School-image" class="header__logo--img"></a></figure>
+        <figure class="header__logo"><a href="index.php"><img src="<?php $content = $db->GetContent("logo"); if($content) { echo $content; } else { echo "https://sanitationsolutions.net/wp-content/uploads/2015/05/empty-image.png"; }  ?>
+        " alt="School-image" class="header__logo--img"></a></figure>
     </header>
