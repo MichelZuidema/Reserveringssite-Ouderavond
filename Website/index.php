@@ -40,36 +40,23 @@ function GetClassAmountRegistered($mentor_id)
 
 
 ?>
+
 <main class="homepage">
     <!-- General information -->
     <article class="information article">
         <h2 class="information__heading">Algemene informatie</h2>
         <div class="information__container">
-            <p class="information__container--text">dat een Lorem lorem ipsum dolor lorem lorem sit amet consectetur,
-                adipisicing elit. Fugit saepe quaerat ut deserunt, non et facilis perspiciatis reiciendis dignissimos,
-                reprehenderit quod consequatur totam. Laboriosam velit adipisci veniam, quod quos harum. lezer, Lorem
-                ipsum, dolor sit amet consectetur adipisicing elit. Incidunt iste, minima ex magnam tenetur voluptates
-                culpa. Rem, labore expedita eius quibusdam error ipsam corrupti temporibus ab, earum nesciunt blanditiis
-                dicta. tijdens het bekijken van de layout van een pagina, afgeleid wordt door de tekstuele inhoud. Het
-                belangrijke punt van het gebruik van Lorem Ipsum is dat het uit een min of meer normale verdeling van
-                letters bestaat, in uw tegenstelling tot “Hier uw tekst, hier uw tekst” wat het tot min of meer leesbaar
-                nederlands maakt. Veel desktop publishing pakketten en web pagina </p>
+            <p class="information__container--text">dat een Lorem lorem ipsum dolor lorem lorem sit amet consectetur, adipisicing elit. Fugit saepe quaerat ut deserunt, non et facilis perspiciatis reiciendis dignissimos, reprehenderit quod consequatur totam. Laboriosam velit adipisci veniam, quod quos harum. lezer, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt iste, minima ex magnam tenetur voluptates culpa. Rem, labore expedita eius quibusdam error ipsam corrupti temporibus ab, earum nesciunt blanditiis dicta. tijdens het bekijken van de layout van een pagina, afgeleid wordt door de tekstuele inhoud. Het belangrijke punt van het gebruik van Lorem Ipsum is dat het uit een min of meer normale verdeling van letters bestaat, in uw tegenstelling tot “Hier uw tekst, hier uw tekst” wat het tot min of meer leesbaar nederlands maakt. Veel desktop publishing pakketten en web pagina </p>
         </div>
-        <Button class="CMS__paragraaf">Change</Button>
+        <Button class="CMS__paragraaf CMS__active--1">Change</Button>
     </article>
     <!-- backgroundimage -->
     <section class="article__image--1"><Button class="CMS__img">Change</Button></section>
     <!-- register information -->
     <article class="register article">
         <h2 class="register--heading">Hoe schrijf ik me in</h2>
-        <ol class="register__list">
-            <li class="register__list__item">1. quidem asperiores expedita aliquam? In enim voluptas quidem.</li>
-            <li class="register__list__item">2. Natus assumenda quaerat beatae quia a dolorum eligendi</li>
-            <li class="register__list__item">3. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-            <li class="register__list__item">4. tenetur, perferendis quae quia asperiores aut.</li>
-            <li class="register__list__item">4. met consectetur adipisicing eliis quae quia asperiores aut.</li>
-        </ol>
-        <Button class="CMS__paragraaf">Change</Button>
+        <ol class="register__list"><li class="register__list__item">1. quidem asperiores expedita aliquam? In enim voluptas quidem.</li><li class="register__list__item">2. Natus assumenda quaerat beatae quia a dolorum eligendi</li><li class="register__list__item">3. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li><li class="register__list__item">4. tenetur, perferendis quae quia asperiores aut.</li><li class="register__list__item">4. met consectetur adipisicing eliis quae quia asperiores aut.</li></ol>
+        <Button class="CMS__paragraaf CMS__active--2">Change</Button>
     </article>
     <!-- background image -->
     <section class="article__image--2"><Button class="CMS__img">Change</Button></section>
@@ -125,3 +112,5 @@ require 'assets/include/footer.php';
 ?>
 <script src="assets/js/text.js"></script>
 <script src="assets/js/diagram.js"></script>
+<script src="assets/js/cms.js"></script>
+

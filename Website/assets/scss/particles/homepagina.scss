@@ -208,7 +208,7 @@
                 transform: translateX(-50%);
                 color: black;
                 font-size: 2rem;
-                z-index: 1000;
+                z-index: 999;
             }
 
             p{
@@ -218,6 +218,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 color: $glr-green;
+                z-index: 999!important;
             }
 
             .diagram--time{
@@ -226,6 +227,7 @@
 
             .diagram--fill{
                 bottom: -3rem;
+                z-index: 999!important;
             }
         }
 
