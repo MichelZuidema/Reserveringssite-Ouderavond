@@ -24,6 +24,7 @@
     <title><?php echo $pageTitle; ?></title>
     <link rel="stylesheet" href="assets/css-import/all.css">    
     <script src="https://cdn.ckeditor.com/ckeditor5/12.2.0/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.2.0/balloon/ckeditor.js"></script>
 </head>
 <body>
     <!-- inlog form -->
