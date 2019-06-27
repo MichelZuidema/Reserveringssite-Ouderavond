@@ -12,7 +12,7 @@
     text-align: left;
     font-size: 2.2rem;
     margin: 1rem 0;
-    color: #f1f1f1;
+    color: #000;
   }
 
   textarea {
@@ -33,7 +33,7 @@
     background: #1c1c1c;
     box-shadow: 1px 1.5px 6px #000;
     border: 3px solid #484646;
-    color: #f1f1f1;
+    color: #000;
     font-size: 2.2rem;
     margin: 0.5rem;
     padding: 1rem;
@@ -72,4 +72,9 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   transition: top 500ms ease-in-out;
+}
+
+
+.model_p{
+  color: #f1f1f1!important;
 }

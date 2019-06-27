@@ -34,7 +34,6 @@
                         <li class="contact-li">Grafisch Lyceum Rotterdam</li>
                         <li class="contact-li">Heer Bokelweg 255</li>
                         <li class="contact-li">3032 AD Rotterdam</li>
-                        <li class="contact-li">WFHH+36 Rotterdam</li>
                         <li class="contact-li">088 200 1500</li>
                         <Button class="CMS__paragraaf">Change</Button>
                     </ul>

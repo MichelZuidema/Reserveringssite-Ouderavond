@@ -75,6 +75,18 @@ console.log(list.innerHTML);
     }
 });
 
+var wYSIWYG = document.querySelector(".ck-editor__main");
+wYSIWYG.addEventListener("click",function(){
+    changeTextModel.classList.add("CMS__model--active");
+    blur.classList.add("login__blur");
+});
+
+var tooblar = document.querySelector(".ck-toolbar").addEventListener("click", function(){
+    changeTextModel.classList.add("CMS__model--active");
+    blur.classList.add("login__blur");
+});
+
+
 
 
 let cmsTab1 = document.querySelector(".model__tab__button--1");
