@@ -31,6 +31,7 @@
                 <!-- contact info section -->
                 <section class="footer__contact">
                     <ul>
+
                         <li class="contact-li">
                             <?php
                                 $content = $db->GetContent('FOOTER_L_1');
@@ -75,6 +76,7 @@
                                 }
                             ?>
                         </li>
+
                         <Button class="CMS__paragraaf">Change</Button>
                     </ul>
                 </section>
