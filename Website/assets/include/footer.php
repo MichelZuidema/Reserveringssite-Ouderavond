@@ -80,7 +80,17 @@
                 </section>
                 <!-- GLR logo -->
                 <section class="footer__logo">
-                    <img src="assets/img/GLRlogo_RGB.png" alt="GLR logo" class="footer__logo--img">
+                    <img src="
+                    <?php
+                    $content = $db->GetContent('FOOTER_R_IMG');
+
+                    if($content) {
+                        echo $content;
+                    } else {
+                        echo "No content found.";
+                    }
+                    ?>
+                    " alt="GLR logo" class="footer__logo--img">
                 </section>
         </section>
     </footer>
