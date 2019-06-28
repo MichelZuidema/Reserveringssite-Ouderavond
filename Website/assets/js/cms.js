@@ -11,6 +11,9 @@ const tabs1 = document.querySelector(".model__tab--1");
 // model tab 1
 const tabs2 = document.querySelector(".model__tab--2");
 
+let cmsTab1 = document.querySelector(".model__tab__button--1");
+let cmsTab2 = document.querySelector(".model__tab__button--2");
+
 //both tabs input
 let tabs1Header = document.querySelector(".model__tab--1 input");
 let tabs2Header = document.querySelector(".model__tab--2 input");
@@ -31,8 +34,6 @@ let paragraafHome = document.querySelector(".information__container--text");
 
 let textarea1 = document.querySelector(".model__textarea--1");
 let textarea2 = document.querySelector(".model__textarea--2");
-
-console.log(list.innerHTML);
 
 
   textarea2.innerHTML = list.innerHTML;
@@ -75,10 +76,23 @@ console.log(list.innerHTML);
     }
 });
 
+var wYSIWYG = document.querySelector(".ck-editor__main");
+wYSIWYG.addEventListener("click",function(){
+    changeTextModel.classList.add("CMS__model--active");
+    blur.classList.add("login__blur");
+});
+
+var tooblar = document.querySelector(".ck-toolbar").addEventListener("click", function(){
+    changeTextModel.classList.add("CMS__model--active");
+    blur.classList.add("login__blur");
+});
 
 
-let cmsTab1 = document.querySelector(".model__tab__button--1");
-let cmsTab2 = document.querySelector(".model__tab__button--2");
+var wYSIWYG3 = document.querySelector(".model__tab--2 div");
+wYSIWYG3.addEventListener("click",function(){
+    changeTextModel.classList.add("CMS__model--active");
+    blur.classList.add("login__blur");
+});
 
 //change header text 
 cmsTab1.innerHTML = infoHeader.innerHTML;
